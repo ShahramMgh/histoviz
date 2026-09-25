@@ -445,8 +445,8 @@ function selectEvent(id){
   if(mk){
     mk.setStyle({color:getComputedStyle(document.documentElement).getPropertyValue("--gold").trim()||"#8A6212",weight:3,fillColor:CATS[v.c].color,fillOpacity:1});
     mk.setRadius(10);
-    map.flyTo([v.lat,v.lng],Math.max(map.getZoom(),6),{duration:.6});
-    cluster.zoomToShowLayer(mk,()=>{mk.bringToFront&&mk.bringToFront();mk.openPopup();});
+    map.flyTo([v.lat,v.lng],Math.max(map.getZoom(),6),{duration:.6});  // gentle; no forced un-clustering
+    setTimeout(()=>{try{if(map.hasLayer(mk))mk.openPopup();}catch(e){}},650);
   }
   fillPanel(v); openPanel();
   history.replaceState(null,"","#"+id);

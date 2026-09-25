@@ -562,3 +562,12 @@ body.dash{margin:0;height:100vh;overflow:hidden}
   .map-overlay{width:min(320px,80%)}
   .dash .panel{top:0;height:100%}
 }
+
+/* ============================================================
+   Pass 9 — full-width scroller; tidy (non-truncated) timeline cards
+   ============================================================ */
+.dash .timebar.compact{max-width:none;margin:0;width:100%}
+/* dashboard timeline cards: title + place only (full text lives in the drawer),
+   so nothing is ever cut mid-sentence */
+.dash .tl-card p, .dash .tl-card .tl-tags{display:none}
+.dash .tl-card h3{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
