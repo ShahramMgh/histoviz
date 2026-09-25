@@ -15,6 +15,7 @@ const active=new Set(Object.keys(CATS));
 const flags={unesco:false,debated:false};
 let query="";
 let activeEra=null;       // when set, the era rail filters to just this era
+let yrFrom=-3000, yrTo=2010;   // period range from the time scroller (min/max ⇒ no bound)
 let visibleOrder=[];      // ids in current display order
 let activeId=null;
 
@@ -115,8 +116,8 @@ ERAS.forEach(er=>{
       if(g)$("#tlScroll").scrollTo({left:g.offsetLeft-8,behavior:"smooth"});
       const pts=EV.filter(v=>v.e===er.id&&isFinite(v.lat)&&isFinite(v.lng)).map(v=>[v.lat,v.lng]);
       if(pts.length){try{map.fitBounds(pts,{padding:[45,45],maxZoom:7,animate:true});}catch(e){}}
-      const yr=ERA_YEAR[er.id];                  // move the political-map slider to this era
-      if(yr!==undefined){const sl=$("#timeSlider");if(sl){sl.value=yr;sl.dispatchEvent(new Event("input"));}}
+      const yr=ERA_YEAR[er.id];                  // show this era's political map
+      if(yr!==undefined)loadPolitical(yr);
       toast("Filtered to "+eraShort(er.name)+" — click it again to show all");
     }else{
       map.setView(HOME_CENTER,HOME_ZOOM);
@@ -156,6 +157,8 @@ $("#search").addEventListener("input",e=>{query=e.target.value.trim().toLowerCas
 
 function matches(v,er){
   if(activeEra&&v.e!==activeEra)return false;
+  if(yrFrom>-3000 && v.y<yrFrom)return false;   // period range (from handle at min = no lower bound)
+  if(yrTo<2010 && v.y>yrTo)return false;         // (to handle at max = no upper bound)
   if(!active.has(v.c))return false;
   if(flags.unesco&&!v.un)return false;
   if(flags.debated&&!v.db)return false;
@@ -240,7 +243,7 @@ async function loadPolitical(year){
   clearPolit();
   const feats=d.features.filter(f=>f&&f.geometry&&f.properties&&f.properties.NAME&&inRegion(fbbox(f.geometry)));
   politLayer=L.geoJSON({type:"FeatureCollection",features:feats},{
-    style:f=>{const c=politColor(f.properties.NAME);return{color:c,weight:1,opacity:.85,fillColor:c,fillOpacity:.42};},
+    style:f=>{const c=politColor(f.properties.NAME);return{color:c,weight:.8,opacity:.6,fillColor:c,fillOpacity:.22};},
     onEachFeature:(f,l)=>{l.bindTooltip(f.properties.NAME,{sticky:true,direction:"top",className:"hv-tip"});
       l.on("mouseover",()=>l.setStyle({fillOpacity:.62,weight:2}));
       l.on("mouseout",()=>{try{politLayer.resetStyle(l);}catch(e){}});
@@ -249,7 +252,7 @@ async function loadPolitical(year){
   if(politLayer.bringToBack)politLayer.bringToBack();
   feats.map(f=>{const b=fbbox(f.geometry);const w=Math.min(b[2],REGION[2])-Math.max(b[0],REGION[0]),h=Math.min(b[3],REGION[3])-Math.max(b[1],REGION[1]);
       return{f,area:w*h,cx:(Math.max(b[0],REGION[0])+Math.min(b[2],REGION[2]))/2,cy:(Math.max(b[1],REGION[1])+Math.min(b[3],REGION[3]))/2};})
-    .filter(o=>o.area>5).sort((a,b)=>b.area-a.area).slice(0,16)
+    .filter(o=>o.area>9).sort((a,b)=>b.area-a.area).slice(0,9)
     .forEach(o=>{const m=L.marker([o.cy,o.cx],{interactive:false,keyboard:false,
       icon:L.divIcon({className:"polit-label",html:'<span>'+esc(o.f.properties.NAME)+'</span>'})}).addTo(map);politLabels.push(m);});
 }
@@ -307,17 +310,29 @@ function showPolity(props){
   openPanel();
 }
 
-(function wireTimeSlider(){
-  const sl=$("#timeSlider"),out=$("#timeYear"),on=$("#timeOn"),ticks=$("#timeTicks"); if(!sl)return;
-  const mn=+sl.min,mx=+sl.max;
+(function wireRange(){
+  const a=$("#timeFrom"),b=$("#timeTo"),on=$("#timeOn"),
+        lo=$("#timeFromLbl"),hi=$("#timeToLbl"),fill=$("#rangeFill"),ticks=$("#timeTicks");
+  if(!a||!b)return;
+  const mn=+a.min,mx=+a.max;
   if(ticks){let h="";HB_YEARS.forEach(y=>{if(y>=mn&&y<=mx)h+='<i style="left:'+((y-mn)/(mx-mn)*100)+'%"></i>';});
     [-3000,-2000,-1000,-500,1,500,1000,1500,2000].forEach(y=>{if(y>=mn&&y<=mx)h+='<b style="left:'+((y-mn)/(mx-mn)*100)+'%">'+yearLabel(y)+'</b>';});ticks.innerHTML=h;}
-  function bubble(){if(!out)return;out.textContent=yearLabel(sl.value);out.style.left=((+sl.value-mn)/(mx-mn)*100)+"%";}
-  let t=null;
-  sl.addEventListener("input",()=>{bubble();clearTimeout(t);t=setTimeout(()=>loadPolitical(+sl.value),240);});
-  sl.addEventListener("change",()=>{bubble();loadPolitical(+sl.value);});
-  if(on)on.addEventListener("change",()=>loadPolitical(+sl.value));
-  bubble(); loadPolitical(+sl.value);
+  function mid(){return Math.round((yrFrom+yrTo)/2);}
+  function paint(){
+    let f=+a.value,t=+b.value; if(f>t){const m=f;f=t;t=m;}
+    yrFrom=f; yrTo=t;
+    const pf=(f-mn)/(mx-mn)*100, pt=(t-mn)/(mx-mn)*100;
+    if(fill){fill.style.left=pf+"%";fill.style.width=(pt-pf)+"%";}
+    if(lo){lo.textContent=yearLabel(f);lo.style.left=pf+"%";}
+    if(hi){hi.textContent=yearLabel(t);hi.style.left=pt+"%";}
+  }
+  let rt=null,pt=null;
+  function onMove(){paint();clearTimeout(rt);rt=setTimeout(render,120);clearTimeout(pt);pt=setTimeout(()=>loadPolitical(mid()),260);}
+  function onDone(){paint();render();loadPolitical(mid());}
+  a.addEventListener("input",onMove); b.addEventListener("input",onMove);
+  a.addEventListener("change",onDone); b.addEventListener("change",onDone);
+  if(on)on.addEventListener("change",()=>loadPolitical(mid()));
+  paint(); loadPolitical(mid());
 })();
 
 const cluster=L.markerClusterGroup({

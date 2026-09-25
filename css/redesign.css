@@ -472,3 +472,34 @@ body.dash{margin:0;height:100vh;overflow:hidden}
   .dash-bottom .tl-scroll{height:clamp(360px,60vh,560px)}
   .dash-title{display:none}
 }
+
+/* ============================================================
+   Pass 7 — dashboard declutter + dual-handle period range
+   ============================================================ */
+/* cleaner, compact era rail in the dashboard */
+.dash-left .scaleseg{display:none}
+.dash-left .era-rail{gap:.4rem}
+.dash-left .era-rail .ribbon{flex:0 0 auto!important;height:auto;gap:5px;overflow:visible}
+.dash-left .era-rail .ribbon button{flex:0 0 auto!important;min-height:0;padding:.34rem .55rem}
+.dash-left .era-rail .era-name{-webkit-line-clamp:1}
+.dash-left .ribbon-note{display:none}
+.dash-bottom{overflow:hidden}
+/* softer, quieter political-map labels */
+.polit-label span{font-size:.76rem;opacity:.92}
+
+/* dual-handle period range slider (from … to) */
+.rangebar{height:76px}
+.rangebar-rail{position:absolute;left:2px;right:2px;top:36px;height:8px;background:var(--rule);border-radius:999px}
+.rangebar-fill{position:absolute;top:0;height:100%;background:var(--lapis);border-radius:999px;opacity:.8}
+.rangebar input[type=range]{position:absolute;left:0;top:28px;width:100%;height:24px;margin:0;
+  -webkit-appearance:none;appearance:none;background:transparent;pointer-events:none}
+.rangebar input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;pointer-events:auto;
+  width:22px;height:22px;border-radius:50%;background:var(--surface2);border:4px solid var(--lapis);
+  box-shadow:var(--shadow-1);cursor:grab;margin-top:0}
+.rangebar input[type=range]::-moz-range-thumb{pointer-events:auto;width:20px;height:20px;border-radius:50%;
+  background:var(--surface2);border:4px solid var(--lapis);box-shadow:var(--shadow-1);cursor:grab}
+.rangebar input[type=range]:active::-webkit-slider-thumb{cursor:grabbing}
+.rangebar .timebar-year{top:2px}
+.rangebar .timebar-year.to{background:var(--gold)}
+.rangebar .timebar-year.to::after{border-top-color:var(--gold)}
+.rangebar .timebar-ticks{top:50px}
