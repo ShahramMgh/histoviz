@@ -521,7 +521,7 @@ body.dash{margin:0;height:100vh;overflow:hidden}
 
 /* map floating overlay: search + filter accordion (top-left) */
 .map-overlay{position:absolute;left:12px;top:12px;z-index:600;width:min(320px,58%);display:flex;flex-direction:column;gap:.5rem}
-.map-overlay .search{width:100%;background:var(--surface2);box-shadow:var(--shadow-1);border-color:var(--rule)}
+.map-overlay .search{flex:0 0 auto;width:100%;height:auto;background:var(--surface2);box-shadow:var(--shadow-1);border-color:var(--rule)}
 .filter-menu{position:relative;align-self:flex-start}
 .filter-btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--display);font-size:.9rem;
   background:var(--surface2);color:var(--ink);border:1px solid var(--rule);border-radius:999px;
