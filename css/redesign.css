@@ -415,3 +415,60 @@ footer{border-top:1px solid var(--rule);margin-top:2.5rem;padding:2rem 1.25rem 3
 .fp-lb-x{position:fixed;top:1rem;right:1.2rem;width:2.5rem;height:2.5rem;border-radius:9px;
   border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.14);color:#fff;font-size:1.5rem;cursor:pointer}
 .fp-lb-x:hover{background:rgba(255,255,255,.24)}
+
+/* ============================================================
+   Pass 6 — dashboard layout (explore.html): map-centric board
+   ============================================================ */
+body.dash{margin:0;height:100vh;overflow:hidden}
+.dash-grid{display:grid;height:100vh;
+  grid-template-columns:320px minmax(0,1fr) 380px;
+  grid-template-rows:auto minmax(0,1fr) clamp(220px,30vh,340px);
+  grid-template-areas:"top top top" "left center right" "bottom bottom bottom"}
+
+/* header */
+.dash-top{grid-area:top;display:flex;align-items:center;gap:1rem;padding:.45rem 1rem;min-height:52px;
+  border-bottom:1px solid var(--rule);background:var(--surface)}
+.dash-title{grid-area:auto;flex:1 1 auto;text-align:center;font-family:var(--display);color:var(--muted);
+  letter-spacing:.02em;font-size:1rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dash-top .masthead-tools{margin-left:0}
+
+/* left column: filters + era rail */
+.dash-left{grid-area:left;min-height:0;display:flex;flex-direction:column;
+  border-right:1px solid var(--rule);background:var(--surface)}
+.dash .controls{position:static;top:auto;margin:0;border-top:0;border-bottom:1px solid var(--rule);
+  background:var(--surface);-webkit-backdrop-filter:none;backdrop-filter:none;padding:.6rem .7rem}
+.dash-left .era-rail{flex:1 1 auto;min-height:0;padding:.6rem .7rem;overflow:auto;display:flex;flex-direction:column;gap:.6rem}
+.dash-left .era-rail .ribbon{flex:1 1 auto;min-height:0}
+.dash-left .ribbon-note{margin:.3rem 0 0;font-size:.75rem;text-align:left}
+
+/* center column: map fills, political-map slider docked below */
+.dash-center{grid-area:center;min-height:0;display:flex;flex-direction:column;background:var(--bg)}
+.dash-center .mapwrap{flex:1 1 auto;min-height:0;height:auto;border:0;border-radius:0;box-shadow:none}
+.dash-center .timebar{margin:0;border:0;border-top:1px solid var(--rule);border-radius:0;box-shadow:none;background:var(--surface)}
+.dash-viewswitch{position:absolute;left:10px;top:10px;z-index:500}
+.dash-viewswitch .viewseg{box-shadow:var(--shadow-1);background:var(--surface2)}
+
+/* right column: the detail panel becomes a static column */
+.dash-right{grid-area:right;min-height:0;overflow:hidden;border-left:1px solid var(--rule);background:var(--surface2)}
+.dash #scrim{display:none!important}
+.dash-right .panel{position:static;transform:none!important;width:100%;max-width:none;height:100%;
+  box-shadow:none;border-left:0;border-radius:0;background:var(--surface2)}
+.dash-right #panelClose{display:none}
+.dash-hint{color:var(--muted);font-style:italic;line-height:1.6}
+
+/* bottom: horizontal timeline */
+.dash-bottom{grid-area:bottom;min-height:0;border-top:1px solid var(--rule);background:var(--bg)}
+.dash-bottom .tl-scroll{height:100%;margin:0;border:0;border-radius:0}
+
+/* stack into a normal scrolling page on small screens */
+@media (max-width:900px){
+  body.dash{height:auto;overflow:auto}
+  .dash-grid{display:block;height:auto}
+  .dash-left,.dash-right{border:0;border-bottom:1px solid var(--rule)}
+  .dash-center{height:auto}
+  .dash-center .mapwrap{height:58vh}
+  .dash-left .era-rail{overflow:visible}
+  .dash-right .panel{height:auto;min-height:40vh}
+  .dash-bottom .tl-scroll{height:clamp(360px,60vh,560px)}
+  .dash-title{display:none}
+}

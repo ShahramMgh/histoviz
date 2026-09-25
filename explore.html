@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Explore the Atlas — The Iranian Heritage</title>
-<meta name="description" content="Interactive timeline and map of 100,000 years of the Iranian plateau: scrub the years to redraw the region's kingdoms and empires, and open any moment for its full page.">
+<title>Atlas — The Iranian Heritage</title>
+<meta name="description" content="Interactive dashboard: timeline, map and the region's kingdoms across 100,000 years of the Iranian plateau.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
@@ -13,69 +13,46 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
 <link rel="stylesheet" href="css/style.css?v=6">
-<link rel="stylesheet" href="css/redesign.css?v=14">
+<link rel="stylesheet" href="css/redesign.css?v=15">
 </head>
-<body>
+<body class="dash">
 <span id="top"></span>
 
-<!-- ============================ Masthead ============================ -->
-<header class="masthead">
-  <div class="wrap masthead-in">
+<div class="dash-grid">
+
+  <!-- ===== header ===== -->
+  <header class="dash-top">
     <a class="brand" href="index.html" aria-label="The Iranian Heritage — home">
       <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 32 32" width="26" height="26"><g fill="none" stroke="currentColor" stroke-width="1.4">
+        <svg viewBox="0 0 32 32" width="24" height="24"><g fill="none" stroke="currentColor" stroke-width="1.4">
           <rect x="7" y="7" width="18" height="18" rx="1"/>
           <rect x="7" y="7" width="18" height="18" rx="1" transform="rotate(45 16 16)"/>
           <circle cx="16" cy="16" r="3.4"/></g></svg>
       </span>
-      <span class="brand-text"><b>The Iranian Heritage</b><em>Atlas of 100,000 years</em></span>
+      <span class="brand-text"><b>The Iranian Heritage</b><em>Interactive atlas</em></span>
     </a>
-
-    <nav class="masthead-nav" aria-label="Sections">
-      <a href="index.html">Home</a>
-      <a href="#eras">Eras</a>
-      <a href="#reference">Reference</a>
-    </nav>
-
+    <div class="dash-title">Timeline &amp; map of the Iranian plateau</div>
     <div class="masthead-tools">
       <span class="userchip" id="userChip" hidden><span id="userLabel"></span></span>
+      <a class="iconbtn ghost2" href="index.html">← Home</a>
       <button type="button" class="iconbtn ghost2" id="btnProfile" title="Profile, themes &amp; your content">Profile</button>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- ============================ Atlas intro ============================ -->
-<header class="atlas-intro wrap">
-  <p class="eyebrow">Interactive atlas</p>
-  <h1 class="atlas-title">Explore the timeline &amp; map</h1>
-  <p class="atlas-sub">Pick an era on the left to move both the map and the timeline, scrub the years to redraw the region’s kingdoms and empires, and open any moment — event or kingdom — for its full page.</p>
-</header>
-
-<!-- ============================ Explorer ============================ -->
-<section class="explorer" id="explorer">
-  <!-- sticky filter bar -->
-  <div class="controls">
-    <div class="wrap controls-in">
-      <input class="search" id="search" type="search" placeholder="Search: Susa, Elam, Zoroaster, Medes, wine…" aria-label="Search the timeline">
-      <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
-      <div class="chips flags" role="group" aria-label="Quick filters">
-        <button type="button" class="chip flag unesco" id="fUnesco" aria-pressed="false">UNESCO</button>
-        <button type="button" class="chip flag debate" id="fDebated" aria-pressed="false">Debated</button>
+  <!-- ===== left: filters + era rail ===== -->
+  <aside class="dash-left" aria-label="Filters and eras">
+    <div class="controls">
+      <div class="controls-in">
+        <input class="search" id="search" type="search" placeholder="Search: Susa, Elam, Hafez…" aria-label="Search the timeline">
+        <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+        <div class="chips flags" role="group" aria-label="Quick filters">
+          <button type="button" class="chip flag unesco" id="fUnesco" aria-pressed="false">UNESCO</button>
+          <button type="button" class="chip flag debate" id="fDebated" aria-pressed="false">Debated</button>
+        </div>
+        <span class="count" id="count" aria-live="polite"></span>
       </div>
-      <span class="count" id="count" aria-live="polite"></span>
     </div>
-  </div>
-
-  <div class="wrap stage-head">
-    <p class="stage-hint"><b>How to explore</b> — pick an era on the left to move both the map and the timeline, or click any event (its card, its dot, or its map pin) for the full note.</p>
-    <div class="seg viewseg" role="group" aria-label="Choose a view">
-      <button type="button" id="btnTimeline" class="is-active" aria-pressed="true">Timeline</button>
-      <button type="button" id="btnFullView" aria-pressed="false">Map of Time</button>
-    </div>
-  </div>
-
-  <div class="stage wrap" id="eras" aria-label="Eras, map and timeline">
-    <aside class="era-rail" aria-label="Jump to an era">
+    <div class="era-rail" aria-label="Jump to an era">
       <div class="era-rail-top">
         <span class="era-rail-title">Eras</span>
         <div class="seg scaleseg" role="group" aria-label="Era scale">
@@ -84,105 +61,75 @@
         </div>
       </div>
       <div class="ribbon" id="ribbon"></div>
+      <p class="ribbon-note" id="ribbonNote">Pick an era to filter the map &amp; timeline.</p>
+    </div>
+  </aside>
+
+  <!-- ===== center: map + political-map time slider ===== -->
+  <main class="dash-center">
+    <div class="mapwrap">
+      <div id="map"></div>
+      <div class="dash-viewswitch">
+        <div class="seg viewseg" role="group" aria-label="Choose a view">
+          <button type="button" id="btnTimeline" class="is-active" aria-pressed="true">Timeline</button>
+          <button type="button" id="btnFullView" aria-pressed="false">Map of Time</button>
+        </div>
+      </div>
+      <div class="map-panel" aria-label="Map controls">
+        <div class="seg mp-seg" role="group" aria-label="Basemap">
+          <button type="button" id="mpTerrain" class="is-active" aria-pressed="true">Terrain</button>
+          <button type="button" id="mpSatellite" aria-pressed="false">Satellite</button>
+        </div>
+        <div class="mp-zoom">
+          <button type="button" id="mpZoomOut" aria-label="Zoom out">–</button>
+          <button type="button" id="mpReset">Reset</button>
+          <button type="button" id="mpZoomIn" aria-label="Zoom in">+</button>
+        </div>
+        <div class="mp-routes">
+          <span class="mp-label">Trade routes</span>
+          <label><input type="checkbox" class="route-toggle" data-route="royal"><span class="swatch" style="border-top-color:#8A6212"></span> Royal Road</label>
+          <label><input type="checkbox" class="route-toggle" data-route="silk"><span class="swatch" style="border-top-color:#146F70"></span> Silk Road</label>
+          <label><input type="checkbox" class="route-toggle" data-route="lapis"><span class="swatch" style="border-top-color:#5A4E86"></span> Lapis lazuli</label>
+        </div>
+      </div>
+    </div>
+    <div class="timebar" aria-label="Historical political map by year">
+      <div class="timebar-head">
+        <label class="timebar-toggle"><input type="checkbox" id="timeOn" checked> Political map of the region</label>
+        <span class="timebar-src">borders © <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a></span>
+      </div>
+      <div class="timebar-track">
+        <output class="timebar-year" id="timeYear">500 BCE</output>
+        <div class="timebar-ticks" id="timeTicks" aria-hidden="true"></div>
+        <input type="range" id="timeSlider" min="-3000" max="2010" value="-500" step="1" aria-label="Year of the political map">
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== right: details of the selected event / kingdom ===== -->
+  <aside class="dash-right" aria-label="Details">
+    <div class="scrim" id="scrim" hidden></div>
+    <aside class="panel" id="panel" aria-label="Event details" aria-live="polite">
+      <div class="panel-head">
+        <span class="panel-era" id="panelEra"></span>
+        <div class="nav">
+          <button type="button" id="panelPrev" title="Previous (←)" aria-label="Previous event">‹</button>
+          <button type="button" id="panelNext" title="Next (→)" aria-label="Next event">›</button>
+          <button type="button" id="panelClose" title="Close (Esc)" aria-label="Close">×</button>
+        </div>
+      </div>
+      <div class="panel-body" id="panelBody"><p class="dash-hint">Click an event on the timeline, a pin on the map, or a kingdom on the political map to read its page here. Drag the year slider to watch the region redraw.</p></div>
     </aside>
+  </aside>
 
-    <div class="stage-main">
-      <div class="mapwrap">
-        <div id="map"></div>
-        <div class="map-panel" aria-label="Map controls">
-          <div class="seg mp-seg" role="group" aria-label="Basemap">
-            <button type="button" id="mpTerrain" class="is-active" aria-pressed="true">Terrain</button>
-            <button type="button" id="mpSatellite" aria-pressed="false">Satellite</button>
-          </div>
-          <div class="mp-zoom">
-            <button type="button" id="mpZoomOut" aria-label="Zoom out">–</button>
-            <button type="button" id="mpReset">Reset</button>
-            <button type="button" id="mpZoomIn" aria-label="Zoom in">+</button>
-          </div>
-          <div class="mp-routes">
-            <span class="mp-label">Trade routes</span>
-            <label><input type="checkbox" class="route-toggle" data-route="royal"><span class="swatch" style="border-top-color:#8A6212"></span> Royal Road</label>
-            <label><input type="checkbox" class="route-toggle" data-route="silk"><span class="swatch" style="border-top-color:#146F70"></span> Silk Road</label>
-            <label><input type="checkbox" class="route-toggle" data-route="lapis"><span class="swatch" style="border-top-color:#5A4E86"></span> Lapis lazuli</label>
-          </div>
-        </div>
-      </div>
-
-      <!-- time slider: scrub the year to redraw the region's political map -->
-      <div class="timebar" aria-label="Historical political map by year">
-        <div class="timebar-head">
-          <label class="timebar-toggle"><input type="checkbox" id="timeOn" checked> Political map of the region</label>
-          <span class="timebar-src">borders © <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a></span>
-        </div>
-        <div class="timebar-track">
-          <output class="timebar-year" id="timeYear">500 BCE</output>
-          <div class="timebar-ticks" id="timeTicks" aria-hidden="true"></div>
-          <input type="range" id="timeSlider" min="-3000" max="2010" value="-500" step="1" aria-label="Year of the political map">
-        </div>
-      </div>
-
-      <div class="tl-scroll" id="tlScroll" tabindex="0" aria-label="Horizontal timeline, scroll sideways">
-        <div class="tl-track" id="tlTrack"></div>
-      </div>
+  <!-- ===== bottom: horizontal timeline ===== -->
+  <section class="dash-bottom" aria-label="Timeline">
+    <div class="tl-scroll" id="tlScroll" tabindex="0" aria-label="Horizontal timeline, scroll sideways">
+      <div class="tl-track" id="tlTrack"></div>
     </div>
-  </div>
-  <p class="ribbon-note wrap" id="ribbonNote">Each era gets equal space. Switch to “True” to see how thin recorded history really is.</p>
-</section>
+  </section>
 
-<!-- ============================ Reference ============================ -->
-<section class="reference notes" id="reference">
-  <div class="wrap">
-    <p class="eyebrow">Reference</p>
-    <h2 class="section-title">Reading the archive</h2>
-
-    <div class="ref-grid">
-      <article class="ref-card">
-        <h3>Reading the dates</h3>
-        <p><strong>Years ago / BP</strong> is used for deep prehistory (“before present”, conventionally 1950). Subtract about 2,000 to convert to BCE: 12,000 years ago ≈ 10,000 BCE. <strong>cal</strong> means a radiocarbon date calibrated to calendar years. Palaeolithic dates often carry wide error ranges and sometimes conflict between methods, as at Kaldar Cave.</p>
-      </article>
-      <article class="ref-card">
-        <h3>What counts as “Iran” here</h3>
-        <p>Events from neighbouring Mesopotamia and Anatolia appear as <em>Wider Middle East</em> where they shaped Iran. Map pins mark the best-known site for each entry; empire-wide or climatic events are pinned to a representative location, and the trade-route overlays are illustrative and approximate.</p>
-      </article>
-      <article class="ref-card">
-        <h3>Sources &amp; caveats</h3>
-        <p>For the Median and early Achaemenid periods much of the narrative comes from Greek writers, especially Herodotus, writing a century or more later. Where royal inscriptions and Greek accounts disagree, the entry is marked <em>debated</em>. New excavations regularly revise prehistoric dates.</p>
-      </article>
-    </div>
-
-    <h3 class="ref-subhead">UNESCO World Heritage sites from this period in Iran</h3>
-    <div class="table-scroll">
-    <table>
-      <thead><tr><th>Site</th><th>Period represented</th><th>Inscribed</th></tr></thead>
-      <tbody>
-        <tr><td>Tchogha Zanbil</td><td>Middle Elamite, c. 1250 BCE</td><td>1979</td></tr>
-        <tr><td>Persepolis</td><td>Achaemenid</td><td>1979</td></tr>
-        <tr><td>Takht-e Soleyman</td><td>Sasanian (and later)</td><td>2003</td></tr>
-        <tr><td>Pasargadae</td><td>Achaemenid (Cyrus II)</td><td>2004</td></tr>
-        <tr><td>Bisotun</td><td>Prehistoric to Sasanian; Darius I inscription</td><td>2006</td></tr>
-        <tr><td>Shushtar Historical Hydraulic System</td><td>Achaemenid origins, Sasanian works</td><td>2009</td></tr>
-        <tr><td>The Persian Garden</td><td>From Pasargadae onward</td><td>2011</td></tr>
-        <tr><td>Shahr-i Sokhta</td><td>Bronze Age</td><td>2014</td></tr>
-        <tr><td>Susa</td><td>c. 4200 BCE onward</td><td>2015</td></tr>
-        <tr><td>The Persian Qanat</td><td>Ancient water engineering</td><td>2016</td></tr>
-        <tr><td>Sasanian Archaeological Landscape of Fars</td><td>Firuzabad, Bishapur, Sarvestan</td><td>2018</td></tr>
-        <tr><td>Prehistoric Sites of the Khorramabad Valley</td><td>Middle and Upper Palaeolithic</td><td>2025</td></tr>
-      </tbody>
-    </table>
-    </div>
-
-    <h3 class="ref-subhead">Further reading</h3>
-    <ul class="reading-list">
-      <li>Encyclopaedia Iranica — the standard scholarly reference: <a href="https://www.iranicaonline.org" target="_blank" rel="noopener">iranicaonline.org</a></li>
-      <li>UNESCO World Heritage Centre, Iran: <a href="https://whc.unesco.org/en/statesparties/ir" target="_blank" rel="noopener">whc.unesco.org</a></li>
-      <li>D. T. Potts, <em>The Archaeology of Elam</em> (2nd ed., Cambridge, 2016)</li>
-      <li>Pierre Briant, <em>From Cyrus to Alexander: A History of the Persian Empire</em> (2002)</li>
-      <li>Touraj Daryaee, <em>Sasanian Persia: The Rise and Fall of an Empire</em> (2009)</li>
-    </ul>
-  </div>
-</section>
-
-<footer class="wrap">Figures and dates reflect published scholarship as of 2026; new excavations regularly revise prehistoric dates. Map tiles © OpenStreetMap contributors &amp; Esri. Historical borders © the historical-basemaps project (CC-BY-SA). Photos via Wikimedia Commons under their respective licences.</footer>
+</div>
 
 <!-- Profile: themes, account & your content -->
 <div class="profile" id="profile" hidden role="dialog" aria-modal="true" aria-label="Profile and settings">
@@ -192,7 +139,6 @@
   </div>
   <div class="profile-scroll">
     <div class="profile-doc">
-
       <section class="profile-card">
         <h3>Appearance</h3>
         <p class="profile-sub">Choose how the atlas looks. Your choice is saved in this browser.</p>
@@ -203,7 +149,6 @@
           <button type="button" data-theme="auto" aria-pressed="false" title="Match system">Auto</button>
         </div>
       </section>
-
       <section class="profile-card">
         <h3>Account</h3>
         <p class="profile-sub" id="profileAccount">You are browsing as a guest.</p>
@@ -213,7 +158,6 @@
           <button type="button" class="iconbtn ghost2" id="btnUsers" hidden title="Manage users">Manage users</button>
         </div>
       </section>
-
       <section class="profile-card">
         <h3>Your content</h3>
         <p class="profile-sub">Events you add are stored in this browser. Edit them here, or open one to add a full article, photos and sources.</p>
@@ -222,7 +166,6 @@
         </div>
         <div class="profile-content" id="profileContent"></div>
       </section>
-
     </div>
   </div>
 </div>
@@ -310,19 +253,6 @@
 <div class="fullpage" id="fullpage" hidden aria-label="Full event page"></div>
 <div class="mapoftime" id="mapoftime" hidden aria-label="Map of Time"></div>
 
-<div class="scrim" id="scrim" hidden></div>
-<aside class="panel" id="panel" aria-label="Event details" aria-live="polite">
-  <div class="panel-head">
-    <span class="panel-era" id="panelEra"></span>
-    <div class="nav">
-      <button type="button" id="panelPrev" title="Previous (←)" aria-label="Previous event">‹</button>
-      <button type="button" id="panelNext" title="Next (→)" aria-label="Next event">›</button>
-      <button type="button" id="panelClose" title="Close (Esc)" aria-label="Close">×</button>
-    </div>
-  </div>
-  <div class="panel-body" id="panelBody"></div>
-</aside>
-
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
@@ -333,23 +263,20 @@
 <script src="js/fullpage.js?v=3"></script>
 <script src="js/mapoftime.js?v=2"></script>
 <script>
-/* redesign glue: "Timeline" view button scrolls back to the stage; keeps the
-   view segmented control visually in sync with the Map-of-Time view. */
+/* view switch: Map of Time overlay; Timeline scrolls the bottom timeline into view */
 (function(){
-  var seg=document.querySelector(".viewseg");
-  if(!seg)return;
+  var seg=document.querySelector(".viewseg"); if(!seg)return;
   var btns=seg.querySelectorAll("button");
   function setActive(el){btns.forEach(function(b){var on=b===el;b.classList.toggle("is-active",on);b.setAttribute("aria-pressed",on);});}
   var tl=document.getElementById("btnTimeline");
   if(tl)tl.addEventListener("click",function(){setActive(tl);
-    var s=document.getElementById("tlScroll");if(s)s.scrollIntoView({behavior:"smooth",block:"center"});});
+    var s=document.getElementById("tlScroll");if(s)s.scrollIntoView({behavior:"smooth",block:"nearest"});});
   var mv=document.getElementById("btnFullView");if(mv)mv.addEventListener("click",function(){setActive(tl);});
 })();
 
 /* profile overlay: appearance (themes), account and your own added events */
 (function(){
-  var p=document.getElementById("profile");
-  if(!p)return;
+  var p=document.getElementById("profile"); if(!p)return;
   function esc(s){return (s||"").replace(/[&<>"]/g,function(c){return({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c];});}
   function renderContent(){
     var el=document.getElementById("profileContent"); if(!el)return;
