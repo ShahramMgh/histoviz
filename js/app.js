@@ -15,7 +15,7 @@ const active=new Set(Object.keys(CATS));
 const flags={unesco:false,debated:false};
 let query="";
 let activeEra=null;       // when set, the era rail filters to just this era
-let yrFrom=-5000, yrTo=2010;   // period range from the time scroller (min/max ⇒ no bound)
+let yrFrom=-10000, yrTo=2010;   // period range from the time scroller (min/max ⇒ no bound)
 let visibleOrder=[];      // ids in current display order
 let activeId=null;
 
@@ -157,7 +157,7 @@ $("#search").addEventListener("input",e=>{query=e.target.value.trim().toLowerCas
 
 function matches(v,er){
   if(activeEra&&v.e!==activeEra)return false;
-  if(yrFrom>-5000 && v.y<yrFrom)return false;   // period range (from handle at min = no lower bound)
+  if(yrFrom>-10000 && v.y<yrFrom)return false;   // period range (from handle at min = no lower bound)
   if(yrTo<2010 && v.y>yrTo)return false;         // (to handle at max = no upper bound)
   if(!active.has(v.c))return false;
   if(flags.unesco&&!v.un)return false;
@@ -222,7 +222,7 @@ applyMapTheme();
    Borders come from the open historical-basemaps project (CC-BY-SA): one
    GeoJSON snapshot per key year. The slider picks the nearest snapshot; we
    render just the polities intersecting the Middle East / plateau region. */
-const HB_YEARS=[-5000,-4000,-3000,-2000,-1500,-1000,-700,-500,-400,-323,-300,-200,-100,-1,100,200,300,400,500,600,700,800,900,1000,1100,1200,1279,1300,1400,1492,1500,1530,1600,1650,1700,1715,1783,1800,1815,1878,1880,1900,1914,1920,1930,1938,1945,1960,1994,2000,2010];
+const HB_YEARS=[-10000,-8000,-5000,-4000,-3000,-2000,-1500,-1000,-700,-500,-400,-323,-300,-200,-100,-1,100,200,300,400,500,600,700,800,900,1000,1100,1200,1279,1300,1400,1492,1500,1530,1600,1650,1700,1715,1783,1800,1815,1878,1880,1900,1914,1920,1930,1938,1945,1960,1994,2000,2010];
 const ERA_YEAR={chal:-3000,bronze:-1250,iron:-650,ach:-500,hel:-300,par:-100,sas:400,later:1600};
 const HB_CACHE={}, REGION=[22,8,80,48];   // [W,S,E,N]
 const POLIT_PALETTE=["#23408E","#8A6212","#146F70","#8C3A2B","#5A4E86","#4E6A35","#7E4F25","#2F5670","#9C4326","#45447A","#135F63","#6B4E9E","#3C5A9A","#2A6E62"];
@@ -316,7 +316,7 @@ function showPolity(props){
   if(!a||!b)return;
   const mn=+a.min,mx=+a.max;
   if(ticks){let h="";HB_YEARS.forEach(y=>{if(y>=mn&&y<=mx)h+='<i style="left:'+((y-mn)/(mx-mn)*100)+'%"></i>';});
-    [-5000,-4000,-3000,-2000,-1000,-500,1,500,1000,1500,2000].forEach(y=>{if(y>=mn&&y<=mx)h+='<b style="left:'+((y-mn)/(mx-mn)*100)+'%">'+yearLabel(y)+'</b>';});ticks.innerHTML=h;}
+    [-10000,-8000,-5000,-3000,-1000,-500,1,500,1000,1500,2000].forEach(y=>{if(y>=mn&&y<=mx)h+='<b style="left:'+((y-mn)/(mx-mn)*100)+'%">'+yearLabel(y)+'</b>';});ticks.innerHTML=h;}
   function mid(){return Math.round((yrFrom+yrTo)/2);}
   function paint(){
     let f=+a.value,t=+b.value; if(f>t){const m=f;f=t;t=m;}
