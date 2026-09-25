@@ -5,6 +5,189 @@
  * (gallery[0] is the hero); `img` is the side-panel thumbnail.
  */
 window.ENRICH = {
+ "e001": {
+  "body": [
+   "Long before our timeline’s main story, archaic humans crossed the Iranian plateau. Simple pebble tools and Acheulean handaxes — the signature of Homo erectus and its kin — turn up at scattered open-air sites: the Kashafrud basin east of Mashhad, Ganj Par on the Caspian lowlands of Gilan (one of the few Acheulean handaxe sites in Iran), and the deep deposits of Darband Cave.",
+   "These finds are sparse and hard to date, and proposed ages for some, such as the Kashafrud material, vary widely. Together they show that the plateau lay on the routes by which the earliest hominins spread out of Africa across Asia."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Ganj Par", "url": "https://en.wikipedia.org/wiki/Ganj_Par" },
+   { "label": "Wikipedia — Kashafrud", "url": "https://en.wikipedia.org/wiki/Kashafrud" }
+  ],
+  "related": [ "e002", "e119", "e007" ]
+ },
+ "e002": {
+  "body": [
+   "For more than a hundred thousand years, Neanderthals worked the caves and rock-shelters of the Zagros. Their toolkit — the Zagros Mousterian — is built around the Levallois technique, striking carefully pre-shaped flakes to make points and side-scrapers for hunting and butchering wild goat, sheep and deer.",
+   "Classic assemblages come from the Lorestan caves of Houmian, Kunji, Ghamari and Kaldar; a fine selection is displayed in the Archaeological Museum of Lorestan inside Falak-ol-Aflak Castle at Khorramabad."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Mousterian", "url": "https://en.wikipedia.org/wiki/Mousterian" }
+  ],
+  "related": [ "e003", "e006", "e120" ]
+ },
+ "e003": {
+  "body": [
+   "Bisotun Cave, at the foot of the great cliff later carved with Darius’s inscription, was dug by Carleton Coon in 1949. Decades later, in 2006, a human forearm bone (a radius) from the cave was re-studied and identified as Neanderthal.",
+   "It was one of the first Neanderthal fossils confirmed from Iran, adding the western Zagros to the known range of the species."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Bisotun", "url": "https://en.wikipedia.org/wiki/Bisotun" }
+  ],
+  "related": [ "e002", "e005", "e075" ]
+ },
+ "e004": {
+  "img": [ { "file": "3._Shanidar_cave,_a_paleolithic_cave_in_Bradost_Mountain,_Erbil_Governorate,_Iraqi_Kurdistan._April_4,_2014.jpg", "alt": "Shanidar Cave", "credit": "Shanidar Cave, Bradost Mountain, Iraqi Kurdistan · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "3._Shanidar_cave,_a_paleolithic_cave_in_Bradost_Mountain,_Erbil_Governorate,_Iraqi_Kurdistan._April_4,_2014.jpg", "alt": "Shanidar Cave exterior", "credit": "Shanidar Cave, Bradost Mountain, Iraqi Kurdistan · Wikimedia Commons" },
+   { "file": "Shanidar_Cave_-_overview.jpg", "alt": "Inside Shanidar Cave", "credit": "Inside Shanidar Cave · Wikimedia Commons" }
+  ],
+  "body": [
+   "Just across today’s border in Iraqi Kurdistan, Shanidar Cave lies in the same Zagros chain. Ralph Solecki excavated the remains of ten Neanderthals there from 1951, and new work since 2015 has found further individuals, including ‘Shanidar Z’ (2018).",
+   "Shanidar became famous for two much-debated ideas: that its people deliberately buried their dead, and the ‘flower burial’ — based on clumps of pollen around one skeleton, which some researchers now attribute to burrowing animals rather than to mourning."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Shanidar Cave", "url": "https://en.wikipedia.org/wiki/Shanidar_Cave" }
+  ],
+  "related": [ "e002", "e005", "e006" ]
+ },
+ "e005": {
+  "img": [ { "file": "Wezmeh_Cave,_Kermanshah,_Iran.jpg", "alt": "Wezmeh Cave", "credit": "Wezmeh Cave near Islamabad-e Gharb, Kermanshah · Wikimedia Commons" } ],
+  "body": [
+   "Wezmeh Cave, near Islamabad-e Gharb in Kermanshah, was used mainly by carnivores such as hyenas, whose dens built up a rich bed of animal bone. Among the remains was a human premolar identified as Neanderthal.",
+   "Later layers also produced early Holocene human remains, making the cave a small but valuable window onto both the Neanderthal Zagros and the peopling of the region after the Ice Age."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Wezmeh", "url": "https://en.wikipedia.org/wiki/Wezmeh" }
+  ],
+  "related": [ "e003", "e004" ]
+ },
+ "e006": {
+  "body": [
+   "The Khorramabad Valley in Lorestan is a natural corridor through the Zagros, and its caves — Kaldar, Yafteh, Kunji, Ghamari and Gilvaran, with the Gar Arjeneh rock-shelter — preserve one of Iran’s deepest human records, reaching back about 63,000 years.",
+   "The sequence spans the Mousterian of the Neanderthals and the Baradostian of the first modern humans, capturing the handover between the two. The valley’s prehistoric sites were inscribed by UNESCO in 2025."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Yafteh", "url": "https://en.wikipedia.org/wiki/Yafteh" }
+  ],
+  "related": [ "e009", "e012", "e002" ]
+ },
+ "e007": {
+  "img": [ { "file": "Ghale_bozi.jpg", "alt": "Qaleh Bozi", "credit": "The Qaleh Bozi shelters south of Isfahan · Wikimedia Commons" } ],
+  "body": [
+   "The Qaleh Bozi rock-shelters south of Isfahan hold Middle Palaeolithic (Mousterian) tools, showing that Neanderthal groups ranged well east of the Zagros onto the edge of the central plateau.",
+   "They are among the easternmost securely documented Mousterian sites in Iran, stretching the map of Neanderthal Iran beyond the western mountains."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Qaleh Bozi", "url": "https://en.wikipedia.org/wiki/Qaleh_Bozi" }
+  ],
+  "related": [ "e008", "e002" ]
+ },
+ "e008": {
+  "body": [
+   "Mirak, on the northern margin of the Dasht-e Kavir near Semnan, is an open-air Middle Palaeolithic site. It is a reminder that during wetter phases the fringes of today’s deserts carried springs, rivers and game, drawing people far from the mountains.",
+   "Sites like Mirak help trace how human groups crossed the arid heart of the plateau between the Zagros and the north-east."
+  ],
+  "related": [ "e007", "e002" ]
+ },
+ "e009": {
+  "img": [ { "file": "Kaldar_cave_in_luristan,_khorramabad_valley.jpg", "alt": "Kaldar Cave", "credit": "Kaldar Cave, Khorramabad Valley, Lorestan · Wikimedia Commons" } ],
+  "body": [
+   "Kaldar Cave, in the northern Khorramabad Valley, was excavated in 2014–15. At its base lay a probable Neanderthal (Mousterian) industry; above it came remains usually linked to anatomically modern humans.",
+   "Radiocarbon dates from the lower part of that upper layer range from about 54,400 to 36,750 years ago, making Kaldar one of the earliest early-modern-human sites in western Asia — though, as often in this deep period, the dates carry wide error ranges."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Kaldar Cave", "url": "https://en.wikipedia.org/wiki/Kaldar_Cave" }
+  ],
+  "related": [ "e006", "e012", "e002" ]
+ },
+ "e010": {
+  "body": [
+   "At the Bawa Yawan rock-shelter in Kermanshah, excavators found in 2017 the milk canine of a Neanderthal child of about six, alongside Zagros Mousterian tools.",
+   "It is among the latest Neanderthal traces in the region, from the period when Neanderthals were giving way to modern humans across western Asia."
+  ],
+  "related": [ "e002", "e009" ]
+ },
+ "e011": {
+  "body": [
+   "Ghar-e Boof, a cave in the Dasht-e Rostam of southern Fars, preserves an early Upper Palaeolithic industry of small blade tools known as the ‘Rostamian’. It is part of the evidence for the spread of Homo sapiens along the southern Zagros.",
+   "As with many Palaeolithic sites, its exact dating and cultural labels remain under discussion."
+  ],
+  "related": [ "e012", "e121" ]
+ },
+ "e012": {
+  "body": [
+   "Yafteh Cave near Khorramabad gives the fullest record of the Baradostian, the earliest Upper Palaeolithic culture of the Zagros. Alongside fine blade tools and bone awls came pendants made from red-deer teeth, lumps of ochre, and sea shells carried inland from the Persian Gulf.",
+   "These ornaments and pigments are early evidence of symbolic behaviour and of long-distance exchange among the first modern humans of the plateau."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Yafteh", "url": "https://en.wikipedia.org/wiki/Yafteh" }
+  ],
+  "related": [ "e009", "e006", "e014" ]
+ },
+ "e013": {
+  "body": [
+   "Between about 26,000 and 19,000 years ago the last Ice Age reached its coldest, driest peak. Glaciers capped the Zagros and Alborz, treeline and rainfall fell, and much of the plateau’s interior became inhospitable.",
+   "Sea level dropped so far that the Persian Gulf was largely dry land, crossed by the combined Tigris–Euphrates river — probably a refuge for people, plants and animals, now drowned beneath the sea."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Last Glacial Maximum", "url": "https://en.wikipedia.org/wiki/Last_Glacial_Maximum" }
+  ],
+  "related": [ "e014", "e016" ]
+ },
+ "e014": {
+  "body": [
+   "After the Ice Age peak, small mobile bands of the Zagros made the tiny stone blades (microliths) that define the Zarzian culture, named after Zarzi Cave in Iraqi Kurdistan. Iranian sites include Pa Sangar and Warwasi in Kermanshah.",
+   "They hunted wild goat, sheep and deer with the bow and broadened their diet with small animals and plants — steps toward the settled, food-producing life that soon followed."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Zarzian", "url": "https://en.wikipedia.org/wiki/Zarzian" }
+  ],
+  "related": [ "e013", "e016", "e017" ]
+ },
+ "e015": {
+  "img": [ { "file": "غار_هوتو_-_دهانه_پایین_و_بالا.jpg", "alt": "Hotu Cave", "credit": "The entrances of Hotu (Huto) Cave, Behshahr · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "غار_هوتو_-_دهانه_پایین_و_بالا.jpg", "alt": "Hotu Cave entrances", "credit": "The entrances of Hotu (Huto) Cave, Behshahr · Wikimedia Commons" },
+   { "file": "Hotu_cave,_Upper_entry.JPG", "alt": "Hotu Cave upper entry", "credit": "Upper entry of Hotu Cave · Wikimedia Commons" }
+  ],
+  "body": [
+   "On the humid Caspian shore near Behshahr, the caves of Hotu (Huto), Kamarband (‘Belt’) and Ali Tappeh were dug by Carleton Coon in 1949–51 and later teams. Their layers record hunters of seal and gazelle, followed by early herders and pottery users.",
+   "Some of Coon’s older dates have since been revised, but the caves remain a key sequence for the shift from foraging to farming along the Caspian."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Huto and Kamarband Caves", "url": "https://en.wikipedia.org/wiki/Huto_and_Kamarband_Caves" }
+  ],
+  "related": [ "e014", "e016" ]
+ },
+ "e016": {
+  "body": [
+   "Around 9700 BCE the last Ice Age gave way to the warm, stable climate of the Holocene. Across the Zagros, oak and pistachio woodland spread and rainfall rose.",
+   "This greener, more predictable world set the stage for the cultivation of wild grasses and the herding of goats — the beginnings of farming in the eastern Fertile Crescent."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Holocene", "url": "https://en.wikipedia.org/wiki/Holocene" }
+  ],
+  "related": [ "e017", "e013" ]
+ },
+ "e017": {
+  "img": [ { "file": "Chogha_Golan_excavations.jpg", "alt": "Chogha Golan excavations", "credit": "Excavations at Chogha Golan, Ilam · Wikimedia Commons" } ],
+  "body": [
+   "Chogha Golan, in the Zagros foothills of Ilam, preserves about eight metres of pre-pottery Neolithic deposits spanning roughly 11,700 to 9,800 years ago. Its people gathered and then cultivated wild barley, wheat, lentils and grass pea, with domesticated emmer wheat appearing near the top of the sequence.",
+   "Published in Science in 2013, the sequence showed that the eastern wing of the Fertile Crescent was an independent centre in the origins of agriculture, not a mere borrower from the west."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Chogha Golan", "url": "https://en.wikipedia.org/wiki/Chogha_Golan" }
+  ],
+  "related": [ "e019", "e020", "e016" ]
+ },
+ "e018": {
+  "body": [
+   "In the tenth and ninth millennia BCE, some of the earliest settlements of the high Zagros appear at sites such as Sheikh-e Abad and Jani in Kermanshah and Tepe Asiab. Their people were still largely hunting and gathering, but beginning to build in mud and to stay in one place.",
+   "Ritual is hinted at from the start: Sheikh-e Abad held deposits of goat horns and skulls, and Asiab yielded a pit filled with the skulls of wild boar."
+  ],
+  "related": [ "e019", "e017", "e023" ]
+ },
  "e019": {
   "img": [
    { "file": "Ganj_Dareh_site.jpg", "alt": "Ganj Dareh", "credit": "The mound of Ganj Dareh, Kermanshah · Wikimedia Commons" }
@@ -14,7 +197,6 @@ window.ENRICH = {
    "The goat bones show one of the earliest known shifts from hunting to managed herding: a slaughter pattern favouring young males, the signature of a herded flock. Ancient-DNA work published in 2016 found these early Zagros farmers were genetically distinct from the first farmers of Anatolia — evidence that agriculture in the eastern Fertile Crescent was a local development, not an import."
   ],
   "refs": [
-   { "label": "Encyclopædia Iranica — Ganj Dareh", "url": "https://www.iranicaonline.org/articles/ganj-dara" },
    { "label": "Broushaki et al., \"Early Neolithic genomes from the eastern Fertile Crescent\", Science (2016)", "url": "https://www.science.org/doi/10.1126/science.aaf7943" },
    { "label": "Wikipedia — Ganj Dareh", "url": "https://en.wikipedia.org/wiki/Ganj_Dareh" }
   ],
@@ -27,10 +209,218 @@ window.ENRICH = {
    "Careful sieving of the deposits recovered charred seeds and tiny animal bones that let the excavators reconstruct diet and environment season by season — a method that became a model for archaeology across the Near East."
   ],
   "refs": [
-   { "label": "Encyclopædia Iranica — Deh Luran", "url": "https://www.iranicaonline.org/articles/deh-luran" },
    { "label": "Wikipedia — Ali Kosh", "url": "https://en.wikipedia.org/wiki/Ali_Kosh" }
   ],
   "related": [ "e019", "e021", "e017" ]
+ },
+ "e021": {
+  "body": [
+   "Chogha Bonut, on the Susiana plain of Khuzestan, is the earliest known village in the lowland where Susa would later rise, settled around 7200 BCE. Its aceramic beginnings — mud-walled huts and hearths before the invention of pottery — show farmers and herders moving down from the Zagros onto the fertile plain.",
+   "Excavation revealed a long Neolithic sequence, making Chogha Bonut a key to how the Susiana lowlands were first peopled."
+  ],
+  "refs": [ { "label": "Wikipedia — Chogha Bonut", "url": "https://en.wikipedia.org/wiki/Chogha_Bonut" } ],
+  "related": [ "e032", "e028", "e020" ]
+ },
+ "e022": {
+  "body": [
+   "Around 7000–6500 BCE fired-clay vessels appear at Zagros and Susiana sites, at first lightly baked and plain, then painted. Pottery transformed daily life: it let food be stored, cooked and carried, and its painted styles became the fingerprints archaeologists use to track cultures across the plateau.",
+   "The shift from the aceramic to the ceramic Neolithic marks a genuine threshold in the region’s prehistory."
+  ],
+  "refs": [ { "label": "Wikipedia — Pottery", "url": "https://en.wikipedia.org/wiki/Pottery" } ],
+  "related": [ "e026", "e019", "e021" ]
+ },
+ "e023": {
+  "body": [
+   "From an early village at Tepe Sarab near Kermanshah comes a small baked-clay figurine of a seated, full-bodied woman, among the best-known Neolithic figurines of Iran. Nicknamed the ‘Venus of Sarab’, it is now in the National Museum of Iran.",
+   "Such figurines, found across the Neolithic Near East, are usually read as expressions of fertility or simply of the human figure in early village art, though their precise meaning is unknown."
+  ],
+  "related": [ "e019", "e018", "e025" ]
+ },
+ "e024": {
+  "body": [
+   "About 6200 BCE a sudden cold, dry spell struck the Northern Hemisphere — the ‘8.2-kiloyear event’, probably triggered by a huge outburst of glacial meltwater into the North Atlantic. It lasted a century or two.",
+   "Its effect on the young farming villages of the Zagros and Susiana is still being studied; some researchers see disruption and abandonment, others resilience and adaptation."
+  ],
+  "refs": [ { "label": "Wikipedia — 8.2-kiloyear event", "url": "https://en.wikipedia.org/wiki/8.2-kiloyear_event" } ],
+  "related": [ "e043", "e016" ]
+ },
+ "e025": {
+  "body": [
+   "Tepe Zagheh, on the Qazvin plain, is an early painted-pottery village of the 6th millennium BCE. Its most striking feature is a ‘painted building’ whose walls were decorated and set with the skulls of wild goats — one of the earliest hints of communal or ritual architecture on the plateau.",
+   "The site helps trace the spread of settled village life into north-central Iran."
+  ],
+  "related": [ "e026", "e029", "e126" ]
+ },
+ "e027": {
+  "body": [
+   "At Hajji Firuz Tepe near Hasanlu in West Azerbaijan, chemical analysis of residues in Neolithic storage jars (c. 5400–5000 BCE) found tartaric acid together with tree resin — one of the earliest chemical confirmations of resinated wine anywhere.",
+   "Slightly older wine traces have since been reported from Georgia, but Hajji Firuz remains a landmark in the deep history of viticulture, in a region still famous for its vines."
+  ],
+  "refs": [ { "label": "Wikipedia — Hajji Firuz Tepe", "url": "https://en.wikipedia.org/wiki/Hajji_Firuz_Tepe" } ],
+  "related": [ "e034", "e022" ]
+ },
+ "e030": {
+  "body": [
+   "Tal-i Iblis in Kerman produced hundreds of crucible fragments coated with copper slag, pointing to some of the earliest copper smelting on the plateau in the 5th–4th millennium BCE.",
+   "It stands, with Tepe Ghabristan and Arisman, among the sites that show how the metallurgy of ancient Iran grew from small experiments into a major craft."
+  ],
+  "related": [ "e126", "e127", "e036" ]
+ },
+ "e031": {
+  "img": [ { "file": "Handmade_pottery_vessel._Painted._From_Tall-i_Bakun_(Tall-e_Bakun),_southern_Iran._4500-4000_BCE.jpg", "alt": "Tall-i Bakun painted vessel", "credit": "Painted vessel from Tall-i Bakun, Fars, 4500–4000 BCE · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Handmade_pottery_vessel._Painted._From_Tall-i_Bakun_(Tall-e_Bakun),_southern_Iran._4500-4000_BCE.jpg", "alt": "Painted vessel", "credit": "Painted vessel from Tall-i Bakun, Fars, 4500–4000 BCE · Wikimedia Commons" },
+   { "file": "Handmade_bowl_painted_with_three_standing_or_dancing_figures._From_Tall-i_Bakun,_southern_Iran._About_4000_BCE.jpg", "alt": "Painted bowl with figures", "credit": "Bowl painted with dancing figures, Tall-i Bakun, c. 4000 BCE · Wikimedia Commons" },
+   { "file": "UC_Oriental_Institute_early_Persian_03.JPG", "alt": "Tall-i Bakun artifacts", "credit": "Tall-i Bakun finds, Oriental Institute, University of Chicago · Wikimedia Commons" }
+  ],
+  "body": [
+   "Tall-i Bakun, beside the later site of Persepolis in Fars, is a painted-pottery village of about 4500–4000 BCE. Its elegant buff ware, decorated with bold geometric and animal designs, is among the finest of the Iranian Chalcolithic.",
+   "Stamp seals and clay sealings from the site show early record-keeping in Fars — a first step toward the administration that would later flower at Anshan and Persepolis."
+  ],
+  "refs": [ { "label": "Wikipedia — Tall-i Bakun", "url": "https://en.wikipedia.org/wiki/Tall-i_Bakun" } ],
+  "related": [ "e029", "e026", "e131" ]
+ },
+ "e035": {
+  "body": [
+   "Around 3300 BCE the world’s first writing appears at Uruk in Mesopotamia as proto-cuneiform — pictographic marks pressed into clay to record goods and transactions. At Susa the same steps are visible: counting tokens, sealed clay envelopes (bullae) and the first numerical tablets.",
+   "Writing was born not from literature but from accounting, and the Iranian lowlands took part from the very beginning."
+  ],
+  "refs": [ { "label": "Wikipedia — Cuneiform", "url": "https://en.wikipedia.org/wiki/Cuneiform" } ],
+  "related": [ "e038", "e032" ]
+ },
+ "e038": {
+  "img": [ { "file": "Economic_tablet_Susa_Louvre_Sb3047.jpg", "alt": "Proto-Elamite tablet", "credit": "Proto-Elamite numerical tablet from Susa, Louvre · Wikimedia Commons" } ],
+  "body": [
+   "Soon after 3100 BCE a distinct script — Proto-Elamite — spread across much of the plateau, from Susa and Anshan to Tepe Yahya, Sialk and Shahr-i Sokhta. Written on clay tablets, it recorded an administrative system shared over vast distances.",
+   "Despite more than a century of study, Proto-Elamite remains largely undeciphered — one of the great puzzles of early writing."
+  ],
+  "refs": [ { "label": "Wikipedia — Proto-Elamite", "url": "https://en.wikipedia.org/wiki/Proto-Elamite" } ],
+  "related": [ "e035", "e131", "e036" ]
+ },
+ "e040": {
+  "body": [
+   "The Awan dynasty is the first royal line of Elam recorded in the king lists, ruling in the second half of the 3rd millennium BCE. Its kings bound together Elam’s two poles — the lowland around Susa and the highland of Anshan in Fars.",
+   "Little survives of Awan beyond names and Mesopotamian references, but it marks the emergence of Elam as a state and a rival to Sumer and Akkad."
+  ],
+  "refs": [ { "label": "Wikipedia — Awan dynasty", "url": "https://en.wikipedia.org/wiki/Awan_dynasty" } ],
+  "related": [ "e131", "e041", "e045" ]
+ },
+ "e041": {
+  "body": [
+   "The Akkadian kings Sargon and his grandson Naram-Sin campaigned east against Elam and Marhashi around 2300 BCE, drawing the Iranian lowlands into the orbit of the world’s first empire.",
+   "A treaty between Naram-Sin and an Elamite ruler is the oldest known text written in the Elamite language (in cuneiform), a landmark in the history of the region’s languages."
+  ],
+  "refs": [ { "label": "Wikipedia — Naram-Sin of Akkad", "url": "https://en.wikipedia.org/wiki/Naram-Sin_of_Akkad" } ],
+  "related": [ "e040", "e045", "e055" ]
+ },
+ "e043": {
+  "body": [
+   "Around 2200 BCE a widespread dry phase — the ‘4.2-kiloyear event’ — is recorded across the Near East. It is often linked to the collapse of the Akkadian empire and to changes in settlement on the Iranian plateau.",
+   "How severe it was locally, and how directly it caused political upheavals, remains debated among specialists."
+  ],
+  "refs": [ { "label": "Wikipedia — 4.2-kiloyear event", "url": "https://en.wikipedia.org/wiki/4.2-kiloyear_event" } ],
+  "related": [ "e024", "e044" ]
+ },
+ "e044": {
+  "body": [
+   "The Gutians, a people from the Zagros mountains, seized control of parts of Mesopotamia after the fall of Akkad around 2150 BCE. Later Mesopotamian tradition remembered their rule as a time of disorder.",
+   "They are one of several mountain peoples — with the Lullubi and later the Kassites — who repeatedly descended from the Iranian ranges into the lowlands."
+  ],
+  "refs": [ { "label": "Wikipedia — Gutian dynasty of Sumer", "url": "https://en.wikipedia.org/wiki/Gutian_dynasty_of_Sumer" } ],
+  "related": [ "e041", "e042", "e049" ]
+ },
+ "e045": {
+  "img": [ { "file": "Statue_of_Puzur-Inshushinak_with_inscription_in_his_name_(lower_half).jpg", "alt": "Statue of Puzur-Inshushinak", "credit": "Lower half of a statue of Puzur-Inshushinak, Louvre · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Statue_of_Puzur-Inshushinak_with_inscription_in_his_name_(lower_half).jpg", "alt": "Statue of Puzur-Inshushinak", "credit": "Lower half of a statue of Puzur-Inshushinak, Louvre · Wikimedia Commons" },
+   { "file": "Kutik-Inshushinak_(name)_in_Linear_Elamite.jpg", "alt": "Name in Linear Elamite", "credit": "The name of Puzur-Inshushinak (Kutik-Inshushinak) written in Linear Elamite · Wikimedia Commons" }
+  ],
+  "body": [
+   "Puzur-Inshushinak (also read Kutik-Inshushinak), the last king of Awan, briefly made Elam a regional power around 2100 BCE. He left bilingual inscriptions in Akkadian and in Linear Elamite, a script of his own realm.",
+   "Objects such as the ‘Table au Lion’ in the Louvre, together with inscribed silver beakers that surfaced in 2004, gave François Desset and colleagues the basis for a proposed decipherment of Linear Elamite published in 2022."
+  ],
+  "refs": [ { "label": "Wikipedia — Puzur-Inshushinak", "url": "https://en.wikipedia.org/wiki/Puzur-Inshushinak" } ],
+  "related": [ "e040", "e038", "e055" ]
+ },
+ "e046": {
+  "body": [
+   "Around 2004 BCE Elamite and Shimashki forces destroyed the city of Ur, ending the last great Sumerian empire (the Third Dynasty of Ur) and carrying off its king.",
+   "The catastrophe was mourned in the ‘Lament for Ur’, one of the masterpieces of Sumerian literature — and a sign of Elam’s growing power in the east."
+  ],
+  "refs": [ { "label": "Wikipedia — Third Dynasty of Ur", "url": "https://en.wikipedia.org/wiki/Third_Dynasty_of_Ur" } ],
+  "related": [ "e040", "e047" ]
+ },
+ "e047": {
+  "body": [
+   "In the Sukkalmah or Epartid period (c. 1970–1500 BCE), Elam — ruled by ‘grand regents’ — stood among the great powers of the Near East, in diplomatic contact with Mari and Babylon.",
+   "Around 1764 BCE Hammurabi of Babylon defeated an Elamite-led coalition, a measure of how seriously Elam was taken by its western neighbours."
+  ],
+  "refs": [ { "label": "Wikipedia — Sukkalmah dynasty", "url": "https://en.wikipedia.org/wiki/Sukkalmah_dynasty" } ],
+  "related": [ "e046", "e055" ]
+ },
+ "e048": {
+  "body": [
+   "Kurangun, high on a rock face in Mamasani, Fars, bears an open-air Elamite relief of a seated god enthroned on a coiled serpent, offering the water of life to rows of worshippers. First carved around the 17th century BCE, it was enlarged with later figures.",
+   "With Naqsh-e Rostam and Kul-e Farah, it belongs to a tradition of Elamite rock art in the highlands of Fars."
+  ],
+  "related": [ "e045", "e053", "e081" ]
+ },
+ "e049": {
+  "img": [ { "file": "Kudurru_Melishipak_Louvre_Sb23_n02.jpg", "alt": "Kassite kudurru", "credit": "Kudurru (boundary stone) of the Kassite king Meli-Shipak II, Louvre · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Kudurru_Melishipak_Louvre_Sb23_n02.jpg", "alt": "Kassite kudurru", "credit": "Kudurru of the Kassite king Meli-Shipak II, Louvre · Wikimedia Commons" },
+   { "file": "Cylinder_seal_of_king_Kirigalzu_II_Louvre_Museum_AOD_105.jpg", "alt": "Kassite cylinder seal", "credit": "Cylinder seal of the Kassite king Kurigalzu II, Louvre · Wikimedia Commons" }
+  ],
+  "body": [
+   "The Kassites, a people from the central Zagros, ruled Babylonia for more than four centuries (c. 1595–1155 BCE) after the fall of the old Babylonian dynasty. Under them Babylon enjoyed a long, stable ‘middle’ age.",
+   "Their carved boundary stones (kudurrus), recording royal land grants under the protection of the gods, are among the most distinctive monuments of the period."
+  ],
+  "refs": [ { "label": "Wikipedia — Kassites", "url": "https://en.wikipedia.org/wiki/Kassites" } ],
+  "related": [ "e044", "e047" ]
+ },
+ "e050": {
+  "body": [
+   "During the 2nd and early 1st millennium BCE, speakers of Iranian languages — ancestors of the Medes, Persians and others — spread onto the plateau from Central Asia and the steppe. Their exact timing and routes are much debated.",
+   "The Oxus civilisation (the BMAC) of the north-east was a probable contact zone, and over centuries the newcomers gave the ‘Iranian’ plateau its name."
+  ],
+  "refs": [ { "label": "Wikipedia — Bactria–Margiana Archaeological Complex", "url": "https://en.wikipedia.org/wiki/Bactria%E2%80%93Margiana_Archaeological_Complex" } ],
+  "related": [ "e133", "e057", "e052" ]
+ },
+ "e052": {
+  "img": [ { "file": "Zoroaster_1.jpg", "alt": "Zoroaster", "credit": "A 19th-century painting depicting the life of Zoroaster · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Zoroaster_1.jpg", "alt": "Zoroaster", "credit": "A 19th-century painting depicting the life of Zoroaster · Wikimedia Commons" },
+   { "file": "CIMRM_44-Mithraic_pater_(Dura_Europos)_B.jpg", "alt": "Early depiction linked to Zoroaster", "credit": "3rd-century figure identified with Zoroaster, Dura-Europos · Wikimedia Commons" },
+   { "file": "Yazd,_Templo_del_Fuego_(2000)_02_(cropped).jpg", "alt": "Zoroastrian fire temple", "credit": "The Fire Temple of Yazd, keeping a Zoroastrian flame · Wikimedia Commons" }
+  ],
+  "body": [
+   "Zarathustra (Zoroaster) composed the Gathas, hymns in Old Avestan so close to the language of the Indian Rigveda that many linguists place him in the late 2nd millennium BCE; others argue for around 600 BCE, and his homeland — usually put in eastern Iran — is equally uncertain.",
+   "His teaching centres on the Wise Lord Ahura Mazda, the struggle between truth (asha) and the lie (druj), and the moral weight of each person’s free choice — ideas that shaped Iranian religion for two thousand years and influenced Judaism, Christianity and Islam."
+  ],
+  "refs": [ { "label": "Encyclopædia Iranica — Zoroaster", "url": "https://www.iranicaonline.org/articles/zoroaster-i-the-name" }, { "label": "Wikipedia — Zoroaster", "url": "https://en.wikipedia.org/wiki/Zoroaster" } ],
+  "related": [ "e079", "e105", "e113" ]
+ },
+ "e055": {
+  "img": [ { "file": "Shutruk-Nakhunte,_Musée_du_Louvre.jpg", "alt": "Object of Shutruk-Nahhunte", "credit": "Elamite object of Shutruk-Nahhunte, Louvre · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Shutruk-Nakhunte,_Musée_du_Louvre.jpg", "alt": "Object of Shutruk-Nahhunte", "credit": "Elamite object of Shutruk-Nahhunte, Louvre · Wikimedia Commons" },
+   { "file": "Babylonian_stele_Louvre_Sb9.jpg", "alt": "Law Code of Hammurabi", "credit": "The Law Code of Hammurabi, carried from Babylon to Susa, Louvre · Wikimedia Commons" },
+   { "file": "Naram-Sin_stele_inscription_in_Elamite.jpg", "alt": "Victory Stele of Naram-Sin", "credit": "The Victory Stele of Naram-Sin, with Shutruk-Nahhunte’s added Elamite inscription, Louvre · Wikimedia Commons" }
+  ],
+  "body": [
+   "Around 1158 BCE the Elamite king Shutruk-Nahhunte raided Babylonia and carried home to Susa some of Mesopotamia’s greatest monuments as trophies — among them the Law Code of Hammurabi and the Victory Stele of Naram-Sin, onto which he added his own Elamite inscription.",
+   "French excavators found both at Susa around 1900; they are now among the treasures of the Louvre."
+  ],
+  "refs": [ { "label": "Wikipedia — Shutruk-Nakhunte", "url": "https://en.wikipedia.org/wiki/Shutruk-Nakhunte" } ],
+  "related": [ "e056", "e045", "e032" ]
+ },
+ "e056": {
+  "body": [
+   "Around 1110 BCE the Babylonian king Nebuchadnezzar I struck back at Elam, sacking Susa and recovering the statue of the god Marduk that the Elamites had carried off.",
+   "After this blow Elam almost vanishes from written records for some three centuries, before re-emerging as the Neo-Elamite kingdom on the eve of the Persians."
+  ],
+  "refs": [ { "label": "Wikipedia — Nebuchadnezzar I", "url": "https://en.wikipedia.org/wiki/Nebuchadnezzar_I" } ],
+  "related": [ "e055", "e064" ]
  },
 
  "e026": {
@@ -50,7 +440,6 @@ window.ENRICH = {
    "Sialk is famous above all for its painted pottery: fine buff and red wares decorated with ibex, birds and geometric friezes, and later black-on-red vessels with long-spouted “teapot” forms. A stepped mud-brick platform on the southern mound is popularly called the Sialk “ziggurat”, though its date and function are debated. Later cemeteries yielded weapons and grey ware linked to the arrival of early Iranian-speaking groups."
   ],
   "refs": [
-   { "label": "Encyclopædia Iranica — Sialk", "url": "https://www.iranicaonline.org/articles/sialk-tepe" },
    { "label": "Wikipedia — Tepe Sialk", "url": "https://en.wikipedia.org/wiki/Tepe_Sialk" }
   ],
   "related": [ "e029", "e022", "e033" ]
@@ -82,8 +471,7 @@ window.ENRICH = {
    "Excavated by Erich Schmidt in the 1930s, the site sits by a spring that has drawn people since deep prehistory and remained important into the Islamic period."
   ],
   "refs": [
-   { "label": "Encyclopædia Iranica — Čašma-ye ʿAli", "url": "https://www.iranicaonline.org/articles/casma-ali-tepe" },
-   { "label": "Wikipedia — Cheshmeh Ali (Ray)", "url": "https://en.wikipedia.org/wiki/Cheshmeh_Ali_(Ray)" }
+   { "label": "Wikipedia — Rey, Iran", "url": "https://en.wikipedia.org/wiki/Ray,_Iran" }
   ],
   "related": [ "e026", "e031" ]
  },
@@ -104,7 +492,6 @@ window.ENRICH = {
   ],
   "refs": [
    { "label": "UNESCO — Susa", "url": "https://whc.unesco.org/en/list/1455" },
-   { "label": "Encyclopædia Iranica — Susa", "url": "https://www.iranicaonline.org/articles/susa-index" },
    { "label": "Wikipedia — Susa", "url": "https://en.wikipedia.org/wiki/Susa" }
   ],
   "related": [ "e038", "e064", "e053" ]
@@ -145,7 +532,6 @@ window.ENRICH = {
    "Godin is best known for chemistry: residues in its storage jars provided some of the earliest chemical evidence anywhere for both barley beer and resinated grape wine, pushing the documented history of these drinks back into the 4th millennium BCE."
   ],
   "refs": [
-   { "label": "Royal Ontario Museum — Godin Tepe", "url": "https://www.rom.on.ca/en/exhibitions-galleries/galleries/world-cultures/wine" },
    { "label": "Wikipedia — Godin Tepe", "url": "https://en.wikipedia.org/wiki/Godin_Tepe" }
   ],
   "related": [ "e027", "e035", "e022" ]
@@ -164,7 +550,6 @@ window.ENRICH = {
    "Two finds stand out: Proto-Elamite clay tablets, showing the site shared in an early administrative system spread across the plateau, and a workshop for carving soft chlorite (steatite) into elaborately decorated bowls and vessels that were traded as far as the cities of Sumer."
   ],
   "refs": [
-   { "label": "Encyclopædia Iranica — Yaḥyā, Tepe", "url": "https://www.iranicaonline.org/articles/yahya-tepe" },
    { "label": "Wikipedia — Tepe Yahya", "url": "https://en.wikipedia.org/wiki/Tepe_Yahya" }
   ],
   "related": [ "e038", "e039", "e037" ]
@@ -188,7 +573,6 @@ window.ENRICH = {
   ],
   "refs": [
    { "label": "UNESCO — Shahr-i Sokhta", "url": "https://whc.unesco.org/en/list/1456" },
-   { "label": "Encyclopædia Iranica — Shahr-e Sūḵta", "url": "https://www.iranicaonline.org/articles/shahr-e-sukhta" },
    { "label": "Wikipedia — Shahr-e Sukhteh", "url": "https://en.wikipedia.org/wiki/Shahr-e_Sukhteh" }
   ],
   "related": [ "e038", "e036", "e039" ]
@@ -208,7 +592,6 @@ window.ENRICH = {
    "The Jiroft, or Halil Rud, culture produced dark soft-stone vessels teeming with scorpion-men, humped bulls, eagles and intertwined serpents. Some scholars have linked it to Marhashi, a land named in Mesopotamian texts, or even to the legendary Aratta of Sumerian epic — connections that remain unproven but underline how rich the eastern plateau was."
   ],
   "refs": [
-   { "label": "Encyclopædia Iranica — Jiroft", "url": "https://www.iranicaonline.org/articles/jiroft-i-general" },
    { "label": "Wikipedia — Konar Sandal", "url": "https://en.wikipedia.org/wiki/Konar_Sandal" }
   ],
   "related": [ "e036", "e037" ]
@@ -223,7 +606,6 @@ window.ENRICH = {
    "The composition, with its triumphant ruler and rows of prisoners, set a template that echoes down more than fifteen centuries to Darius I’s great relief at Bisotun a short distance away — a reminder of how long the language of royal victory endured on these mountain roads."
   ],
   "refs": [
-   { "label": "Encyclopædia Iranica — Anobanini", "url": "https://www.iranicaonline.org/articles/anobanini" },
    { "label": "Wikipedia — Anubanini rock relief", "url": "https://en.wikipedia.org/wiki/Anubanini_rock_relief" }
   ],
   "related": [ "e075", "e045" ]
@@ -317,7 +699,6 @@ window.ENRICH = {
   ],
   "refs": [
    { "label": "British Museum — The Cyrus Cylinder", "url": "https://www.britishmuseum.org/collection/object/W_1880-0617-1941" },
-   { "label": "Encyclopædia Iranica — Cyrus Cylinder", "url": "https://www.iranicaonline.org/articles/cyrus-cylinder" },
    { "label": "Wikipedia — Cyrus Cylinder", "url": "https://en.wikipedia.org/wiki/Cyrus_Cylinder" }
   ],
   "related": [ "e067", "e072" ]
@@ -332,7 +713,6 @@ window.ENRICH = {
   ],
   "refs": [
    { "label": "UNESCO — Bisotun", "url": "https://whc.unesco.org/en/list/1222" },
-   { "label": "Encyclopædia Iranica — Bisotun", "url": "https://www.iranicaonline.org/articles/bisotun-1-introduction" },
    { "label": "Wikipedia — Behistun Inscription", "url": "https://en.wikipedia.org/wiki/Behistun_Inscription" }
   ],
   "related": [ "e074", "e076", "e042" ]
@@ -376,7 +756,6 @@ window.ENRICH = {
    "Other panels depict royal boar and deer hunts in marshland, crowded with elephants, boats and musicians — among the finest surviving works of Sasanian art."
   ],
   "refs": [
-   { "label": "Encyclopædia Iranica — Ṭāq-e Bostān", "url": "https://www.iranicaonline.org/articles/taq-e-bostan" },
    { "label": "Wikipedia — Taq-e Bostan", "url": "https://en.wikipedia.org/wiki/Taq-e_Bostan" }
   ],
   "related": [ "e115", "e102" ]
@@ -545,5 +924,94 @@ window.ENRICH = {
    { "label": "Wikipedia — Ziwiye hoard", "url": "https://en.wikipedia.org/wiki/Ziwiye_hoard" }
   ],
   "related": [ "e058", "e065", "e139" ]
+ },
+
+ "e144": {
+  "img": [ { "file": "Ferdowsi_Statue.jpg", "alt": "Statue of Ferdowsi", "credit": "Statue of Ferdowsi in Tus, by Abolhassan Sadighi · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Ferdowsi_Statue.jpg", "alt": "Statue of Ferdowsi", "credit": "Statue of Ferdowsi in Tus, by Abolhassan Sadighi · Wikimedia Commons" },
+   { "file": "The_tomb_of_Ferdosi.jpg", "alt": "Tomb of Ferdowsi", "credit": "The mausoleum of Ferdowsi at Tus · Wikimedia Commons" },
+   { "file": "Imaginary_depiction_of_the_poet_Firdausi._Folio_from_a_Khavarannama_(The_Book_of_the_East)_of_ibn_Husam_al-Din,_1476-1486_(cropped).jpg", "alt": "Manuscript depiction of Ferdowsi", "credit": "Imaginary depiction of Ferdowsi, Khavaran-nama manuscript, 1476–1486 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Abul-Qasem Ferdowsi of Tus spent some three decades composing the Shahnameh, the “Book of Kings”, completed around 1010 CE. In roughly fifty thousand couplets it carries Iran from the creation of the world through its mythical and historical kings down to the Arab conquest.",
+   "Written in a Persian remarkably free of Arabic borrowings, the epic did more than any other work to secure the language and the memory of pre-Islamic Iran. Ferdowsi died poor, but his tomb at Tus is now a national shrine."
+  ],
+  "refs": [ { "label": "Encyclopædia Iranica — Ferdowsi", "url": "https://www.iranicaonline.org/articles/ferdowsi-i" }, { "label": "Wikipedia — Ferdowsi", "url": "https://en.wikipedia.org/wiki/Ferdowsi" } ],
+  "related": [ "e118", "e184", "e181" ]
+ },
+
+ "e152": {
+  "img": [ { "file": "Maulana_Jelaledin_Muhammad_Rumi_in_konya.jpg", "alt": "Shrine of Rumi", "credit": "The tomb-shrine of Rumi (the Mevlana Museum), Konya · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Maulana_Jelaledin_Muhammad_Rumi_in_konya.jpg", "alt": "Shrine of Rumi, Konya", "credit": "The tomb-shrine of Rumi (the Mevlana Museum), Konya · Wikimedia Commons" },
+   { "file": "مولانا_اثر_حسین_بهزاد_(cropped).jpg", "alt": "Portrait of Rumi", "credit": "Rumi, imagined by the miniaturist Hossein Behzad · Wikimedia Commons" },
+   { "file": "Turkey.Konya008.jpg", "alt": "Rumi's tomb", "credit": "Rumi’s tomb under the green dome, Konya · Wikimedia Commons" }
+  ],
+  "body": [
+   "Jalal al-Din Muhammad, called Mowlana (“our master”) and in the West Rumi, was born near Balkh and settled in Konya in Anatolia. His meeting with the wandering mystic Shams-e Tabrizi transformed him into an ecstatic poet of divine love.",
+   "His vast Masnavi is often called “the Persian Qur’an”, and the Mevlevi order he inspired is known for its meditative whirling dance. Centuries on, he is among the most widely read poets in the world."
+  ],
+  "refs": [ { "label": "Encyclopædia Iranica — Rumi", "url": "https://www.iranicaonline.org/articles/rumi" }, { "label": "Wikipedia — Rumi", "url": "https://en.wikipedia.org/wiki/Rumi" } ],
+  "related": [ "e151", "e148", "e154" ]
+ },
+
+ "e153": {
+  "img": [ { "file": "Saadi_Tomb.jpg", "alt": "Tomb of Saadi", "credit": "The mausoleum of Saadi (the Saadieh), Shiraz · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Saadi_Tomb.jpg", "alt": "Tomb of Saadi", "credit": "The mausoleum of Saadi (the Saadieh), Shiraz · Wikimedia Commons" },
+   { "file": "Saadi_by_Hossein_Behzad_(1894–1968)_(Inverted).jpg", "alt": "Portrait of Saadi", "credit": "Saadi, imagined by the miniaturist Hossein Behzad · Wikimedia Commons" },
+   { "file": "Sa'di_and_His_Dedicatee_Abu_Bakr_b._Sa'd_b._Zangi.jpg", "alt": "Saadi and his patron", "credit": "Saadi and the Salghurid ruler Abu Bakr ibn Sa’d, Mughal folio, 1602 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Saadi of Shiraz travelled for decades across the Islamic world before returning home to write his two masterpieces: the Bustan (“Orchard”), in verse, and the Golestan (“Rose Garden”), a blend of prose and poetry. Both mix worldly wisdom, wit and moral tales.",
+   "His humane vision endures in the lines beginning “The children of Adam are limbs of one body” — verses associated with the entrance of the United Nations."
+  ],
+  "refs": [ { "label": "Encyclopædia Iranica — Saʿdi", "url": "https://www.iranicaonline.org/articles/sadi-sirazi" }, { "label": "Wikipedia — Saadi Shirazi", "url": "https://en.wikipedia.org/wiki/Saadi_Shirazi" } ],
+  "related": [ "e154", "e152", "e183" ]
+ },
+
+ "e154": {
+  "img": [ { "file": "Tomb_of_Hafez,_Shiraz_03.jpg", "alt": "Tomb of Hafez", "credit": "The tomb of Hafez (the Hafezieh), Shiraz · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Tomb_of_Hafez,_Shiraz_03.jpg", "alt": "Tomb of Hafez", "credit": "The tomb of Hafez (the Hafezieh), Shiraz · Wikimedia Commons" },
+   { "file": "Depiction_of_Hafiz,_painted_by_Sultan_Muhammad_circa_1531,_Cartier_Hafiz.jpg", "alt": "Manuscript depiction of Hafez", "credit": "Hafez reading, by Sultan Muhammad, c. 1531 · Wikimedia Commons" },
+   { "file": "Anselm_Feuerbach_Hafis_vor_der_Schenke_(cropped).jpg", "alt": "Hafez painting", "credit": "“Hafez before the tavern”, by Anselm Feuerbach · Wikimedia Commons" }
+  ],
+  "body": [
+   "Shams al-Din Muhammad, known by his pen-name Hafez (“one who has memorised the Qur’an”), spent almost his whole life in Shiraz. His Divan of some five hundred ghazals is the most beloved book of Persian poetry, admired for a matchless music and for layering wine, love and the divine in a single line.",
+   "Iranians still open his Divan at random for guidance (fal-e Hafez), and his garden tomb in Shiraz draws visitors day and night."
+  ],
+  "refs": [ { "label": "Encyclopædia Iranica — Hafez", "url": "https://www.iranicaonline.org/articles/hafez-i" }, { "label": "Wikipedia — Hafez", "url": "https://en.wikipedia.org/wiki/Hafez" } ],
+  "related": [ "e153", "e155", "e152" ]
+ },
+
+ "e165": {
+  "img": [ { "file": "Avicenne_-_Avicenna_-_Ibn_Sina_(980-1037)_CIPB2067.jpg", "alt": "Portrait of Avicenna", "credit": "Imagined portrait of Ibn Sina (Avicenna) · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Avicenne_-_Avicenna_-_Ibn_Sina_(980-1037)_CIPB2067.jpg", "alt": "Portrait of Avicenna", "credit": "Imagined portrait of Ibn Sina (Avicenna) · Wikimedia Commons" },
+   { "file": "Awicenna-WalentyzPilzna.png", "alt": "Avicenna at the sickbed", "credit": "Avicenna at the sickbed, miniature by Walenty z Pilzna, c. 1479 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Abu Ali ibn Sina — Avicenna to the Latin world — was born near Bukhara and, largely self-taught, mastered medicine, philosophy, astronomy and more before he was twenty. He served princes across Iran and died at Hamadan, where his tomb stands.",
+   "His Canon of Medicine organised the whole of ancient and Islamic medicine and remained a standard European textbook into the seventeenth century, while his Book of Healing shaped philosophy East and West."
+  ],
+  "refs": [ { "label": "Encyclopædia Iranica — Avicenna", "url": "https://www.iranicaonline.org/articles/avicenna-index" }, { "label": "Wikipedia — Avicenna", "url": "https://en.wikipedia.org/wiki/Avicenna" } ],
+  "related": [ "e163", "e166", "e181" ]
+ },
+
+ "e201": {
+  "img": [ { "file": "Contemporary_portrait_of_Nader_Shah._Artist_unknown,_created_in_ca._1740_in_Iran_(cropped).jpg", "alt": "Portrait of Nader Shah", "credit": "Contemporary portrait of Nader Shah, c. 1740 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Contemporary_portrait_of_Nader_Shah._Artist_unknown,_created_in_ca._1740_in_Iran_(cropped).jpg", "alt": "Portrait of Nader Shah", "credit": "Contemporary portrait of Nader Shah, c. 1740 · Wikimedia Commons" },
+   { "file": "Nader_shah_and_his_sons.jpg", "alt": "Nader Shah and his sons", "credit": "Nader Shah with two of his sons · Wikimedia Commons" },
+   { "file": "Nadir_Shah.jpg", "alt": "Nader Shah, later years", "credit": "A Western view of Nader in later life, from Jonas Hanway (1753) · Wikimedia Commons" }
+  ],
+  "body": [
+   "Nader Qoli, a herdsman’s son from Khorasan, rose through the chaos that followed the Safavid collapse to expel Afghan and Ottoman invaders and, in 1736, take the throne as Nader Shah. A ruthless and brilliant general, he built the largest empire of his day in the region.",
+   "In 1739 he invaded India and sacked Delhi, carrying home the Peacock Throne and the Koh-i-Noor diamond. His later years turned cruel and paranoid, and his assassination in 1747 plunged Iran back into disorder."
+  ],
+  "refs": [ { "label": "Wikipedia — Nader Shah", "url": "https://en.wikipedia.org/wiki/Nader_Shah" }, { "label": "Britannica — Nader Shah", "url": "https://www.britannica.com/biography/Nader-Shah" } ],
+  "related": [ "e200", "e202" ]
  }
 };

@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
 <link rel="stylesheet" href="css/style.css?v=6">
-<link rel="stylesheet" href="css/redesign.css?v=8">
+<link rel="stylesheet" href="css/redesign.css?v=13">
 </head>
 <body>
 <span id="top"></span>
@@ -47,6 +47,7 @@
 <!-- ============================ Hero ============================ -->
 <header class="hero">
   <div class="hero-motif" aria-hidden="true"></div>
+  <div class="hero-skyline" aria-hidden="true"></div>
   <div class="wrap hero-in">
     <p class="eyebrow">Interactive timeline &amp; map · Zagros to the Sasanians</p>
     <h1 class="hero-title">The Iranian Heritage<span>100,000 years of human evidence — from Neanderthal caves in the Zagros to the fall of the Sasanians</span></h1>
@@ -115,6 +116,20 @@
           </div>
         </div>
       </div>
+
+      <!-- time slider: scrub the year to redraw the region's political map -->
+      <div class="timebar" aria-label="Historical political map by year">
+        <div class="timebar-head">
+          <label class="timebar-toggle"><input type="checkbox" id="timeOn" checked> Political map of the region</label>
+          <span class="timebar-src">borders © <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a></span>
+        </div>
+        <div class="timebar-track">
+          <output class="timebar-year" id="timeYear">500 BCE</output>
+          <div class="timebar-ticks" id="timeTicks" aria-hidden="true"></div>
+          <input type="range" id="timeSlider" min="-3000" max="2010" value="-500" step="1" aria-label="Year of the political map">
+        </div>
+      </div>
+
       <div class="tl-scroll" id="tlScroll" tabindex="0" aria-label="Horizontal timeline, scroll sideways">
         <div class="tl-track" id="tlTrack"></div>
       </div>
@@ -320,9 +335,10 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-<script src="js/data.js?v=4"></script>
-<script src="js/enrich.js?v=4"></script>
-<script src="js/app.js?v=12"></script>
+<script src="js/theme.js?v=1"></script>
+<script src="js/data.js?v=6"></script>
+<script src="js/enrich.js?v=7"></script>
+<script src="js/app.js?v=16"></script>
 <script src="js/fullpage.js?v=3"></script>
 <script src="js/mapoftime.js?v=2"></script>
 <script>

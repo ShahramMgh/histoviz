@@ -81,14 +81,7 @@ function saveEventContent(id,patch){
   Object.assign(ev,patch); render(); return true;
 }
 
-/* ---------- Theme ---------- */
-const THEMES=["auto","light","dark","parchment"];
-function applyTheme(t){
-  document.documentElement.setAttribute("data-theme",t);
-  try{localStorage.setItem("hv-theme",t);}catch(e){}
-  document.querySelectorAll("#themeSeg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.theme===t));
-  applyMapTheme();
-}
+/* ---------- Theme (switching handled by js/theme.js; here we only react) ---------- */
 function effDark(){
   const t=document.documentElement.getAttribute("data-theme");
   if(t==="dark")return true;
@@ -122,9 +115,11 @@ ERAS.forEach(er=>{
       if(g)$("#tlScroll").scrollTo({left:g.offsetLeft-8,behavior:"smooth"});
       const pts=EV.filter(v=>v.e===er.id&&isFinite(v.lat)&&isFinite(v.lng)).map(v=>[v.lat,v.lng]);
       if(pts.length){try{map.fitBounds(pts,{padding:[45,45],maxZoom:7,animate:true});}catch(e){}}
+      const yr=ERA_YEAR[er.id];                  // move the political-map slider to this era
+      if(yr!==undefined){const sl=$("#timeSlider");if(sl){sl.value=yr;sl.dispatchEvent(new Event("input"));}}
       toast("Filtered to "+eraShort(er.name)+" — click it again to show all");
     }else{
-      map.setView(HOME_CENTER,HOME_ZOOM);        // cleared → back to the whole region
+      map.setView(HOME_CENTER,HOME_ZOOM);
       toast("Showing all eras");
     }
   });
@@ -220,6 +215,111 @@ function applyMapTheme(){                       // imagery basemaps carry no the
 }
 applyMapTheme();
 
+/* ---- Time-driven political map of the region (real historical borders) ----
+   Borders come from the open historical-basemaps project (CC-BY-SA): one
+   GeoJSON snapshot per key year. The slider picks the nearest snapshot; we
+   render just the polities intersecting the Middle East / plateau region. */
+const HB_YEARS=[-3000,-2000,-1500,-1000,-700,-500,-400,-323,-300,-200,-100,-1,100,200,300,400,500,600,700,800,900,1000,1100,1200,1279,1300,1400,1492,1500,1530,1600,1650,1700,1715,1783,1800,1815,1878,1880,1900,1914,1920,1930,1938,1945,1960,1994,2000,2010];
+const ERA_YEAR={chal:-3000,bronze:-1250,iron:-650,ach:-500,hel:-300,par:-100,sas:400,later:1600};
+const HB_CACHE={}, REGION=[22,8,80,48];   // [W,S,E,N]
+const POLIT_PALETTE=["#23408E","#8A6212","#146F70","#8C3A2B","#5A4E86","#4E6A35","#7E4F25","#2F5670","#9C4326","#45447A","#135F63","#6B4E9E","#3C5A9A","#2A6E62"];
+function hbSnap(y){let b=HB_YEARS[0];for(const s of HB_YEARS)if(Math.abs(s-y)<Math.abs(b-y))b=s;return b;}
+function hbUrl(s){return "https://cdn.jsdelivr.net/gh/aourednik/historical-basemaps@master/geojson/world_"+(s<0?("bc"+(-s)):(""+s))+".geojson";}
+function yearLabel(y){y=Math.round(+y);return y<0?((-y)+" BCE"):(y+" CE");}
+function politColor(n){let h=0;for(let i=0;i<n.length;i++)h=(h*31+n.charCodeAt(i))>>>0;return POLIT_PALETTE[h%POLIT_PALETTE.length];}
+function fbbox(g){const m=[Infinity,Infinity,-Infinity,-Infinity];(function scan(c){if(typeof c[0]==="number"){if(c[0]<m[0])m[0]=c[0];if(c[1]<m[1])m[1]=c[1];if(c[0]>m[2])m[2]=c[0];if(c[1]>m[3])m[3]=c[1];}else c.forEach(scan);})(g.coordinates||[]);return m;}
+function inRegion(b){return b[0]<REGION[2]&&b[2]>REGION[0]&&b[1]<REGION[3]&&b[3]>REGION[1];}
+let politLayer=null, politLabels=[], politReq=0, politYear=null;
+function clearPolit(){ if(politLayer){map.removeLayer(politLayer);politLayer=null;} politLabels.forEach(l=>map.removeLayer(l)); politLabels=[]; }
+async function fetchHB(s){ if(HB_CACHE[s])return HB_CACHE[s]; const r=await fetch(hbUrl(s)); const d=await r.json(); HB_CACHE[s]=d; return d; }
+async function loadPolitical(year){
+  const on=$("#timeOn"); if(on&&!on.checked){clearPolit();return;}
+  const snap=hbSnap(year), my=++politReq; politYear=year;
+  let d; try{d=await fetchHB(snap);}catch(e){return;}
+  if(my!==politReq)return;                       // a newer request has started
+  clearPolit();
+  const feats=d.features.filter(f=>f&&f.geometry&&f.properties&&f.properties.NAME&&inRegion(fbbox(f.geometry)));
+  politLayer=L.geoJSON({type:"FeatureCollection",features:feats},{
+    style:f=>{const c=politColor(f.properties.NAME);return{color:c,weight:1,opacity:.85,fillColor:c,fillOpacity:.42};},
+    onEachFeature:(f,l)=>{l.bindTooltip(f.properties.NAME,{sticky:true,direction:"top",className:"hv-tip"});
+      l.on("mouseover",()=>l.setStyle({fillOpacity:.62,weight:2}));
+      l.on("mouseout",()=>{try{politLayer.resetStyle(l);}catch(e){}});
+      l.on("click",()=>showPolity(f.properties));}
+  }).addTo(map);
+  if(politLayer.bringToBack)politLayer.bringToBack();
+  feats.map(f=>{const b=fbbox(f.geometry);const w=Math.min(b[2],REGION[2])-Math.max(b[0],REGION[0]),h=Math.min(b[3],REGION[3])-Math.max(b[1],REGION[1]);
+      return{f,area:w*h,cx:(Math.max(b[0],REGION[0])+Math.min(b[2],REGION[2]))/2,cy:(Math.max(b[1],REGION[1])+Math.min(b[3],REGION[3]))/2};})
+    .filter(o=>o.area>5).sort((a,b)=>b.area-a.area).slice(0,16)
+    .forEach(o=>{const m=L.marker([o.cy,o.cx],{interactive:false,keyboard:false,
+      icon:L.divIcon({className:"polit-label",html:'<span>'+esc(o.f.properties.NAME)+'</span>'})}).addTo(map);politLabels.push(m);});
+}
+/* ---- descriptions & pages for the kingdoms shown on the political map ---- */
+const POLITY_INFO=[
+ {kw:["achaemenid"],name:"Achaemenid Empire",url:"https://en.wikipedia.org/wiki/Achaemenid_Empire",body:["The first Persian Empire (c. 550–330 BCE), founded by Cyrus the Great — the largest the world had yet seen, uniting the plateau with Mesopotamia, Egypt, Anatolia and Central Asia.","It was run through satrapies, the Royal Road, gold coinage and a multilingual bureaucracy, and fell to Alexander the Great in 330 BCE."]},
+ {kw:["median","medes","media"],name:"Median Kingdom",url:"https://en.wikipedia.org/wiki/Medes",body:["The kingdom of the Medes (c. 700–550 BCE), Iranian-speakers of the north-western Zagros who, with Babylon, destroyed Assyria before being absorbed by their Persian kin under Cyrus."]},
+ {kw:["elam"],name:"Elam",url:"https://en.wikipedia.org/wiki/Elam",body:["One of the oldest civilisations of the Near East (c. 3200–540 BCE), joining lowland Susa to highland Anshan in Fars, and for millennia the great eastern rival of Mesopotamia."]},
+ {kw:["parthia"],name:"Parthian Empire",url:"https://en.wikipedia.org/wiki/Parthian_Empire",body:["The Parthian (Arsacid) Empire (c. 247 BCE–224 CE), an Iranian dynasty from the north-east that mastered mounted archery, controlled the Silk Road, and held Rome at bay for centuries."]},
+ {kw:["sasan"],name:"Sasanian Empire",url:"https://en.wikipedia.org/wiki/Sasanian_Empire",body:["The last pre-Islamic Persian empire (224–651 CE), a superpower rivalling Rome and Byzantium that gave Zoroastrianism an official, codified form before the Arab conquest."]},
+ {kw:["seleucid"],name:"Seleucid Empire",url:"https://en.wikipedia.org/wiki/Seleucid_Empire",body:["The Hellenistic empire (312–63 BCE) of Alexander’s general Seleucus, which planted Greek cities, coinage and art across Iran and Mesopotamia."]},
+ {kw:["neo-assyria","assyria"],name:"Assyrian Empire",url:"https://en.wikipedia.org/wiki/Neo-Assyrian_Empire",body:["The Neo-Assyrian Empire (c. 911–609 BCE), the dominant military power of the Near East, which repeatedly campaigned into the Zagros before falling to the Medes and Babylonians."]},
+ {kw:["babylon"],name:"Babylonia",url:"https://en.wikipedia.org/wiki/Babylonia",body:["Babylonia of the lower Euphrates; its Neo-Babylonian empire (626–539 BCE) briefly ruled the Near East before Cyrus the Great took the city in 539 BCE."]},
+ {kw:["safavid"],name:"Safavid Empire",url:"https://en.wikipedia.org/wiki/Safavid_Iran",body:["The Safavid Empire (1501–1736) that reunified Iran, made Twelver Shi’ism the state religion, and raised the incomparable capital of Isfahan."]},
+ {kw:["qajar"],name:"Qajar Iran",url:"https://en.wikipedia.org/wiki/Qajar_dynasty",body:["The Qajar dynasty (1789–1925), which made Tehran the capital and ruled Iran through an age of European pressure, lost territory, and the 1906 Constitutional Revolution."]},
+ {kw:["afsharid","afshar"],name:"Afsharid Empire",url:"https://en.wikipedia.org/wiki/Afsharid_dynasty",body:["The empire of Nader Shah (1736–1796), the military genius who expelled invaders, seized the throne, and sacked Delhi in 1739."]},
+ {kw:["zand"],name:"Zand Dynasty",url:"https://en.wikipedia.org/wiki/Zand_dynasty",body:["The Zand dynasty (1751–1794) of Karim Khan, who styled himself only ‘regent’ and gave Iran a rare interval of peace from Shiraz."]},
+ {kw:["rashidun"],name:"Rashidun Caliphate",url:"https://en.wikipedia.org/wiki/Rashidun_Caliphate",body:["The first (‘Rightly-Guided’) caliphate (632–661 CE), under which Arab-Muslim armies conquered the Sasanian Empire."]},
+ {kw:["umayyad"],name:"Umayyad Caliphate",url:"https://en.wikipedia.org/wiki/Umayyad_Caliphate",body:["The first great Islamic caliphate (661–750 CE), which absorbed the former Sasanian lands into a vast empire stretching from Spain to Central Asia."]},
+ {kw:["abbasid"],name:"Abbasid Caliphate",url:"https://en.wikipedia.org/wiki/Abbasid_Caliphate",body:["The caliphate (750–1258 CE) whose Baghdad court — deeply shaped by Persian administration and scholars — presided over the Islamic Golden Age."]},
+ {kw:["samanid"],name:"Samanid Empire",url:"https://en.wikipedia.org/wiki/Samanid_Empire",body:["A Persian dynasty (819–999) centred on Bukhara that led the renaissance of the New Persian language, nurturing Rudaki, Ferdowsi and Avicenna."]},
+ {kw:["ghaznavid","ghazna"],name:"Ghaznavid Empire",url:"https://en.wikipedia.org/wiki/Ghaznavids",body:["A Turko-Persian empire (977–1186) based at Ghazni that carried Persianate court culture deep into India."]},
+ {kw:["seljuk","seljuq"],name:"Seljuk Empire",url:"https://en.wikipedia.org/wiki/Seljuk_Empire",body:["The Great Seljuk Empire (1037–1194), a Turkic dynasty that ruled Iran and the Near East, patronising Persian administration and Sunni learning."]},
+ {kw:["khwarazm","khwarezm","khwarizm"],name:"Khwarazmian Empire",url:"https://en.wikipedia.org/wiki/Khwarazmian_Empire",body:["A vast but short-lived empire (c. 1077–1231) of the east, destroyed by the Mongol invasion it provoked."]},
+ {kw:["ilkhan"],name:"Ilkhanate",url:"https://en.wikipedia.org/wiki/Ilkhanate",body:["The Mongol state ruling Iran (1256–1335), founded by Hulagu Khan; its later khans converted to Islam and rebuilt Persian cultural life."]},
+ {kw:["mongol"],name:"Mongol Empire",url:"https://en.wikipedia.org/wiki/Mongol_Empire",body:["The largest contiguous land empire in history, whose 13th-century conquests devastated and then reshaped Iran under the Ilkhans."]},
+ {kw:["timurid","timur"],name:"Timurid Empire",url:"https://en.wikipedia.org/wiki/Timurid_Empire",body:["The empire of Timur (Tamerlane) and his heirs (1370–1507), an age of dazzling art and science centred on Samarkand and Herat."]},
+ {kw:["ottoman"],name:"Ottoman Empire",url:"https://en.wikipedia.org/wiki/Ottoman_Empire",body:["The great Turkish empire of Anatolia and the Near East, for centuries the western rival of Safavid and Qajar Iran."]},
+ {kw:["byzantine","eastern roman"],name:"Byzantine Empire",url:"https://en.wikipedia.org/wiki/Byzantine_Empire",body:["The Christian Eastern Roman Empire of Constantinople, locked in centuries of frontier war with Sasanian Iran."]},
+ {kw:["roman"],name:"Roman Empire",url:"https://en.wikipedia.org/wiki/Roman_Empire",body:["Rome, the Mediterranean superpower whose eastern frontier met the Parthian and then Sasanian empires of Iran."]},
+ {kw:["urartu","van"],name:"Urartu",url:"https://en.wikipedia.org/wiki/Urartu",body:["The Iron Age kingdom (9th–6th c. BCE) centred on Lake Van, which built fortresses across today’s north-western Iran."]},
+ {kw:["mannae","mannaea"],name:"Mannaea",url:"https://en.wikipedia.org/wiki/Mannaeans",body:["An Iron Age kingdom south of Lake Urmia, caught between Assyria, Urartu and the rising Medes."]},
+ {kw:["scythia","saka","sacae"],name:"Scythians (Saka)",url:"https://en.wikipedia.org/wiki/Scythians",body:["Iranian-speaking horse nomads of the steppe whose confederations raided and traded with the settled empires of Iran."]},
+ {kw:["bactria"],name:"Bactria",url:"https://en.wikipedia.org/wiki/Bactria",body:["The rich land of the middle Oxus — an Achaemenid satrapy and later a Greek kingdom, a crossroads between Iran, India and the steppe."]},
+ {kw:["kushan"],name:"Kushan Empire",url:"https://en.wikipedia.org/wiki/Kushan_Empire",body:["A Central Asian empire (c. 30–375 CE) astride the routes between Iran, India and China, and a great patron of Buddhism."]},
+ {kw:["hephthalite","white hun"],name:"Hephthalites",url:"https://en.wikipedia.org/wiki/Hephthalites",body:["The ‘White Huns’, steppe conquerors who humbled the Sasanians in the 5th century and dominated the north-east."]},
+ {kw:["gandhara","gandhāra"],name:"Gandhāra",url:"https://en.wikipedia.org/wiki/Gandhara",body:["The region of the north-west Indian subcontinent, long tied to Iran — an Achaemenid satrapy and a famed crossroads of Greek, Indian and Iranian art."]},
+ {kw:["persia","iran"],name:"Persia (Iran)",url:"https://en.wikipedia.org/wiki/History_of_Iran",body:["Persia — the heartland of the Iranian plateau, home across the ages to Elam, the Medes and Persians, and the long succession of empires that followed."]}
+];
+function polityInfo(name){const n=(name||"").toLowerCase();for(const e of POLITY_INFO){if(e.kw.some(k=>n.includes(k)))return e;}return null;}
+function showPolity(props){
+  const name=(props&&props.NAME)||"Unknown", info=polityInfo(name), yl=yearLabel(politYear);
+  panel.classList.add("polity-mode");
+  $("#panelEra").textContent="Political map"; $("#panelEra").style.background="var(--lapis)";
+  let html='<div class="panel-date">Kingdoms &amp; powers · '+esc(yl)+'</div><h2>'+esc(info?info.name:name)+'</h2>';
+  const sub=[]; if(props.SUBJECTO&&props.SUBJECTO!==name)sub.push("subject to "+props.SUBJECTO);
+  if(props.PARTOF&&props.PARTOF!==name&&props.PARTOF!==props.SUBJECTO)sub.push("part of "+props.PARTOF);
+  if(sub.length)html+='<div class="place">'+esc(sub.join(" · "))+'</div>';
+  html+='<div class="tags"><span class="tag">'+esc(yl)+'</span>'+(info?'':'<span class="tag debated">brief entry</span>')+'</div>';
+  if(info){ html+='<p class="summary">'+esc(info.body[0])+'</p>'; if(info.body[1])html+='<div class="body"><p>'+esc(info.body[1])+'</p></div>'; }
+  else { html+='<p class="summary">A polity shown on the historical map of the region around '+esc(yl)+'. The atlas doesn’t carry a written entry for this one yet — follow the link for more.</p>'; }
+  const url=info?info.url:("https://en.wikipedia.org/w/index.php?search="+encodeURIComponent(name));
+  html+='<div class="panel-actions"><a class="btn primary" href="'+esc(url)+'" target="_blank" rel="noopener">Read more ↗</a></div>';
+  const pb=$("#panelBody"); pb.innerHTML=html; pb.scrollTop=0;
+  openPanel();
+}
+
+(function wireTimeSlider(){
+  const sl=$("#timeSlider"),out=$("#timeYear"),on=$("#timeOn"),ticks=$("#timeTicks"); if(!sl)return;
+  const mn=+sl.min,mx=+sl.max;
+  if(ticks){let h="";HB_YEARS.forEach(y=>{if(y>=mn&&y<=mx)h+='<i style="left:'+((y-mn)/(mx-mn)*100)+'%"></i>';});
+    [-3000,-2000,-1000,-500,1,500,1000,1500,2000].forEach(y=>{if(y>=mn&&y<=mx)h+='<b style="left:'+((y-mn)/(mx-mn)*100)+'%">'+yearLabel(y)+'</b>';});ticks.innerHTML=h;}
+  function bubble(){if(!out)return;out.textContent=yearLabel(sl.value);out.style.left=((+sl.value-mn)/(mx-mn)*100)+"%";}
+  let t=null;
+  sl.addEventListener("input",()=>{bubble();clearTimeout(t);t=setTimeout(()=>loadPolitical(+sl.value),240);});
+  sl.addEventListener("change",()=>{bubble();loadPolitical(+sl.value);});
+  if(on)on.addEventListener("change",()=>loadPolitical(+sl.value));
+  bubble(); loadPolitical(+sl.value);
+})();
+
 const cluster=L.markerClusterGroup({
   maxClusterRadius:38, showCoverageOnHover:false, spiderfyOnMaxZoom:true,
   iconCreateFunction:c=>L.divIcon({html:"<div>"+c.getChildCount()+"</div>",className:"hv-cluster",iconSize:[34,34]})
@@ -242,7 +342,7 @@ Object.entries(ROUTES).forEach(([k,r])=>{
 
 /* ---------- Detail panel ---------- */
 const scrim=$("#scrim"), panel=$("#panel");
-function closePanel(){panel.classList.remove("show");scrim.classList.remove("show");
+function closePanel(){panel.classList.remove("show");panel.classList.remove("polity-mode");scrim.classList.remove("show");
   setTimeout(()=>{if(!panel.classList.contains("show"))scrim.hidden=true;},260);
   if(activeId&&byId[activeId]) history.replaceState(null,"",location.pathname+location.search);
 }
@@ -251,6 +351,7 @@ scrim.onclick=closePanel;
 $("#panelPrev").onclick=()=>step(-1);
 $("#panelNext").onclick=()=>step(1);
 function step(d){
+  if(panel.classList.contains("polity-mode"))return;
   if(!visibleOrder.length)return;
   let i=visibleOrder.indexOf(activeId);
   i=(i+d+visibleOrder.length)%visibleOrder.length;
@@ -261,6 +362,7 @@ function commonsImg(file,w){return "https://commons.wikimedia.org/wiki/Special:F
 function commonsPage(file){return "https://commons.wikimedia.org/wiki/File:"+encodeURIComponent(file);}
 
 function fillPanel(v){
+  panel.classList.remove("polity-mode");
   const er=ERAS.find(e=>e.id===v.e);
   $("#panelEra").textContent=er?er.name.split(":")[0]:"";
   $("#panelEra").style.background=er?er.color:"var(--muted)";
@@ -393,17 +495,8 @@ function render(){
   }
 }
 
-/* ---------- Theme + layer wiring ---------- */
-document.querySelectorAll("#themeSeg button").forEach(b=>b.onclick=()=>applyTheme(b.dataset.theme));
-(function initTheme(){
-  let t=null; try{t=localStorage.getItem("hv-theme");}catch(e){}
-  // One-time migration: adopt the new "Paper" default even if an older session
-  // saved the previous "auto" default. Explicit choices after this are kept.
-  try{ if(!localStorage.getItem("hv-theme-default-v2")){ t="parchment"; localStorage.setItem("hv-theme-default-v2","1"); } }catch(e){}
-  if(!t||!THEMES.includes(t))t="parchment";
-  applyTheme(t);
-})();
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{applyMapTheme();render();});
+/* ---------- React to theme changes (js/theme.js drives the switching) ---------- */
+document.addEventListener("hv-theme",()=>{applyMapTheme();render();});
 
 document.querySelectorAll(".route-toggle").forEach(cb=>cb.addEventListener("change",()=>{
   const k=cb.dataset.route, lyr=routeLayers[k];

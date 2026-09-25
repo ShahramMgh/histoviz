@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 440" fill="none"
+     stroke="#8a6a2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- ===== distant mountains ===== -->
+  <g stroke-opacity=".30">
+    <path d="M0,212 L120,182 205,206 330,150 445,196 560,152 700,188 840,150 1000,192 1150,160 1300,198 1450,166 1600,192"/>
+    <path d="M0,262 L150,236 305,262 470,226 640,262 820,230 1000,266 1200,236 1405,262 1600,242"/>
+    <path d="M0,300 L180,286 360,302 540,286 760,304 980,288 1200,304 1420,290 1600,302" stroke-opacity=".5"/>
+  </g>
+
+  <!-- ===== terrace baselines ===== -->
+  <g stroke-opacity=".55">
+    <path d="M0,360 H1600"/>
+    <path d="M0,392 H1250 M1360,392 H1600" stroke-opacity=".35"/>
+    <path d="M0,414 H1600" stroke-opacity=".22"/>
+  </g>
+
+  <!-- ===== structures receding into the left distance ===== -->
+  <g stroke-opacity=".4" stroke-width="1.6">
+    <!-- small distant doorframe -->
+    <path d="M120,360 v-72 M142,360 v-72 M114,288 h34 M114,288 v-10 h34 v10 M120,278 h22"/>
+    <!-- distant column stumps -->
+    <path d="M182,360 v-44 M196,360 v-44 M182,316 l14,3 M182,360 h14"/>
+    <path d="M62,360 v-30 M76,360 v-30 M62,330 h14"/>
+    <!-- faint relief ticks along the receding terrace -->
+    <g stroke-width="1.2" stroke-opacity=".32">
+      <path d="M96,384 v-13 M114,384 v-13 M132,384 v-13 M150,384 v-13 M168,384 v-13
+               M186,384 v-13 M204,384 v-13 M222,384 v-13 M240,384 v-13 M258,384 v-13 M276,384 v-13"/>
+    </g>
+  </g>
+
+  <!-- ===== procession relief band on the terrace face ===== -->
+  <g stroke-opacity=".45" stroke-width="1.6">
+    <path d="M300,366 H1180 M300,384 H1180"/>
+    <!-- stylised rows of guards: repeated short figures -->
+    <g id="figs">
+      <path d="M312,383 v-14 M312,371 l4,-3 M312,371 l-4,-3"/>
+    </g>
+    <path d="M330,383 v-15 M348,383 v-15 M366,383 v-15 M384,383 v-15 M402,383 v-15 M420,383 v-15
+             M438,383 v-15 M456,383 v-15 M474,383 v-15 M492,383 v-15 M510,383 v-15 M528,383 v-15
+             M546,383 v-15 M564,383 v-15 M582,383 v-15 M600,383 v-15 M618,383 v-15 M636,383 v-15
+             M654,383 v-15 M672,383 v-15 M690,383 v-15 M708,383 v-15 M726,383 v-15 M744,383 v-15
+             M762,383 v-15 M780,383 v-15 M798,383 v-15 M816,383 v-15 M834,383 v-15 M852,383 v-15
+             M870,383 v-15 M888,383 v-15 M906,383 v-15 M924,383 v-15 M942,383 v-15 M960,383 v-15
+             M978,383 v-15 M996,383 v-15 M1014,383 v-15 M1032,383 v-15 M1050,383 v-15 M1068,383 v-15
+             M1086,383 v-15 M1104,383 v-15 M1122,383 v-15 M1140,383 v-15 M1158,383 v-15 M1176,383 v-15"/>
+    <g stroke-width="1.2" stroke-opacity=".4">
+      <circle cx="330" cy="365" r="2"/><circle cx="366" cy="365" r="2"/><circle cx="402" cy="365" r="2"/>
+      <circle cx="438" cy="365" r="2"/><circle cx="474" cy="365" r="2"/><circle cx="510" cy="365" r="2"/>
+      <circle cx="654" cy="365" r="2"/><circle cx="690" cy="365" r="2"/><circle cx="726" cy="365" r="2"/>
+      <circle cx="906" cy="365" r="2"/><circle cx="942" cy="365" r="2"/><circle cx="1050" cy="365" r="2"/>
+      <circle cx="1086" cy="365" r="2"/><circle cx="1140" cy="365" r="2"/>
+    </g>
+  </g>
+
+  <!-- ===== Faravahar (winged disc) emblems on the terrace ===== -->
+  <g stroke-opacity=".55" stroke-width="1.6">
+    <g transform="translate(470,388)">
+      <circle cx="0" cy="0" r="7"/>
+      <path d="M0,-7 v-8 M-7,0 l-9,-3 M-7,3 l-11,0 M-7,6 l-9,3 M7,0 l9,-3 M7,3 l11,0 M7,6 l9,3
+               M-3,7 l-3,8 M3,7 l3,8"/>
+    </g>
+    <g transform="translate(1130,388)">
+      <circle cx="0" cy="0" r="7"/>
+      <path d="M0,-7 v-8 M-7,0 l-9,-3 M-7,3 l-11,0 M-7,6 l-9,3 M7,0 l9,-3 M7,3 l11,0 M7,6 l9,3
+               M-3,7 l-3,8 M3,7 l3,8"/>
+    </g>
+  </g>
+
+  <!-- ===== column stumps (ruined) ===== -->
+  <g stroke-opacity=".6">
+    <path d="M250,360 v-46 M268,360 v-46 M250,314 l18,-6 M250,360 h18"/>
+    <path d="M694,360 v-40 M712,360 v-40 M694,320 l18,4 M694,360 h18"/>
+    <path d="M1000,360 v-58 M1018,360 v-58 M1000,302 l18,-5 M1000,360 h18"/>
+    <path d="M1230,360 v-72 M1250,360 v-72 M1230,288 l20,6 M1230,360 h20"/>
+  </g>
+
+  <!-- ===== tall fluted columns with capitals ===== -->
+  <!-- column A -->
+  <g stroke-opacity=".72">
+    <path d="M420,360 v-108 M446,360 v-108"/>
+    <path d="M427,360 v-108 M433,360 v-108 M439,360 v-108" stroke-opacity=".4" stroke-width="1.2"/>
+    <path d="M414,360 h38 M418,360 v-6 h30 v6" stroke-opacity=".55"/>
+    <path d="M416,252 h34 M420,252 v-10 h26 v10"/>
+    <path d="M420,242 c-4,-12 12,-12 13,-2 c1,-10 17,-10 13,2" stroke-opacity=".6"/>
+  </g>
+  <!-- column B (taller) -->
+  <g stroke-opacity=".72">
+    <path d="M760,360 v-168 M786,360 v-168"/>
+    <path d="M767,360 v-168 M773,360 v-168 M779,360 v-168" stroke-opacity=".4" stroke-width="1.2"/>
+    <path d="M754,360 h38 M758,360 v-6 h30 v6" stroke-opacity=".55"/>
+    <path d="M756,192 h34 M760,192 v-10 h26 v10"/>
+    <path d="M760,182 c-5,-14 14,-14 15,-2 c1,-12 20,-12 15,2" stroke-opacity=".6"/>
+  </g>
+  <!-- column C (bull capital) -->
+  <g stroke-opacity=".75">
+    <path d="M905,360 v-206 M933,360 v-206"/>
+    <path d="M912,360 v-206 M919,360 v-206 M926,360 v-206" stroke-opacity=".4" stroke-width="1.2"/>
+    <path d="M899,360 h40 M903,360 v-7 h32 v7" stroke-opacity=".55"/>
+    <path d="M899,154 h40 M903,154 v-12 h32 v12"/>
+    <!-- twin bull foreparts -->
+    <path d="M903,142 c-4,-16 -22,-16 -24,-2 c-1,-8 -7,-10 -9,-4" stroke-opacity=".65"/>
+    <path d="M935,142 c4,-16 22,-16 24,-2 c1,-8 7,-10 9,-4" stroke-opacity=".65"/>
+  </g>
+  <!-- column D (tallest, elaborate) -->
+  <g stroke-opacity=".78">
+    <path d="M1118,360 v-244 M1150,360 v-244"/>
+    <path d="M1126,360 v-244 M1134,360 v-244 M1142,360 v-244" stroke-opacity=".4" stroke-width="1.2"/>
+    <path d="M1112,360 h44 M1116,360 v-8 h36 v8" stroke-opacity=".55"/>
+    <path d="M1110,116 h48 M1116,116 v-14 h36 v14"/>
+    <path d="M1116,102 c-5,-20 -26,-20 -28,-3 c-1,-10 -9,-12 -11,-5" stroke-opacity=".65"/>
+    <path d="M1152,102 c5,-20 26,-20 28,-3 c1,-10 9,-12 11,-5" stroke-opacity=".65"/>
+    <path d="M1122,102 c0,-14 24,-14 24,0" stroke-opacity=".5"/>
+  </g>
+
+  <!-- ===== stone doorframes (Gate of Xerxes / Tachara jambs) ===== -->
+  <g stroke-opacity=".7">
+    <path d="M590,360 v-118 M614,360 v-118 M652,360 v-118 M676,360 v-118"/>
+    <path d="M584,242 h98 M584,242 v-14 h98 v14 M590,214 h86" stroke-opacity=".6"/>
+  </g>
+
+  <!-- ===== great gateway (right) ===== -->
+  <g stroke-opacity=".8">
+    <!-- piers -->
+    <path d="M1362,360 v-244 M1392,360 v-210 M1486,360 v-210 M1516,360 v-244"/>
+    <!-- doorway opening -->
+    <path d="M1392,150 h94"/>
+    <path d="M1400,360 v-198 M1478,360 v-198 M1400,162 h78" stroke-opacity=".5" stroke-width="1.4"/>
+    <!-- entablature + cornice with dentils -->
+    <path d="M1348,116 h182 M1348,116 v-16 h182 v16"/>
+    <path d="M1356,100 h166 M1356,100 v-14 h166 v14"/>
+    <g stroke-width="1.3" stroke-opacity=".6">
+      <path d="M1360,114 v-10 M1370,114 v-10 M1380,114 v-10 M1390,114 v-10 M1400,114 v-10 M1410,114 v-10
+               M1420,114 v-10 M1430,114 v-10 M1440,114 v-10 M1450,114 v-10 M1460,114 v-10 M1470,114 v-10
+               M1480,114 v-10 M1490,114 v-10 M1500,114 v-10 M1510,114 v-10"/>
+    </g>
+    <path d="M1366,86 h148 M1372,86 v-9 h136 v9" stroke-opacity=".6"/>
+  </g>
+
+  <!-- ===== flanking lamassu (human-headed winged bulls) ===== -->
+  <!-- left lamassu, facing right -->
+  <g stroke-opacity=".72">
+    <path d="M1300,360 v-96 h56 v96"/>
+    <path d="M1300,360 h56" stroke-opacity=".5"/>
+    <path d="M1312,360 v-14 M1326,360 v-14 M1340,360 v-14" stroke-opacity=".45" stroke-width="1.4"/>
+    <!-- wing sweeping up-left -->
+    <path d="M1300,286 c-16,-10 -26,-30 -22,-52 M1300,286 c-12,-6 -20,-20 -20,-38 M1300,286 c-8,-4 -13,-14 -14,-26" stroke-opacity=".55"/>
+    <!-- human head with headdress + beard, facing right -->
+    <path d="M1352,264 c14,0 22,10 22,22 c0,10 -8,18 -20,18" stroke-opacity=".6"/>
+    <path d="M1350,250 h30 v8 h-30" stroke-opacity=".6"/>
+    <path d="M1362,304 v20 M1368,304 v18 M1356,304 v20" stroke-opacity=".45" stroke-width="1.3"/>
+  </g>
+  <!-- right lamassu, facing left -->
+  <g stroke-opacity=".72">
+    <path d="M1528,360 v-96 h58 v96"/>
+    <path d="M1528,360 h58" stroke-opacity=".5"/>
+    <path d="M1544,360 v-14 M1558,360 v-14 M1572,360 v-14" stroke-opacity=".45" stroke-width="1.4"/>
+    <path d="M1586,286 c16,-10 26,-30 22,-52 M1586,286 c12,-6 20,-20 20,-38" stroke-opacity=".55"/>
+    <path d="M1534,264 c-14,0 -22,10 -22,22 c0,10 8,18 20,18" stroke-opacity=".6"/>
+    <path d="M1506,250 h30 v8 h-30" stroke-opacity=".6"/>
+    <path d="M1524,304 v20 M1530,304 v18 M1518,304 v20" stroke-opacity=".45" stroke-width="1.3"/>
+  </g>
+
+  <!-- ===== staircase up to the gateway ===== -->
+  <g stroke-opacity=".55" stroke-width="1.6">
+    <path d="M1256,360 l0,-8 26,0 0,-8 26,0 0,-8 26,0 0,-8 24,0"/>
+    <path d="M1256,352 h26 M1282,344 h26 M1308,336 h26"/>
+  </g>
+</svg>

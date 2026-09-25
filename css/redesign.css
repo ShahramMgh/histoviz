@@ -56,9 +56,22 @@ header.hero{position:relative;overflow:hidden;padding:0;border-bottom:1px solid 
     radial-gradient(120% 95% at -5% -10%, var(--tint-lapis), transparent 55%),
     linear-gradient(180deg, var(--surface2), var(--bg) 88%);}
 .hero-motif{position:absolute;inset:0;background-image:var(--star);background-size:66px 66px;
-  opacity:.8;pointer-events:none;
-  -webkit-mask-image:linear-gradient(180deg, rgba(0,0,0,.75), transparent 78%);
-          mask-image:linear-gradient(180deg, rgba(0,0,0,.75), transparent 78%)}
+  opacity:.55;pointer-events:none;
+  -webkit-mask-image:linear-gradient(180deg, rgba(0,0,0,.7), transparent 55%);
+          mask-image:linear-gradient(180deg, rgba(0,0,0,.7), transparent 55%)}
+/* sketched Persepolis skyline: near-invisible behind the text (upper-left),
+   strengthening toward the edges and corners. The two masks are multiplied —
+   a radial that hollows out the text zone, and a gentle top fade — so the
+   ruins read as a faint backdrop that comes alive in the corners. */
+.hero-skyline{position:absolute;left:0;right:0;bottom:0;height:min(84%,380px);pointer-events:none;
+  background:url("../assets/persepolis-skyline.svg?v=2") no-repeat bottom center;
+  background-size:100% auto;opacity:.62;
+  -webkit-mask-image:radial-gradient(115% 130% at 31% 42%, transparent 0%, rgba(0,0,0,.05) 28%, #000 80%);
+          mask-image:radial-gradient(115% 130% at 31% 42%, transparent 0%, rgba(0,0,0,.05) 28%, #000 80%)}
+:root[data-theme="dark"] .hero-skyline{opacity:.72}
+@media (max-width:640px){ .hero-skyline{opacity:.42;
+  -webkit-mask-image:radial-gradient(140% 120% at 50% 60%, transparent 0%, rgba(0,0,0,.08) 30%, #000 85%);
+          mask-image:radial-gradient(140% 120% at 50% 60%, transparent 0%, rgba(0,0,0,.08) 30%, #000 85%)} }
 .hero-in{position:relative;z-index:1;padding:clamp(1.8rem,4vw,3rem) 1.25rem clamp(1.4rem,2.6vw,2rem)}
 .hero .hero-title{font-family:var(--display);font-weight:400;letter-spacing:.01em;line-height:1.02;
   margin:.2rem 0 0;font-size:clamp(2.2rem,5.6vw,3.7rem);max-width:20ch;color:var(--ink)}
@@ -335,6 +348,44 @@ footer{border-top:1px solid var(--rule);margin-top:2.5rem;padding:2rem 1.25rem 3
 .mp-routes label{display:flex;align-items:center;gap:.45rem;cursor:pointer;white-space:nowrap;color:var(--ink)}
 .mp-routes .swatch{width:1.1rem;height:0;border-top-width:3px;border-top-style:solid;display:inline-block}
 .mp-routes input{accent-color:var(--lapis)}
+/* ============================================================
+   Time slider + political-map overlay
+   ============================================================ */
+.timebar{margin:.9rem 0 0;padding:.75rem 1rem 1.1rem;background:var(--surface2);border:1px solid var(--rule);
+  border-radius:var(--r-md);box-shadow:var(--shadow-1)}
+.timebar-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.timebar-toggle{display:flex;align-items:center;gap:.5rem;font-family:var(--display);font-size:1rem;color:var(--ink);cursor:pointer}
+.timebar-toggle input{accent-color:var(--lapis);width:1rem;height:1rem}
+.timebar-src{font-size:.74rem;color:var(--muted)}
+.timebar-src a{color:var(--muted)}
+.timebar-track{position:relative;height:72px;margin-top:.5rem}
+.timebar-year{position:absolute;top:0;left:0;transform:translateX(-50%);white-space:nowrap;
+  background:var(--lapis);color:#fff;font-family:var(--display);font-size:.9rem;letter-spacing:.02em;
+  padding:.18rem .6rem;border-radius:8px;box-shadow:var(--shadow-1);pointer-events:none;z-index:3}
+.timebar-year::after{content:"";position:absolute;left:50%;bottom:-5px;transform:translateX(-50%);
+  border:5px solid transparent;border-bottom:0;border-top-color:var(--lapis)}
+#timeSlider{position:absolute;top:30px;left:0;width:100%;margin:0;height:8px;-webkit-appearance:none;appearance:none;
+  background:linear-gradient(90deg,#5E5242,#4E6A35,#7E4F25,#2F5670,#45447A,#23408E,#135F63,#7E5A12,#6B4E9E);
+  border-radius:999px;outline:none;cursor:pointer}
+#timeSlider::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;
+  background:var(--surface2);border:4px solid var(--lapis);box-shadow:var(--shadow-1);cursor:grab;margin-top:-8px}
+#timeSlider::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--surface2);
+  border:4px solid var(--lapis);box-shadow:var(--shadow-1);cursor:grab}
+#timeSlider:active::-webkit-slider-thumb{cursor:grabbing}
+.timebar-ticks{position:absolute;left:0;right:0;top:44px;height:26px;pointer-events:none}
+.timebar-ticks i{position:absolute;top:0;width:1px;height:6px;background:var(--rule);transform:translateX(-50%)}
+.timebar-ticks b{position:absolute;top:9px;font-family:var(--display);font-size:.68rem;color:var(--muted);
+  transform:translateX(-50%);white-space:nowrap;font-weight:400}
+
+.panel.polity-mode #panelPrev,.panel.polity-mode #panelNext{display:none}
+
+/* labels floating over the political-map polygons */
+.polit-label{background:none;border:0;width:0!important;height:0!important;overflow:visible}
+.polit-label span{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;font-family:var(--display);
+  font-size:.82rem;color:#2a2117;letter-spacing:.01em;
+  text-shadow:0 0 3px #fff,0 0 3px #fff,0 1px 2px rgba(255,255,255,.9)}
+:root[data-theme="dark"] .polit-label span{color:#f2ede2;text-shadow:0 0 3px #000,0 0 4px #000}
+@media (max-width:640px){ .timebar-ticks b{display:none} }
 @media (max-width:520px){ .map-panel{width:152px;top:8px;right:8px;padding:.5rem;font-size:.78rem} }
 
 /* ============================================================
