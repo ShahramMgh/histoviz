@@ -95,6 +95,12 @@ header.hero{position:relative;overflow:hidden;padding:0;border-bottom:1px solid 
 .cta.ghost{background:transparent;color:var(--ink);border-color:var(--rule)}
 .cta.ghost:hover{background:color-mix(in srgb, var(--ink) 7%, transparent)}
 
+/* ============================ Atlas intro (explore page) ============================ */
+.atlas-intro{padding:clamp(1.4rem,3vw,2.2rem) 1.25rem .4rem}
+.atlas-title{font-family:var(--display);font-weight:400;line-height:1.05;margin:.15rem 0 0;
+  font-size:clamp(1.9rem,4vw,2.8rem);color:var(--ink)}
+.atlas-sub{max-width:70ch;margin:.6rem 0 0;color:var(--muted);font-size:1.02rem;line-height:1.55}
+
 /* ============================ Explorer ============================ */
 .explorer{padding-top:.4rem}
 .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1.1rem}
