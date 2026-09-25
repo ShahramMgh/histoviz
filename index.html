@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="parchment">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Iranian Heritage — 100,000 years of human history</title>
+<meta name="description" content="The Iranian Heritage: an interactive timeline and map of 100,000 years of human history on the Iranian Plateau, from Neanderthal caves in the Zagros to the fall of the Sasanians and beyond.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+<link rel="stylesheet" href="css/style.css?v=6">
+<link rel="stylesheet" href="css/redesign.css?v=8">
+</head>
+<body>
+<span id="top"></span>
+
+<!-- ============================ Masthead ============================ -->
+<header class="masthead">
+  <div class="wrap masthead-in">
+    <a class="brand" href="#top" aria-label="The Iranian Heritage — top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="26" height="26"><g fill="none" stroke="currentColor" stroke-width="1.4">
+          <rect x="7" y="7" width="18" height="18" rx="1"/>
+          <rect x="7" y="7" width="18" height="18" rx="1" transform="rotate(45 16 16)"/>
+          <circle cx="16" cy="16" r="3.4"/></g></svg>
+      </span>
+      <span class="brand-text"><b>The Iranian Heritage</b><em>Atlas of 100,000 years</em></span>
+    </a>
+
+    <nav class="masthead-nav" aria-label="Sections">
+      <a href="#explorer">Explore</a>
+      <a href="#eras">Eras</a>
+      <a href="#reference">Reference</a>
+    </nav>
+
+    <div class="masthead-tools">
+      <span class="userchip" id="userChip" hidden><span id="userLabel"></span></span>
+      <button type="button" class="iconbtn ghost2" id="btnProfile" title="Profile, themes &amp; your content">Profile</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================ Hero ============================ -->
+<header class="hero">
+  <div class="hero-motif" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <p class="eyebrow">Interactive timeline &amp; map · Zagros to the Sasanians</p>
+    <h1 class="hero-title">The Iranian Heritage<span>100,000 years of human evidence — from Neanderthal caves in the Zagros to the fall of the Sasanians</span></h1>
+    <p class="hero-lead">A sourced atlas of what archaeology, inscriptions and ancient writers reveal about the people of the Iranian plateau and its borderlands — the Zagros, Susiana, the Caspian shore, Sistan and Kerman. Scroll the timeline, roam the map, and open any moment for its full story, photographs and sources.</p>
+
+    <div class="hero-cta">
+      <a class="cta primary" href="#explorer">Start exploring ↓</a>
+      <a class="cta ghost" href="#reference">How to read the dates</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================ Explorer ============================ -->
+<section class="explorer" id="explorer">
+  <!-- sticky filter bar -->
+  <div class="controls">
+    <div class="wrap controls-in">
+      <input class="search" id="search" type="search" placeholder="Search: Susa, Elam, Zoroaster, Medes, wine…" aria-label="Search the timeline">
+      <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+      <div class="chips flags" role="group" aria-label="Quick filters">
+        <button type="button" class="chip flag unesco" id="fUnesco" aria-pressed="false">UNESCO</button>
+        <button type="button" class="chip flag debate" id="fDebated" aria-pressed="false">Debated</button>
+      </div>
+      <span class="count" id="count" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <div class="wrap stage-head">
+    <p class="stage-hint"><b>How to explore</b> — pick an era on the left to move both the map and the timeline, or click any event (its card, its dot, or its map pin) for the full note.</p>
+    <div class="seg viewseg" role="group" aria-label="Choose a view">
+      <button type="button" id="btnTimeline" class="is-active" aria-pressed="true">Timeline</button>
+      <button type="button" id="btnFullView" aria-pressed="false">Map of Time</button>
+    </div>
+  </div>
+
+  <div class="stage wrap" id="eras" aria-label="Eras, map and timeline">
+    <aside class="era-rail" aria-label="Jump to an era">
+      <div class="era-rail-top">
+        <span class="era-rail-title">Eras</span>
+        <div class="seg scaleseg" role="group" aria-label="Era scale">
+          <button type="button" id="btnEven" aria-pressed="true" title="Equal space per era">Even</button>
+          <button type="button" id="btnTrue" aria-pressed="false" title="Heights match real duration">True</button>
+        </div>
+      </div>
+      <div class="ribbon" id="ribbon"></div>
+    </aside>
+
+    <div class="stage-main">
+      <div class="mapwrap">
+        <div id="map"></div>
+        <div class="map-panel" aria-label="Map controls">
+          <div class="seg mp-seg" role="group" aria-label="Basemap">
+            <button type="button" id="mpTerrain" class="is-active" aria-pressed="true">Terrain</button>
+            <button type="button" id="mpSatellite" aria-pressed="false">Satellite</button>
+          </div>
+          <div class="mp-zoom">
+            <button type="button" id="mpZoomOut" aria-label="Zoom out">–</button>
+            <button type="button" id="mpReset">Reset</button>
+            <button type="button" id="mpZoomIn" aria-label="Zoom in">+</button>
+          </div>
+          <div class="mp-routes">
+            <span class="mp-label">Trade routes</span>
+            <label><input type="checkbox" class="route-toggle" data-route="royal"><span class="swatch" style="border-top-color:#8A6212"></span> Royal Road</label>
+            <label><input type="checkbox" class="route-toggle" data-route="silk"><span class="swatch" style="border-top-color:#146F70"></span> Silk Road</label>
+            <label><input type="checkbox" class="route-toggle" data-route="lapis"><span class="swatch" style="border-top-color:#5A4E86"></span> Lapis lazuli</label>
+          </div>
+        </div>
+      </div>
+      <div class="tl-scroll" id="tlScroll" tabindex="0" aria-label="Horizontal timeline, scroll sideways">
+        <div class="tl-track" id="tlTrack"></div>
+      </div>
+    </div>
+  </div>
+  <p class="ribbon-note wrap" id="ribbonNote">Each era gets equal space. Switch to “True” to see how thin recorded history really is.</p>
+</section>
+
+<!-- ============================ Reference ============================ -->
+<section class="reference notes" id="reference">
+  <div class="wrap">
+    <p class="eyebrow">Reference</p>
+    <h2 class="section-title">Reading the archive</h2>
+
+    <div class="ref-grid">
+      <article class="ref-card">
+        <h3>Reading the dates</h3>
+        <p><strong>Years ago / BP</strong> is used for deep prehistory (“before present”, conventionally 1950). Subtract about 2,000 to convert to BCE: 12,000 years ago ≈ 10,000 BCE. <strong>cal</strong> means a radiocarbon date calibrated to calendar years. Palaeolithic dates often carry wide error ranges and sometimes conflict between methods, as at Kaldar Cave.</p>
+      </article>
+      <article class="ref-card">
+        <h3>What counts as “Iran” here</h3>
+        <p>Events from neighbouring Mesopotamia and Anatolia appear as <em>Wider Middle East</em> where they shaped Iran. Map pins mark the best-known site for each entry; empire-wide or climatic events are pinned to a representative location, and the trade-route overlays are illustrative and approximate.</p>
+      </article>
+      <article class="ref-card">
+        <h3>Sources &amp; caveats</h3>
+        <p>For the Median and early Achaemenid periods much of the narrative comes from Greek writers, especially Herodotus, writing a century or more later. Where royal inscriptions and Greek accounts disagree, the entry is marked <em>debated</em>. New excavations regularly revise prehistoric dates.</p>
+      </article>
+    </div>
+
+    <h3 class="ref-subhead">UNESCO World Heritage sites from this period in Iran</h3>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Site</th><th>Period represented</th><th>Inscribed</th></tr></thead>
+      <tbody>
+        <tr><td>Tchogha Zanbil</td><td>Middle Elamite, c. 1250 BCE</td><td>1979</td></tr>
+        <tr><td>Persepolis</td><td>Achaemenid</td><td>1979</td></tr>
+        <tr><td>Takht-e Soleyman</td><td>Sasanian (and later)</td><td>2003</td></tr>
+        <tr><td>Pasargadae</td><td>Achaemenid (Cyrus II)</td><td>2004</td></tr>
+        <tr><td>Bisotun</td><td>Prehistoric to Sasanian; Darius I inscription</td><td>2006</td></tr>
+        <tr><td>Shushtar Historical Hydraulic System</td><td>Achaemenid origins, Sasanian works</td><td>2009</td></tr>
+        <tr><td>The Persian Garden</td><td>From Pasargadae onward</td><td>2011</td></tr>
+        <tr><td>Shahr-i Sokhta</td><td>Bronze Age</td><td>2014</td></tr>
+        <tr><td>Susa</td><td>c. 4200 BCE onward</td><td>2015</td></tr>
+        <tr><td>The Persian Qanat</td><td>Ancient water engineering</td><td>2016</td></tr>
+        <tr><td>Sasanian Archaeological Landscape of Fars</td><td>Firuzabad, Bishapur, Sarvestan</td><td>2018</td></tr>
+        <tr><td>Prehistoric Sites of the Khorramabad Valley</td><td>Middle and Upper Palaeolithic</td><td>2025</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3 class="ref-subhead">Further reading</h3>
+    <ul class="reading-list">
+      <li>Encyclopaedia Iranica — the standard scholarly reference: <a href="https://www.iranicaonline.org" target="_blank" rel="noopener">iranicaonline.org</a></li>
+      <li>UNESCO World Heritage Centre, Iran: <a href="https://whc.unesco.org/en/statesparties/ir" target="_blank" rel="noopener">whc.unesco.org</a></li>
+      <li>D. T. Potts, <em>The Archaeology of Elam</em> (2nd ed., Cambridge, 2016)</li>
+      <li>Pierre Briant, <em>From Cyrus to Alexander: A History of the Persian Empire</em> (2002)</li>
+      <li>Touraj Daryaee, <em>Sasanian Persia: The Rise and Fall of an Empire</em> (2009)</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="wrap">Timeline ends with the death of Yazdegerd III in 651 CE. Figures and dates reflect published scholarship as of 2026; new excavations regularly revise prehistoric dates. Map tiles © OpenStreetMap contributors. Photos via Wikimedia Commons under their respective licences.</footer>
+
+<!-- Profile: themes, account & your content -->
+<div class="profile" id="profile" hidden role="dialog" aria-modal="true" aria-label="Profile and settings">
+  <div class="profile-bar">
+    <div class="profile-title">Profile &amp; settings</div>
+    <button type="button" class="fp-x" id="profileClose" aria-label="Close">×</button>
+  </div>
+  <div class="profile-scroll">
+    <div class="profile-doc">
+
+      <section class="profile-card">
+        <h3>Appearance</h3>
+        <p class="profile-sub">Choose how the atlas looks. Your choice is saved in this browser.</p>
+        <div class="seg themeseg" id="themeSeg" role="group" aria-label="Theme">
+          <button type="button" data-theme="parchment" aria-pressed="true" title="Warm parchment">Paper</button>
+          <button type="button" data-theme="light" aria-pressed="false" title="Light">Light</button>
+          <button type="button" data-theme="dark" aria-pressed="false" title="Dark">Dark</button>
+          <button type="button" data-theme="auto" aria-pressed="false" title="Match system">Auto</button>
+        </div>
+      </section>
+
+      <section class="profile-card">
+        <h3>Account</h3>
+        <p class="profile-sub" id="profileAccount">You are browsing as a guest.</p>
+        <div class="profile-actions">
+          <button type="button" class="iconbtn ghost2" id="btnSignIn" title="Sign in">Sign in</button>
+          <button type="button" class="iconbtn ghost2" id="btnSignOut" hidden title="Sign out">Sign out</button>
+          <button type="button" class="iconbtn ghost2" id="btnUsers" hidden title="Manage users">Manage users</button>
+        </div>
+      </section>
+
+      <section class="profile-card">
+        <h3>Your content</h3>
+        <p class="profile-sub">Events you add are stored in this browser. Edit them here, or open one to add a full article, photos and sources.</p>
+        <div class="profile-actions">
+          <button type="button" class="iconbtn" id="btnAdd" hidden title="Add a new event">＋ Add event</button>
+        </div>
+        <div class="profile-content" id="profileContent"></div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<!-- Admin: add / edit events -->
+<div class="scrim" id="admScrim" hidden></div>
+<div class="modal" id="admModal" hidden role="dialog" aria-modal="true" aria-labelledby="admTitle">
+  <div class="modal-head">
+    <h2 id="admTitle">Add event</h2>
+    <button type="button" id="admClose" aria-label="Close">×</button>
+  </div>
+  <form id="admForm" class="modal-body">
+    <input type="hidden" id="fId">
+    <div class="grid2">
+      <label>Year <input type="number" id="fYear" min="1" required placeholder="e.g. 550"></label>
+      <label>Era
+        <select id="fEraAd"><option value="BCE">BCE</option><option value="CE">CE</option></select>
+      </label>
+    </div>
+    <label>Display date <span class="opt">(optional)</span> <input type="text" id="fDate" placeholder="auto, e.g. “c. 550 BCE”"></label>
+    <label>Title <input type="text" id="fTitle" required placeholder="Name of the event or site"></label>
+    <label>Category
+      <select id="fCat"></select>
+    </label>
+    <label>Place <input type="text" id="fPlace" placeholder="e.g. Fars, Iran"></label>
+    <div class="grid2">
+      <label>Latitude <input type="number" step="any" id="fLat" placeholder="32.19"></label>
+      <label>Longitude <input type="number" step="any" id="fLng" placeholder="48.25"></label>
+    </div>
+    <button type="button" class="btn ghost" id="fPick">📍 Pick location on the map</button>
+    <label>Short summary <textarea id="fSummary" rows="2" placeholder="One or two sentences shown on the card"></textarea></label>
+    <label>Full description <span class="opt">(optional)</span> <textarea id="fBody" rows="5" placeholder="Longer article shown in the “read more” panel. Blank lines separate paragraphs."></textarea></label>
+    <label>Image <span class="opt">(URL, or a Wikimedia “File:Name.jpg”)</span> <input type="text" id="fImg" placeholder="https://…  or  File:Persepolis.jpg"></label>
+    <label>Image credit <span class="opt">(optional)</span> <input type="text" id="fCredit" placeholder="e.g. Photo: Jane Doe / CC BY-SA 4.0"></label>
+    <label>UNESCO note <span class="opt">(optional)</span> <input type="text" id="fUn" placeholder="e.g. UNESCO 1979"></label>
+    <label class="check"><input type="checkbox" id="fDb"> Date or interpretation is debated</label>
+    <div class="modal-actions">
+      <button type="submit" class="btn primary">Save event</button>
+      <button type="button" class="btn" id="admDelete" hidden>Delete</button>
+      <button type="button" class="btn ghost" id="admExport" title="Copy all admin-added events as JSON">Export added ▾</button>
+    </div>
+  </form>
+  <div class="modal-list" id="admList" aria-label="Events you have added"></div>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<!-- Auth: sign in / create first admin -->
+<div class="scrim" id="authScrim" hidden></div>
+<div class="modal small" id="authModal" hidden role="dialog" aria-modal="true" aria-labelledby="authTitle">
+  <div class="modal-head">
+    <h2 id="authTitle">Sign in</h2>
+    <button type="button" id="authClose" aria-label="Close">×</button>
+  </div>
+  <form id="authForm" class="modal-body">
+    <p class="adm-hint" id="authHint">Sign in to add or edit events.</p>
+    <label>Username <input id="auUser" autocomplete="username" autocapitalize="off"></label>
+    <label>Password <input id="auPass" type="password" autocomplete="current-password"></label>
+    <div class="modal-actions"><button class="btn primary" id="authSubmit" type="submit">Sign in</button></div>
+    <p class="auth-note">🔒 Accounts are stored only in this browser (hashed). This is a convenience layer, not real security — anyone with access to this browser or the code can bypass it. Use a backend for genuine access control.</p>
+  </form>
+</div>
+
+<!-- Users management (admin) -->
+<div class="scrim" id="usersScrim" hidden></div>
+<div class="modal" id="usersModal" hidden role="dialog" aria-modal="true" aria-labelledby="usersTitle">
+  <div class="modal-head">
+    <h2 id="usersTitle">Users &amp; roles</h2>
+    <button type="button" id="usersClose" aria-label="Close">×</button>
+  </div>
+  <div class="modal-body">
+    <form id="userAddForm">
+      <div class="grid2">
+        <label>Username <input id="nuUser" autocapitalize="off"></label>
+        <label>Role <select id="nuRole"><option value="user">User (edit content)</option><option value="admin">Admin (edit + manage users)</option></select></label>
+      </div>
+      <label>Password <input id="nuPass" type="password" autocomplete="new-password"></label>
+      <div class="modal-actions"><button class="btn primary" type="submit">Add user</button></div>
+    </form>
+    <div class="modal-list" id="usersList"></div>
+    <p class="auth-note">Roles: <b>Admin</b> can edit events and manage users. <b>User</b> can edit events only. Everyone else has view-only access.</p>
+  </div>
+</div>
+
+<!-- Full-screen views -->
+<div class="fullpage" id="fullpage" hidden aria-label="Full event page"></div>
+<div class="mapoftime" id="mapoftime" hidden aria-label="Map of Time"></div>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="panel" id="panel" aria-label="Event details" aria-live="polite">
+  <div class="panel-head">
+    <span class="panel-era" id="panelEra"></span>
+    <div class="nav">
+      <button type="button" id="panelPrev" title="Previous (←)" aria-label="Previous event">‹</button>
+      <button type="button" id="panelNext" title="Next (→)" aria-label="Next event">›</button>
+      <button type="button" id="panelClose" title="Close (Esc)" aria-label="Close">×</button>
+    </div>
+  </div>
+  <div class="panel-body" id="panelBody"></div>
+</aside>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="js/data.js?v=4"></script>
+<script src="js/enrich.js?v=4"></script>
+<script src="js/app.js?v=12"></script>
+<script src="js/fullpage.js?v=3"></script>
+<script src="js/mapoftime.js?v=2"></script>
+<script>
+/* redesign glue: "Timeline" view button scrolls back to the stage; keeps the
+   view segmented control visually in sync with the Map-of-Time view. */
+(function(){
+  var seg=document.querySelector(".viewseg");
+  if(!seg)return;
+  var btns=seg.querySelectorAll("button");
+  function setActive(el){btns.forEach(function(b){var on=b===el;b.classList.toggle("is-active",on);b.setAttribute("aria-pressed",on);});}
+  var tl=document.getElementById("btnTimeline");
+  if(tl)tl.addEventListener("click",function(){setActive(tl);
+    var s=document.getElementById("tlScroll");if(s)s.scrollIntoView({behavior:"smooth",block:"center"});});
+  var mv=document.getElementById("btnFullView");if(mv)mv.addEventListener("click",function(){setActive(tl);});
+})();
+
+/* profile overlay: appearance (themes), account and your own added events */
+(function(){
+  var p=document.getElementById("profile");
+  if(!p)return;
+  function esc(s){return (s||"").replace(/[&<>"]/g,function(c){return({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c];});}
+  function renderContent(){
+    var el=document.getElementById("profileContent"); if(!el)return;
+    var list=[]; try{list=JSON.parse(localStorage.getItem("hv-user-events")||"[]")||[];}catch(e){}
+    if(!list.length){el.innerHTML='<p class="profile-empty">No events added yet. Sign in, then use “Add event”.</p>';return;}
+    list.sort(function(a,b){return a.y-b.y;});
+    el.innerHTML=list.map(function(v){
+      return '<div class="profile-row"><span class="pr-date">'+esc(v.d||"")+'</span>'+
+             '<span class="pr-title">'+esc(v.t||"")+'</span>'+
+             '<button type="button" class="iconbtn ghost2 pr-edit" data-id="'+esc(v.id)+'">Edit</button></div>';
+    }).join("");
+    el.querySelectorAll(".pr-edit").forEach(function(b){b.onclick=function(){
+      close(); if(window.HV&&HV.editEvent)HV.editEvent(b.dataset.id);
+    };});
+  }
+  function open(){
+    var u=(window.HV&&HV.currentUser)?HV.currentUser():null;
+    var acc=document.getElementById("profileAccount");
+    if(acc)acc.textContent=u?("Signed in as "+u.username+" · "+(u.role==="admin"?"Admin":"User"))
+                            :"You are browsing as a guest. Sign in to add and edit events.";
+    renderContent();
+    p.hidden=false; document.body.style.overflow="hidden";
+    requestAnimationFrame(function(){p.classList.add("show");});
+  }
+  function close(){p.classList.remove("show");document.body.style.overflow="";setTimeout(function(){p.hidden=true;},220);}
+  var btn=document.getElementById("btnProfile"); if(btn)btn.addEventListener("click",open);
+  var x=document.getElementById("profileClose"); if(x)x.addEventListener("click",close);
+  document.addEventListener("keydown",function(e){if(!p.hidden&&e.key==="Escape")close();});
+})();
+</script>
+</body>
+</html>
