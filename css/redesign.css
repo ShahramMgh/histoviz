@@ -503,3 +503,62 @@ body.dash{margin:0;height:100vh;overflow:hidden}
 .rangebar .timebar-year.to{background:var(--gold)}
 .rangebar .timebar-year.to::after{border-top-color:var(--gold)}
 .rangebar .timebar-ticks{top:50px}
+
+/* ============================================================
+   Pass 8 — dashboard v2: floating search/filters, drawer panel,
+   tall era rail, compact period scroller
+   ============================================================ */
+.dash-grid{grid-template-columns:236px minmax(0,1fr);
+  grid-template-areas:"top top" "left center" "bottom bottom"}
+.dash-top{flex-wrap:wrap}
+
+/* left: Eras fill the column and expand vertically */
+.dash-left .era-rail{flex:1 1 auto;min-height:0;padding:.7rem;overflow:auto;display:flex;flex-direction:column;gap:.5rem}
+.dash-left .era-rail-top{margin-bottom:.1rem}
+.dash-left .era-rail .ribbon{flex:1 1 auto!important;min-height:0;height:auto;display:flex;flex-direction:column;gap:6px}
+.dash-left .era-rail .ribbon button{flex:1 1 0!important;min-height:46px;padding:.4rem .6rem}
+.dash-left .era-rail .era-name{-webkit-line-clamp:2}
+
+/* map floating overlay: search + filter accordion (top-left) */
+.map-overlay{position:absolute;left:12px;top:12px;z-index:600;width:min(320px,58%);display:flex;flex-direction:column;gap:.5rem}
+.map-overlay .search{width:100%;background:var(--surface2);box-shadow:var(--shadow-1);border-color:var(--rule)}
+.filter-menu{position:relative;align-self:flex-start}
+.filter-btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--display);font-size:.9rem;
+  background:var(--surface2);color:var(--ink);border:1px solid var(--rule);border-radius:999px;
+  padding:.42rem .9rem;cursor:pointer;box-shadow:var(--shadow-1)}
+.filter-btn .count{color:var(--muted);font-family:var(--body);font-size:.8rem}
+.filter-btn .filter-caret{color:var(--muted);font-size:.7rem}
+.filter-panel{position:absolute;left:0;top:calc(100% + 6px);z-index:10;width:min(330px,74vw);
+  background:var(--surface2);border:1px solid var(--rule);border-radius:var(--r-md);box-shadow:var(--shadow-2);
+  padding:.85rem .95rem;display:flex;flex-direction:column;gap:.9rem;max-height:70vh;overflow:auto}
+.fp-group{display:flex;flex-direction:column;gap:.45rem}
+.fp-label{font-family:var(--display);text-transform:uppercase;letter-spacing:.1em;font-size:.68rem;color:var(--muted)}
+.fp-check{display:flex;align-items:center;gap:.5rem;font-size:.92rem;cursor:pointer;color:var(--ink)}
+.fp-check input{accent-color:var(--lapis)}
+.fp-note{font-size:.72rem;color:var(--muted)}
+.fp-routes{display:flex;flex-direction:column;gap:.3rem}
+.fp-routes label{display:flex;align-items:center;gap:.45rem;cursor:pointer;white-space:nowrap;font-size:.9rem;color:var(--ink)}
+.fp-routes .swatch{width:1.1rem;height:0;border-top-width:3px;border-top-style:solid;display:inline-block}
+.fp-routes input{accent-color:var(--lapis)}
+
+/* map controls compact (top-right) */
+.map-panel{width:150px}
+.dash-top .viewseg button{font-size:.85rem;padding:.34rem .8rem}
+
+/* compact, narrower period scroller */
+.timebar.compact{max-width:760px;margin:0 auto;width:100%;padding:.4rem 1.2rem .55rem;border:0;
+  border-top:1px solid var(--rule);background:var(--surface);box-shadow:none;border-radius:0}
+.timebar.compact .rangebar{height:52px}
+.timebar.compact .rangebar-rail{top:26px;height:6px}
+.timebar.compact .rangebar input[type=range]{top:19px}
+.timebar.compact .rangebar .timebar-year{top:0;font-size:.78rem;padding:.1rem .5rem}
+.timebar.compact .rangebar .timebar-ticks{top:36px}
+.timebar.compact .rangebar .timebar-ticks b{display:none}
+
+/* details drawer sits below the header, opens/closes (slide-over) */
+.dash .panel{top:54px;height:calc(100vh - 54px)}
+
+@media (max-width:900px){
+  .map-overlay{width:min(320px,80%)}
+  .dash .panel{top:0;height:100%}
+}

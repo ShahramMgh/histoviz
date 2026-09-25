@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
 <link rel="stylesheet" href="css/style.css?v=6">
-<link rel="stylesheet" href="css/redesign.css?v=16">
+<link rel="stylesheet" href="css/redesign.css?v=17">
 </head>
 <body class="dash">
 <span id="top"></span>
@@ -33,48 +33,72 @@
     </a>
     <div class="dash-title">Timeline &amp; map of the Iranian plateau</div>
     <div class="masthead-tools">
+      <div class="seg viewseg" role="group" aria-label="Choose a view">
+        <button type="button" id="btnTimeline" class="is-active" aria-pressed="true">Timeline</button>
+        <button type="button" id="btnFullView" aria-pressed="false">Map of Time</button>
+      </div>
       <span class="userchip" id="userChip" hidden><span id="userLabel"></span></span>
       <a class="iconbtn ghost2" href="index.html">← Home</a>
       <button type="button" class="iconbtn ghost2" id="btnProfile" title="Profile, themes &amp; your content">Profile</button>
     </div>
   </header>
 
-  <!-- ===== left: filters + era rail ===== -->
-  <aside class="dash-left" aria-label="Filters and eras">
-    <div class="controls">
-      <div class="controls-in">
-        <input class="search" id="search" type="search" placeholder="Search: Susa, Elam, Hafez…" aria-label="Search the timeline">
-        <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
-        <div class="chips flags" role="group" aria-label="Quick filters">
-          <button type="button" class="chip flag unesco" id="fUnesco" aria-pressed="false">UNESCO</button>
-          <button type="button" class="chip flag debate" id="fDebated" aria-pressed="false">Debated</button>
-        </div>
-        <span class="count" id="count" aria-live="polite"></span>
-      </div>
-    </div>
+  <!-- ===== left: the Eras rail (fills the column) ===== -->
+  <aside class="dash-left" aria-label="Eras">
     <div class="era-rail" aria-label="Jump to an era">
       <div class="era-rail-top">
         <span class="era-rail-title">Eras</span>
-        <div class="seg scaleseg" role="group" aria-label="Era scale">
-          <button type="button" id="btnEven" aria-pressed="true" title="Equal space per era">Even</button>
-          <button type="button" id="btnTrue" aria-pressed="false" title="Heights match real duration">True</button>
+        <div class="seg scaleseg" role="group" aria-label="Era scale" hidden>
+          <button type="button" id="btnEven" aria-pressed="true">Even</button>
+          <button type="button" id="btnTrue" aria-pressed="false">True</button>
         </div>
       </div>
       <div class="ribbon" id="ribbon"></div>
-      <p class="ribbon-note" id="ribbonNote">Pick an era to filter the map &amp; timeline.</p>
+      <p class="ribbon-note" id="ribbonNote" hidden></p>
     </div>
   </aside>
 
-  <!-- ===== center: map + political-map time slider ===== -->
+  <!-- ===== center: map + compact period scroller ===== -->
   <main class="dash-center">
     <div class="mapwrap">
       <div id="map"></div>
-      <div class="dash-viewswitch">
-        <div class="seg viewseg" role="group" aria-label="Choose a view">
-          <button type="button" id="btnTimeline" class="is-active" aria-pressed="true">Timeline</button>
-          <button type="button" id="btnFullView" aria-pressed="false">Map of Time</button>
+
+      <!-- floating search + filter accordion (over the map) -->
+      <div class="map-overlay">
+        <input class="search" id="search" type="search" placeholder="Search: Susa, Elam, Hafez…" aria-label="Search the timeline">
+        <div class="filter-menu">
+          <button type="button" class="filter-btn" id="filterToggle" aria-expanded="false" aria-controls="filterPanel">
+            <span>Filters</span><span class="count" id="count"></span><span class="filter-caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="filter-panel" id="filterPanel" hidden>
+            <div class="fp-group">
+              <span class="fp-label">Themes</span>
+              <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+            </div>
+            <div class="fp-group">
+              <span class="fp-label">Show only</span>
+              <div class="chips flags" role="group" aria-label="Quick filters">
+                <button type="button" class="chip flag unesco" id="fUnesco" aria-pressed="false">UNESCO</button>
+                <button type="button" class="chip flag debate" id="fDebated" aria-pressed="false">Debated</button>
+              </div>
+            </div>
+            <div class="fp-group">
+              <label class="fp-check"><input type="checkbox" id="timeOn" checked> Political map of the region</label>
+              <span class="fp-note">borders © <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a></span>
+            </div>
+            <div class="fp-group">
+              <span class="fp-label">Trade routes</span>
+              <div class="fp-routes">
+                <label><input type="checkbox" class="route-toggle" data-route="royal"><span class="swatch" style="border-top-color:#8A6212"></span> Royal Road</label>
+                <label><input type="checkbox" class="route-toggle" data-route="silk"><span class="swatch" style="border-top-color:#146F70"></span> Silk Road</label>
+                <label><input type="checkbox" class="route-toggle" data-route="lapis"><span class="swatch" style="border-top-color:#5A4E86"></span> Lapis lazuli</label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- map controls (top-right) -->
       <div class="map-panel" aria-label="Map controls">
         <div class="seg mp-seg" role="group" aria-label="Basemap">
           <button type="button" id="mpTerrain" class="is-active" aria-pressed="true">Terrain</button>
@@ -85,19 +109,11 @@
           <button type="button" id="mpReset">Reset</button>
           <button type="button" id="mpZoomIn" aria-label="Zoom in">+</button>
         </div>
-        <div class="mp-routes">
-          <span class="mp-label">Trade routes</span>
-          <label><input type="checkbox" class="route-toggle" data-route="royal"><span class="swatch" style="border-top-color:#8A6212"></span> Royal Road</label>
-          <label><input type="checkbox" class="route-toggle" data-route="silk"><span class="swatch" style="border-top-color:#146F70"></span> Silk Road</label>
-          <label><input type="checkbox" class="route-toggle" data-route="lapis"><span class="swatch" style="border-top-color:#5A4E86"></span> Lapis lazuli</label>
-        </div>
       </div>
     </div>
-    <div class="timebar" aria-label="Period and political map">
-      <div class="timebar-head">
-        <label class="timebar-toggle"><input type="checkbox" id="timeOn" checked> Political map of the region</label>
-        <span class="timebar-src">borders © <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a></span>
-      </div>
+
+    <!-- compact period scroller (from … to) -->
+    <div class="timebar compact" aria-label="Period">
       <div class="timebar-track rangebar">
         <output class="timebar-year from" id="timeFromLbl">3000 BCE</output>
         <output class="timebar-year to" id="timeToLbl">2010 CE</output>
@@ -109,22 +125,6 @@
     </div>
   </main>
 
-  <!-- ===== right: details of the selected event / kingdom ===== -->
-  <aside class="dash-right" aria-label="Details">
-    <div class="scrim" id="scrim" hidden></div>
-    <aside class="panel" id="panel" aria-label="Event details" aria-live="polite">
-      <div class="panel-head">
-        <span class="panel-era" id="panelEra"></span>
-        <div class="nav">
-          <button type="button" id="panelPrev" title="Previous (←)" aria-label="Previous event">‹</button>
-          <button type="button" id="panelNext" title="Next (→)" aria-label="Next event">›</button>
-          <button type="button" id="panelClose" title="Close (Esc)" aria-label="Close">×</button>
-        </div>
-      </div>
-      <div class="panel-body" id="panelBody"><p class="dash-hint">Click an event on the timeline, a pin on the map, or a kingdom on the political map to read its page here. Drag the year slider to watch the region redraw.</p></div>
-    </aside>
-  </aside>
-
   <!-- ===== bottom: horizontal timeline ===== -->
   <section class="dash-bottom" aria-label="Timeline">
     <div class="tl-scroll" id="tlScroll" tabindex="0" aria-label="Horizontal timeline, scroll sideways">
@@ -133,6 +133,20 @@
   </section>
 
 </div>
+
+<!-- ===== details drawer (opens on select, closes with ×) ===== -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="panel" id="panel" aria-label="Event details" aria-live="polite">
+  <div class="panel-head">
+    <span class="panel-era" id="panelEra"></span>
+    <div class="nav">
+      <button type="button" id="panelPrev" title="Previous (←)" aria-label="Previous event">‹</button>
+      <button type="button" id="panelNext" title="Next (→)" aria-label="Next event">›</button>
+      <button type="button" id="panelClose" title="Close (Esc)" aria-label="Close">×</button>
+    </div>
+  </div>
+  <div class="panel-body" id="panelBody"></div>
+</aside>
 
 <!-- Profile: themes, account & your content -->
 <div class="profile" id="profile" hidden role="dialog" aria-modal="true" aria-label="Profile and settings">
@@ -266,15 +280,25 @@
 <script src="js/fullpage.js?v=3"></script>
 <script src="js/mapoftime.js?v=2"></script>
 <script>
-/* view switch: Map of Time overlay; Timeline scrolls the bottom timeline into view */
+/* view switch + filter accordion + profile overlay */
 (function(){
-  var seg=document.querySelector(".viewseg"); if(!seg)return;
-  var btns=seg.querySelectorAll("button");
-  function setActive(el){btns.forEach(function(b){var on=b===el;b.classList.toggle("is-active",on);b.setAttribute("aria-pressed",on);});}
-  var tl=document.getElementById("btnTimeline");
-  if(tl)tl.addEventListener("click",function(){setActive(tl);
-    var s=document.getElementById("tlScroll");if(s)s.scrollIntoView({behavior:"smooth",block:"nearest"});});
-  var mv=document.getElementById("btnFullView");if(mv)mv.addEventListener("click",function(){setActive(tl);});
+  var seg=document.querySelector(".viewseg");
+  if(seg){var btns=seg.querySelectorAll("button");
+    function setActive(el){btns.forEach(function(b){var on=b===el;b.classList.toggle("is-active",on);b.setAttribute("aria-pressed",on);});}
+    var tl=document.getElementById("btnTimeline");
+    if(tl)tl.addEventListener("click",function(){setActive(tl);var s=document.getElementById("tlScroll");if(s)s.scrollIntoView({behavior:"smooth",block:"nearest"});});
+    var mv=document.getElementById("btnFullView");if(mv)mv.addEventListener("click",function(){setActive(tl);});
+  }
+  /* filter accordion */
+  var t=document.getElementById("filterToggle"), fp=document.getElementById("filterPanel");
+  if(t&&fp){
+    t.addEventListener("click",function(e){e.stopPropagation();
+      var open=fp.hasAttribute("hidden");
+      if(open){fp.removeAttribute("hidden");}else{fp.setAttribute("hidden","");}
+      t.setAttribute("aria-expanded",String(open));});
+    fp.addEventListener("click",function(e){e.stopPropagation();});
+    document.addEventListener("click",function(){ if(!fp.hasAttribute("hidden")){fp.setAttribute("hidden","");t.setAttribute("aria-expanded","false");} });
+  }
 })();
 
 /* profile overlay: appearance (themes), account and your own added events */
