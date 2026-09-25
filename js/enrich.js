@@ -682,6 +682,158 @@ window.ENRICH = {
   "refs": [ { "label": "Wikipedia — Battle of Gaugamela", "url": "https://en.wikipedia.org/wiki/Battle_of_Gaugamela" } ],
   "related": [ "e076", "e086", "e087" ]
  },
+ "e086": {
+  "img": [ { "file": "The_weddings_at_Susa,_Alexander_to_Stateira_and_Hephaistion_to_Drypetis_(late_19th_century_engraving).jpg", "alt": "The weddings at Susa", "credit": "The mass weddings at Susa, 324 BCE — late 19th-century engraving · Wikimedia Commons" } ],
+  "body": [
+   "In 324 BCE, at Susa, Alexander the Great staged one of antiquity’s most famous political spectacles: a mass wedding in which he and some ninety of his officers married Persian and Median noblewomen in a single Persian-rite ceremony. Alexander himself took two Achaemenid princesses, Stateira and Parysatis.",
+   "The Susa weddings were the boldest expression of Alexander’s policy of fusing Macedonian and Iranian elites into a single ruling class. He also enrolled 30,000 young Persians trained in Macedonian arms and paid the debts of his soldiers.",
+   "The experiment barely outlived him — most of the Macedonians repudiated their Iranian wives after his death in 323 BCE — but it signalled how thoroughly Iran had absorbed its conqueror, and it prefigured the mixed Greco-Iranian world of the Hellenistic age."
+  ],
+  "refs": [ { "label": "Wikipedia — Susa weddings", "url": "https://en.wikipedia.org/wiki/Susa_weddings" } ],
+  "related": [ "e085", "e087", "e032" ]
+ },
+ "e087": {
+  "img": [ { "file": "Seleucos_Nicator_Louvre_Ma3597_n3.jpg", "alt": "Seleucus I Nicator", "credit": "Bust attributed to Seleucus I Nicator, Louvre · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Seleucos_Nicator_Louvre_Ma3597_n3.jpg", "alt": "Seleucus I bust", "credit": "Bust attributed to Seleucus I Nicator, Louvre · Wikimedia Commons" },
+   { "file": "Seleukos_I_Nikator_Bronze_Roman_100BCE-100CE_Museo_Archeologico_Nazionale_Naples_AN_5590_1.jpg", "alt": "Bronze of Seleucus I", "credit": "Roman bronze bust of Seleucus I, Naples · Wikimedia Commons" },
+   { "file": "Seleucos_I_Bucephalos_coin.jpg", "alt": "Coin of Seleucus I", "credit": "Coin of Seleucus I depicting a horned horse · Wikimedia Commons" }
+  ],
+  "body": [
+   "After Alexander’s death his generals fought for decades over the spoils. Seleucus, once commander of the elite hypaspists, emerged with the largest share: a vast realm reaching from Anatolia and Syria across Iran to the borders of India, ruled from 312 BCE.",
+   "The Seleucids planted Greek-style cities and military colonies across the Iranian plateau — Laodicea (Nahavand), Europos and others — and Greek joined Aramaic as a language of administration. Coins, gymnasia and Hellenistic art spread deep into Iran.",
+   "Yet the empire was always overstretched. The eastern provinces slipped away — Bactria and Parthia broke free in the mid-3rd century BCE — and by about 140 BCE the Parthians had ended Seleucid rule in Iran itself."
+  ],
+  "refs": [ { "label": "Wikipedia — Seleucus I Nicator", "url": "https://en.wikipedia.org/wiki/Seleucus_I_Nicator" } ],
+  "related": [ "e086", "e088", "e090" ]
+ },
+ "e088": {
+  "img": [ { "file": "Ai_Khanoum_Portrait_of_a_man,_found_in_the_administrative_palace.jpg", "alt": "Greek portrait from Ai-Khanoum", "credit": "Portrait of a man from the palace at Ai-Khanoum, Bactria · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Ai_Khanoum_Portrait_of_a_man,_found_in_the_administrative_palace.jpg", "alt": "Greek portrait from Ai-Khanoum", "credit": "Portrait of a man from the palace at Ai-Khanoum · Wikimedia Commons" },
+   { "file": "Ai-Khanoum-gold_stater_of_Antiochos1.jpg", "alt": "Greco-Bactrian coin", "credit": "Gold stater found at Ai-Khanoum · Wikimedia Commons" }
+  ],
+  "body": [
+   "Around 250 BCE the Greek governor of Bactria (northern Afghanistan) broke away from the Seleucids to found an independent kingdom. Cut off from the Mediterranean, these Greco-Bactrian rulers created a remarkable fusion of Greek and Central Asian culture.",
+   "Their city at Ai-Khanoum on the Oxus — with its gymnasium, theatre, Greek inscriptions and Corinthian columns beside Iranian and Indian forms — is one of the easternmost Greek cities ever excavated.",
+   "Greco-Bactrian and later Indo-Greek kings pushed into India and struck some of the finest coins of the ancient world, before steppe nomads (the Yuezhi/Kushans) overran Bactria in the 2nd century BCE."
+  ],
+  "refs": [ { "label": "Wikipedia — Greco-Bactrian Kingdom", "url": "https://en.wikipedia.org/wiki/Greco-Bactrian_Kingdom" } ],
+  "related": [ "e087", "e092", "e050" ]
+ },
+ "e089": {
+  "body": [
+   "On a low rock beside the great cliff of Bisotun reclines a life-size carving of Herakles, cup in hand, a lion-skin beneath him and his club and bow nearby. A Greek inscription dates it to 148 BCE and dedicates it to a Seleucid official.",
+   "It is one of the last Seleucid monuments in Iran, carved just as the Parthians were taking over the region — a small but vivid trace of the Greek presence on the plateau.",
+   "The Herakles sits within the Bisotun World Heritage landscape, a short distance below the far more famous Achaemenid inscription of Darius the Great."
+  ],
+  "refs": [ { "label": "Wikipedia — Behistun Inscription", "url": "https://en.wikipedia.org/wiki/Behistun_Inscription" } ],
+  "related": [ "e075", "e087" ]
+ },
+ "e090": {
+  "img": [ { "file": "Nisa-Overview-2015.JPG", "alt": "Nisa, Parthian capital", "credit": "The ruins of Nisa, an early Parthian royal centre · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Nisa-Overview-2015.JPG", "alt": "Nisa ruins", "credit": "The ruins of Nisa, an early Parthian royal centre near Ashgabat · Wikimedia Commons" },
+   { "file": "Coin_of_Arsaces_I_(1),_Nisa_mint.jpg", "alt": "Coin of Arsaces I", "credit": "Silver drachm of Arsaces I, Nisa mint · Wikimedia Commons" },
+   { "file": "Parthian_mounted_archer.jpg", "alt": "Parthian mounted archer", "credit": "A Parthian mounted archer · Wikimedia Commons" }
+  ],
+  "body": [
+   "Around 247 BCE the Parni, a nomadic people of the north-east, seized the Seleucid province of Parthia. Their chief Arsaces I founded a dynasty — the Arsacids — that would count its years from this date and rule Iran for almost five centuries.",
+   "Early royal centres such as Nisa, near modern Ashgabat, have yielded ivories, wine vessels and archives that show a court blending Iranian and Hellenistic tastes.",
+   "The Parthians made mounted archery and heavy armoured cavalry the terror of their enemies, and from these modest beginnings built the empire that would face Rome across the Euphrates."
+  ],
+  "refs": [ { "label": "Wikipedia — Arsaces I of Parthia", "url": "https://en.wikipedia.org/wiki/Arsaces_I_of_Parthia" } ],
+  "related": [ "e091", "e092", "e093" ]
+ },
+ "e091": {
+  "img": [ { "file": "MithridatesIParthiaCoinHistoryofIran.jpg", "alt": "Mithridates I of Parthia", "credit": "Coin portrait of Mithridates I of Parthia · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "MithridatesIParthiaCoinHistoryofIran.jpg", "alt": "Mithridates I coin", "credit": "Coin portrait of Mithridates I of Parthia · Wikimedia Commons" },
+   { "file": "Coin_of_Mithradates_I_of_Parthia,_Seleucia_mint.jpg", "alt": "Coin, Seleucia mint", "credit": "Coin of Mithridates I, Seleucia mint · Wikimedia Commons" },
+   { "file": "Xong-e_Ashdar_Parthian_relief.jpg", "alt": "Parthian rock relief", "credit": "The Xong-e Noruzi Parthian rock relief, Khuzestan · Wikimedia Commons" }
+  ],
+  "body": [
+   "Between about 148 and 141 BCE Mithridates I transformed Parthia from a frontier principality into an empire, taking Media and then Babylonia from the crumbling Seleucids.",
+   "He founded Ctesiphon on the Tigris, across from the Greek city of Seleucia, which grew into one of the great capitals of the ancient world and the Parthian (and later Sasanian) seat of power.",
+   "Adopting the title ‘King of Kings’ and a tolerant policy toward Greek cities and diverse faiths, Mithridates set the pattern for the long Arsacid ascendancy."
+  ],
+  "refs": [ { "label": "Wikipedia — Mithridates I of Parthia", "url": "https://en.wikipedia.org/wiki/Mithridates_I_of_Parthia" } ],
+  "related": [ "e090", "e092", "e093" ]
+ },
+ "e092": {
+  "img": [ { "file": "Silk_from_Mawangdui_2.jpg", "alt": "Han silk", "credit": "Han-dynasty Chinese silk — the trade the Parthians brokered · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Silk_from_Mawangdui_2.jpg", "alt": "Han silk", "credit": "Han-dynasty Chinese silk, 2nd century BCE · Wikimedia Commons" },
+   { "file": "Tetradrachm_of_Mithridates_II_of_Parthia,_minted_at_Seleucia_between_120_and_109_BC.jpg", "alt": "Coin of Mithridates II", "credit": "Tetradrachm of Mithridates II of Parthia, Seleucia mint · Wikimedia Commons" }
+  ],
+  "body": [
+   "Under Mithridates II (r. c. 124–91 BCE) Parthia reached its height and threw the long-distance trade routes wide open. In 121 BCE a Parthian embassy met envoys of Han China, formally linking the two great empires.",
+   "Parthia sat astride the overland route between China and the Mediterranean, and the Parthians grew rich as the essential middlemen of the Silk Road — passing on Chinese silk to Rome while jealously guarding the secret of its origin.",
+   "Merv and other caravan cities flourished on this traffic, which carried not only goods but ideas, religions and art across the whole of Asia."
+  ],
+  "refs": [ { "label": "Wikipedia — Mithridates II of Parthia", "url": "https://en.wikipedia.org/wiki/Mithridates_II_of_Parthia" } ],
+  "related": [ "e090", "e091", "e093" ]
+ },
+ "e093": {
+  "img": [ { "file": "ParthianCataphract.JPG", "alt": "Parthian cataphract", "credit": "A Parthian armoured horseman (cataphract) · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "ParthianCataphract.JPG", "alt": "Parthian cataphract", "credit": "A Parthian armoured horseman (cataphract) · Wikimedia Commons" },
+   { "file": "Bataille_de_Carrhes.JPG", "alt": "Battle of Carrhae", "credit": "Troop formations at the Battle of Carrhae, 53 BCE · Wikimedia Commons" },
+   { "file": "Bust_of_an_unknown_citizen_in_the_realist_republican_tradition_(Louvre_MR_510).jpg", "alt": "Marcus Licinius Crassus", "credit": "Bust identified with Marcus Licinius Crassus, Louvre · Wikimedia Commons" }
+  ],
+  "body": [
+   "In 53 BCE the Roman triumvir Crassus invaded Parthia in search of glory. On the plain of Carrhae (Harran) the Parthian general Surena met him with a small, all-cavalry army: horse-archers who shot from the saddle and armoured cataphracts who charged home.",
+   "Kept supplied with arrows by a camel train, the archers rained shafts on the tightly packed legions all day — the origin of the ‘Parthian shot’, fired backward at full gallop. Crassus’s army was annihilated and he himself was killed.",
+   "Carrhae was one of Rome’s worst defeats and set the Euphrates as the long frontier between the two empires — a border contested for the next seven centuries."
+  ],
+  "refs": [ { "label": "Wikipedia — Battle of Carrhae", "url": "https://en.wikipedia.org/wiki/Battle_of_Carrhae" } ],
+  "related": [ "e091", "e092", "e098" ]
+ },
+ "e094": {
+  "body": [
+   "The life-size bronze statue of a Parthian nobleman found at Shami in Khuzestan is the finest surviving Parthian sculpture. Moustached and wearing the belted tunic and baggy trousers of the Iranian nobility, he stands with a stiff frontal dignity typical of Parthian art (National Museum of Iran).",
+   "Shami lay in Elymais, a semi-independent kingdom around Izeh in the south-western mountains that survived under Parthian overlordship and left a wealth of rock reliefs.",
+   "Together these works show a distinctively Iranian visual language reasserting itself after the Hellenistic centuries — frontal, formal and aristocratic."
+  ],
+  "refs": [ { "label": "Wikipedia — Elymais", "url": "https://en.wikipedia.org/wiki/Elymais" } ],
+  "related": [ "e091", "e097" ]
+ },
+ "e095": {
+  "body": [
+   "The Parthian centuries left few written records, but a rich oral culture flourished. Wandering minstrels, the gosans, sang heroic tales at court and in the countryside, keeping alive stories that would later be gathered into Ferdowsi’s Shahnameh.",
+   "Much of the ‘Parthian’ heroic cycle — the deeds of Rostam and the house of the Suren — probably took shape in this age, and the great love-romance Vis and Ramin is thought to have Parthian roots.",
+   "So while the Arsacids wrote little down, they carried forward the epic memory of Iran through song."
+  ],
+  "refs": [ { "label": "Wikipedia — Vis and Rāmin", "url": "https://en.wikipedia.org/wiki/Vis_and_R%C4%81min" } ],
+  "related": [ "e144", "e090" ]
+ },
+ "e096": {
+  "body": [
+   "Vologases I (r. c. 51–78 CE) steadied the Parthian empire and settled the long quarrel with Rome over Armenia, securing the Armenian throne for his brother — a compromise that held for generations.",
+   "Later Zoroastrian tradition credits a king ‘Valakhsh’ (Vologases) with the first effort to gather the scattered oral and written fragments of the Avesta, an early step toward preserving the sacred texts.",
+   "He also founded a new commercial city near Ctesiphon, a sign of the era’s prosperity."
+  ],
+  "refs": [ { "label": "Wikipedia — Vologases I of Parthia", "url": "https://en.wikipedia.org/wiki/Vologases_I_of_Parthia" } ],
+  "related": [ "e091", "e113" ]
+ },
+ "e097": {
+  "body": [
+   "On a rocky basalt hill rising from Lake Hamun in Sistan stands Kuh-e Khwaja, a Parthian- and Sasanian-era complex of palace and temple built of mud brick and stone.",
+   "It is famous for rare surviving wall paintings — figures of gods, kings and courtiers — that give a precious glimpse of Iranian painting in an age from which almost nothing else survives.",
+   "The remote sanctuary was a place of pilgrimage, tied in local legend to Zoroastrian and later traditions of the coming saviour."
+  ],
+  "refs": [ { "label": "Wikipedia — Kuh-e Khwajeh", "url": "https://en.wikipedia.org/wiki/Kuh-e_Khwajeh" } ],
+  "related": [ "e037", "e099" ]
+ },
+ "e098": {
+  "body": [
+   "In 116–117 CE the Roman emperor Trajan invaded Parthia, captured the capital Ctesiphon and marched all the way to the Persian Gulf — the furthest east a Roman army ever reached.",
+   "But his gains were shallow: revolts erupted behind him, the fortress-city of Hatra defied his siege, and after his death in 117 his successor Hadrian abandoned the conquests and pulled the frontier back to the Euphrates.",
+   "The campaign showed both the reach of Rome and the resilience of Parthia, which absorbed the blow and endured for another century."
+  ],
+  "refs": [ { "label": "Wikipedia — Trajan's Parthian campaign", "url": "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign" } ],
+  "related": [ "e093", "e091", "e101" ]
+ },
 
  "e026": {
   "img": [
