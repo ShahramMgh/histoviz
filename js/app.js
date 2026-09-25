@@ -338,11 +338,14 @@ function showPolity(props){
 const cluster=L.markerClusterGroup({
   maxClusterRadius:38, showCoverageOnHover:false, spiderfyOnMaxZoom:true,
   iconCreateFunction:c=>L.divIcon({html:"<div>"+c.getChildCount()+"</div>",className:"hv-cluster",iconSize:[34,34]})
-}).addTo(map);
+});                                  // clustering is opt-in (Filters ▸ Cluster nearby sites)
+const plainLayer=L.layerGroup().addTo(map);   // default: small individual points
+let clusterOn=false;
+function markerHost(){return clusterOn?cluster:plainLayer;}
 let markersByIdx={};
 
 function markerStroke(){return effDark()?"#0F1522":"#FFFFFF";}
-function baseStyle(cat){return {radius:6,weight:1.6,color:markerStroke(),fillColor:CATS[cat].color,fillOpacity:.92};}
+function baseStyle(cat){return {radius:4,weight:1,color:markerStroke(),fillColor:CATS[cat].color,fillOpacity:.85};}
 
 /* trade-route overlays (illustrative, approximate) */
 const ROUTES={
@@ -444,7 +447,8 @@ function selectEvent(id){
   const mk=markersByIdx[id];
   if(mk){
     mk.setStyle({color:getComputedStyle(document.documentElement).getPropertyValue("--gold").trim()||"#8A6212",weight:3,fillColor:CATS[v.c].color,fillOpacity:1});
-    mk.setRadius(10);
+    mk.setRadius(11);
+    if(mk.bringToFront)mk.bringToFront();
     map.flyTo([v.lat,v.lng],Math.max(map.getZoom(),6),{duration:.6});  // gentle; no forced un-clustering
     setTimeout(()=>{try{if(map.hasLayer(mk))mk.openPopup();}catch(e){}},650);
   }
@@ -455,7 +459,9 @@ function selectEvent(id){
 /* ---------- Render timeline + markers ---------- */
 function render(){
   const track=$("#tlTrack"); track.innerHTML="";
-  cluster.clearLayers(); markersByIdx={}; visibleOrder=[];
+  cluster.clearLayers(); plainLayer.clearLayers(); markersByIdx={}; visibleOrder=[];
+  if(clusterOn){ if(!map.hasLayer(cluster))cluster.addTo(map); if(map.hasLayer(plainLayer))map.removeLayer(plainLayer); }
+  else { if(!map.hasLayer(plainLayer))plainLayer.addTo(map); if(map.hasLayer(cluster))map.removeLayer(cluster); }
   let shown=0, side=0;
   ERAS.forEach(er=>{
     const items=EV.filter(v=>v.e===er.id&&matches(v,er)).sort((a,b)=>a.y-b.y);
@@ -490,7 +496,7 @@ function render(){
       m.bindTooltip('<b>'+esc(v.d)+'</b> — '+esc(v.t),{direction:"top",offset:[0,-6],opacity:.97,className:"hv-tip"});
       m.bindPopup('<b>'+esc(v.t)+'</b><br>'+esc(v.d)+(v.p?'<br><i>'+esc(v.p)+'</i>':'')+'<br><a href="#'+v.id+'">details ›</a>');
       m.on("click",()=>selectEvent(v.id));
-      cluster.addLayer(m); markersByIdx[v.id]=m;
+      markerHost().addLayer(m); markersByIdx[v.id]=m;
     });
     track.appendChild(group);
   });
@@ -512,6 +518,9 @@ function render(){
 
 /* ---------- React to theme changes (js/theme.js drives the switching) ---------- */
 document.addEventListener("hv-theme",()=>{applyMapTheme();render();});
+
+/* optional marker clustering (off by default → small individual points) */
+(function(){const c=$("#clusterOn");if(c)c.addEventListener("change",()=>{clusterOn=c.checked;render();});})();
 
 document.querySelectorAll(".route-toggle").forEach(cb=>cb.addEventListener("change",()=>{
   const k=cb.dataset.route, lyr=routeLayers[k];
