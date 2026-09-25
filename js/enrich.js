@@ -422,6 +422,102 @@ window.ENRICH = {
   "refs": [ { "label": "Wikipedia — Nebuchadnezzar I", "url": "https://en.wikipedia.org/wiki/Nebuchadnezzar_I" } ],
   "related": [ "e055", "e064" ]
  },
+ "e057": {
+  "body": [
+   "In 843 and 835 BCE the annals of the Assyrian king Shalmaneser III name, for the first time, Parsua (the Persians, then living in the central Zagros) and Madai (the Medes). These are the earliest written references to the two Iranian-speaking peoples who would later found great empires.",
+   "At this stage they were scattered tribal groups paying tribute to Assyria, not the unified kingdoms of later Greek accounts — the very beginning of the Persians and Medes in recorded history."
+  ],
+  "refs": [ { "label": "Wikipedia — Medes", "url": "https://en.wikipedia.org/wiki/Medes" } ],
+  "related": [ "e058", "e065", "e067" ]
+ },
+ "e058": {
+  "body": [
+   "Mannaea was an Iron Age kingdom south of Lake Urmia, wedged between the great powers of Assyria, Urartu and the rising Medes from roughly the 10th to the 7th century BCE. Its people were probably a mix of local and Iranian-speaking groups.",
+   "The famous Ziwiye treasure and the fortified sanctuary of Qalaichi near Bukan are associated with Mannaea, whose art blends Assyrian, Urartian and Scythian styles."
+  ],
+  "refs": [ { "label": "Wikipedia — Mannaeans", "url": "https://en.wikipedia.org/wiki/Mannaeans" } ],
+  "related": [ "e142", "e060", "e059" ]
+ },
+ "e059": {
+  "img": [ { "file": "Naghade-hasanloo3.jpg", "alt": "Hasanlu", "credit": "The citadel mound of Hasanlu, Solduz valley · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Naghade-hasanloo3.jpg", "alt": "Hasanlu mound", "credit": "The citadel mound of Hasanlu, Solduz valley · Wikimedia Commons" },
+   { "file": "Hasanlu-gold-cup.jpg", "alt": "Hasanlu Gold Bowl", "credit": "The Hasanlu Gold Bowl, embossed with gods and chariots · Wikimedia Commons" },
+   { "file": "Hasanloo2.jpg", "alt": "Hasanlu ruins", "credit": "Excavated buildings at Hasanlu · Wikimedia Commons" }
+  ],
+  "body": [
+   "Hasanlu, a fortified town in the Solduz valley of West Azerbaijan, was stormed and burned around 800 BCE — probably by Urartu. The fire sealed the site, preserving buildings, objects and even victims where they fell; Robert Dyson excavated it from 1956.",
+   "Its most celebrated find is the Hasanlu Gold Bowl, embossed with rows of deities, chariots and myth, and among its dead were the two embracing skeletons dubbed the ‘Hasanlu Lovers’."
+  ],
+  "refs": [ { "label": "Wikipedia — Teppe Hasanlu", "url": "https://en.wikipedia.org/wiki/Teppe_Hasanlu" } ],
+  "related": [ "e058", "e060", "e054" ]
+ },
+ "e060": {
+  "img": [ { "file": "Urartian_arch_near_Van._1973.jpg", "alt": "Urartian architecture", "credit": "An Urartian stone arch near Van · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Urartian_arch_near_Van._1973.jpg", "alt": "Urartian arch", "credit": "An Urartian stone arch near Van · Wikimedia Commons" },
+   { "file": "Urartu_Helmet_Fragment_1.jpg", "alt": "Urartian bronze helmet", "credit": "Fragment of a bronze helmet from the reign of Argishti I, Urartu · Wikimedia Commons" },
+   { "file": "Niche_and_base_for_a_destroyed_Urartian_statue._Van._1973.jpg", "alt": "Van citadel niche", "credit": "Niche and base for a destroyed Urartian stele, Van citadel · Wikimedia Commons" }
+  ],
+  "body": [
+   "Urartu was a powerful kingdom of the 9th–6th centuries BCE centred on Lake Van, whose rulers raised massive stone fortresses, rock-cut temples and irrigation works across the highlands of eastern Anatolia and today’s north-western Iran.",
+   "In Iran, fortresses such as Bastam (built under Rusa II) marked the Urartian frontier. A rival and sometimes overlord of the local Iron Age kingdoms, Urartu was finally eclipsed by the Medes."
+  ],
+  "refs": [ { "label": "Wikipedia — Urartu", "url": "https://en.wikipedia.org/wiki/Urartu" } ],
+  "related": [ "e058", "e059", "e065" ]
+ },
+ "e061": {
+  "body": [
+   "Tepe Nush-i Jan, on a rocky spur near Malayer in Hamadan, is one of the best-preserved Median sites, occupied about 750–600 BCE. It held a fort, a columned hall and — remarkably — one of the oldest known fire temples: a lozenge-shaped sanctuary with a stepped fire altar.",
+   "When the settlement was abandoned its buildings were deliberately packed with stone and shale, which is why the mud-brick architecture still stands to roof height — a rare window onto Median religion and building before the Persians."
+  ],
+  "related": [ "e062", "e057", "e079" ]
+ },
+ "e062": {
+  "img": [ { "file": "Hegmataneh.jpg", "alt": "Ecbatana (Hegmataneh)", "credit": "The Hegmataneh mound of ancient Ecbatana, Hamadan · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Hegmataneh.jpg", "alt": "Ecbatana mound", "credit": "The Hegmataneh mound of ancient Ecbatana, Hamadan · Wikimedia Commons" },
+   { "file": "Reza_Abbasi_Museum_(15).jpg", "alt": "Ram's-head rhyton from Ecbatana", "credit": "Golden ram’s-head rhyton found at Ecbatana, Reza Abbasi Museum · Wikimedia Commons" }
+  ],
+  "body": [
+   "According to Herodotus, Deioces united the quarrelsome Median tribes around 700 BCE and built Ecbatana (modern Hamadan) as his capital, ringed by seven concentric walls painted in different colours. Assyrian records, however, show many small Median chiefdoms rather than one early kingdom, so an early unified Media is debated.",
+   "Ecbatana went on to serve as a summer capital of the Achaemenid, Seleucid and Parthian rulers; its great mound, Hegmataneh, still rises in the heart of Hamadan."
+  ],
+  "refs": [ { "label": "Wikipedia — Ecbatana", "url": "https://en.wikipedia.org/wiki/Ecbatana" } ],
+  "related": [ "e065", "e068", "e057" ]
+ },
+ "e063": {
+  "body": [
+   "At Halule on the Tigris in 691 BCE, an alliance of Elam, Babylon and their neighbours fought the Assyrian king Sennacherib to a bloody standstill; both sides claimed the victory.",
+   "The battle shows how Elam and Babylon repeatedly joined forces to resist Assyrian expansion in the century before Assyria’s own fall."
+  ],
+  "refs": [ { "label": "Wikipedia — Battle of Halule", "url": "https://en.wikipedia.org/wiki/Battle_of_Halule" } ],
+  "related": [ "e064", "e056" ]
+ },
+ "e064": {
+  "body": [
+   "Around 647 BCE the Assyrian king Ashurbanipal sacked Susa, the ancient capital of Elam, in revenge for Elamite support of Babylonian revolts. His inscriptions boast of levelling temples, carrying off treasures and desecrating royal tombs, and reliefs at Nineveh show the city in flames.",
+   "The blow shattered the old Elamite state; a smaller Neo-Elamite realm lingered on, while in the emptied highlands the Persians were quietly settling the land of Anshan."
+  ],
+  "refs": [ { "label": "Wikipedia — Ashurbanipal", "url": "https://en.wikipedia.org/wiki/Ashurbanipal" } ],
+  "related": [ "e056", "e067", "e047" ]
+ },
+ "e065": {
+  "body": [
+   "Between 614 and 612 BCE the Median king Cyaxares (Uvakhshtra) and Nabopolassar of Babylon combined to bring down the Assyrian Empire, the terror of the Near East. Cyaxares took the old religious capital Assur in 614; together the allies stormed and destroyed Nineveh in 612.",
+   "Assyria’s fall echoed across the ancient world and in the Hebrew prophets, and it left the Medes the dominant power of the Iranian plateau — until Cyrus."
+  ],
+  "refs": [ { "label": "Wikipedia — Battle of Nineveh (612 BC)", "url": "https://en.wikipedia.org/wiki/Battle_of_Nineveh_(612_BC)" } ],
+  "related": [ "e057", "e062", "e067" ]
+ },
+ "e066": {
+  "body": [
+   "In 585 BCE a long war between the Medes under Cyaxares and the Lydians of Anatolia was halted when a total solar eclipse suddenly darkened the battlefield on the Halys river. Both armies took it as an omen, made peace, and fixed the Halys as their border.",
+   "The eclipse — said to have been foretold by the Greek philosopher Thales — lets astronomers date the battle exactly, making it one of the earliest precisely dated events in history."
+  ],
+  "refs": [ { "label": "Wikipedia — Battle of Halys", "url": "https://en.wikipedia.org/wiki/Battle_of_Halys" } ],
+  "related": [ "e065", "e068" ]
+ },
 
  "e026": {
   "img": [
