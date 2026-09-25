@@ -518,6 +518,170 @@ window.ENRICH = {
   "refs": [ { "label": "Wikipedia — Battle of Halys", "url": "https://en.wikipedia.org/wiki/Battle_of_Halys" } ],
   "related": [ "e065", "e068" ]
  },
+ "e067": {
+  "img": [ { "file": "Cyrus_stele_in_Pasagardae.jpg", "alt": "Four-winged figure, Pasargadae", "credit": "The four-winged guardian relief at Pasargadae, traditionally linked to Cyrus · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Cyrus_stele_in_Pasagardae.jpg", "alt": "Four-winged figure", "credit": "The four-winged guardian relief at Pasargadae · Wikimedia Commons" },
+   { "file": "Cyrus_II_(The_Great)_(cropped).jpg", "alt": "Cyrus the Great", "credit": "An imagined portrait of Cyrus the Great · Wikimedia Commons" }
+  ],
+  "body": [
+   "Around 559 BCE Cyrus II became king of Anshan in Fars, then a Persian vassal of the Medes. His own inscriptions call his ancestors kings of Anshan; Herodotus makes him a grandson of the Median king Astyages.",
+   "Within a decade he would overthrow his Median overlords and begin building the first Persian Empire — the greatest the world had yet seen."
+  ],
+  "refs": [ { "label": "Wikipedia — Cyrus the Great", "url": "https://en.wikipedia.org/wiki/Cyrus_the_Great" } ],
+  "related": [ "e068", "e070", "e131" ]
+ },
+ "e068": {
+  "img": [ { "file": "Jean_Charles_Nicaise_Perrin_-_Cyrus_and_Astyages_-_WGA17209.jpg", "alt": "Cyrus and Astyages", "credit": "Cyrus and Astyages, by Jean-Charles Nicaise Perrin · Wikimedia Commons" } ],
+  "body": [
+   "In 550 BCE Cyrus rebelled against his Median overlord Astyages. According to Herodotus the Median army defected to him, and Cyrus took the capital Ecbatana without a hard fight.",
+   "The Medes were not so much conquered as absorbed: they became partners in the new Persian state, and Median nobles and customs stayed influential throughout the empire."
+  ],
+  "refs": [ { "label": "Wikipedia — Astyages", "url": "https://en.wikipedia.org/wiki/Astyages" } ],
+  "related": [ "e062", "e067", "e065" ]
+ },
+ "e069": {
+  "img": [ { "file": "Croesus_portrait.jpg", "alt": "Croesus of Lydia", "credit": "Croesus, the wealthy king of Lydia · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Croesus_portrait.jpg", "alt": "Croesus", "credit": "Croesus, the wealthy king of Lydia · Wikimedia Commons" },
+   { "file": "Kroisos._Circa_564-53-550-39_BC._AV_Stater_(16mm,_10.76_g)._Heavy_series._Sardes_mint.jpg", "alt": "Lydian gold coin", "credit": "Gold stater of Croesus, Sardis mint, c. 550 BCE — among the first coins · Wikimedia Commons" }
+  ],
+  "body": [
+   "About 547–546 BCE Cyrus marched west and defeated Croesus, the fabulously rich king of Lydia, capturing his capital Sardis; the Greek cities of Ionia then came under Persian rule.",
+   "Lydia had minted some of the world’s first coins. With its conquest Persia gained the wealth of Anatolia and a frontier facing the Greek world — the seed of later conflict."
+  ],
+  "refs": [ { "label": "Wikipedia — Croesus", "url": "https://en.wikipedia.org/wiki/Croesus" } ],
+  "related": [ "e067", "e080", "e072" ]
+ },
+ "e072": {
+  "body": [
+   "Cyrus the Great died around 530 BCE on campaign in Central Asia — according to Herodotus, fighting the Massagetae, a steppe people led by their queen Tomyris. His body was brought back to Pasargadae.",
+   "He left an empire stretching from the Aegean to the edge of India, and a reputation for tolerance that echoes in the Cyrus Cylinder and in the Hebrew Bible."
+  ],
+  "refs": [ { "label": "Wikipedia — Cyrus the Great", "url": "https://en.wikipedia.org/wiki/Cyrus_the_Great" } ],
+  "related": [ "e070", "e071", "e073" ]
+ },
+ "e073": {
+  "img": [ { "file": "Stela_Cambyses_Apis_closeup.jpg", "alt": "Cambyses and the Apis bull", "credit": "Cambyses II kneeling before the Apis bull, Egyptian stela · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Stela_Cambyses_Apis_closeup.jpg", "alt": "Cambyses and Apis", "credit": "Cambyses II before the Apis bull, Egyptian stela · Wikimedia Commons" },
+   { "file": "Meeting_Between_Cambyses_II_and_Psammetichus_III.jpg", "alt": "Cambyses and Psammetichus III", "credit": "A 19th-century imagining of Cambyses II meeting the defeated pharaoh Psammetichus III · Wikimedia Commons" }
+  ],
+  "body": [
+   "In 525 BCE Cambyses II, son of Cyrus, defeated the Egyptian pharaoh at Pelusium and made Egypt a Persian province, carrying the empire to the Nile.",
+   "Later Greek writers accused him of sacrilege against Egypt’s gods, but Egyptian sources show him also honouring the Apis bull and taking pharaonic titles — the propaganda of the conquered coloured his memory."
+  ],
+  "refs": [ { "label": "Wikipedia — Cambyses II", "url": "https://en.wikipedia.org/wiki/Cambyses_II" } ],
+  "related": [ "e072", "e074" ]
+ },
+ "e074": {
+  "img": [ { "file": "Darius_detail_on_the_Darius_vase.jpg", "alt": "Darius I", "credit": "Darius I as imagined by a Greek painter (the Darius Vase) · Wikimedia Commons" } ],
+  "body": [
+   "After Cambyses died in 522 BCE and the disputed killing of Bardiya (whom Darius calls the impostor Gaumata), Darius I seized the Achaemenid throne and spent a year crushing revolts that flared across the empire.",
+   "Darius told his version of these events on the great cliff of Bisotun, and reorganised the state so thoroughly that he is often seen as its true second founder."
+  ],
+  "refs": [ { "label": "Wikipedia — Darius the Great", "url": "https://en.wikipedia.org/wiki/Darius_the_Great" } ],
+  "related": [ "e075", "e076", "e077" ]
+ },
+ "e077": {
+  "img": [ { "file": "Achaemenid_coin_daric_420BC_front.jpg", "alt": "Gold daric", "credit": "An Achaemenid gold daric showing the royal archer · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Achaemenid_coin_daric_420BC_front.jpg", "alt": "Gold daric", "credit": "An Achaemenid gold daric showing the royal archer, c. 420 BCE · Wikimedia Commons" },
+   { "file": "AchaemenidDaric4thCenturyBCE.jpg", "alt": "Daric", "credit": "An Achaemenid daric, 4th century BCE · Wikimedia Commons" }
+  ],
+  "body": [
+   "Darius I turned Cyrus’s conquests into a lasting state. He divided it into satrapies (provinces) under governors, built the Royal Road from Susa to Sardis with relay stations for royal couriers, and issued the gold daric — one of history’s first imperial coinages.",
+   "Aramaic served as a common administrative language, and a canal was cut from the Nile to the Red Sea. This machinery let a single king rule from the Aegean to the Indus."
+  ],
+  "refs": [ { "label": "Wikipedia — Royal Road", "url": "https://en.wikipedia.org/wiki/Royal_Road" } ],
+  "related": [ "e076", "e078", "e074" ]
+ },
+ "e078": {
+  "img": [ { "file": "Ghasabe_Qanats_of_Gonabad2.jpg", "alt": "Qanat of Gonabad", "credit": "A channel of the ancient Qanats of Ghasabeh, Gonabad · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Ghasabe_Qanats_of_Gonabad2.jpg", "alt": "Qanat of Gonabad", "credit": "The ancient Qanats of Ghasabeh, Gonabad · Wikimedia Commons" },
+   { "file": "Qanat_Kashan.jpg", "alt": "Qanat at Kashan", "credit": "A qanat surfacing in the Fin Garden, Kashan · Wikimedia Commons" }
+  ],
+  "body": [
+   "Qanats are underground channels that tap groundwater in the hills and lead it by gentle gravity to the surface, letting farms and towns flourish in Iran’s arid interior. Their origins reach into the 1st millennium BCE, and the technology spread across the Achaemenid empire and far beyond.",
+   "Iran’s qanats were inscribed by UNESCO in 2016; some, still in use today, run for tens of kilometres underground."
+  ],
+  "refs": [ { "label": "Wikipedia — Qanat", "url": "https://en.wikipedia.org/wiki/Qanat" } ],
+  "related": [ "e077", "e103" ]
+ },
+ "e079": {
+  "body": [
+   "Achaemenid royal inscriptions praise the great god Ahuramazda as the giver of kingship, yet the Persepolis administrative tablets record rations for offerings to Elamite and other gods too. How far the early Persian kings were ‘Zoroastrian’ is much debated.",
+   "From Artaxerxes II the gods Mithra and Anahita join Ahuramazda in the royal formulas — a sign of the court’s evolving religion."
+  ],
+  "refs": [ { "label": "Wikipedia — Ahura Mazda", "url": "https://en.wikipedia.org/wiki/Ahura_Mazda" } ],
+  "related": [ "e052", "e076", "e083" ]
+ },
+ "e080": {
+  "img": [ { "file": "Scene_of_the_Battle_of_Marathon.jpg", "alt": "Battle of Marathon", "credit": "A depiction of the Battle of Marathon · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Scene_of_the_Battle_of_Marathon.jpg", "alt": "Battle of Marathon", "credit": "A depiction of the Battle of Marathon · Wikimedia Commons" },
+   { "file": "Plain_of_Marathon_with_Pine_Forest_and_Wetlands,_May_2015_-_panoramio.jpg", "alt": "Plain of Marathon", "credit": "The plain of Marathon today · Wikimedia Commons" }
+  ],
+  "body": [
+   "From 499 BCE the Greek cities of Ionia rose against Persian rule; Persia crushed the revolt and sacked Miletus. In 490 BCE Darius sent a punitive expedition to Greece, but the Athenians defeated it at Marathon.",
+   "Marathon was a minor setback for the vast empire, but for the Greeks it became a founding legend — and the start of the long Greco-Persian wars."
+  ],
+  "refs": [ { "label": "Wikipedia — Battle of Marathon", "url": "https://en.wikipedia.org/wiki/Battle_of_Marathon" } ],
+  "related": [ "e069", "e082" ]
+ },
+ "e081": {
+  "img": [ { "file": "Naqsh-e_Rustam_necropolis_in_Iran.jpg", "alt": "Naqsh-e Rostam", "credit": "The royal Achaemenid tombs of Naqsh-e Rostam · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Naqsh-e_Rustam_necropolis_in_Iran.jpg", "alt": "Naqsh-e Rostam necropolis", "credit": "The royal Achaemenid tombs of Naqsh-e Rostam · Wikimedia Commons" },
+   { "file": "Xerxes_tomb_at_Naqsh-e_Rostam-_upper_register_(4614878357).jpg", "alt": "Tomb of Xerxes", "credit": "Upper register of the tomb of Xerxes I, Naqsh-e Rostam · Wikimedia Commons" },
+   { "file": "Tomb_of_Darius_I_DNa_inscription.jpg", "alt": "DNa inscription", "credit": "The DNa inscription on the tomb of Darius I · Wikimedia Commons" }
+  ],
+  "body": [
+   "In the cliff of Naqsh-e Rostam near Persepolis, four Achaemenid kings — Darius I and three successors — cut their cross-shaped rock tombs high above the ground. Each façade shows the king before a fire altar, the platform upheld by the empire’s many peoples.",
+   "Beside them stand later Sasanian victory reliefs and the enigmatic stone tower called the Ka’ba-ye Zartosht, whose purpose is still unknown."
+  ],
+  "refs": [ { "label": "Wikipedia — Naqsh-e Rostam", "url": "https://en.wikipedia.org/wiki/Naqsh-e_Rostam" } ],
+  "related": [ "e076", "e102", "e075" ]
+ },
+ "e082": {
+  "img": [ { "file": "Achaemenid_king_killing_a_Greek_hoplite.jpg", "alt": "Persian king and Greek hoplite", "credit": "A Persian king killing a Greek hoplite, seal impression · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Achaemenid_king_killing_a_Greek_hoplite.jpg", "alt": "Persian king and Greek hoplite", "credit": "A Persian king killing a Greek hoplite, seal impression · Wikimedia Commons" },
+   { "file": "Xerxes_all_ethnicities.jpg", "alt": "Soldiers of the empire", "credit": "The many peoples of the empire, from the tomb of Xerxes I · Wikimedia Commons" }
+  ],
+  "body": [
+   "In 480–479 BCE Xerxes I led a huge invasion of Greece. He forced the pass of Thermopylae and burned Athens, but his fleet was crushed at Salamis and his army defeated at Plataea and Mycale.",
+   "The failure ended Persian ambitions in mainland Greece, though the empire remained the dominant power of western Asia for another century and a half."
+  ],
+  "refs": [ { "label": "Wikipedia — Xerxes I", "url": "https://en.wikipedia.org/wiki/Xerxes_I" } ],
+  "related": [ "e080", "e076", "e083" ]
+ },
+ "e083": {
+  "body": [
+   "In 401 BCE Cyrus the Younger marched against his brother, King Artaxerxes II, and died at the battle of Cunaxa near Babylon. The Greek mercenaries in his army — the ‘Ten Thousand’ — then fought their way home, a march immortalised in Xenophon’s Anabasis.",
+   "Artaxerxes II is also the first Achaemenid king whose inscriptions invoke Mithra and Anahita beside Ahuramazda."
+  ],
+  "refs": [ { "label": "Wikipedia — Battle of Cunaxa", "url": "https://en.wikipedia.org/wiki/Battle_of_Cunaxa" } ],
+  "related": [ "e079", "e082", "e084" ]
+ },
+ "e084": {
+  "body": [
+   "Egypt had thrown off Persian rule for some sixty years. Around 343 BCE Artaxerxes III reconquered it, briefly restoring the empire to its full extent on the eve of Alexander.",
+   "His reign was marked by a ruthless consolidation of a realm strained by repeated satrapal revolts."
+  ],
+  "refs": [ { "label": "Wikipedia — Artaxerxes III", "url": "https://en.wikipedia.org/wiki/Artaxerxes_III" } ],
+  "related": [ "e073", "e085" ]
+ },
+ "e085": {
+  "img": [ { "file": "Alexander_Mosaic_detail_of_Alexander_the_Great_(3x4_cropped).jpg", "alt": "Alexander the Great", "credit": "Alexander the Great, detail of the Alexander Mosaic, Pompeii · Wikimedia Commons" } ],
+  "body": [
+   "In three great battles — Granicus (334), Issus (333) and Gaugamela (331 BCE) — Alexander of Macedon shattered the Achaemenid army. Persepolis was burned in 330 BCE, and the last king, Darius III, was murdered by his own satrap Bessus.",
+   "Two centuries of Persian empire ended — but the conquest opened a Hellenistic age in which the Greek and Iranian worlds mingled."
+  ],
+  "refs": [ { "label": "Wikipedia — Battle of Gaugamela", "url": "https://en.wikipedia.org/wiki/Battle_of_Gaugamela" } ],
+  "related": [ "e076", "e086", "e087" ]
+ },
 
  "e026": {
   "img": [
