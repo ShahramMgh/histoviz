@@ -834,6 +834,276 @@ window.ENRICH = {
   "refs": [ { "label": "Wikipedia — Trajan's Parthian campaign", "url": "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign" } ],
   "related": [ "e093", "e091", "e101" ]
  },
+ "e099": {
+  "img": [ { "file": "Ardashir_i's_relief_at_Firuzabad,_Fars,_Iran.JPG", "alt": "Ardashir I's victory relief at Firuzabad", "credit": "Ardashir I’s equestrian victory relief at Firuzabad, Fars · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Ardashir_i's_relief_at_Firuzabad,_Fars,_Iran.JPG", "alt": "Firuzabad relief", "credit": "Ardashir I’s equestrian victory relief at Firuzabad · Wikimedia Commons" },
+   { "file": "Ghal'eh_Dokhtar2.jpg", "alt": "Qal'eh Dokhtar", "credit": "Qal’eh Dokhtar, Ardashir’s cliff fortress near Firuzabad · Wikimedia Commons" },
+   { "file": "Ardashir_Babakan's_Palace_in_FiruzAbad.JPG", "alt": "Palace of Ardashir", "credit": "The palace of Ardashir at Firuzabad · Wikimedia Commons" },
+   { "file": "Dinar_of_Ardashir_I_(cropped).jpg", "alt": "Coin of Ardashir I", "credit": "Gold dinar of Ardashir I · Wikimedia Commons" }
+  ],
+  "body": [
+   "In 224 CE Ardashir, a prince from Fars who traced his line to the priest Sasan, defeated and killed the last Parthian king, Artabanus IV, at the battle of Hormozgan. Crowned ‘King of Kings’, he founded the Sasanian dynasty that would rule Iran for more than four centuries.",
+   "Ardashir rebuilt the empire on new foundations: a strong central monarchy bound tightly to a powerful Zoroastrian priesthood, throne and sacred fire together. He claimed the heritage of the Achaemenids and carved his triumphs into the same living rock at Naqsh-e Rostam where Darius lay buried.",
+   "His homeland in Fars still holds his ambition in stone — the round city of Ardashir-Khwarrah (Gor, modern Firuzabad), the towering cliff fortress of Qal’eh Dokhtar and his columned palace, together inscribed as the Sasanian Archaeological Landscape of Fars (UNESCO 2018)."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Ardashir I", "url": "https://en.wikipedia.org/wiki/Ardashir_I" },
+   { "label": "UNESCO — Sasanian Archaeological Landscape of Fars", "url": "https://whc.unesco.org/en/list/1568" }
+  ],
+  "related": [ "e102", "e106", "e112" ]
+ },
+ "e100": {
+  "img": [ { "file": "Seal_of_Mani_(cleaned_up)._Seal_with_figure_of_Mani,_possibly_3rd_century_CE,_possibly_Irak._Cabinet_des_Médailles,_Paris.jpg", "alt": "Seal of Mani", "credit": "Rock-crystal seal with the figure of Mani, Cabinet des Médailles, Paris · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Seal_of_Mani_(cleaned_up)._Seal_with_figure_of_Mani,_possibly_3rd_century_CE,_possibly_Irak._Cabinet_des_Médailles,_Paris.jpg", "alt": "Seal of Mani", "credit": "Rock-crystal seal with the figure of Mani · Wikimedia Commons" },
+   { "file": "Mani's_Community_Established_(Detail_1).jpg", "alt": "Manichaean painting", "credit": "‘Mani’s Community Established’, Manichaean painting · Wikimedia Commons" },
+   { "file": "Shahname_-_Mani_death_(cropped).jpg", "alt": "Death of Mani", "credit": "The death of Mani, from a Shahnameh manuscript · Wikimedia Commons" },
+   { "file": "Mani_of_Cao'an;_the_Buddha_of_Light.jpg", "alt": "Mani as Buddha of Light", "credit": "Mani venerated as the ‘Buddha of Light’, Cao’an temple, China · Wikimedia Commons" }
+  ],
+  "body": [
+   "Around 240 CE, in the Sasanian realm, the visionary Mani (216–274/277 CE) began to preach a new universal religion. Raised in a Jewish-Christian baptist community in Mesopotamia, he proclaimed himself the last in a line of prophets that included Zoroaster, the Buddha and Jesus.",
+   "Manichaeism taught a stark dualism of Light and Darkness and offered an elaborate cosmic myth, a disciplined ‘elect’ and a wider class of lay ‘hearers’. Mani wrote and illustrated his own scriptures, and his missionaries carried the faith west to Roman Africa and east along the Silk Road as far as China, where it survived for a thousand years.",
+   "At first tolerated by Shapur I, Mani fell foul of the Zoroastrian priesthood under Bahram I and died in prison. His religion, persecuted almost everywhere, nonetheless became one of the great world faiths of late antiquity."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Mani (prophet)", "url": "https://en.wikipedia.org/wiki/Mani_(prophet)" },
+   { "label": "Wikipedia — Manichaeism", "url": "https://en.wikipedia.org/wiki/Manichaeism" }
+  ],
+  "related": [ "e105", "e101", "e092" ]
+ },
+ "e101": {
+  "img": [ { "file": "Gold_coin_of_Shapur_I,_minted_at_Ctesiphon_between_260–272.jpg", "alt": "Gold coin of Shapur I", "credit": "Gold coin of Shapur I, Ctesiphon mint · Wikimedia Commons" } ],
+  "body": [
+   "Shapur I (r. 240–270 CE), Ardashir’s son, made the young Sasanian empire a match for Rome. In 244 CE his forces met the Roman emperor Gordian III near Misiche on the Euphrates; Gordian died in the campaign, and his successor Philip the Arab was forced to pay a huge ransom for peace.",
+   "Shapur recorded his victories in a triumphant trilingual inscription on the Ka‘ba-ye Zartosht at Naqsh-e Rostam — the ‘Res Gestae Divi Saporis’ — boasting that he had defeated three Roman emperors: Gordian, Philip and, later, Valerian.",
+   "The wealth and prisoners from these wars fuelled a wave of building across Iran, from new cities such as Bishapur to the great rock reliefs that showed the King of Kings towering over kneeling Romans."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Shapur I", "url": "https://en.wikipedia.org/wiki/Shapur_I" },
+   { "label": "Wikipedia — Battle of Misiche", "url": "https://en.wikipedia.org/wiki/Battle_of_Misiche" }
+  ],
+  "related": [ "e102", "e103", "e100" ]
+ },
+ "e102": {
+  "img": [ { "file": "Cameo_Shapur_Valerianus_Bab360_CdM_Paris.jpg", "alt": "Shapur I captures Valerian", "credit": "Cameo of Shapur I seizing the emperor Valerian, Cabinet des Médailles, Paris · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Cameo_Shapur_Valerianus_Bab360_CdM_Paris.jpg", "alt": "Shapur and Valerian cameo", "credit": "Cameo of Shapur I seizing the emperor Valerian · Wikimedia Commons" },
+   { "file": "Naghsh-e_rostam,_Irán,_2016-09-24,_DD_12.jpg", "alt": "Triumph relief at Naqsh-e Rostam", "credit": "Shapur I’s triumph over the Romans, rock relief at Naqsh-e Rostam · Wikimedia Commons" },
+   { "file": "Valerianus_Ny_Carlsberg_Glyptotek_IN3387.jpg", "alt": "Bust of Valerian", "credit": "Bust of the Roman emperor Valerian · Wikimedia Commons" },
+   { "file": "HumiliationValerianusHolbein.jpg", "alt": "Humiliation of Valerian", "credit": "‘The Humiliation of Valerian’, drawing by Hans Holbein · Wikimedia Commons" }
+  ],
+  "body": [
+   "In 260 CE Shapur I won the most famous victory in Sasanian history: near Edessa he defeated and captured the Roman emperor Valerian himself — the only Roman emperor ever taken alive by a foreign enemy.",
+   "The humiliation was carved into the cliffs of Naqsh-e Rostam and Bishapur, where Shapur sits mounted while Valerian stands captive and the emperor Philip kneels in submission. A famous cameo in Paris shows the king seizing Valerian by the wrist.",
+   "Later legend claimed Valerian ended his days as a living footstool for the king and, at his death, was flayed. Whatever the truth, the capture became the enduring image of Sasanian power over Rome."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Valerian (emperor)", "url": "https://en.wikipedia.org/wiki/Valerian_(emperor)" },
+   { "label": "Wikipedia — Naqsh-e Rostam", "url": "https://en.wikipedia.org/wiki/Naqsh-e_Rostam" }
+  ],
+  "related": [ "e101", "e099", "e075" ]
+ },
+ "e103": {
+  "img": [ { "file": "Ceremonial_Hall_of_Bishapur_(Kazerun)_2.jpg", "alt": "Bishapur ceremonial hall", "credit": "The ceremonial hall of Bishapur, Kazerun · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Ceremonial_Hall_of_Bishapur_(Kazerun)_2.jpg", "alt": "Bishapur hall", "credit": "The ceremonial hall of Bishapur · Wikimedia Commons" },
+   { "file": "Anahita_Temple_of_Bishapur_(Kazerun)_1.jpg", "alt": "Anahita temple", "credit": "The sunken ‘Anahita temple’ at Bishapur · Wikimedia Commons" },
+   { "file": "Bishapour_palaistemple.jpg", "alt": "Bishapur palace-temple", "credit": "The palace-temple complex of Bishapur · Wikimedia Commons" },
+   { "file": "Bishapur_by_Eugène_Flandin.jpg", "alt": "Bishapur engraving", "credit": "Bishapur drawn by Eugène Flandin, 19th century · Wikimedia Commons" }
+  ],
+  "body": [
+   "To celebrate his triumphs Shapur I founded a splendid new city, Bishapur, on the road between Fars and Khuzestan, laid out on a grid said to have been surveyed by Roman prisoners of war.",
+   "Its ruins include a great columned hall, a mysterious sunken ‘Anahita temple’ fed by the river, and floor mosaics in Roman style. In the nearby gorge of Tang-e Chogan, six huge rock reliefs celebrate Sasanian victories, including the submission of the Romans.",
+   "Bishapur blended Iranian planning with Greco-Roman craftsmanship — a monument to the cosmopolitan confidence of the early Sasanian state."
+  ],
+  "refs": [ { "label": "Wikipedia — Bishapur", "url": "https://en.wikipedia.org/wiki/Bishapur" } ],
+  "related": [ "e101", "e102", "e099" ]
+ },
+ "e104": {
+  "img": [ { "file": "Ancient_City_of_Gandhi_Shapour_01.jpg", "alt": "Ruins of Gondishapur", "credit": "The ruins of the ancient city of Gondishapur, Khuzestan · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Ancient_City_of_Gandhi_Shapour_01.jpg", "alt": "Gondishapur ruins", "credit": "Ruins of Gondishapur · Wikimedia Commons" },
+   { "file": "Ancient_City_of_Gandhi_Shapour_02.jpg", "alt": "Gondishapur site", "credit": "The site of Gondishapur · Wikimedia Commons" },
+   { "file": "Ancient_City_of_Gandhi_Shapour_03.jpg", "alt": "Gondishapur excavations", "credit": "Excavations at Gondishapur · Wikimedia Commons" }
+  ],
+  "body": [
+   "At Gondishapur in Khuzestan the Sasanians created what became the greatest centre of learning in the empire. Tradition credits Shapur I, and later Khosrow I, with settling Greek prisoners and welcoming Nestorian Christian and Indian scholars there.",
+   "Its academy and hospital brought together Greek, Syriac, Indian and Persian medicine, philosophy and astronomy, and helped pioneer the teaching hospital as an institution. When the pagan schools of Athens were closed in 529 CE, some of their philosophers found refuge here.",
+   "The learning gathered at Gondishapur passed, after the Islamic conquest, into the great translation movement of Baghdad — making the city a crucial bridge between the ancient and the medieval worlds."
+  ],
+  "refs": [ { "label": "Wikipedia — Academy of Gondishapur", "url": "https://en.wikipedia.org/wiki/Academy_of_Gondishapur" } ],
+  "related": [ "e112", "e103", "e100" ]
+ },
+ "e105": {
+  "img": [ { "file": "Naqshe_Rajab_Darafsh_Ordibehesht_93_(1).jpg", "alt": "Naqsh-e Rajab", "credit": "The Sasanian reliefs and inscriptions at Naqsh-e Rajab, near Persepolis · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Naqshe_Rajab_Darafsh_Ordibehesht_93_(1).jpg", "alt": "Naqsh-e Rajab", "credit": "The Sasanian reliefs at Naqsh-e Rajab, where Kartir left an inscription · Wikimedia Commons" },
+   { "file": "Coin_of_the_Sasanian_king_Bahram_I,_Ctesiphon_mint.jpg", "alt": "Coin of Bahram I", "credit": "Coin of Bahram I, under whom Mani was executed · Wikimedia Commons" }
+  ],
+  "body": [
+   "As the priest Kartir rose to power under a succession of kings, Zoroastrianism was forged into a militant state church. In a series of rock inscriptions — a rare honour for a commoner — Kartir boasted of founding fires, promoting the priesthood and striking down ‘heretics’.",
+   "Under his influence Bahram I had the prophet Mani arrested and executed around 276 CE, and Kartir claimed to have acted against Jews, Christians, Buddhists, Brahmins and Manichaeans alike.",
+   "His campaign fixed Zoroastrian orthodoxy at the heart of the Sasanian state — a fusion of throne and altar that would shape Iran for centuries."
+  ],
+  "refs": [ { "label": "Wikipedia — Kartir", "url": "https://en.wikipedia.org/wiki/Kartir" } ],
+  "related": [ "e100", "e099", "e113" ]
+ },
+ "e106": {
+  "img": [ { "file": "Bust_of_Shapur_II_the_Great_in_the_Metropolitan_Museum_of_Art.jpg", "alt": "Bust of Shapur II", "credit": "Silver bust of Shapur II, Metropolitan Museum of Art · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Bust_of_Shapur_II_the_Great_in_the_Metropolitan_Museum_of_Art.jpg", "alt": "Bust of Shapur II", "credit": "Silver bust of Shapur II · Wikimedia Commons" },
+   { "file": "British_Museum_Shapur_II_Plate.jpg", "alt": "Shapur II hunting plate", "credit": "Silver plate of Shapur II hunting, British Museum · Wikimedia Commons" },
+   { "file": "Gold_coin_of_Shapur_II,_struck_c._320.jpg", "alt": "Coin of Shapur II", "credit": "Gold coin of Shapur II, c. 320 CE · Wikimedia Commons" },
+   { "file": "Taq-e_Bostan_-_High-relief_Shapur_II_and_Shapur_III.jpg", "alt": "Relief of Shapur II and III", "credit": "Rock relief of Shapur II and Shapur III, Taq-e Bostan · Wikimedia Commons" }
+  ],
+  "body": [
+   "Shapur II (r. 309–379 CE) was, legend says, crowned while still in his mother’s womb, and reigned for seventy years — the longest reign in Iranian history. Under him the Sasanian empire recovered and reached a new height of power.",
+   "He crushed Arab raiders, campaigned relentlessly against Rome, and in 363 CE trapped the invading emperor Julian, who was killed in the retreat; the humbled Romans ceded Nisibis and much of the frontier. He also resettled nomads and rebuilt cities.",
+   "A militant Zoroastrian, Shapur II persecuted the empire’s growing Christian population, now suspect as co-religionists of Rome. His long reign left the Sasanian state stronger and more centralised than ever."
+  ],
+  "refs": [ { "label": "Wikipedia — Shapur II", "url": "https://en.wikipedia.org/wiki/Shapur_II" } ],
+  "related": [ "e102", "e112", "e099" ]
+ },
+ "e107": {
+  "img": [ { "file": "Plate_with_a_hunting_scene_from_the_tale_of_Bahram_Gur_and_Azadeh_MET_DT1634.jpg", "alt": "Bahram Gur and Azadeh", "credit": "Silver plate of Bahram Gur hunting with the harpist Azadeh, Metropolitan Museum · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Plate_with_a_hunting_scene_from_the_tale_of_Bahram_Gur_and_Azadeh_MET_DT1634.jpg", "alt": "Bahram Gur and Azadeh", "credit": "Silver plate of Bahram Gur and Azadeh · Wikimedia Commons" },
+   { "file": "Bowl_Bahram_Gur_Azadeh_Met_57.36.14_n02.jpg", "alt": "Bahram Gur bowl", "credit": "Gilded bowl depicting Bahram Gur and Azadeh · Wikimedia Commons" },
+   { "file": "Drachm_of_Bahram_V,_Rew-Ardashir_mint.jpg", "alt": "Coin of Bahram V", "credit": "Silver drachm of Bahram V · Wikimedia Commons" }
+  ],
+  "body": [
+   "Bahram V (r. 420–438 CE), remembered as Bahram Gur (‘the wild ass’) for his love of the hunt, became one of the most beloved kings of Persian legend — hero of countless tales and of Nezami’s romance ‘Haft Peykar’ (The Seven Beauties).",
+   "History records a capable ruler who won the throne with Arab help, threw back an invasion by the Hephthalites in the east, and eased the persecution of Christians. Tradition credits him with bringing Luri musicians from India to bring music to his people.",
+   "Silverware and manuscript paintings across the centuries return again and again to Bahram Gur — hunting with the harpist Azadeh, or seizing the crown from between two lions — showing how firmly he lodged in the Iranian imagination."
+  ],
+  "refs": [ { "label": "Wikipedia — Bahram V", "url": "https://en.wikipedia.org/wiki/Bahram_V" } ],
+  "related": [ "e109", "e114", "e106" ]
+ },
+ "e108": {
+  "img": [ { "file": "Great_Wall_of_Gorgan_20160522_05.jpg", "alt": "Great Wall of Gorgan", "credit": "Remains of the Great Wall of Gorgan (the ‘Red Snake’) · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Great_Wall_of_Gorgan_20160522_05.jpg", "alt": "Great Wall of Gorgan", "credit": "Remains of the Great Wall of Gorgan · Wikimedia Commons" },
+   { "file": "Great_Wall_of_Gorgan_-_panoramio.jpg", "alt": "Wall of Gorgan landscape", "credit": "The line of the Wall of Gorgan across the plain · Wikimedia Commons" }
+  ],
+  "body": [
+   "Across the plain south-east of the Caspian runs the Great Wall of Gorgan, the ‘Red Snake’ — a brick barrier nearly 200 km long, among the greatest frontier walls of the ancient world, rivalling Hadrian’s Wall and the Great Wall of China in scale.",
+   "Built most likely in the 5th–6th centuries CE, it was fed by its own canal and studded with more than thirty forts garrisoned by tens of thousands of soldiers, defending the settled empire against the nomads of the northern steppe.",
+   "Its sophisticated brick kilns, water supply and logistics reveal the organisational might of the late Sasanian state at the height of its power."
+  ],
+  "refs": [ { "label": "Wikipedia — Great Wall of Gorgan", "url": "https://en.wikipedia.org/wiki/Great_Wall_of_Gorgan" } ],
+  "related": [ "e109", "e112", "e106" ]
+ },
+ "e109": {
+  "img": [ { "file": "Plate_of_Peroz_I_hunting.jpg", "alt": "Plate of Peroz I", "credit": "Silver plate of Peroz I hunting · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Plate_of_Peroz_I_hunting.jpg", "alt": "Plate of Peroz I", "credit": "Silver plate of Peroz I hunting · Wikimedia Commons" },
+   { "file": "PerozICoinHistoryofIran.jpg", "alt": "Coin of Peroz I", "credit": "Coin of Peroz I · Wikimedia Commons" },
+   { "file": "The_Discomfiture_and_Death_of_Piroz,_from_a_Manuscript_of_the_Shahnama_(Book_of_Kings)_of_Firdawsi_LACMA_M.73.5.23.jpg", "alt": "Death of Peroz", "credit": "The death of Peroz, from a Shahnameh manuscript, LACMA · Wikimedia Commons" }
+  ],
+  "body": [
+   "The later 5th century brought disaster on the eastern frontier. King Peroz I (r. 459–484 CE), after years of famine and costly wars, led a great army against the Hephthalites, the ‘White Huns’ of Central Asia.",
+   "In 484 CE his host was lured into a trap and annihilated; Peroz himself was killed — the first Sasanian king to die in battle against a foreign enemy. For a time the empire paid humiliating tribute to the victors.",
+   "The catastrophe shook the Sasanian state, drained its treasury, and helped open the way to the social upheavals of the Mazdakite movement a few years later."
+  ],
+  "refs": [ { "label": "Wikipedia — Peroz I", "url": "https://en.wikipedia.org/wiki/Peroz_I" } ],
+  "related": [ "e110", "e108", "e112" ]
+ },
+ "e110": {
+  "img": [ { "file": "The_Iranian_prophet_Mazdak_being_executed.png", "alt": "Execution of Mazdak", "credit": "The execution of Mazdak and his followers, Shahnameh manuscript · Wikimedia Commons" } ],
+  "body": [
+   "Around the turn of the 6th century the priest Mazdak preached a radical reform — a religion of light and justice that condemned greed and called for the sharing of wealth (and, his enemies charged, of women) to end the inequalities tearing the empire apart.",
+   "For a time King Kavad I embraced the movement, using it to break the power of the great nobles and priests. But the backlash was fierce, and around 524–528 CE the future Khosrow I lured the Mazdakites to a gathering and massacred them, executing Mazdak himself.",
+   "Mazdakism was crushed, but its memory as an early movement for social equality echoed through later Iranian revolts for centuries."
+  ],
+  "refs": [ { "label": "Wikipedia — Mazdak", "url": "https://en.wikipedia.org/wiki/Mazdak" } ],
+  "related": [ "e112", "e109", "e100" ]
+ },
+ "e112": {
+  "img": [ { "file": "Plate_of_the_Sasanian_king_Khosrow_I_Anushirvan.jpg", "alt": "Khosrow I plate", "credit": "Ceremonial plate of Khosrow I Anushirvan · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Plate_of_the_Sasanian_king_Khosrow_I_Anushirvan.jpg", "alt": "Khosrow I plate", "credit": "Ceremonial plate of Khosrow I Anushirvan · Wikimedia Commons" },
+   { "file": "001125-TaqKasra-Iraq-IMG_7914-2.jpg", "alt": "Taq Kasra", "credit": "The great arch of Ctesiphon (Taq Kasra), Khosrow’s throne hall · Wikimedia Commons" },
+   { "file": "KhosrauITokharistanCoinHistoryofIran.jpg", "alt": "Coin of Khosrow I", "credit": "Coin of Khosrow I · Wikimedia Commons" },
+   { "file": "Plate_of_Khosrow_I_Anushirvan.jpg", "alt": "Khosrow I enthroned plate", "credit": "Plate showing Khosrow I enthroned · Wikimedia Commons" }
+  ],
+  "body": [
+   "Khosrow I (r. 531–579 CE), called Anushirvan, ‘of the immortal soul’, presided over the golden age of the Sasanian empire and became the very model of the just king in later Persian and Arabic literature.",
+   "After crushing the Mazdakites he overhauled the state: a new land survey and fixed tax, a reformed and salaried army, and a class of lesser nobles (dehqans) loyal to the crown. He fought long wars with Byzantium, destroyed the Hephthalite kingdom in alliance with the Turks, and extended Sasanian power to Yemen.",
+   "A patron of learning, he expanded Gondishapur, sponsored translations from Greek, Sanskrit and Syriac, and — tradition says — received the game of chess from India and had backgammon devised in reply. His reign fixed the ideal of Iranian kingship for a thousand years."
+  ],
+  "refs": [ { "label": "Wikipedia — Khosrow I", "url": "https://en.wikipedia.org/wiki/Khosrow_I" } ],
+  "related": [ "e110", "e104", "e114" ]
+ },
+ "e113": {
+  "img": [ { "file": "Videvdad_Sadah_(Zoroastrian_religious_code),_opened_to_first_chapter,_unknown_copyist,_Yazd,_Iran,_1647_AD_-_British_Library,_London_-_DSC00550.jpg", "alt": "Avestan manuscript", "credit": "A Vidēvdād manuscript in the Avestan script, Yazd 1647, British Library · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Videvdad_Sadah_(Zoroastrian_religious_code),_opened_to_first_chapter,_unknown_copyist,_Yazd,_Iran,_1647_AD_-_British_Library,_London_-_DSC00550.jpg", "alt": "Avestan manuscript", "credit": "A Vidēvdād manuscript in the Avestan script · Wikimedia Commons" },
+   { "file": "Vendidad_fol_1r.jpg", "alt": "Vendidad folio", "credit": "Folio of the Vendidad in Avestan and Pahlavi · Wikimedia Commons" }
+  ],
+  "body": [
+   "For more than a millennium the Avesta, the scriptures of Zoroastrianism, had been transmitted orally by priests who memorised its hymns and rituals. In the later Sasanian period, probably the 5th–6th centuries, scholars devised a precise new alphabet to write it down.",
+   "This ‘Dēn dabīrē’ (religion script), derived from cursive Pahlavi, had a distinct sign for every sound of the sacred language, so that the exact pronunciation of the prayers could be preserved. For the first time the Avesta could be fixed in writing.",
+   "The written canon that resulted — with its Middle Persian translation and commentary, the Zand — preserved a religion that had shaped Iran since prehistory, even as that religion neared the end of its reign as the state faith."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Avestan alphabet", "url": "https://en.wikipedia.org/wiki/Avestan_alphabet" },
+   { "label": "Wikipedia — Avesta", "url": "https://en.wikipedia.org/wiki/Avesta" }
+  ],
+  "related": [ "e105", "e037", "e112" ]
+ },
+ "e115": {
+  "img": [ { "file": "KhosrauIIGoldCoinCroppedHistoryofIran.jpg", "alt": "Gold coin of Khosrow II", "credit": "Gold coin of Khosrow II (Parviz) · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "KhosrauIIGoldCoinCroppedHistoryofIran.jpg", "alt": "Coin of Khosrow II", "credit": "Gold coin of Khosrow II · Wikimedia Commons" },
+   { "file": "Heraclius_610-641.jpg", "alt": "Emperor Heraclius", "credit": "Coin of the Byzantine emperor Heraclius · Wikimedia Commons" },
+   { "file": "The_Sasanian_Empire_on_the_eve_of_the_Final_Roman-Persian_War.png", "alt": "Sasanian Empire map", "credit": "The Sasanian empire on the eve of the final Roman–Persian war · Wikimedia Commons" },
+   { "file": "Piero_della_Francesca_021.jpg", "alt": "Return of the True Cross", "credit": "Heraclius returns the True Cross — fresco by Piero della Francesca · Wikimedia Commons" }
+  ],
+  "body": [
+   "The reign of Khosrow II (Parviz) climaxed in the last and greatest of the Roman–Persian wars (602–628 CE). Sasanian armies overran the Levant, taking Jerusalem in 614 and carrying off the relic of the True Cross, then conquered Egypt and reached the very walls of Constantinople.",
+   "For a moment it seemed the empire might restore the borders of the Achaemenids. But in 626 the great siege of Constantinople failed, and the emperor Heraclius struck deep into Iran, sacking Khosrow’s palaces and burning the fire temple of Adur Gushnasp.",
+   "Khosrow was overthrown and killed in 628, the conquests were surrendered, and both empires emerged utterly exhausted — just as a new power was rising in Arabia."
+  ],
+  "refs": [ { "label": "Wikipedia — Byzantine–Sasanian War of 602–628", "url": "https://en.wikipedia.org/wiki/Byzantine%E2%80%93Sasanian_War_of_602%E2%80%93628" } ],
+  "related": [ "e114", "e116", "e112" ]
+ },
+ "e116": {
+  "img": [ { "file": "Depiction_of_the_Battle_of_al-Qādisiyyah_from_a_manuscript_of_the_Persian_epic_Shāh-nāmeh._Source-_British_Library_(MS._I.O.Islamic_3265_(1614)_f._602r).jpg", "alt": "Battle of al-Qadisiyyah", "credit": "The Battle of al-Qadisiyyah, from a Shahnameh manuscript, British Library · Wikimedia Commons" } ],
+  "body": [
+   "In 636 CE, on the plain of al-Qadisiyyah near the Euphrates, the exhausted Sasanian army under the general Rostam Farrokhzad met the armies of the new Islamic caliphate. After several days of desperate fighting the Persians were routed and Rostam was killed.",
+   "The victory opened the road to the capital: the Arabs took Ctesiphon with its fabled treasures, and the Sasanian court fled onto the Iranian plateau.",
+   "Qadisiyyah broke the military back of the empire and became one of the decisive battles of world history — the beginning of the end of Zoroastrian Iran."
+  ],
+  "refs": [ { "label": "Wikipedia — Battle of al-Qadisiyyah", "url": "https://en.wikipedia.org/wiki/Battle_of_al-Qadisiyyah" } ],
+  "related": [ "e117", "e118", "e115" ]
+ },
+ "e117": {
+  "img": [ { "file": "Castle_Nahavend_by_Eugène_Flandin.jpg", "alt": "Nahavand", "credit": "Nahavand drawn by Eugène Flandin, 19th century · Wikimedia Commons" } ],
+  "body": [
+   "The last great stand of the Sasanian empire came in 642 CE at Nahavand, in the Zagros, where Yazdegerd III gathered a large army to halt the Muslim advance onto the plateau.",
+   "In a hard-fought battle the Persian host was destroyed. The Arabs called it Fath al-Futuh, the ‘Victory of Victories’, for it shattered the last organised resistance and opened all of Iran to conquest.",
+   "After Nahavand the empire dissolved into scattered local resistance; there would be no more imperial armies to defend the King of Kings."
+  ],
+  "refs": [ { "label": "Wikipedia — Battle of Nahavand", "url": "https://en.wikipedia.org/wiki/Battle_of_Nahavand" } ],
+  "related": [ "e116", "e118", "e115" ]
+ },
+ "e118": {
+  "img": [ { "file": "Yazdegerd_III_coronation.jpg", "alt": "Coronation of Yazdegerd III", "credit": "The coronation of Yazdegerd III, from a Shahnameh manuscript · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Yazdegerd_III_coronation.jpg", "alt": "Coronation of Yazdegerd III", "credit": "The coronation of Yazdegerd III · Wikimedia Commons" },
+   { "file": "Coin_of_the_Sasanian_king_Yazdegerd_III,_651_mint_(Cropped).jpg", "alt": "Coin of Yazdegerd III", "credit": "Coin of Yazdegerd III, 651 CE · Wikimedia Commons" },
+   { "file": "Ambassador_from_Persia_(波斯國),_visiting_the_court_of_the_Tang_Dynasty._The_Gathering_of_Kings_(王会图)_circa_650_CE.jpg", "alt": "Persian envoy at the Tang court", "credit": "A Persian ambassador at the Tang court, c. 650 CE · Wikimedia Commons" },
+   { "file": "Ctesiphon-ruin_1864.jpg", "alt": "Ruins of Ctesiphon", "credit": "The ruined arch of Ctesiphon, photographed in 1864 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Yazdegerd III, a grandson of Khosrow II placed on the throne as a boy in 632 CE, was the last Sasanian King of Kings. His reign was spent in flight, retreating ever eastward as the caliphate’s armies overran his empire.",
+   "He appealed for help to the Tang court of China and to the Turks, but none came in time. In 651 CE, near Merv, the hunted king was murdered by a miller for his jewels — an ignoble end to a dynasty that had ruled for four centuries.",
+   "His son Peroz fled to China, where a Sasanian government-in-exile lingered for a generation. With Yazdegerd’s death the Iranian empire fell, and the long transformation of Iran into an Islamic land began — though its language, culture and memory endured."
+  ],
+  "refs": [ { "label": "Wikipedia — Yazdegerd III", "url": "https://en.wikipedia.org/wiki/Yazdegerd_III" } ],
+  "related": [ "e117", "e116", "e115" ]
+ },
 
  "e026": {
   "img": [
@@ -1148,9 +1418,16 @@ window.ENRICH = {
   "img": [
    { "file": "Takht-e-soleiman-1.jpg", "alt": "Takht-e Soleyman", "credit": "The lake and sanctuary of Takht-e Soleyman · Wikimedia Commons" }
   ],
+  "gallery": [
+   { "file": "Takht-e-soleiman-1.jpg", "alt": "Takht-e Soleyman lake", "credit": "The spring-fed lake and sanctuary of Takht-e Soleyman · Wikimedia Commons" },
+   { "file": "040313-TakhteSoleyman-IMG_7280-2.jpg", "alt": "Takht-e Soleyman ruins", "credit": "Ruins around the sacred lake at Takht-e Soleyman · Wikimedia Commons" },
+   { "file": "Darvaze_takht.JPG", "alt": "Gateway of Takht-e Soleyman", "credit": "The gateway of the walled sanctuary · Wikimedia Commons" },
+   { "file": "Wall-tile_with_Dragon._Made_in_Iran_(Kashan)._Takht-i_Sulayman,_ca._1270-75.jpg", "alt": "Ilkhanid dragon tile", "credit": "Ilkhanid dragon wall-tile from Takht-e Soleyman, c. 1270–75 · Wikimedia Commons" }
+  ],
   "body": [
-   "Takht-e Soleyman, the “Throne of Solomon”, lies in a volcanic valley of West Azerbaijan around a deep, spring-fed lake. Here stood Adur Gushnasp, one of the three great fires of the Sasanian empire, associated with kings and warriors; a Zoroastrian fire temple, palaces and a royal sanctuary clustered around the water.",
-   "The site was rebuilt in the Ilkhanid period and its architecture influenced later Islamic design. It was inscribed by UNESCO in 2003."
+   "Takht-e Soleyman, the “Throne of Solomon”, lies in a volcanic valley of West Azerbaijan around a deep, spring-fed lake whose mineral-laden water has slowly built up the ground around it. Here stood Adur Gushnasp, one of the three great fires of the Sasanian empire — the fire of kings and warriors — with a Zoroastrian fire temple, palaces and a royal sanctuary clustered around the water.",
+   "Sasanian kings came here to be crowned and to give thanks after victory, and the flames were tended so that they never died. When Heraclius sacked the sanctuary in 624 CE it was a blow aimed at the very soul of the empire.",
+   "The site was rebuilt as a summer palace in the Ilkhanid (Mongol) period, and its layout of buildings around a sacred pool influenced later Islamic design. It was inscribed by UNESCO in 2003."
   ],
   "refs": [
    { "label": "UNESCO — Takht-e Soleyman", "url": "https://whc.unesco.org/en/list/1077" },
@@ -1163,14 +1440,21 @@ window.ENRICH = {
   "img": [
    { "file": "تاق‌بستان.jpg", "alt": "Taq-e Bostan", "credit": "The grottoes of Taq-e Bostan, Kermanshah · Wikimedia Commons" }
   ],
+  "gallery": [
+   { "file": "تاق‌بستان.jpg", "alt": "Taq-e Bostan grottoes", "credit": "The rock grottoes of Taq-e Bostan · Wikimedia Commons" },
+   { "file": "Knight-Iran.JPG", "alt": "Sasanian cataphract relief", "credit": "The armoured royal horseman (cataphract) in the great grotto · Wikimedia Commons" },
+   { "file": "IranTaqIBustanEberjagdKhosrowsII.jpg", "alt": "Royal boar hunt relief", "credit": "The royal boar hunt in the marshes, great grotto of Taq-e Bostan · Wikimedia Commons" },
+   { "file": "Shapur_II_investiture_at_Taq-e_Bustan_(4684094261).jpg", "alt": "Investiture relief", "credit": "Investiture relief at Taq-e Bostan · Wikimedia Commons" }
+  ],
   "body": [
-   "At Taq-e Bostan near Kermanshah, the late Sasanian kings cut a series of grottoes and reliefs into the rock beside a spring. The larger grotto, usually linked to Khosrow II (r. 590–628 CE), shows an investiture scene above and, below, a heavily armoured royal horseman — a vivid picture of the cataphract cavalry that made Sasanian armies feared.",
-   "Other panels depict royal boar and deer hunts in marshland, crowded with elephants, boats and musicians — among the finest surviving works of Sasanian art."
+   "At Taq-e Bostan near Kermanshah, the late Sasanian kings cut a series of grottoes and reliefs into the rock beside a spring. The larger grotto, usually linked to Khosrow II (r. 590–628 CE), shows an investiture scene above — the king flanked by the gods Ahura Mazda and Anahita — and, below, a heavily armoured royal horseman, a vivid picture of the cataphract cavalry that made Sasanian armies feared.",
+   "The side walls carry two great hunting scenes: a royal boar hunt in the marshes and a deer hunt, crowded with elephants, boats, beaters and musicians. Carved almost in the round, they are among the finest and liveliest works of Sasanian art.",
+   "Taq-e Bostan marks the last flowering of Sasanian rock relief, a tradition of royal image-making on stone that had begun eight centuries earlier under the Achaemenids and here reached its sumptuous close on the eve of the empire’s fall."
   ],
   "refs": [
    { "label": "Wikipedia — Taq-e Bostan", "url": "https://en.wikipedia.org/wiki/Taq-e_Bostan" }
   ],
-  "related": [ "e115", "e102" ]
+  "related": [ "e115", "e102", "e112" ]
  },
 
  "e120": {
