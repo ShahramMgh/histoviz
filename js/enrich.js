@@ -1814,6 +1814,171 @@ window.ENRICH = {
   "refs": [ { "label": "Wikipedia — Sohrab Sepehri", "url": "https://en.wikipedia.org/wiki/Sohrab_Sepehri" } ],
   "related": [ "e158", "e159", "e154" ]
  },
+ "e161": {
+  "img": [ { "file": "Madrid_-_Ciudad_Universitaria,_Monumento_a_Muhammad_al-Juarismi_(cropped).jpg", "alt": "Statue of al-Khwarizmi", "credit": "Monument to al-Khwarizmi, Madrid · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Madrid_-_Ciudad_Universitaria,_Monumento_a_Muhammad_al-Juarismi_(cropped).jpg", "alt": "Statue of al-Khwarizmi", "credit": "Monument to al-Khwarizmi, Madrid · Wikimedia Commons" },
+   { "file": "Image-Al-Kitāb_al-muḫtaṣar_fī_ḥisāb_al-ğabr_wa-l-muqābala.jpg", "alt": "Al-Jabr manuscript", "credit": "A page of al-Khwarizmi’s Al-Jabr, the founding book of algebra · Wikimedia Commons" },
+   { "file": "The_Algebra_of_Mohammed_ben_Musa_(English).png", "alt": "The Algebra translated", "credit": "An English rendering of al-Khwarizmi’s Algebra · Wikimedia Commons" },
+   { "file": "Dixit_algorizmi.png", "alt": "Dixit Algorizmi", "credit": "‘Dixit Algorizmi’ — a Latin text derived from al-Khwarizmi, source of the word ‘algorithm’ · Wikimedia Commons" }
+  ],
+  "body": [
+   "Muhammad ibn Musa al-Khwarizmi, working at the House of Wisdom in 9th-century Baghdad, was one of the founders of mathematics as we know it. His book Al-Kitab al-Mukhtasar fi Hisab al-Jabr wa’l-Muqabala gave algebra both its method and its name (al-jabr).",
+   "His treatise on calculation with Hindu-Arabic numerals introduced the decimal place-value system to the Islamic world and, in Latin translation, to Europe; the Latinised form of his name, ‘Algorizmi’, gave us the word algorithm. He also produced influential works on astronomy and geography."
+  ],
+  "refs": [ { "label": "Wikipedia — Al-Khwarizmi", "url": "https://en.wikipedia.org/wiki/Al-Khwarizmi" } ],
+  "related": [ "e147", "e166", "e171" ]
+ },
+ "e162": {
+  "img": [ { "file": "Iranian_Farabi.jpg", "alt": "Al-Farabi", "credit": "Al-Farabi, imagined portrait · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Iranian_Farabi.jpg", "alt": "Al-Farabi", "credit": "Al-Farabi, imagined portrait · Wikimedia Commons" },
+   { "file": "Alpharabius_in_Liber_Chronicarum_1493_AD.png", "alt": "Alpharabius", "credit": "Al-Farabi (‘Alpharabius’) in the Nuremberg Chronicle, 1493 · Wikimedia Commons" },
+   { "file": "Bnf_lat_9335.jpg", "alt": "Farabi manuscript", "credit": "A Latin manuscript of al-Farabi’s work · Wikimedia Commons" }
+  ],
+  "body": [
+   "Al-Farabi was among the greatest philosophers of the medieval world, so revered as an interpreter of Aristotle that he was called the ‘Second Teacher’ (after Aristotle himself). He wrote penetrating commentaries on logic and metaphysics that shaped both Islamic and, later, European thought.",
+   "In political philosophy his ‘Virtuous City’ (al-Madina al-Fadila) reimagined Plato’s Republic for a monotheistic age. He was also a leading music theorist, whose Great Book of Music long remained a standard authority."
+  ],
+  "refs": [ { "label": "Wikipedia — Al-Farabi", "url": "https://en.wikipedia.org/wiki/Al-Farabi" } ],
+  "related": [ "e163", "e167", "e168" ]
+ },
+ "e163": {
+  "img": [ { "file": "زکریای_رازی_اثر_حسین_بهزاد_(cropped).jpg", "alt": "Al-Razi (Rhazes)", "credit": "Al-Razi imagined by Hossein Behzad · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "زکریای_رازی_اثر_حسین_بهزاد_(cropped).jpg", "alt": "Al-Razi", "credit": "Al-Razi imagined by Hossein Behzad · Wikimedia Commons" },
+   { "file": "Rhazes,_a_physician,_examines_a_boy_Wellcome_V0015933.jpg", "alt": "Rhazes examining a patient", "credit": "Rhazes examining a patient, Wellcome Collection · Wikimedia Commons" },
+   { "file": "Al-RaziInGerardusCremonensis1250.JPG", "alt": "Al-Razi in a Latin manuscript", "credit": "Al-Razi depicted in a 13th-century Latin manuscript · Wikimedia Commons" },
+   { "file": "Rhazes_(c._1906)_-_Veloso_Salgado.png", "alt": "Rhazes painting", "credit": "Rhazes, painting by Veloso Salgado, 1906 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Muhammad ibn Zakariya al-Razi (Rhazes), born at Rey near modern Tehran, was the greatest clinician of the medieval Islamic world. His vast medical encyclopaedia, the Kitab al-Hawi (the Latin ‘Continens’), and the Kitab al-Mansuri were studied in Europe for centuries.",
+   "He was the first to distinguish smallpox from measles in a careful clinical treatise, pioneered the idea of the hospital ward and controlled experiment, and made lasting contributions to chemistry. A bold freethinker, he questioned received authority in both medicine and religion."
+  ],
+  "refs": [ { "label": "Wikipedia — Muhammad ibn Zakariya al-Razi", "url": "https://en.wikipedia.org/wiki/Muhammad_ibn_Zakariya_al-Razi" } ],
+  "related": [ "e162", "e166", "e104" ]
+ },
+ "e164": {
+  "img": [ { "file": "Book_Al_Sufi.jpg", "alt": "Book of Fixed Stars", "credit": "A page from al-Sufi’s Book of Fixed Stars · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Book_Al_Sufi.jpg", "alt": "Book of Fixed Stars", "credit": "A page from al-Sufi’s Book of Fixed Stars · Wikimedia Commons" },
+   { "file": "Al-Sufi_depicted_in_Albrecht_Dürers_'The_Northern_Celestial_Hemisphere'_(1515).jpg", "alt": "Al-Sufi in Dürer's star map", "credit": "Al-Sufi honoured in Dürer’s celestial map, 1515 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Abd al-Rahman al-Sufi (Azophi), working under the Buyid court, was one of the great observational astronomers of the Middle Ages. His Book of Fixed Stars carefully revised Ptolemy’s catalogue, giving corrected positions, magnitudes and the traditional Arabic star names still used today.",
+   "In it he recorded the first known description of the Andromeda Galaxy — a ‘little cloud’ — and of the Large Magellanic Cloud, the earliest observations of galaxies beyond our own. His illustrated constellations became a model for astronomers East and West."
+  ],
+  "refs": [ { "label": "Wikipedia — Abd al-Rahman al-Sufi", "url": "https://en.wikipedia.org/wiki/Abd_al-Rahman_al-Sufi" } ],
+  "related": [ "e166", "e169", "e171" ]
+ },
+ "e166": {
+  "img": [ { "file": "Persian_Scholar_pavilion_in_Vienna_UN_(Biruni)_(cropped).jpg", "alt": "Statue of al-Biruni", "credit": "Statue of al-Biruni, Scholars Pavilion, Vienna · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Persian_Scholar_pavilion_in_Vienna_UN_(Biruni)_(cropped).jpg", "alt": "Statue of al-Biruni", "credit": "Statue of al-Biruni, Scholars Pavilion, Vienna · Wikimedia Commons" },
+   { "file": "Lunar_phases_al-Biruni.jpg", "alt": "Lunar phases by al-Biruni", "credit": "Al-Biruni’s diagram of the phases of the Moon · Wikimedia Commons" },
+   { "file": "Biruni-russian.jpg", "alt": "Al-Biruni stamp", "credit": "Al-Biruni commemorated on a stamp · Wikimedia Commons" }
+  ],
+  "body": [
+   "Al-Biruni of Khwarazm was one of history’s most universal scholars — astronomer, mathematician, geographer, historian and pioneering student of other cultures. Travelling to India in the train of Mahmud of Ghazni, he mastered Sanskrit and wrote his great, sympathetic study Tarikh al-Hind (‘The History of India’).",
+   "He calculated the Earth’s radius with remarkable accuracy from a single mountaintop observation, measured the specific gravities of metals and gems, discussed whether the Earth might rotate and orbit the Sun, and compiled masterworks on chronology, astronomy and pharmacology."
+  ],
+  "refs": [ { "label": "Wikipedia — Al-Biruni", "url": "https://en.wikipedia.org/wiki/Al-Biruni" } ],
+  "related": [ "e184", "e161", "e169" ]
+ },
+ "e167": {
+  "img": [ { "file": "The_tomb_of_Imam_Al-Ghazali.jpg", "alt": "Tomb of al-Ghazali", "credit": "The tomb of al-Ghazali at Tus · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "The_tomb_of_Imam_Al-Ghazali.jpg", "alt": "Tomb of al-Ghazali", "credit": "The tomb of al-Ghazali at Tus · Wikimedia Commons" },
+   { "file": "Munqidh_min_al-dalal_(last_page).jpg", "alt": "Al-Ghazali autobiography", "credit": "Last page of al-Ghazali’s spiritual autobiography, al-Munqidh min al-Dalal · Wikimedia Commons" }
+  ],
+  "body": [
+   "Abu Hamid al-Ghazali of Tus, honoured as ‘the Proof of Islam’ (Hujjat al-Islam), was one of the most influential thinkers in the history of Islam. At the height of his fame as a teacher in Baghdad he abandoned his post in a spiritual crisis and became a wandering Sufi.",
+   "His Incoherence of the Philosophers challenged the rationalist metaphysics of Avicenna and al-Farabi, while his masterwork, the Revival of the Religious Sciences (Ihya Ulum al-Din), wove Sufi spirituality into mainstream Sunni orthodoxy — a synthesis that shaped Muslim thought ever after."
+  ],
+  "refs": [ { "label": "Wikipedia — Al-Ghazali", "url": "https://en.wikipedia.org/wiki/Al-Ghazali" } ],
+  "related": [ "e162", "e168", "e185" ]
+ },
+ "e168": {
+  "img": [ { "file": "Shihab_al-Din_Abu_al-Futuh_Ahmad_bin_Habbash_(Ya'ish)_bin_Amirak_al-Suhrawardi_al-Maqtuli_(d._1191-92);_Hikmat_al-Ishraq,_copied_by_Shams_bin_Jamal_al-Hatani,_post-Seljuq_Iran,_dated_Tuesday_13_October_1220.jpg", "alt": "Hikmat al-Ishraq manuscript", "credit": "Suhrawardi’s Hikmat al-Ishraq, copied 1220 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Shihab_al-Din_Abu_al-Futuh_Ahmad_bin_Habbash_(Ya'ish)_bin_Amirak_al-Suhrawardi_al-Maqtuli_(d._1191-92);_Hikmat_al-Ishraq,_copied_by_Shams_bin_Jamal_al-Hatani,_post-Seljuq_Iran,_dated_Tuesday_13_October_1220.jpg", "alt": "Hikmat al-Ishraq", "credit": "Suhrawardi’s Hikmat al-Ishraq, copied 1220 · Wikimedia Commons" },
+   { "file": "Opening_page_from_the_manuscript_of_\"Hikmat_al-ʿIshraq\"_by_al-Suhrawardi.jpg", "alt": "Opening of Hikmat al-Ishraq", "credit": "Opening page of a manuscript of the Hikmat al-Ishraq · Wikimedia Commons" }
+  ],
+  "body": [
+   "Shahab al-Din Suhrawardi founded the Illuminationist (Ishraqi) school of philosophy, one of the most original systems ever produced in Iran. In place of Aristotelian logic-chopping he built a metaphysics of Light, in which all reality is a hierarchy of luminous intensities descending from the ‘Light of Lights’.",
+   "He consciously drew on Platonic, Zoroastrian and Islamic sources, presenting himself as heir to an ancient Persian wisdom. His radical ideas alarmed the orthodox, and he was executed at Aleppo in 1191, earning the title al-Maqtul, ‘the slain’; his philosophy nonetheless flourished for centuries."
+  ],
+  "refs": [ { "label": "Wikipedia — Shahab al-Din Suhrawardi", "url": "https://en.wikipedia.org/wiki/Shahab_al-Din_Suhrawardi" } ],
+  "related": [ "e167", "e172", "e037" ]
+ },
+ "e169": {
+  "img": [ { "file": "Nasir_al-Din_Tusi.jpg", "alt": "Nasir al-Din al-Tusi", "credit": "Nasir al-Din al-Tusi · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Nasir_al-Din_Tusi.jpg", "alt": "Nasir al-Din al-Tusi", "credit": "Nasir al-Din al-Tusi · Wikimedia Commons" },
+   { "file": "Nasir_al-Din_al-Tusi_at_observatory.jpg", "alt": "Tusi at the observatory", "credit": "Al-Tusi at the Maragheh observatory · Wikimedia Commons" },
+   { "file": "Tusi_couple.jpg", "alt": "The Tusi couple", "credit": "The ‘Tusi couple’, his geometric device for generating linear from circular motion · Wikimedia Commons" }
+  ],
+  "body": [
+   "Nasir al-Din al-Tusi of Tus was the leading polymath of 13th-century Iran — astronomer, mathematician, philosopher and statesman. After the Mongol conquest he persuaded Hulagu Khan to build the great observatory at Maragheh, the finest of its age, and compiled the influential Ilkhanid astronomical tables.",
+   "He established trigonometry as a mathematical discipline in its own right and devised the ‘Tusi couple’, a geometric model that generates straight-line motion from two circles — a device that reappears three centuries later in the work of Copernicus. His Nasirean Ethics remained a classic of Persian moral philosophy."
+  ],
+  "refs": [ { "label": "Wikipedia — Nasir al-Din al-Tusi", "url": "https://en.wikipedia.org/wiki/Nasir_al-Din_al-Tusi" } ],
+  "related": [ "e191", "e170", "e171" ]
+ },
+ "e170": {
+  "img": [ { "file": "Ghotb2.jpg", "alt": "Qutb al-Din al-Shirazi", "credit": "Qutb al-Din al-Shirazi, imagined portrait · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Ghotb2.jpg", "alt": "Qutb al-Din al-Shirazi", "credit": "Qutb al-Din al-Shirazi · Wikimedia Commons" },
+   { "file": "Al-Shirazi's_Tomb.jpg", "alt": "Tomb of al-Shirazi", "credit": "The tomb of Qutb al-Din al-Shirazi · Wikimedia Commons" }
+  ],
+  "body": [
+   "Qutb al-Din al-Shirazi, a pupil of Nasir al-Din al-Tusi and a colleague at Maragheh, was a polymath who wrote on astronomy, optics, medicine, philosophy and music. He refined the non-Ptolemaic planetary models developed by the Maragheh school.",
+   "With his student Kamal al-Din al-Farisi he gave the first broadly correct explanation of how the rainbow forms — by the refraction and internal reflection of light within raindrops — a landmark in the history of optics."
+  ],
+  "refs": [ { "label": "Wikipedia — Qutb al-Din al-Shirazi", "url": "https://en.wikipedia.org/wiki/Qutb_al-Din_al-Shirazi" } ],
+  "related": [ "e169", "e171", "e164" ]
+ },
+ "e171": {
+  "img": [ { "file": "Jamshid_bin_Mas'ud_bin_Mahmud_al-Tabib_al-Kashi,_known_as_Ghiyath_(d._1429);_Miftah_al-Hisab_signed_ibn_Muhammad_Mu'min_Taj_al-Din_al-Shirazi,_Iran,_dated_31_May_1656.jpg", "alt": "Miftah al-Hisab manuscript", "credit": "Al-Kashi’s Key to Arithmetic (Miftah al-Hisab), copied 1656 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Jamshid_bin_Mas'ud_bin_Mahmud_al-Tabib_al-Kashi,_known_as_Ghiyath_(d._1429);_Miftah_al-Hisab_signed_ibn_Muhammad_Mu'min_Taj_al-Din_al-Shirazi,_Iran,_dated_31_May_1656.jpg", "alt": "Miftah al-Hisab", "credit": "Al-Kashi’s Key to Arithmetic, copied 1656 · Wikimedia Commons" },
+   { "file": "Law_of_cosines_following_al-Kashi.png", "alt": "Law of cosines", "credit": "The law of cosines, known in French as ‘le théorème d’Al-Kashi’ · Wikimedia Commons" }
+  ],
+  "body": [
+   "Jamshid al-Kashi of Kashan was one of the finest computational mathematicians before the modern age, working at Ulugh Beg’s celebrated observatory in Samarkand. In his Treatise on the Circumference he calculated 2π to sixteen decimal places — an accuracy unmatched for nearly two centuries.",
+   "He computed the sine of one degree to extraordinary precision, made systematic use of decimal fractions, and stated the law of cosines in the form still taught today (in French it bears his name). His Key to Arithmetic became a standard textbook across the Islamic world."
+  ],
+  "refs": [ { "label": "Wikipedia — Jamshid al-Kashi", "url": "https://en.wikipedia.org/wiki/Jamshid_al-Kashi" } ],
+  "related": [ "e196", "e169", "e161" ]
+ },
+ "e172": {
+  "img": [ { "file": "مجسمه_ملاصدرا.jpg", "alt": "Statue of Mulla Sadra", "credit": "Statue of Mulla Sadra · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "مجسمه_ملاصدرا.jpg", "alt": "Statue of Mulla Sadra", "credit": "Statue of Mulla Sadra · Wikimedia Commons" },
+   { "file": "The_House_of_Mulla_Sadra_in_Kahak_Qom.jpg", "alt": "House of Mulla Sadra", "credit": "The house of Mulla Sadra at Kahak, near Qom · Wikimedia Commons" },
+   { "file": "مدرسه_خان_شیراز.jpg", "alt": "Khan School, Shiraz", "credit": "The Khan School in Shiraz, where Mulla Sadra taught · Wikimedia Commons" }
+  ],
+  "body": [
+   "Sadr al-Din al-Shirazi, known as Mulla Sadra, was the greatest philosopher of the Safavid age and arguably the most important in Iran since Avicenna. His grand synthesis, the ‘Transcendent Theosophy’ (al-Hikma al-Muta‘aliya), fused rational philosophy, mystical insight and scripture.",
+   "His central doctrines — the primacy and gradation of existence, and ‘substantial motion’ (the idea that things are in ceaseless inner change) — reshaped Islamic metaphysics. His vast Four Journeys (al-Asfar al-Arba‘a) is still the core text of the Iranian philosophical tradition."
+  ],
+  "refs": [ { "label": "Wikipedia — Mulla Sadra", "url": "https://en.wikipedia.org/wiki/Mulla_Sadra" } ],
+  "related": [ "e168", "e173", "e200" ]
+ },
+ "e173": {
+  "img": [ { "file": "Shaykh_Baha'i,_false_ascription_to_Sadiqi_Beg,_signed_by_the_\"slave_Muhammad_'Ali\",_dated_1744-5._Malek_Museum,_Tehran.jpg", "alt": "Sheikh Bahai", "credit": "Sheikh Bahai, portrait dated 1744–5, Malek Museum, Tehran · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Shaykh_Baha'i,_false_ascription_to_Sadiqi_Beg,_signed_by_the_\"slave_Muhammad_'Ali\",_dated_1744-5._Malek_Museum,_Tehran.jpg", "alt": "Sheikh Bahai", "credit": "Sheikh Bahai, portrait dated 1744–5, Malek Museum · Wikimedia Commons" },
+   { "file": "خلاصة_الحساب_01.jpg", "alt": "Kholasat al-Hisab", "credit": "Sheikh Bahai’s arithmetic textbook, Kholasat al-Hisab · Wikimedia Commons" },
+   { "file": "مقبره_شیخ_بهایی.jpg", "alt": "Tomb of Sheikh Bahai", "credit": "The tomb of Sheikh Bahai at Mashhad · Wikimedia Commons" }
+  ],
+  "body": [
+   "Baha’ al-Din al-‘Amili, universally known as Sheikh Bahai, was the towering polymath of Shah Abbas’s Isfahan — jurist, philosopher, mathematician, astronomer, architect and poet. As the leading religious scholar of the Safavid state he combined law and mysticism, and his Persian poetry is still read today.",
+   "He was also a brilliant engineer, credited with contributions to the design of Isfahan’s great square and gardens, to the distribution of water through its canals, and to ingenious devices such as a self-heating bath. His arithmetic textbook, the Kholasat al-Hisab, was studied for centuries."
+  ],
+  "refs": [ { "label": "Wikipedia — Baha' al-din al-'Amili", "url": "https://en.wikipedia.org/wiki/Baha%27_al-din_al-%27Amili" } ],
+  "related": [ "e172", "e200", "e171" ]
+ },
 
  "e152": {
   "img": [ { "file": "Maulana_Jelaledin_Muhammad_Rumi_in_konya.jpg", "alt": "Shrine of Rumi", "credit": "The tomb-shrine of Rumi (the Mevlana Museum), Konya · Wikimedia Commons" } ],
