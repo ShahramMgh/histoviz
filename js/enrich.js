@@ -1636,6 +1636,184 @@ window.ENRICH = {
   "refs": [ { "label": "Encyclopædia Iranica — Ferdowsi", "url": "https://www.iranicaonline.org/articles/ferdowsi-i" }, { "label": "Wikipedia — Ferdowsi", "url": "https://en.wikipedia.org/wiki/Ferdowsi" } ],
   "related": [ "e118", "e184", "e181" ]
  },
+ "e143": {
+  "img": [ { "file": "Miniature_of_Rudaki_by_Hossein_Behzad.jpg", "alt": "Rudaki", "credit": "Rudaki imagined by Hossein Behzad · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Miniature_of_Rudaki_by_Hossein_Behzad.jpg", "alt": "Rudaki miniature", "credit": "Rudaki imagined by Hossein Behzad · Wikimedia Commons" },
+   { "file": "Rudaki_Tomb_in_Panjkent-after_restored.jpg", "alt": "Tomb of Rudaki", "credit": "The tomb of Rudaki at Panjakent · Wikimedia Commons" },
+   { "file": "Iranian_Roodaki.jpg", "alt": "Statue of Rudaki", "credit": "Statue of Rudaki · Wikimedia Commons" }
+  ],
+  "body": [
+   "Abu Abdollah Rudaki, who flourished at the Samanid court of Bukhara in the early 10th century, is remembered as the ‘father of Persian poetry’ — the first great master to compose in the New Persian language written in the Arabic script.",
+   "Though only a fraction of his reputed output survives, his clear, musical verse — lyric, panegyric, and the famous poem said to have drawn the king homeward to Bukhara — set the pattern for a thousand years of Persian poetry. Tradition holds that he was blind in later life, and he died in poverty in his native Panjakent."
+  ],
+  "refs": [ { "label": "Wikipedia — Rudaki", "url": "https://en.wikipedia.org/wiki/Rudaki" } ],
+  "related": [ "e181", "e144", "e147" ]
+ },
+ "e145": {
+  "img": [ { "file": "ناصرخسرو_-_رسام_ارژنگی_(cropped).jpg", "alt": "Nasir Khusraw", "credit": "Nasir Khusraw imagined by Rassam Arjangi · Wikimedia Commons" } ],
+  "body": [
+   "Nasir Khusraw was a poet, philosopher and traveller who, after a spiritual crisis in mid-life, undertook a seven-year journey to Egypt and Mecca recorded in his celebrated Safarnama (Book of Travels) — one of the finest works of early Persian prose and a priceless record of the 11th-century Islamic world.",
+   "Converted to Ismaili Shiism, he became a leading missionary (da‘i) and was driven into exile in the remote Pamir valley of Yumgan, where he wrote philosophical poetry and treatises. He is still revered as a saint and founding teacher among the Ismailis of Badakhshan."
+  ],
+  "refs": [ { "label": "Wikipedia — Nasir Khusraw", "url": "https://en.wikipedia.org/wiki/Nasir_Khusraw" } ],
+  "related": [ "e166", "e167", "e150" ]
+ },
+ "e146": {
+  "img": [ { "file": "Baba_Tahir.jpg", "alt": "Baba Taher", "credit": "Baba Taher, imagined portrait · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Baba_Tahir.jpg", "alt": "Baba Taher", "credit": "Baba Taher, imagined portrait · Wikimedia Commons" },
+   { "file": "Mausolée_Baba_Taher_Hamedan.jpg", "alt": "Tomb of Baba Taher", "credit": "The modern mausoleum of Baba Taher at Hamadan · Wikimedia Commons" }
+  ],
+  "body": [
+   "Baba Taher ‘Oryan’ (‘the Naked’) was an 11th-century mystic and wandering dervish of Hamadan, remembered above all for his do-baytis — plaintive quatrains in a local Luri-Persian dialect that are still sung across Iran today.",
+   "Little of his life is certain, but his simple, deeply felt verse on love and longing for the divine has made him one of the best-loved folk poets of the Persian-speaking world. His domed tomb in Hamadan is a place of pilgrimage."
+  ],
+  "refs": [ { "label": "Wikipedia — Baba Taher", "url": "https://en.wikipedia.org/wiki/Baba_Taher" } ],
+  "related": [ "e176", "e174", "e149" ]
+ },
+ "e147": {
+  "img": [ { "file": "Hakim_Omar_Khayam_-_panoramio.jpg", "alt": "Statue of Omar Khayyam", "credit": "Statue of Omar Khayyam · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Hakim_Omar_Khayam_-_panoramio.jpg", "alt": "Statue of Omar Khayyam", "credit": "Statue of Omar Khayyam · Wikimedia Commons" },
+   { "file": "Mausoleum_of_Omar_Khayyám.jpg", "alt": "Mausoleum of Khayyam", "credit": "The modern mausoleum of Omar Khayyam at Nishapur · Wikimedia Commons" },
+   { "file": "Omar_Khayyám's_solution_of_third_degree_equations.png", "alt": "Khayyam's cubic solution", "credit": "Khayyam’s geometric solution of a cubic equation · Wikimedia Commons" }
+  ],
+  "body": [
+   "Omar Khayyam of Nishapur was one of the most versatile minds of medieval Iran: a mathematician who classified and geometrically solved cubic equations, and an astronomer who helped devise the Jalali calendar — more accurate than the Gregorian that came centuries later.",
+   "Yet in the West he is famous as a poet, through Edward FitzGerald’s free Victorian rendering of the Rubaiyat — quatrains that meditate, amid wine and roses, on the fleetingness of life and the limits of knowledge. His mausoleum at Nishapur is now a national monument."
+  ],
+  "refs": [ { "label": "Wikipedia — Omar Khayyam", "url": "https://en.wikipedia.org/wiki/Omar_Khayyam" } ],
+  "related": [ "e161", "e169", "e148" ]
+ },
+ "e148": {
+  "img": [ { "file": "\"Hakim_Sanai_addressing_the_Sultan_of_Ghazna\"_Folio_from_Hadiqat_al_Haqiqa_(The_Garden_of_Truth_and_The_Path_to_Trek)_MS_OR._1651,_fol._1b.png", "alt": "Sanai addressing the Sultan of Ghazna", "credit": "Sanai before the Sultan of Ghazna, from the Hadiqat al-Haqiqa · Wikimedia Commons" } ],
+  "body": [
+   "Hakim Sanai of Ghazna was the first great poet to make the mystical path the central subject of the Persian narrative poem (masnavi). His Hadiqat al-Haqiqa (The Walled Garden of Truth) turned Sufi teaching into sustained, disciplined verse.",
+   "He thereby opened the road later travelled by Attar and Rumi, who honoured him as a master. Rumi wrote that Attar was the soul and Sanai its two eyes, ‘and we came after’ them both."
+  ],
+  "refs": [ { "label": "Wikipedia — Sanai", "url": "https://en.wikipedia.org/wiki/Sanai" } ],
+  "related": [ "e151", "e152", "e184" ]
+ },
+ "e149": {
+  "img": [ { "file": "Poets_Mausoleum_Tabriz.JPG", "alt": "Mausoleum of Poets, Tabriz", "credit": "The Maqbarat-osh-Shoara (Mausoleum of Poets) in Tabriz, where Khaqani is buried · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Poets_Mausoleum_Tabriz.JPG", "alt": "Mausoleum of Poets", "credit": "The Maqbarat-osh-Shoara in Tabriz · Wikimedia Commons" },
+   { "file": "Khaqani_Park3.JPG", "alt": "Khaqani Park", "credit": "Khaqani commemorated in a park in his name · Wikimedia Commons" }
+  ],
+  "body": [
+   "Khaqani Shirvani, born in the Caucasus, was among the greatest and most demanding of the Persian qasida poets, famous for a dense, learned and image-crowded style. His ode on the ruined palace of Ctesiphon (the Aivan-e Madain) is a celebrated meditation on the fall of empires.",
+   "After a pilgrimage to Mecca he wrote the travel poem Tohfat al-Iraqayn. He spent his last years in Tabriz, where he is buried in the Maqbarat-osh-Shoara, the ‘Mausoleum of Poets’."
+  ],
+  "refs": [ { "label": "Wikipedia — Khaqani", "url": "https://en.wikipedia.org/wiki/Khaqani" } ],
+  "related": [ "e150", "e148", "e112" ]
+ },
+ "e150": {
+  "img": [ { "file": "Nezami_(detail)_Addressing_his_Son_Mohammad._Attributed_to_Behzad,_Leyli_and_Majnun_(Nizami_Ganjavi)_1482.jpg", "alt": "Nizami Ganjavi", "credit": "Nizami addressing his son, attributed to Behzad, 1482 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Nezami_(detail)_Addressing_his_Son_Mohammad._Attributed_to_Behzad,_Leyli_and_Majnun_(Nizami_Ganjavi)_1482.jpg", "alt": "Nizami portrait", "credit": "Nizami addressing his son, attributed to Behzad, 1482 · Wikimedia Commons" },
+   { "file": "Nizami_-_Khusraw_discovers_Shirin_bathing_in_a_pool.jpg", "alt": "Khosrow and Shirin", "credit": "Khosrow discovers Shirin bathing — scene from Nizami’s romance · Wikimedia Commons" },
+   { "file": "King_Qizil_Arslan_Welcomes_the_Poet_Nizami.jpg", "alt": "Nizami received by the king", "credit": "King Qizil Arslan welcomes the poet Nizami · Wikimedia Commons" },
+   { "file": "Nizami_Ganjavi_at_shah's_reception_miniature.JPG", "alt": "Nizami at court", "credit": "Nizami at a royal reception, manuscript miniature · Wikimedia Commons" }
+  ],
+  "body": [
+   "Nizami of Ganja is the supreme master of the Persian romantic epic. His Khamsa (‘Quintet’) — five long poems including the tragic loves of Khosrow and Shirin and of Layla and Majnun, and the allegorical Haft Peykar — reshaped narrative poetry for centuries.",
+   "His lush, subtly worked verse and profound psychological insight made him one of the most imitated poets in the Persian, Turkish and Urdu traditions, and his scenes have inspired manuscript painters for eight hundred years."
+  ],
+  "refs": [ { "label": "Wikipedia — Nizami Ganjavi", "url": "https://en.wikipedia.org/wiki/Nizami_Ganjavi" } ],
+  "related": [ "e107", "e151", "e154" ]
+ },
+ "e151": {
+  "img": [ { "file": "Miniature_of_Attar_by_Hossein_Behzad.jpg", "alt": "Attar of Nishapur", "credit": "Attar imagined by Hossein Behzad · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Miniature_of_Attar_by_Hossein_Behzad.jpg", "alt": "Attar miniature", "credit": "Attar imagined by Hossein Behzad · Wikimedia Commons" },
+   { "file": "The_Mantiq_al-tair.jpg", "alt": "The Conference of the Birds", "credit": "Manuscript of Attar’s Mantiq al-Tair (Conference of the Birds) · Wikimedia Commons" },
+   { "file": "\"The_Concourse_of_the_Birds\",_Folio_11r_from_a_Mantiq_al-tair_(Language_of_the_Birds)_MET_DT227734.jpg", "alt": "The Concourse of the Birds", "credit": "‘The Concourse of the Birds’, Mantiq al-Tair, Metropolitan Museum · Wikimedia Commons" }
+  ],
+  "body": [
+   "Farid al-Din Attar of Nishapur, a pharmacist by trade, was one of the great Sufi poets. His masterpiece, the Mantiq al-Tair (The Conference of the Birds), is an allegory in which the birds of the world journey in search of their king, the Simorgh, only to discover the divine within themselves.",
+   "He also compiled the Tazkirat al-Awliya, a prose collection of the lives and sayings of the Sufi saints. Tradition says the young Rumi met him as a boy; Attar’s influence on later mystical poetry was immense. He died at Nishapur, said to have perished in the Mongol sack of the city."
+  ],
+  "refs": [ { "label": "Wikipedia — Attar of Nishapur", "url": "https://en.wikipedia.org/wiki/Attar_of_Nishapur" } ],
+  "related": [ "e148", "e152", "e191" ]
+ },
+ "e155": {
+  "img": [ { "file": "Jami,_holding_an_astrolabe_(portrait)._By_Behzâd,_from_the_Romance_of_Alexander_by_Nezâmî._Manuscript_of_the_Khamseh_of_the_emir_'Alî_Fârsî_Barlas,_Herat_1494-1495;_British_Library,_Or._6810,_f_225_v.jpg", "alt": "Jami", "credit": "Jami holding an astrolabe, by Behzad, Herat 1494–95, British Library · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Jami,_holding_an_astrolabe_(portrait)._By_Behzâd,_from_the_Romance_of_Alexander_by_Nezâmî._Manuscript_of_the_Khamseh_of_the_emir_'Alî_Fârsî_Barlas,_Herat_1494-1495;_British_Library,_Or._6810,_f_225_v.jpg", "alt": "Jami portrait", "credit": "Jami holding an astrolabe, by Behzad, Herat 1494–95 · Wikimedia Commons" },
+   { "file": "Jami_Rose_Garden.jpg", "alt": "Jami manuscript", "credit": "Illustrated page from a work of Jami · Wikimedia Commons" },
+   { "file": "Baharistan_Manuscript_from_Bodleian_Libraries_folio_29a.jpg", "alt": "Baharistan manuscript", "credit": "Folio from Jami’s Baharistan, Bodleian Libraries · Wikimedia Commons" }
+  ],
+  "body": [
+   "Abd al-Rahman Jami of Herat is often called the ‘last great classical poet’ of Persian — a master of the Timurid golden age equally at home in lyric, epic and scholarship. His Haft Awrang (Seven Thrones) gathers seven long poems, among them Yusuf and Zulaikha and Salaman and Absal.",
+   "A leading figure of the Naqshbandi Sufi order and friend of the statesman-poet Ali-Shir Nava’i, Jami wrote learned works on grammar, music and mysticism as well as poetry, and his fame spread from the Ottoman lands to Mughal India."
+  ],
+  "refs": [ { "label": "Wikipedia — Jami", "url": "https://en.wikipedia.org/wiki/Jami" } ],
+  "related": [ "e196", "e195", "e150" ]
+ },
+ "e156": {
+  "img": [ { "file": "Drawing_of_Saeb_Tabrizi_by_Abbas_Rassam_Arjangi.jpg", "alt": "Saib Tabrizi", "credit": "Saeb Tabrizi drawn by Abbas Rassam Arjangi · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Drawing_of_Saeb_Tabrizi_by_Abbas_Rassam_Arjangi.jpg", "alt": "Saib Tabrizi", "credit": "Saeb Tabrizi drawn by Abbas Rassam Arjangi · Wikimedia Commons" },
+   { "file": "Saeb_003.jpg", "alt": "Saib Tabrizi", "credit": "Saeb Tabrizi · Wikimedia Commons" }
+  ],
+  "body": [
+   "Saeb Tabrizi was the leading master of the ‘Indian style’ (sabk-e Hendi) of Persian poetry that flourished across the Safavid and Mughal worlds. He spent years at the Mughal court in India before returning to serve as poet laureate to Shah Abbas II in Isfahan.",
+   "A supremely prolific writer of the ghazal, he was admired for fresh, intricate metaphors and pithy, quotable lines. His couplets passed into everyday speech as proverbs, and he shaped poetic taste from Iran to India and Central Asia."
+  ],
+  "refs": [ { "label": "Wikipedia — Saib Tabrizi", "url": "https://en.wikipedia.org/wiki/Saib_Tabrizi" } ],
+  "related": [ "e200", "e155", "e154" ]
+ },
+ "e157": {
+  "img": [ { "file": "Mohammad-Taqi_Bahar-Original.jpg", "alt": "Mohammad-Taqi Bahar", "credit": "Mohammad-Taqi Bahar (Malek osh-Sho‘ara) · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Mohammad-Taqi_Bahar-Original.jpg", "alt": "Bahar", "credit": "Mohammad-Taqi Bahar · Wikimedia Commons" },
+   { "file": "Bahar_tomb.jpg", "alt": "Tomb of Bahar", "credit": "The tomb of Bahar · Wikimedia Commons" }
+  ],
+  "body": [
+   "Malek osh-Sho‘ara Bahar (‘King of Poets’) was the outstanding Persian poet of the early 20th century and a bridge between classical tradition and the modern age. A journalist, scholar and political activist, he threw his verse behind the Constitutional Revolution.",
+   "He served in parliament, was repeatedly imprisoned and exiled for his outspokenness, and wrote a landmark study of the history of Persian prose style (Sabk-shenasi). His poetry married classical mastery to the concerns of a nation seeking reform."
+  ],
+  "refs": [ { "label": "Wikipedia — Mohammad-Taqi Bahar", "url": "https://en.wikipedia.org/wiki/Mohammad-Taqi_Bahar" } ],
+  "related": [ "e212", "e158", "e208" ]
+ },
+ "e158": {
+  "img": [ { "file": "Nima_Yushij_-_Original.jpg", "alt": "Nima Yushij", "credit": "Nima Yushij, father of modern Persian poetry · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Nima_Yushij_-_Original.jpg", "alt": "Nima Yushij", "credit": "Nima Yushij · Wikimedia Commons" },
+   { "file": "Nima_Yushij's_tomb.jpg", "alt": "Tomb of Nima", "credit": "Nima Yushij’s tomb at Yush · Wikimedia Commons" },
+   { "file": "House_of_Nima_(2).JPG", "alt": "House of Nima", "credit": "The house of Nima Yushij in Yush, Mazandaran · Wikimedia Commons" }
+  ],
+  "body": [
+   "Nima Yushij, born in the mountain village of Yush, is the father of modern Persian poetry (she‘r-e now). Breaking with the rigid metres and rhyme schemes that had ruled for a millennium, he freed the poetic line to follow the natural rhythm of feeling and speech.",
+   "His innovations, at first fiercely resisted, transformed Iranian literature and opened the way for Forough Farrokhzad, Sohrab Sepehri, Ahmad Shamlou and the whole modern movement. He is buried at his beloved Yush."
+  ],
+  "refs": [ { "label": "Wikipedia — Nima Yooshij", "url": "https://en.wikipedia.org/wiki/Nima_Yooshij" } ],
+  "related": [ "e159", "e160", "e157" ]
+ },
+ "e159": {
+  "img": [ { "file": "Forough_Farrokhzad,_1960s.jpg", "alt": "Forough Farrokhzad", "credit": "Forough Farrokhzad, 1960s · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Forough_Farrokhzad,_1960s.jpg", "alt": "Forough Farrokhzad", "credit": "Forough Farrokhzad, 1960s · Wikimedia Commons" },
+   { "file": "Forough_Farrokhzad_with_pipe.jpg", "alt": "Forough Farrokhzad", "credit": "Forough Farrokhzad · Wikimedia Commons" },
+   { "file": "Forough80.jpg", "alt": "Forough Farrokhzad", "credit": "Forough Farrokhzad · Wikimedia Commons" }
+  ],
+  "body": [
+   "Forough Farrokhzad was one of the most influential and controversial poets of modern Iran — a bold woman’s voice in a male-dominated literary world. Writing in the free verse pioneered by Nima, she gave frank, intimate expression to female desire, doubt and longing.",
+   "Collections such as ‘Another Birth’ (Tavallodi Digar) transformed Persian poetry. She was also a gifted filmmaker; her documentary on a leper colony, ‘The House Is Black’, is a landmark of Iranian cinema. She died in a car accident at only thirty-two."
+  ],
+  "refs": [ { "label": "Wikipedia — Forugh Farrokhzad", "url": "https://en.wikipedia.org/wiki/Forugh_Farrokhzad" } ],
+  "related": [ "e158", "e160", "e215" ]
+ },
+ "e160": {
+  "img": [ { "file": "Sohrab_Sepehri_(1975).jpg", "alt": "Sohrab Sepehri", "credit": "Sohrab Sepehri, 1975 · Wikimedia Commons" } ],
+  "body": [
+   "Sohrab Sepehri was a leading modernist poet and an accomplished painter whose gentle, mystical verse drew on Persian Sufism and East Asian thought. His long poem ‘The Water’s Footfall’ (Sedaye Pa-ye Ab) is among the best-loved works of modern Persian literature.",
+   "Shunning politics and fame, he wrote of nature, simplicity and wonder in a fresh, luminous voice. His spare, contemplative paintings hang in major collections; he died of leukaemia in Tehran and is buried near Kashan."
+  ],
+  "refs": [ { "label": "Wikipedia — Sohrab Sepehri", "url": "https://en.wikipedia.org/wiki/Sohrab_Sepehri" } ],
+  "related": [ "e158", "e159", "e154" ]
+ },
 
  "e152": {
   "img": [ { "file": "Maulana_Jelaledin_Muhammad_Rumi_in_konya.jpg", "alt": "Shrine of Rumi", "credit": "The tomb-shrine of Rumi (the Mevlana Museum), Konya · Wikimedia Commons" } ],
