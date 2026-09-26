@@ -1979,6 +1979,77 @@ window.ENRICH = {
   "refs": [ { "label": "Wikipedia — Baha' al-din al-'Amili", "url": "https://en.wikipedia.org/wiki/Baha%27_al-din_al-%27Amili" } ],
   "related": [ "e172", "e200", "e171" ]
  },
+ "e174": {
+  "img": [ { "file": "Bayazid_Bastami_Tomb.JPG", "alt": "Tomb of Bayazid Bastami", "credit": "The tomb of Bayazid Bastami at Bastam · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Bayazid_Bastami_Tomb.JPG", "alt": "Tomb of Bayazid Bastami", "credit": "The tomb of Bayazid Bastami at Bastam · Wikimedia Commons" },
+   { "file": "Bayazid_Mosque.JPG", "alt": "Bayazid mosque complex", "credit": "The shrine and mosque complex at Bastam · Wikimedia Commons" }
+  ],
+  "body": [
+   "Bayazid (Abu Yazid) Bastami of Bastam was one of the earliest and most influential of the Sufi mystics, remembered as the founder of the ‘drunken’ or ecstatic school of Sufism. He spoke of fana — the annihilation of the self in God — with a vividness no one before him had dared.",
+   "His ecstatic utterances (shathiyat), such as ‘Glory be to me, how great is my majesty!’, scandalised the orthodox but became touchstones of the mystical tradition. Though he left no writings, his sayings were treasured and transmitted by later Sufis, and his shrine at Bastam is still a place of pilgrimage."
+  ],
+  "refs": [ { "label": "Wikipedia — Bayazid Bastami", "url": "https://en.wikipedia.org/wiki/Bayazid_Bastami" } ],
+  "related": [ "e175", "e176", "e151" ]
+ },
+ "e175": {
+  "img": [ { "file": "Hallaj.jpg", "alt": "Mansur al-Hallaj", "credit": "Mansur al-Hallaj, imagined portrait · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Hallaj.jpg", "alt": "Mansur al-Hallaj", "credit": "Mansur al-Hallaj, imagined portrait · Wikimedia Commons" },
+   { "file": "Brooklyn_Museum_-_The_Execution_of_Mansur_Hallaj_From_the_Warren_Hastings_Album.jpg", "alt": "Execution of al-Hallaj", "credit": "The execution of al-Hallaj, Warren Hastings Album, Brooklyn Museum · Wikimedia Commons" },
+   { "file": "Burning_and_crucifixion_of_Mansur_al-Hallaj,_depiction_from_a_19th_century_Kashmiri_manuscript.jpg", "alt": "Martyrdom of al-Hallaj", "credit": "The martyrdom of al-Hallaj, 19th-century Kashmiri manuscript · Wikimedia Commons" }
+  ],
+  "body": [
+   "Mansur al-Hallaj, of Persian birth in Fars, was the most famous martyr of Sufism. A wandering preacher whose sermons drew huge crowds, he uttered the notorious ecstatic cry ‘Ana al-Haqq’ — ‘I am the Truth’ (that is, I am God) — an expression of total union with the divine.",
+   "Condemned for blasphemy and for suspected political sedition, he was imprisoned for years and then brutally executed in Baghdad in 922. For later Sufi poets — Attar, Rumi, Hafez — al-Hallaj became the supreme symbol of the lover who dies for the truth of divine love."
+  ],
+  "refs": [ { "label": "Wikipedia — Mansur al-Hallaj", "url": "https://en.wikipedia.org/wiki/Mansur_al-Hallaj" } ],
+  "related": [ "e174", "e151", "e154" ]
+ },
+ "e176": {
+  "img": [ { "file": "Abū-Sa'īd_Abul-Khayr_Statue_at_nishapur_(5).jpg", "alt": "Statue of Abu Sa'id", "credit": "Statue of Abu Sa‘id Abol-Kheyr at Nishapur · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Abū-Sa'īd_Abul-Khayr_Statue_at_nishapur_(5).jpg", "alt": "Statue of Abu Sa'id", "credit": "Statue of Abu Sa‘id Abol-Kheyr at Nishapur · Wikimedia Commons" },
+   { "file": "Abuseyit_Abulhayir_Myane_Baba.jpg", "alt": "Tomb of Abu Sa'id", "credit": "The tomb of Abu Sa‘id at Meana (Mayhana) · Wikimedia Commons" }
+  ],
+  "body": [
+   "Abu Sa‘id Abol-Kheyr, born at Mayhana in Khorasan, was one of the first Sufis to make the Persian quatrain (ruba‘i) a vehicle for mystical feeling, and many of the earliest Sufi love-poems are attributed to him.",
+   "He did much to shape the communal life of the Sufi lodge (khaneqah), drawing up rules of conduct for its members. Famous for his generosity, humour and disregard for outward piety, he became one of the most beloved figures of early Persian Sufism."
+  ],
+  "refs": [ { "label": "Wikipedia — Abu Sa'id Abu'l-Khayr", "url": "https://en.wikipedia.org/wiki/Abu_Sa%27id_Abu%27l-Khayr" } ],
+  "related": [ "e174", "e146", "e151" ]
+ },
+ "e177": {
+  "img": [ { "file": "Portrait_of_Shah_Nematollah_Vali.jpg", "alt": "Shah Ni'matullah Wali", "credit": "Portrait of Shah Ni‘matullah Wali · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Portrait_of_Shah_Nematollah_Vali.jpg", "alt": "Shah Ni'matullah Wali", "credit": "Portrait of Shah Ni‘matullah Wali · Wikimedia Commons" },
+   { "file": "Santuario_Shah_Nematollah_Vali,_Mahan,_Irán,_2016-09-22,_DD_16.jpg", "alt": "Shrine at Mahan", "credit": "The shrine of Shah Ni‘matullah Wali at Mahan, Kerman · Wikimedia Commons" },
+   { "file": "Shah_Nematollah_Vali_Shrine_in_Qajar_era.png", "alt": "Shrine in the Qajar era", "credit": "The shrine at Mahan in the Qajar period · Wikimedia Commons" }
+  ],
+  "body": [
+   "Shah Ni‘matullah Wali was a poet and Sufi master who founded the Ni‘matullahi order, still the largest Sufi brotherhood in Iran. Widely travelled — from Samarkand to Mecca to India — he settled at last in Mahan, near Kerman, where his teaching drew disciples from across the Muslim world.",
+   "He left a large body of mystical poetry and prose, and was famed for his supposed longevity and for prophetic verses attributed to him. His serene turquoise-domed shrine at Mahan, endowed by later kings, is among the most beautiful monuments of Iran."
+  ],
+  "refs": [ { "label": "Wikipedia — Shah Ni'matullah Wali", "url": "https://en.wikipedia.org/wiki/Shah_Ni%27matullah_Wali" } ],
+  "related": [ "e155", "e178", "e197" ]
+ },
+ "e178": {
+  "img": [ { "file": "Shaykh_Safi_al-Din_interpreting_for_his_disciples_various_verses_by_distinguished_poets_(cropped).jpg", "alt": "Sheikh Safi al-Din", "credit": "Sheikh Safi al-Din with his disciples, manuscript painting · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Shaykh_Safi_al-Din_interpreting_for_his_disciples_various_verses_by_distinguished_poets_(cropped).jpg", "alt": "Sheikh Safi al-Din", "credit": "Sheikh Safi al-Din with his disciples, manuscript painting · Wikimedia Commons" },
+   { "file": "Tomb_of_Shayk_Safi_(central_tower_tomb),_built_in_1335_by_his_son_and_successor_Sadr_al-din_Musa.jpg", "alt": "Tomb of Sheikh Safi", "credit": "The tower tomb of Sheikh Safi al-Din at Ardabil, built 1335 · Wikimedia Commons" },
+   { "file": "Shaykh_Safi_dancing_in_a_samaa_(Shaykh_Safi_detail),_Ṣafvat_al-Ṣafā,_the_life_of_Shaykh_Ṣafī_al-Dīn,_by_Ismāʿil_bin_Bazzāz,_completed_in_September_1582_in_Shirāz.jpg", "alt": "Sheikh Safi in samaa", "credit": "Sheikh Safi dancing in a samaa, Safvat al-Safa, 1582 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Sheikh Safi al-Din of Ardabil was the founder of the Safaviyya, a Sufi order that began as a movement of religious devotion in the 14th century. A charismatic teacher, he gathered a wide following across north-western Iran, Anatolia and the Caucasus.",
+   "Over the following generations his descendants transformed the order into a militant, Shia political movement whose warriors, the Qizilbash, eventually founded the Safavid dynasty in 1501 — an empire that took its very name from him. His shrine at Ardabil is a UNESCO World Heritage site."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Safi-ad-din Ardabili", "url": "https://en.wikipedia.org/wiki/Safi-ad-din_Ardabili" },
+   { "label": "UNESCO — Sheikh Safi al-Din Shrine, Ardabil", "url": "https://whc.unesco.org/en/list/1345" }
+  ],
+  "related": [ "e198", "e177", "e155" ]
+ },
 
  "e152": {
   "img": [ { "file": "Maulana_Jelaledin_Muhammad_Rumi_in_konya.jpg", "alt": "Shrine of Rumi", "credit": "The tomb-shrine of Rumi (the Mevlana Museum), Konya · Wikimedia Commons" } ],
