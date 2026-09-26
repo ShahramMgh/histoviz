@@ -88,6 +88,7 @@ window.ENRICH = {
    "Mirak, on the northern margin of the Dasht-e Kavir near Semnan, is an open-air Middle Palaeolithic site. It is a reminder that during wetter phases the fringes of today’s deserts carried springs, rivers and game, drawing people far from the mountains.",
    "Sites like Mirak help trace how human groups crossed the arid heart of the plateau between the Zagros and the north-east."
   ],
+  "refs": [ { "label": "Wikipedia — Prehistory of Iran", "url": "https://en.wikipedia.org/wiki/Prehistory_of_Iran" } ],
   "related": [ "e007", "e002" ]
  },
  "e009": {
@@ -106,6 +107,7 @@ window.ENRICH = {
    "At the Bawa Yawan rock-shelter in Kermanshah, excavators found in 2017 the milk canine of a Neanderthal child of about six, alongside Zagros Mousterian tools.",
    "It is among the latest Neanderthal traces in the region, from the period when Neanderthals were giving way to modern humans across western Asia."
   ],
+  "refs": [ { "label": "Wikipedia — Prehistory of Iran", "url": "https://en.wikipedia.org/wiki/Prehistory_of_Iran" } ],
   "related": [ "e002", "e009" ]
  },
  "e011": {
@@ -113,6 +115,7 @@ window.ENRICH = {
    "Ghar-e Boof, a cave in the Dasht-e Rostam of southern Fars, preserves an early Upper Palaeolithic industry of small blade tools known as the ‘Rostamian’. It is part of the evidence for the spread of Homo sapiens along the southern Zagros.",
    "As with many Palaeolithic sites, its exact dating and cultural labels remain under discussion."
   ],
+  "refs": [ { "label": "Wikipedia — Prehistory of Iran", "url": "https://en.wikipedia.org/wiki/Prehistory_of_Iran" } ],
   "related": [ "e012", "e121" ]
  },
  "e012": {
@@ -186,6 +189,7 @@ window.ENRICH = {
    "In the tenth and ninth millennia BCE, some of the earliest settlements of the high Zagros appear at sites such as Sheikh-e Abad and Jani in Kermanshah and Tepe Asiab. Their people were still largely hunting and gathering, but beginning to build in mud and to stay in one place.",
    "Ritual is hinted at from the start: Sheikh-e Abad held deposits of goat horns and skulls, and Asiab yielded a pit filled with the skulls of wild boar."
   ],
+  "refs": [ { "label": "Wikipedia — Prehistory of Iran", "url": "https://en.wikipedia.org/wiki/Prehistory_of_Iran" } ],
   "related": [ "e019", "e017", "e023" ]
  },
  "e019": {
@@ -234,6 +238,7 @@ window.ENRICH = {
    "From an early village at Tepe Sarab near Kermanshah comes a small baked-clay figurine of a seated, full-bodied woman, among the best-known Neolithic figurines of Iran. Nicknamed the ‘Venus of Sarab’, it is now in the National Museum of Iran.",
    "Such figurines, found across the Neolithic Near East, are usually read as expressions of fertility or simply of the human figure in early village art, though their precise meaning is unknown."
   ],
+  "refs": [ { "label": "Wikipedia — Prehistory of Iran", "url": "https://en.wikipedia.org/wiki/Prehistory_of_Iran" } ],
   "related": [ "e019", "e018", "e025" ]
  },
  "e024": {
@@ -249,6 +254,7 @@ window.ENRICH = {
    "Tepe Zagheh, on the Qazvin plain, is an early painted-pottery village of the 6th millennium BCE. Its most striking feature is a ‘painted building’ whose walls were decorated and set with the skulls of wild goats — one of the earliest hints of communal or ritual architecture on the plateau.",
    "The site helps trace the spread of settled village life into north-central Iran."
   ],
+  "refs": [ { "label": "Wikipedia — Prehistory of Iran", "url": "https://en.wikipedia.org/wiki/Prehistory_of_Iran" } ],
   "related": [ "e026", "e029", "e126" ]
  },
  "e027": {
@@ -264,6 +270,7 @@ window.ENRICH = {
    "Tal-i Iblis in Kerman produced hundreds of crucible fragments coated with copper slag, pointing to some of the earliest copper smelting on the plateau in the 5th–4th millennium BCE.",
    "It stands, with Tepe Ghabristan and Arisman, among the sites that show how the metallurgy of ancient Iran grew from small experiments into a major craft."
   ],
+  "refs": [ { "label": "Wikipedia — Prehistory of Iran", "url": "https://en.wikipedia.org/wiki/Prehistory_of_Iran" } ],
   "related": [ "e126", "e127", "e036" ]
  },
  "e031": {
@@ -363,6 +370,7 @@ window.ENRICH = {
    "Kurangun, high on a rock face in Mamasani, Fars, bears an open-air Elamite relief of a seated god enthroned on a coiled serpent, offering the water of life to rows of worshippers. First carved around the 17th century BCE, it was enlarged with later figures.",
    "With Naqsh-e Rostam and Kul-e Farah, it belongs to a tradition of Elamite rock art in the highlands of Fars."
   ],
+  "refs": [ { "label": "Wikipedia — Elam", "url": "https://en.wikipedia.org/wiki/Elam" } ],
   "related": [ "e045", "e053", "e081" ]
  },
  "e049": {
@@ -471,6 +479,7 @@ window.ENRICH = {
    "Tepe Nush-i Jan, on a rocky spur near Malayer in Hamadan, is one of the best-preserved Median sites, occupied about 750–600 BCE. It held a fort, a columned hall and — remarkably — one of the oldest known fire temples: a lozenge-shaped sanctuary with a stepped fire altar.",
    "When the settlement was abandoned its buildings were deliberately packed with stone and shale, which is why the mud-brick architecture still stands to roof height — a rare window onto Median religion and building before the Persians."
   ],
+  "refs": [ { "label": "Wikipedia — Medes", "url": "https://en.wikipedia.org/wiki/Medes" } ],
   "related": [ "e062", "e057", "e079" ]
  },
  "e062": {
