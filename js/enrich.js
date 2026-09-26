@@ -17,6 +17,7 @@ window.ENRICH = {
   "related": [ "e002", "e119", "e007" ]
  },
  "e002": {
+  "img": [ { "file": "Illustration of stone tools belonging to the Middle Palaeolithic (sometimes called 'Mousterian') industries.jpg", "alt": "Mousterian stone tools", "credit": "Middle Palaeolithic (Mousterian) stone tools of the kind made by Neanderthals · Wikimedia Commons" } ],
   "body": [
    "For more than a hundred thousand years, Neanderthals worked the caves and rock-shelters of the Zagros. Their toolkit — the Zagros Mousterian — is built around the Levallois technique, striking carefully pre-shaped flakes to make points and side-scrapers for hunting and butchering wild goat, sheep and deer.",
    "Classic assemblages come from the Lorestan caves of Houmian, Kunji, Ghamari and Kaldar; a fine selection is displayed in the Archaeological Museum of Lorestan inside Falak-ol-Aflak Castle at Khorramabad."
@@ -256,6 +257,11 @@ window.ENRICH = {
   "related": [ "e043", "e016" ]
  },
  "e025": {
+  "img": [ { "file": "Tepe Zagheh mortar 7000 BC.jpg", "alt": "Mortar from Tepe Zagheh", "credit": "Stone mortar from Tepe Zagheh, c. 7000 BCE · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Tepe Zagheh mortar 7000 BC.jpg", "alt": "Mortar from Tepe Zagheh", "credit": "Stone mortar from Tepe Zagheh, c. 7000 BCE · Wikimedia Commons" },
+   { "file": "Tepe Zagheh stone tools 7000 BC.jpg", "alt": "Stone tools from Tepe Zagheh", "credit": "Stone tools from Tepe Zagheh · Wikimedia Commons" }
+  ],
   "body": [
    "Tepe Zagheh, on the Qazvin plain, is an early painted-pottery village of the 6th millennium BCE. Its most striking feature is a ‘painted building’ whose walls were decorated and set with the skulls of wild goats — one of the earliest hints of communal or ritual architecture on the plateau.",
    "The site helps trace the spread of settled village life into north-central Iran."
@@ -316,6 +322,11 @@ window.ENRICH = {
   "related": [ "e035", "e131", "e036" ]
  },
  "e040": {
+  "img": [ { "file": "Puzur-Inshushinak, Governor of Susa, on the statue of the Goddess Narundi.jpg", "alt": "Puzur-Inshushinak", "credit": "Inscription of Puzur-Inshushinak of Awan on the statue of the goddess Narundi, Louvre · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Puzur-Inshushinak, Governor of Susa, on the statue of the Goddess Narundi.jpg", "alt": "Puzur-Inshushinak", "credit": "Inscription of Puzur-Inshushinak of Awan on the statue of the goddess Narundi, Louvre · Wikimedia Commons" },
+   { "file": "Statue Narundi Louvre Sb54-Sb6617.jpg", "alt": "Statue of Narundi", "credit": "The statue of the goddess Narundi dedicated at Susa, Louvre · Wikimedia Commons" }
+  ],
   "body": [
    "The Awan dynasty is the first royal line of Elam recorded in the king lists, ruling in the second half of the 3rd millennium BCE. Its kings bound together Elam’s two poles — the lowland around Susa and the highland of Anshan in Fars.",
    "Little survives of Awan beyond names and Mesopotamian references, but it marks the emergence of Elam as a state and a rival to Sumer and Akkad."
@@ -366,6 +377,7 @@ window.ENRICH = {
   "related": [ "e040", "e038", "e055" ]
  },
  "e046": {
+  "img": [ { "file": "Great Ziggurat of Ur.JPG", "alt": "Ziggurat of Ur", "credit": "The great ziggurat of Ur, the city sacked by the Elamites c. 2004 BCE · Wikimedia Commons" } ],
   "body": [
    "Around 2004 BCE Elamite and Shimashki forces destroyed the city of Ur, ending the last great Sumerian empire (the Third Dynasty of Ur) and carrying off its king.",
    "The catastrophe was mourned in the ‘Lament for Ur’, one of the masterpieces of Sumerian literature — and a sign of Elam’s growing power in the east."
@@ -444,6 +456,7 @@ window.ENRICH = {
   "related": [ "e056", "e045", "e032" ]
  },
  "e056": {
+  "img": [ { "file": "Babylonian Kassite Kudurru Boundary Stone Louvre Museum.jpg", "alt": "Babylonian kudurru", "credit": "A Babylonian boundary stone (kudurru) of the kind set up in Nebuchadnezzar I's age, Louvre · Wikimedia Commons" } ],
   "body": [
    "Around 1110 BCE the Babylonian king Nebuchadnezzar I struck back at Elam, sacking Susa and recovering the statue of the god Marduk that the Elamites had carried off.",
    "After this blow Elam almost vanishes from written records for some three centuries, before re-emerging as the Neo-Elamite kingdom on the eve of the Persians."
@@ -1667,6 +1680,11 @@ window.ENRICH = {
  },
 
  "e141": {
+  "img": [ { "file": "Painted terracotta tile from Baba Jan 3.jpg", "alt": "Painted tile from Baba Jan", "credit": "Painted terracotta tile from Baba Jan Tepe, Luristan · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Painted terracotta tile from Baba Jan 3.jpg", "alt": "Painted tile from Baba Jan", "credit": "Painted terracotta tile from Baba Jan Tepe, Luristan · Wikimedia Commons" },
+   { "file": "Painted terracotta tile from Baba Jan 1.jpg", "alt": "Painted tile from Baba Jan", "credit": "Painted terracotta tile from Baba Jan Tepe · Wikimedia Commons" }
+  ],
   "body": [
    "Baba Jan Tepe, in the high Delfan valleys of Luristan, was excavated by Clare Goff in the 1960s–70s. Its Iron Age levels included a painted “manor” and a building with a decorated hall, along with distinctive painted pottery.",
    "The site gives a rare, everyday picture of the Zagros communities that the Assyrian kings encountered — and taxed — when they campaigned into the mountains in the early first millennium BCE, the world from which the Medes and Persians would emerge."
@@ -2739,6 +2757,11 @@ window.ENRICH = {
   "related": [ "e134", "e030", "e037" ]
  },
  "e140": {
+  "img": [ { "file": "Master of Animals finial, Iran, Luristan, 8th century BC, bronze - Arthur M. Sackler Museum, Harvard University - DSC01574.jpg", "alt": "Luristan bronze finial", "credit": "A ‘Master of Animals’ finial, Luristan bronze, 8th century BCE, of the kind found at Surkh Dum · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Master of Animals finial, Iran, Luristan, 8th century BC, bronze - Arthur M. Sackler Museum, Harvard University - DSC01574.jpg", "alt": "Luristan bronze finial", "credit": "A ‘Master of Animals’ finial, Luristan bronze, 8th century BCE, of the kind found at Surkh Dum · Wikimedia Commons" },
+   { "file": "Ibex Standard Finial, about 700-600 BC, Luristan, Iran, bronze - Cleveland Museum of Art - DSC08159.JPG", "alt": "Luristan ibex finial", "credit": "An ibex standard finial, Luristan bronze, c. 700–600 BCE · Wikimedia Commons" }
+  ],
   "body": [
    "Surkh Dum-e Luri, a sanctuary site in the mountains of Luristan, was a religious centre of the Iron Age communities famous for the ‘Luristan bronzes’. Excavation revealed a shrine where worshippers deposited votive offerings over many generations.",
    "Among the finds were quantities of the elaborately cast bronze pins, plaques, weapons and horse-fittings that make the Luristan bronzes one of the most distinctive art traditions of ancient Iran, produced by the nomadic and settled peoples of the western Zagros."
