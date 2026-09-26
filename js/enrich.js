@@ -590,6 +590,12 @@ window.ENRICH = {
  },
  "e068": {
   "img": [ { "file": "Jean_Charles_Nicaise_Perrin_-_Cyrus_and_Astyages_-_WGA17209.jpg", "alt": "Cyrus and Astyages", "credit": "Cyrus and Astyages, by Jean-Charles Nicaise Perrin · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Jean_Charles_Nicaise_Perrin_-_Cyrus_and_Astyages_-_WGA17209.jpg", "alt": "Cyrus and Astyages", "credit": "Cyrus before Astyages, by J. C. N. Perrin · Wikimedia Commons" },
+   { "file": "Cyrus_II_(The_Great)_(cropped).jpg", "alt": "Cyrus the Great", "credit": "An idealised image of Cyrus the Great · Wikimedia Commons" },
+   { "file": "Painting_of_Cyrus_the_Great_in_battle.png", "alt": "Cyrus in battle", "credit": "Cyrus the Great in battle · Wikimedia Commons" },
+   { "file": "Defeat_of_Croesus_546_BCE.jpg", "alt": "Cyrus defeats Croesus", "credit": "Cyrus’s defeat of Croesus of Lydia, 546 BCE · Wikimedia Commons" }
+  ],
   "body": [
    "In 550 BCE Cyrus rebelled against his Median overlord Astyages. According to Herodotus the Median army defected to him, and Cyrus took the capital Ecbatana without a hard fight.",
    "The Medes were not so much conquered as absorbed: they became partners in the new Persian state, and Median nobles and customs stayed influential throughout the empire."
@@ -638,6 +644,12 @@ window.ENRICH = {
  },
  "e074": {
   "img": [ { "file": "Darius_detail_on_the_Darius_vase.jpg", "alt": "Darius I", "credit": "Darius I as imagined by a Greek painter (the Darius Vase) · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Darius_detail_on_the_Darius_vase.jpg", "alt": "Darius I", "credit": "Darius I, detail of the Darius Vase · Wikimedia Commons" },
+   { "file": "Darius_I.jpg", "alt": "Darius the Great", "credit": "Darius the Great · Wikimedia Commons" },
+   { "file": "Gaumata_being_trampled_upon_by_Darius.jpg", "alt": "Darius and Gaumata", "credit": "Darius treads on the usurper Gaumata, Bisotun · Wikimedia Commons" },
+   { "file": "The_Darius_seal._Darius_stands_in_a_royal_chariot_below_Ahura_Mazda_and_shoots_arrows_at_a_rampant_lion._From_Thebes,_Egypt._6th-5th_century_BCE._British_Museum_(cropped).jpg", "alt": "The Darius seal", "credit": "The royal seal of Darius, British Museum · Wikimedia Commons" }
+  ],
   "body": [
    "After Cambyses died in 522 BCE and the disputed killing of Bardiya (whom Darius calls the impostor Gaumata), Darius I seized the Achaemenid throne and spent a year crushing revolts that flared across the empire.",
    "Darius told his version of these events on the great cliff of Bisotun, and reorganised the state so thoroughly that he is often seen as its true second founder."
@@ -1363,6 +1375,12 @@ window.ENRICH = {
   "img": [
    { "file": "Anubanini_rock_relief_Ernst_Herzfeld_1913.jpg", "alt": "Anubanini rock relief", "credit": "The Anubanini relief at Sarpol-e Zahab, photographed by Ernst Herzfeld, 1913 · Wikimedia Commons" }
   ],
+  "gallery": [
+   { "file": "Anubanini_rock_relief_Ernst_Herzfeld_1913.jpg", "alt": "Anubanini relief (drawing)", "credit": "The Anubanini relief recorded by Ernst Herzfeld, 1913 · Wikimedia Commons" },
+   { "file": "Anubanini_Rock_Relief_1.jpg", "alt": "Anubanini relief", "credit": "The Anubanini rock relief at Sarpol-e Zahab · Wikimedia Commons" },
+   { "file": "Anubanini_relief_constituents_King_Anubanini.jpg", "alt": "King Anubanini", "credit": "King Anubanini on the relief · Wikimedia Commons" },
+   { "file": "Lullubi-ki_on_the_Anubanini_Rock_Relief.jpg", "alt": "Lullubi inscription", "credit": "The Lullubi inscription on the relief · Wikimedia Commons" }
+  ],
   "body": [
    "Carved into a cliff at Sarpol-e Zahab in the Zagros, the Anubanini relief shows a king of the Lullubi — a mountain people of the late 3rd millennium BCE — trampling a fallen enemy while the goddess Ishtar leads bound captives before him on a rope. It is among the oldest rock reliefs in Iran.",
    "The composition, with its triumphant ruler and rows of prisoners, set a template that echoes down more than fifteen centuries to Darius I’s great relief at Bisotun a short distance away — a reminder of how long the language of royal victory endured on these mountain roads."
@@ -1440,6 +1458,12 @@ window.ENRICH = {
   "img": [
    { "file": "Pasargad_Tomb_Cyrus3.jpg", "alt": "Pasargadae", "credit": "The tomb of Cyrus the Great, Pasargadae · Wikimedia Commons" }
   ],
+  "gallery": [
+   { "file": "Pasargad_Tomb_Cyrus3.jpg", "alt": "Tomb of Cyrus", "credit": "The tomb of Cyrus the Great at Pasargadae · Wikimedia Commons" },
+   { "file": "Audience_Palace,_Pasargadae_03.jpg", "alt": "Audience Palace", "credit": "The audience palace of Pasargadae · Wikimedia Commons" },
+   { "file": "Gateway_Palace,_Pasargades_01.jpg", "alt": "Gateway Palace", "credit": "The gateway palace of Pasargadae · Wikimedia Commons" },
+   { "file": "Passargade_by_Eugène_Flandin.jpg", "alt": "Pasargadae, 19th c.", "credit": "Pasargadae drawn by Eugène Flandin, 19th century · Wikimedia Commons" }
+  ],
   "body": [
    "Pasargadae was the first dynastic capital of the Achaemenid Empire, laid out by Cyrus the Great after about 546 BCE across a high plain in Fars. Its scattered palaces, audience hall and gatehouse sat within a network of watercourses and plantings — the earliest known Persian “paradise” garden, the chahar bagh.",
    "At its edge stands the austere gabled tomb of Cyrus, a six-stepped plinth carrying a simple gabled chamber; Alexander the Great is said to have paid his respects there. Pasargadae was inscribed by UNESCO in 2004."
@@ -1455,6 +1479,11 @@ window.ENRICH = {
   "img": [
    { "file": "Cyrus_Cylinder_front.jpg", "alt": "Cyrus Cylinder", "credit": "The Cyrus Cylinder, British Museum · Wikimedia Commons" }
   ],
+  "gallery": [
+   { "file": "Cyrus_Cylinder_front.jpg", "alt": "The Cyrus Cylinder", "credit": "The Cyrus Cylinder, British Museum · Wikimedia Commons" },
+   { "file": "Cyrus_Cylinder_back.jpg", "alt": "Cyrus Cylinder (reverse)", "credit": "The reverse of the Cyrus Cylinder · Wikimedia Commons" },
+   { "file": "Cyrus_Cylinder_detail.jpg", "alt": "Cuneiform detail", "credit": "Detail of the cuneiform text of the Cyrus Cylinder · Wikimedia Commons" }
+  ],
   "body": [
    "In 539 BCE Cyrus the Great took Babylon, and the event was commemorated on a barrel-shaped clay cylinder inscribed in Akkadian cuneiform. In it Cyrus presents himself as chosen by the Babylonian god Marduk and describes restoring temples and returning deported peoples and their gods to their homelands — a message echoed in the Hebrew Bible’s account of the Jews’ return to Jerusalem.",
    "Excavated at Babylon in 1879 and now in the British Museum, the cylinder is a masterpiece of royal propaganda. Its popular billing as the “first charter of human rights” is a modern interpretation that most historians regard as anachronistic."
@@ -1469,6 +1498,12 @@ window.ENRICH = {
   "img": [
    { "file": "Bisotun_Iran_Relief_Achamenid_Period.JPG", "alt": "Behistun relief", "credit": "The relief and inscription of Darius I at Bisotun · Wikimedia Commons" }
   ],
+  "gallery": [
+   { "file": "Bisotun_Iran_Relief_Achamenid_Period.JPG", "alt": "Bisotun relief", "credit": "The relief and inscription of Darius I at Bisotun · Wikimedia Commons" },
+   { "file": "Behistun_relief_Darius_and_Gaumata.jpg", "alt": "Darius and the rebels", "credit": "Darius treads on Gaumata before the captive rebel kings · Wikimedia Commons" },
+   { "file": "Behistun_Inscription_in_Persia_ca._520_BC-_UNESCO_World_Heritage_Site.jpg", "alt": "The cliff at Bisotun", "credit": "The inscription high on the cliff at Bisotun · Wikimedia Commons" },
+   { "file": "Behistun_DB1_1-15.jpg", "alt": "Old Persian cuneiform", "credit": "The Old Persian cuneiform text of the inscription · Wikimedia Commons" }
+  ],
   "body": [
    "High on a limestone cliff above the old road between Ecbatana and Babylon, Darius I carved the story of his contested rise to power around 520 BCE. A relief shows the king facing nine bound rebel “liar kings”, with the winged symbol of Ahuramazda above; a long trilingual text in Old Persian, Elamite and Babylonian spells out his version of events.",
    "Because the same text appears in three scripts, Bisotun became the key that unlocked cuneiform — the role Henry Rawlinson’s copies of the 1830s–40s played for Mesopotamian writing, much as the Rosetta Stone did for Egyptian hieroglyphs. It is a UNESCO World Heritage Site (2006)."
@@ -1482,6 +1517,12 @@ window.ENRICH = {
  "e076": {
   "img": [
    { "file": "2018-09-21_Iran,_Persepolis,_Tachara_(from_the_southeast).jpg", "alt": "Persepolis", "credit": "The Tachara palace, Persepolis · Wikimedia Commons" }
+  ],
+  "gallery": [
+   { "file": "2018-09-21_Iran,_Persepolis,_Tachara_(from_the_southeast).jpg", "alt": "Persepolis (Tachara)", "credit": "The Tachara palace at Persepolis · Wikimedia Commons" },
+   { "file": "General_view_of_the_ruins_of_Persepolis.jpg", "alt": "Ruins of Persepolis", "credit": "General view of the ruins of Persepolis · Wikimedia Commons" },
+   { "file": "Persepolis_Reconstruction_Apadana_Chipiez.jpg", "alt": "Reconstruction of the Apadana", "credit": "Reconstruction of the Apadana at Persepolis (Chipiez) · Wikimedia Commons" },
+   { "file": "Georges-Antoine_Rochegrosse_Incendie_de_Persepolis_1890.jpg", "alt": "The burning of Persepolis", "credit": "‘The Burning of Persepolis’ by Rochegrosse, 1890 · Wikimedia Commons" }
   ],
   "body": [
    "Begun by Darius I from about 518 BCE and continued by Xerxes and their successors, Persepolis (Old Persian Parsa) was the ceremonial heart of the Achaemenid Empire. Its terrace carried the great columned audience hall, the Apadana, whose stairway reliefs show delegations from twenty-three subject peoples bringing gifts — a stone image of empire.",
