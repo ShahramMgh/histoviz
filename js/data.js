@@ -280,7 +280,15 @@ window.EV = [
  {id:"e213",e:"later",y:1882,lat:35.689,lng:51.39,d:"1882–1967 CE",t:"Mohammad Mossadegh",p:"Tehran",x:"Prime minister who nationalized Iran’s oil in 1951 and was overthrown in the 1953 coup, an event that long shaped Iran’s relations with the West.",c:"state"},
  {id:"e214",e:"later",y:1903,lat:35.689,lng:51.39,d:"1903–1951 CE",t:"Sadegh Hedayat",p:"Tehran",x:"The founder of modern Iranian fiction, whose haunting novella The Blind Owl is the most famous work of 20th-century Persian prose.",c:"culture"},
  {id:"e215",e:"later",y:1907,lat:38.08,lng:46.29,d:"1907–1941 CE",t:"Parvin E’tesami",p:"Tabriz / Tehran",x:"One of the most beloved Persian poets of the 20th century, whose polished didactic verse gave voice to the poor and to women.",c:"culture"},
- {id:"e216",e:"later",y:1979,lat:35.689,lng:51.39,d:"1979 CE",t:"The Islamic Revolution",p:"Tehran",x:"The revolution that overthrew the monarchy in 1979 and founded the Islamic Republic, closing 2,500 years of Iranian kingship.",c:"state"}
+ {id:"e216",e:"later",y:1979,lat:35.689,lng:51.39,d:"1979 CE",t:"The Islamic Revolution",p:"Tehran",x:"The revolution that overthrew the monarchy in 1979 and founded the Islamic Republic, closing 2,500 years of Iranian kingship.",c:"state"},
+ {id:"e224",e:"later",y:1300,lat:36.27,lng:50.00,d:"c. 1300–1371 CE",t:"Obayd Zakani",p:"Qazvin",x:"Poet and the greatest satirist of classical Persian literature, famed for his biting social wit and the fable Mush-o-Gorbeh (‘Mice and Cat’).",c:"culture"},
+ {id:"e218",e:"later",y:1921,lat:29.59,lng:52.58,d:"1921–2012 CE",t:"Simin Daneshvar",p:"Shiraz",x:"Iran’s first major woman novelist; her Savushun (1969) is among the best-loved and best-selling Persian novels.",c:"culture"},
+ {id:"e217",e:"later",y:1923,lat:35.70,lng:51.42,d:"1923–1969 CE",t:"Jalal Al-e-Ahmad",p:"Tehran",x:"Writer and social critic whose polemic Gharbzadegi (‘Westoxification’) shaped a generation of Iranian intellectuals.",c:"culture"},
+ {id:"e219",e:"later",y:1925,lat:35.70,lng:51.42,d:"1925–2000 CE",t:"Ahmad Shamlou",p:"Tehran",x:"Towering modernist poet, translator and lexicographer, the master of Persian ‘white’ (free) verse.",c:"culture"},
+ {id:"e220",e:"later",y:1929,lat:36.30,lng:59.61,d:"1929–1990 CE",t:"Mehdi Akhavan-Sales",p:"Mashhad",x:"Major modern poet who fused Nima’s free verse with the epic gravity of the old Khorasani style.",c:"culture"},
+ {id:"e221",e:"later",y:1933,lat:36.20,lng:57.68,d:"1933–1977 CE",t:"Ali Shariati",p:"Mazinan, Khorasan",x:"Sociologist and Islamic thinker whose lectures reinterpreting Shia Islam helped inspire the 1979 revolution.",c:"culture"},
+ {id:"e222",e:"later",y:1940,lat:35.70,lng:51.42,d:"1940–2016 CE",t:"Abbas Kiarostami",p:"Tehran",x:"Palme d’Or-winning filmmaker, the central figure of the internationally acclaimed Iranian New Wave.",c:"culture"},
+ {id:"e223",e:"later",y:1977,lat:35.70,lng:51.42,d:"1977–2017 CE",t:"Maryam Mirzakhani",p:"Tehran",x:"Mathematician and the first woman to win the Fields Medal (2014), for her work on the geometry of curved surfaces.",c:"culture"}
 ];
 
 /* ============================================================

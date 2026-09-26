@@ -2657,6 +2657,102 @@ window.ENRICH = {
   "refs": [ { "label": "Wikipedia — Iranian Revolution", "url": "https://en.wikipedia.org/wiki/Iranian_Revolution" } ],
   "related": [ "e209", "e213", "e208" ]
  },
+ "e224": {
+  "img": [ { "file": "A_compilation_of_works_by_'Ubayd-i_Zakani_(d._1370)_and_Fakhr_al-Din_Bushaq-e_a'tima_(d._1420)_signed_Ahmad_al-Shirazi,_Safavid_Iran,_dated_April-May_1540.jpg", "alt": "Manuscript of Obayd Zakani", "credit": "A Safavid manuscript of the works of Obayd Zakani, 1540 · Wikimedia Commons" } ],
+  "body": [
+   "Obayd Zakani, from near Qazvin, is the great satirist of classical Persian literature. In an age of Mongol turmoil and pious cant he turned a merciless, often bawdy wit on the hypocrisy of judges, clerics and rulers.",
+   "His mock-heroic fable Mush-o-Gorbeh (‘The Mice and the Cat’), his ‘Ethics of the Aristocrats’ and his book of jokes remain sharp and funny six centuries on — a rare comic voice in a tradition dominated by lyric and epic."
+  ],
+  "refs": [ { "label": "Wikipedia — Obayd Zakani", "url": "https://en.wikipedia.org/wiki/Obayd_Zakani" } ],
+  "related": [ "e154", "e155", "e193" ]
+ },
+ "e218": {
+  "img": [ { "file": "Simin_Daneshvar_Cc0be0e4.jpg", "alt": "Simin Daneshvar", "credit": "Simin Daneshvar · Wikimedia Commons" } ],
+  "body": [
+   "Simin Daneshvar was Iran’s first major woman novelist and a pioneering translator and academic. Her 1969 novel Savushun, set in wartime Shiraz and seen through the eyes of a woman, is one of the best-loved and best-selling works of modern Persian fiction.",
+   "Married to the writer Jalal Al-e-Ahmad, she was a central figure of Tehran’s literary world for half a century, and her clear, humane prose opened the Persian novel to women’s experience and inner life."
+  ],
+  "refs": [ { "label": "Wikipedia — Simin Daneshvar", "url": "https://en.wikipedia.org/wiki/Simin_Daneshvar" } ],
+  "related": [ "e217", "e219", "e215" ]
+ },
+ "e217": {
+  "img": [ { "file": "Jalal_Al-e-Ahmad05_(1).jpg", "alt": "Jalal Al-e-Ahmad", "credit": "Jalal Al-e-Ahmad · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Jalal_Al-e-Ahmad05_(1).jpg", "alt": "Jalal Al-e-Ahmad", "credit": "Jalal Al-e-Ahmad · Wikimedia Commons" },
+   { "file": "Jalal_Al-Ahmad_stamp.JPG", "alt": "Al-e-Ahmad stamp", "credit": "Jalal Al-e-Ahmad commemorated on a stamp · Wikimedia Commons" }
+  ],
+  "body": [
+   "Jalal Al-e-Ahmad was among the most influential Iranian writers and social critics of the 20th century. A novelist and essayist of great energy, he moved from communism through disillusionment to a searching engagement with Iran’s own culture.",
+   "His 1962 polemic Gharbzadegi (‘Westoxification’) argued that Iran had become passively addicted to Western technology and values at the cost of its own identity. The book electrified a generation and became a touchstone of the intellectual ferment that preceded the 1979 revolution."
+  ],
+  "refs": [ { "label": "Wikipedia — Jalal Al-e-Ahmad", "url": "https://en.wikipedia.org/wiki/Jalal_Al-e-Ahmad" } ],
+  "related": [ "e218", "e221", "e214" ]
+ },
+ "e219": {
+  "img": [ { "file": "Ahmad_Shamlu.jpg", "alt": "Ahmad Shamlou", "credit": "Ahmad Shamlou · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Ahmad_Shamlu.jpg", "alt": "Ahmad Shamlou", "credit": "Ahmad Shamlou · Wikimedia Commons" },
+   { "file": "Ahmad_Shamlou_writing.jpg", "alt": "Ahmad Shamlou writing", "credit": "Ahmad Shamlou at work · Wikimedia Commons" }
+  ],
+  "body": [
+   "Ahmad Shamlou was one of the giants of modern Persian poetry — a poet, translator, journalist and lexicographer whose work dominated the second half of the 20th century. Building on Nima Yushij’s revolution, he perfected she‘r-e sepid (‘white verse’), abandoning metre altogether for a powerful, incantatory free rhythm.",
+   "His poetry fused love, political defiance and a deep humanism, and made him a beloved and often censored public voice. He also translated widely into Persian and spent decades compiling the Ketab-e Kucheh, a vast encyclopaedia of Iranian folk culture and idiom."
+  ],
+  "refs": [ { "label": "Wikipedia — Ahmad Shamlou", "url": "https://en.wikipedia.org/wiki/Ahmad_Shamlou" } ],
+  "related": [ "e158", "e159", "e220" ]
+ },
+ "e220": {
+  "img": [ { "file": "Mehdi Akhavan Sales - Mohammad Ghahraman-Ali Bagherzadeh Bagha - (Cropped).jpg", "alt": "Mehdi Akhavan-Sales", "credit": "Mehdi Akhavan-Sales (right) · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Mehdi Akhavan Sales - Mohammad Ghahraman-Ali Bagherzadeh Bagha - (Cropped).jpg", "alt": "Mehdi Akhavan-Sales", "credit": "Mehdi Akhavan-Sales (right) · Wikimedia Commons" },
+   { "file": "Mehdi_Akhavan-Sales_grave.jpg", "alt": "Grave of Akhavan-Sales", "credit": "The grave of Mehdi Akhavan-Sales near Tus · Wikimedia Commons" }
+  ],
+  "body": [
+   "Mehdi Akhavan-Sales (‘M. Omid’) was one of the most important poets of modern Iran, who married the free-verse innovations of Nima Yushij to the grave, sonorous diction of the old Khorasani masters.",
+   "Steeped in the Shahnameh and in ancient Iranian legend, his melancholy, symbol-laden poems — above all ‘Winter’ (Zemestan) — captured the disillusionment that followed the 1953 coup and became anthems of a generation."
+  ],
+  "refs": [ { "label": "Wikipedia — Mehdi Akhavan-Sales", "url": "https://en.wikipedia.org/wiki/Mehdi_Akhavan-Sales" } ],
+  "related": [ "e158", "e219", "e144" ]
+ },
+ "e221": {
+  "img": [ { "file": "Dr_Ali_Shariati.jpg", "alt": "Ali Shariati", "credit": "Ali Shariati · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Dr_Ali_Shariati.jpg", "alt": "Ali Shariati", "credit": "Ali Shariati · Wikimedia Commons" },
+   { "file": "Shariati7.jpg", "alt": "Ali Shariati", "credit": "Ali Shariati lecturing · Wikimedia Commons" }
+  ],
+  "body": [
+   "Ali Shariati was a sociologist and religious thinker whose reinterpretation of Shia Islam as a revolutionary ideology of social justice made him one of the most influential figures behind the 1979 revolution. Educated in Mashhad and Paris, he blended modern sociology with Islamic themes.",
+   "His electrifying lectures at the Hosseiniyeh Ershad in Tehran drew huge young audiences and cast Shiism as a creed of protest against tyranny and inequality. Harassed by the Shah’s SAVAK, he died in Britain in 1977, on the eve of the upheaval his ideas had helped to shape."
+  ],
+  "refs": [ { "label": "Wikipedia — Ali Shariati", "url": "https://en.wikipedia.org/wiki/Ali_Shariati" } ],
+  "related": [ "e216", "e217", "e209" ]
+ },
+ "e222": {
+  "img": [ { "file": "Kiarostami_Boroujerdi_(3)(Cropped).jpg", "alt": "Abbas Kiarostami", "credit": "Abbas Kiarostami · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Kiarostami_Boroujerdi_(3)(Cropped).jpg", "alt": "Abbas Kiarostami", "credit": "Abbas Kiarostami · Wikimedia Commons" },
+   { "file": "Abbas_Kiarostami_by_tasnimnews_09.jpg", "alt": "Abbas Kiarostami", "credit": "Abbas Kiarostami · Wikimedia Commons" }
+  ],
+  "body": [
+   "Abbas Kiarostami was one of the most acclaimed filmmakers in the history of world cinema and the central figure of the Iranian New Wave. Working often with non-professional actors, children and the landscapes of rural Iran, he made spare, quietly profound films that blur the line between fiction and documentary.",
+   "His ‘Koker trilogy’ and films such as Close-Up and Taste of Cherry — which won the Palme d’Or at Cannes in 1997 — brought Iranian cinema to global prominence and influenced directors around the world. He also worked as a photographer and poet."
+  ],
+  "refs": [ { "label": "Wikipedia — Abbas Kiarostami", "url": "https://en.wikipedia.org/wiki/Abbas_Kiarostami" } ],
+  "related": [ "e159", "e219", "e216" ]
+ },
+ "e223": {
+  "img": [ { "file": "Maryam Mirzakhani (cropped).jpg", "alt": "Maryam Mirzakhani", "credit": "Maryam Mirzakhani · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Maryam Mirzakhani (cropped).jpg", "alt": "Maryam Mirzakhani", "credit": "Maryam Mirzakhani · Wikimedia Commons" },
+   { "file": "Four_Fields_medallists_plus_epsilon.jpg", "alt": "Fields Medallists 2014", "credit": "Mirzakhani (left) among the 2014 Fields Medallists · Wikimedia Commons" }
+  ],
+  "body": [
+   "Maryam Mirzakhani was a mathematician of the first rank and, in 2014, the first woman — and first Iranian — ever to win the Fields Medal, mathematics’ highest honour. A two-time gold medallist at the International Mathematical Olympiad as a schoolgirl in Tehran, she went on to a professorship at Stanford.",
+   "Her deep work on the geometry and dynamics of curved surfaces (Riemann surfaces, moduli spaces and billiards) reshaped several fields. Her death from cancer in 2017 at only forty was mourned across Iran and the mathematical world; she remains an icon for young women in science."
+  ],
+  "refs": [ { "label": "Wikipedia — Maryam Mirzakhani", "url": "https://en.wikipedia.org/wiki/Maryam_Mirzakhani" } ],
+  "related": [ "e171", "e161", "e169" ]
+ },
  "e119": {
   "img": [ { "file": "Darband_cave,_Gilan.jpg", "alt": "Darband Cave", "credit": "Darband Cave in the mountains of Gilan · Wikimedia Commons" } ],
   "body": [
