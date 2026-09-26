@@ -2562,6 +2562,113 @@ window.ENRICH = {
   "refs": [ { "label": "Wikipedia — Iranian Revolution", "url": "https://en.wikipedia.org/wiki/Iranian_Revolution" } ],
   "related": [ "e209", "e213", "e208" ]
  },
+ "e119": {
+  "img": [ { "file": "Darband_cave,_Gilan.jpg", "alt": "Darband Cave", "credit": "Darband Cave in the mountains of Gilan · Wikimedia Commons" } ],
+  "body": [
+   "Darband Cave, in the mountains of Gilan above the Sefidrud valley, has yielded some of the oldest evidence of human presence in northern Iran — simple stone tools and butchered animal bones pointing to occupation deep in the Palaeolithic.",
+   "Remains of cave bear and other Pleistocene fauna alongside the artefacts show early humans sharing these highland caves with the great animals of the Ice Age, hunting or scavenging along the Caspian slopes in very remote antiquity."
+  ],
+  "refs": [ { "label": "Wikipedia — Darband Cave", "url": "https://en.wikipedia.org/wiki/Darband_Cave" } ],
+  "related": [ "e001", "e002", "e003" ]
+ },
+ "e121": {
+  "body": [
+   "Eshkaft-e Gavi, a cave near Marvdasht in Fars, was occupied by hunter-gatherers of the Upper Palaeolithic and later Epipalaeolithic, tens of thousands of years ago.",
+   "Its stone tools and animal bones document the gradual shift toward broad-spectrum foraging — small game, plants and shellfish alongside big game — the way of life that would eventually lead, in this same region of southern Iran, to the first experiments with farming."
+  ],
+  "refs": [ { "label": "Wikipedia — Prehistory of Iran", "url": "https://en.wikipedia.org/wiki/Prehistory_of_Iran" } ],
+  "related": [ "e004", "e005", "e006" ]
+ },
+ "e123": {
+  "body": [
+   "Tepe Guran, in the Hulailan valley of Luristan, is one of the key early village sites of the Zagros. Excavation revealed a long sequence running from the flimsy seasonal huts of herders up to a settled farming village of mud-brick houses.",
+   "The site helps trace the crucial transition, in the 8th–7th millennium BCE, from mobile hunting and herding to permanent agricultural life — one of the foundations on which later civilisation was built."
+  ],
+  "refs": [ { "label": "Wikipedia — Prehistory of Iran", "url": "https://en.wikipedia.org/wiki/Prehistory_of_Iran" } ],
+  "related": [ "e124", "e010", "e011" ]
+ },
+ "e124": {
+  "body": [
+   "Tepe Abdul Hosein, near Nurabad in Luristan, is an early Neolithic settlement of the high Zagros, dating to around the late 8th millennium BCE.",
+   "Its inhabitants were among the pioneers of farming and herding in the mountains, living in small mud-brick houses; the site preserves early stages in the domestication of plants and animals that would transform human life across the Near East."
+  ],
+  "refs": [ { "label": "Wikipedia — Prehistory of Iran", "url": "https://en.wikipedia.org/wiki/Prehistory_of_Iran" } ],
+  "related": [ "e123", "e010", "e011" ]
+ },
+ "e125": {
+  "body": [
+   "Sang-e Chakhmaq, a pair of mounds near Shahroud on the northern edge of the central plateau, marks the eastward spread of the Neolithic and is among the earliest farming settlements known in north-eastern Iran.",
+   "Its finds — mud-brick architecture, early pottery, figurines and evidence of domesticated crops and animals — link the Neolithic worlds of the Zagros and Central Asia, and bear on the spread of farming toward the Iranian northeast and beyond."
+  ],
+  "refs": [ { "label": "Wikipedia — Prehistory of Iran", "url": "https://en.wikipedia.org/wiki/Prehistory_of_Iran" } ],
+  "related": [ "e123", "e124", "e138" ]
+ },
+ "e129": {
+  "img": [ { "file": "Godin_tape.jpg", "alt": "Godin Tepe", "credit": "The mound of Godin Tepe in the Kangavar valley, near Seh Gabi · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Godin_tape.jpg", "alt": "Godin Tepe mound", "credit": "The mound of Godin Tepe in the Kangavar valley, near Seh Gabi · Wikimedia Commons" },
+   { "file": "Cuenco_de_Cerámica_(Godin_Tepe,_Irán)_-_MARQ.jpg", "alt": "Painted bowl from the Kangavar valley", "credit": "Chalcolithic painted pottery from the Kangavar valley (Godin Tepe) · Wikimedia Commons" }
+  ],
+  "body": [
+   "Seh Gabi is a cluster of small mounds in the Kangavar valley of the central Zagros, excavated together with the neighbouring Godin Tepe. Its remains span the Chalcolithic — the age when copper metallurgy and painted pottery flourished.",
+   "The finely painted ceramics recovered here, related to the wares of Mesopotamia’s Ubaid and later periods, show the Zagros communities woven into the wider exchange networks of the 5th and 4th millennia BCE."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Seh Gabi", "url": "https://en.wikipedia.org/wiki/Seh_Gabi" },
+   { "label": "Wikipedia — Godin Tepe", "url": "https://en.wikipedia.org/wiki/Godin_Tepe" }
+  ],
+  "related": [ "e017", "e020", "e022" ]
+ },
+ "e130": {
+  "body": [
+   "Tepe Pardis, on the Varamin plain south-east of Tehran, is a Chalcolithic site that has thrown light on the beginnings of craft industry on the central plateau, with some of the earliest evidence in Iran for large-scale, specialised pottery production.",
+   "Traces of clay-extraction pits and kilns suggest that by the 5th millennium BCE potters here were working almost on an industrial scale — a sign of growing economic complexity in the villages around the future site of Tehran."
+  ],
+  "refs": [ { "label": "Wikipedia — Prehistory of Iran", "url": "https://en.wikipedia.org/wiki/Prehistory_of_Iran" } ],
+  "related": [ "e136", "e017", "e020" ]
+ },
+ "e134": {
+  "img": [ { "file": "Triple_pottery_vessel_-_early_2nd_millennium_BC_-_Shah_Tepe_(Golestan_province)_-_National_Museum_of_Iran_-_Inv._number_314_-_(3).jpg", "alt": "Pottery from Shah Tepe", "credit": "Triple pottery vessel from Shah Tepe, early 2nd millennium BCE, National Museum of Iran · Wikimedia Commons" } ],
+  "body": [
+   "Shah Tepe, on the fertile Gorgan plain near the Caspian, is a Bronze Age mound first excavated in the 1930s. Its distinctive grey-black burnished pottery links it to a cultural world stretching across north-eastern Iran and Central Asia.",
+   "The settlement flourished in the 3rd millennium BCE as part of the trade and cultural network connecting the Caspian lowlands with the great Bronze Age centres to the east, and its cemeteries have yielded fine metalwork and ceramics."
+  ],
+  "refs": [ { "label": "Wikipedia — Shah Tepe", "url": "https://en.wikipedia.org/wiki/Shah_Tepe" } ],
+  "related": [ "e138", "e030", "e031" ]
+ },
+ "e135": {
+  "body": [
+   "The mound of Bampur, in the hot lowlands of Iranian Baluchistan, gives its name to a Bronze Age culture of the south-east. Its distinctive painted and grey wares place it within the far-flung trade world that linked the Iranian plateau, the Jiroft culture and the Indus Valley civilisation.",
+   "As a node on the routes that carried chlorite vessels, metals and semi-precious stones between Mesopotamia, Iran and the Indus, Bampur illuminates the eastern — and often overlooked — half of Iran’s Bronze Age."
+  ],
+  "refs": [ { "label": "Wikipedia — Bampur", "url": "https://en.wikipedia.org/wiki/Bampur" } ],
+  "related": [ "e030", "e033", "e138" ]
+ },
+ "e136": {
+  "img": [ { "file": "Proto-Elamite_tablet_with_transcription.jpg", "alt": "Proto-Elamite tablet", "credit": "A Proto-Elamite clay tablet — the kind of administrative record found at Tepe Sofalin · Wikimedia Commons" } ],
+  "body": [
+   "Tepe Sofalin, near Pishva south-east of Tehran, was an important administrative centre of the Proto-Elamite period around 3100 BCE. Excavations uncovered clay tablets inscribed in the still-undeciphered Proto-Elamite script, together with cylinder seals and sealings.",
+   "These finds show that the earliest writing and bureaucratic accounting in Iran were not confined to Susa but reached across the plateau to the region of modern Tehran, at the very dawn of recorded administration."
+  ],
+  "refs": [ { "label": "Wikipedia — Proto-Elamite", "url": "https://en.wikipedia.org/wiki/Proto-Elamite" } ],
+  "related": [ "e025", "e026", "e130" ]
+ },
+ "e138": {
+  "body": [
+   "Gohar Tepe, on the Caspian plain near Behshahr in Mazandaran, is one of the largest prehistoric mounds of northern Iran, with occupation spanning the Bronze and Iron Ages over several millennia.",
+   "Its excavated burials, architecture and metalwork reveal a long-lived, prosperous community of the Caspian lowlands, and have made the site a key reference for the prehistory of Iran’s northern coast."
+  ],
+  "refs": [ { "label": "Wikipedia — Prehistory of Iran", "url": "https://en.wikipedia.org/wiki/Prehistory_of_Iran" } ],
+  "related": [ "e134", "e030", "e037" ]
+ },
+ "e140": {
+  "body": [
+   "Surkh Dum-e Luri, a sanctuary site in the mountains of Luristan, was a religious centre of the Iron Age communities famous for the ‘Luristan bronzes’. Excavation revealed a shrine where worshippers deposited votive offerings over many generations.",
+   "Among the finds were quantities of the elaborately cast bronze pins, plaques, weapons and horse-fittings that make the Luristan bronzes one of the most distinctive art traditions of ancient Iran, produced by the nomadic and settled peoples of the western Zagros."
+  ],
+  "refs": [ { "label": "Wikipedia — Luristan bronze", "url": "https://en.wikipedia.org/wiki/Luristan_bronze" } ],
+  "related": [ "e037", "e134", "e135" ]
+ },
 
  "e152": {
   "img": [ { "file": "Maulana_Jelaledin_Muhammad_Rumi_in_konya.jpg", "alt": "Shrine of Rumi", "credit": "The tomb-shrine of Rumi (the Mevlana Museum), Konya · Wikimedia Commons" } ],
