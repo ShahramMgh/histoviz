@@ -2050,6 +2050,271 @@ window.ENRICH = {
   ],
   "related": [ "e198", "e177", "e155" ]
  },
+ "e179": {
+  "img": [ { "file": "TahiribnHusaynCoinHistoryofIran.jpg", "alt": "Coin of Tahir ibn Husayn", "credit": "Coin of Tahir ibn Husayn · Wikimedia Commons" } ],
+  "body": [
+   "Tahir ibn Husayn, a general of Persian descent, won the civil war that placed the caliph al-Ma’mun on the Abbasid throne. As his reward he was made governor of the vast eastern province of Khorasan in 821, where he founded the Tahirid dynasty.",
+   "The Tahirids ruled Khorasan almost as independent kings and are often counted as the first of the semi-independent Iranian dynasties that arose as Abbasid power waned — the beginning of Iran’s political re-emergence after the Arab conquest."
+  ],
+  "refs": [ { "label": "Wikipedia — Tahir ibn Husayn", "url": "https://en.wikipedia.org/wiki/Tahir_ibn_Husayn" } ],
+  "related": [ "e180", "e181", "e118" ]
+ },
+ "e180": {
+  "img": [ { "file": "The_Statue_of_Ya'qub_ibn_al-Layth_al-Saffar.jpg", "alt": "Statue of Ya'qub ibn Layth", "credit": "Statue of Ya‘qub ibn al-Layth al-Saffar · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "The_Statue_of_Ya'qub_ibn_al-Layth_al-Saffar.jpg", "alt": "Statue of Ya'qub", "credit": "Statue of Ya‘qub ibn al-Layth al-Saffar · Wikimedia Commons" },
+   { "file": "An_illustrated_and_illuminated_folio_from_a_manuscript_of_Husayn_Va’iz_al-Kashifi’s_Akhlaq-i_Muhsini;_Ya'qub_ibn_Layth_standing_on_the_roof_in_full_armour,_Persia,_Shiraz,_Safavid,_16th_century.jpg", "alt": "Ya'qub in armour", "credit": "Ya‘qub ibn Layth in full armour, Safavid manuscript · Wikimedia Commons" },
+   { "file": "آرامگاه_یعقوب_لیث.jpg", "alt": "Tomb of Ya'qub", "credit": "The tomb of Ya‘qub ibn Layth near Dezful · Wikimedia Commons" }
+  ],
+  "body": [
+   "Ya‘qub ibn al-Layth, a coppersmith (saffar) turned warlord from Sistan, carved out an empire by the sword. From 861 he overthrew the Tahirids and pushed to the very gates of Baghdad, defying the caliph himself.",
+   "The Saffarid dynasty he founded was the first since the Arab conquest to make Persian the language of the court, and tradition credits Ya‘qub with reviving Persian poetry. Though his empire was short-lived, he became a folk hero of Iranian independence."
+  ],
+  "refs": [ { "label": "Wikipedia — Ya'qub ibn al-Layth al-Saffar", "url": "https://en.wikipedia.org/wiki/Ya%27qub_ibn_al-Layth_al-Saffar" } ],
+  "related": [ "e179", "e181", "e143" ]
+ },
+ "e181": {
+  "img": [ { "file": "13_Buhara_Mavzolej_Ismaila_Samanija_(2).JPG", "alt": "Samanid mausoleum", "credit": "The Samanid mausoleum at Bukhara · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "13_Buhara_Mavzolej_Ismaila_Samanija_(2).JPG", "alt": "Samanid mausoleum", "credit": "The Samanid mausoleum at Bukhara, a masterpiece of early Islamic brickwork · Wikimedia Commons" },
+   { "file": "TajikistanP19-100Somoni-1999(2000)-donatedeh_f.jpg", "alt": "Ismail Samani banknote", "credit": "Ismail Samani on a Tajik banknote · Wikimedia Commons" }
+  ],
+  "body": [
+   "Ismail Samani, ruling from Bukhara from 892, built the Samanid state into the most brilliant Iranian realm of its age, embracing Khorasan and Transoxiana. Firm, just and pious, he became a model of the good Iranian king.",
+   "Under the Samanids, Bukhara and Samarkand blossomed into centres of learning where the young Avicenna studied and Rudaki sang; here New Persian literature came fully of age. Ismail’s domed mausoleum at Bukhara is a masterpiece of early Islamic brickwork."
+  ],
+  "refs": [ { "label": "Wikipedia — Ismail Samani", "url": "https://en.wikipedia.org/wiki/Ismail_Samani" } ],
+  "related": [ "e143", "e166", "e184" ]
+ },
+ "e182": {
+  "img": [ { "file": "Gonbad-e_Qabus.JPG", "alt": "Gonbad-e Qabus tower", "credit": "The Gonbad-e Qabus tomb-tower, raised in 1006 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Gonbad-e_Qabus.JPG", "alt": "Gonbad-e Qabus", "credit": "The Gonbad-e Qabus tomb-tower · Wikimedia Commons" },
+   { "file": "Coin_of_Qabus,_minted_in_Jurjan_(Gorgan).jpg", "alt": "Coin of Qabus", "credit": "Coin of Qabus, minted at Jurjan · Wikimedia Commons" }
+  ],
+  "body": [
+   "Qabus ibn Wushmagir, ruler of the small Ziyarid state on the Caspian, was a polymath prince — poet, calligrapher, astronomer and patron — at whose court the young Avicenna and al-Biruni found favour.",
+   "He is immortalised by the tower he raised for his own tomb, the Gonbad-e Qabus: a soaring brick cylinder over fifty metres high, built in 1006, one of the marvels of Iranian architecture and a UNESCO World Heritage site."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Qabus", "url": "https://en.wikipedia.org/wiki/Qabus" },
+   { "label": "UNESCO — Gonbad-e Qābus", "url": "https://whc.unesco.org/en/list/1398" }
+  ],
+  "related": [ "e166", "e181", "e183" ]
+ },
+ "e183": {
+  "img": [ { "file": "Adud_al-Dawla.jpg", "alt": "Adud al-Dawla", "credit": "Adud al-Dawla, imagined portrait · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Adud_al-Dawla.jpg", "alt": "Adud al-Dawla", "credit": "Adud al-Dawla · Wikimedia Commons" },
+   { "file": "Adud_al-Dawla_medallion.jpg", "alt": "Medallion of Adud al-Dawla", "credit": "Gold medallion of Adud al-Dawla · Wikimedia Commons" },
+   { "file": "Quran_Gate_881225_02T.jpg", "alt": "Quran Gate, Shiraz", "credit": "The Quran Gate of Shiraz, associated with Adud al-Dawla · Wikimedia Commons" }
+  ],
+  "body": [
+   "Adud al-Dawla was the greatest ruler of the Buyid dynasty, a Shia Iranian house from the Caspian highlands that had seized Baghdad in 945 and reduced the Sunni Abbasid caliph to a figurehead.",
+   "From his capitals at Shiraz and Baghdad he presided over a cultural golden age, founding hospitals, libraries and observatories and building the great Band-e Amir dam. He revived the ancient Persian title Shahanshah, ‘King of Kings’, unused since the Sasanians."
+  ],
+  "refs": [ { "label": "Wikipedia — Adud al-Dawla", "url": "https://en.wikipedia.org/wiki/Adud_al-Dawla" } ],
+  "related": [ "e181", "e184", "e099" ]
+ },
+ "e184": {
+  "img": [ { "file": "Mahmud_of_Ghazni_receiving_Indian_elephants_as_tribute_(Majmu_al-Tawarikh,_Hafiz_i-Abru,_Herat,_1425).jpg", "alt": "Mahmud of Ghazni receiving tribute", "credit": "Mahmud of Ghazni receiving Indian elephants as tribute, Herat 1425 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Mahmud_of_Ghazni_receiving_Indian_elephants_as_tribute_(Majmu_al-Tawarikh,_Hafiz_i-Abru,_Herat,_1425).jpg", "alt": "Mahmud receiving tribute", "credit": "Mahmud of Ghazni receiving Indian elephants as tribute, Herat 1425 · Wikimedia Commons" },
+   { "file": "Mahmud_of_Ghazni,_Ghaznavid_ruler,_conquering_Qasdar_(modern_Khuzdar)_in_India,_miniature_from_the_Jamiʿ_al-Tawarikh_of_Rashid_al-Din_Il-Khanid_Tabriz_Ms_Or_20_f.108v.jpg", "alt": "Mahmud on campaign", "credit": "Mahmud of Ghazni on campaign, Jami al-Tawarikh · Wikimedia Commons" },
+   { "file": "Captured_Indian_Raja_Brought_to_Sultan_Mahmud_of_Ghazni,_Folio_from_a_Majma_al-Tavarikh_(World_Histories)_MET_AD-37.193a_(detail).jpg", "alt": "Captured raja before Mahmud", "credit": "A captured Indian raja brought before Mahmud, Metropolitan Museum · Wikimedia Commons" }
+  ],
+  "body": [
+   "Mahmud of Ghazni turned his father’s frontier realm into a mighty empire stretching from Iran to the Punjab. From 998 he led some seventeen famous campaigns into India, returning laden with plunder that made Ghazna a dazzling capital.",
+   "A fierce Sunni and a great patron, he gathered scholars and poets at his court — among them al-Biruni and Farrukhi — and it was for him that Ferdowsi completed the Shahnameh, though the poet famously felt cheated of his promised reward. Mahmud’s raids opened the way for the long Muslim presence in the Indian subcontinent."
+  ],
+  "refs": [ { "label": "Wikipedia — Mahmud of Ghazni", "url": "https://en.wikipedia.org/wiki/Mahmud_of_Ghazni" } ],
+  "related": [ "e144", "e166", "e185" ]
+ },
+ "e185": {
+  "img": [ { "file": "Seljuk_Sultan_Tugrul_Bey_sitting_on_his_throne._Topkapı_Sarayı_Müzesi_1653-3_(304_B).jpg", "alt": "Tughril enthroned", "credit": "Sultan Tughril Beg enthroned, Topkapı Palace Museum · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Seljuk_Sultan_Tugrul_Bey_sitting_on_his_throne._Topkapı_Sarayı_Müzesi_1653-3_(304_B).jpg", "alt": "Tughril enthroned", "credit": "Sultan Tughril Beg enthroned · Wikimedia Commons" },
+   { "file": "Tughrul_Tower_(cropped).jpg", "alt": "Tughrul Tower", "credit": "The Tughrul Tower at Rey, traditionally his tomb · Wikimedia Commons" },
+   { "file": "TughrilCoin.jpg", "alt": "Coin of Tughril", "credit": "Coin of Tughril Beg · Wikimedia Commons" }
+  ],
+  "body": [
+   "Tughril Beg, chief of the Oghuz Turkish Seljuqs, led his people out of Central Asia into Iran, defeating the Ghaznavids and taking Nishapur and then the whole plateau. In 1055 he entered Baghdad, freeing the caliph from Buyid control.",
+   "The caliph named him Sultan, making him temporal master of the Islamic east. The empire Tughril founded — ruled through Persian viziers and steeped in Persian culture — reunited Iran and dominated the Middle East for a century. His tomb-tower still stands at Rey."
+  ],
+  "refs": [ { "label": "Wikipedia — Tughril", "url": "https://en.wikipedia.org/wiki/Tughril" } ],
+  "related": [ "e186", "e187", "e184" ]
+ },
+ "e186": {
+  "img": [ { "file": "Alp_Arslan_on_throne_Majma_al-Tawarikh_by_Hafiz_Abru_(cropped).png", "alt": "Alp Arslan enthroned", "credit": "Sultan Alp Arslan enthroned, Majma al-Tawarikh · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Alp_Arslan_on_throne_Majma_al-Tawarikh_by_Hafiz_Abru_(cropped).png", "alt": "Alp Arslan enthroned", "credit": "Sultan Alp Arslan enthroned · Wikimedia Commons" },
+   { "file": "BnF_Fr232_fol323_Alp_Arslan_Romanus.jpg", "alt": "Alp Arslan and Romanos", "credit": "Alp Arslan humbling the captive emperor Romanos after Manzikert · Wikimedia Commons" },
+   { "file": "Dinar_of_Muhammad_Alp_Arslan,_AH_455-465.jpg", "alt": "Dinar of Alp Arslan", "credit": "Gold dinar of Alp Arslan · Wikimedia Commons" }
+  ],
+  "body": [
+   "Alp Arslan (‘Heroic Lion’), nephew of Tughril, expanded the Seljuk empire and, in 1071, won the momentous Battle of Manzikert, capturing the Byzantine emperor Romanos IV.",
+   "The victory shattered Byzantine power in Anatolia and opened the region to Turkish settlement, changing the map of the Middle East forever. Aided by his brilliant Persian vizier Nizam al-Mulk, Alp Arslan ruled a realm at the height of its strength before dying in a duel with a captured foe."
+  ],
+  "refs": [ { "label": "Wikipedia — Alp Arslan", "url": "https://en.wikipedia.org/wiki/Alp_Arslan" } ],
+  "related": [ "e185", "e187", "e169" ]
+ },
+ "e187": {
+  "img": [ { "file": "Seljuk_Sultan_Malik_Shah_at_his_court_Jāmiʿ_al-Tawārikh,_Tabriz,_1317._Topkapı_Sarayı_Library_(Hazine_1654)_Malik_Shah_detail.jpg", "alt": "Malik-Shah at court", "credit": "Sultan Malik-Shah at his court, Jami al-Tawarikh, Tabriz 1317 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Seljuk_Sultan_Malik_Shah_at_his_court_Jāmiʿ_al-Tawārikh,_Tabriz,_1317._Topkapı_Sarayı_Library_(Hazine_1654)_Malik_Shah_detail.jpg", "alt": "Malik-Shah at court", "credit": "Sultan Malik-Shah at his court, 1317 · Wikimedia Commons" },
+   { "file": "Malik-Shah_I.jpg", "alt": "Malik-Shah I", "credit": "Sultan Malik-Shah I · Wikimedia Commons" },
+   { "file": "Dinar_of_Malik_Shah_I,_AH_465-485.jpg", "alt": "Dinar of Malik-Shah", "credit": "Gold dinar of Malik-Shah I · Wikimedia Commons" }
+  ],
+  "body": [
+   "Under Malik-Shah I the Seljuk empire reached its zenith, stretching from the Mediterranean to Central Asia. The true architect of this golden age was his great Persian vizier, Nizam al-Mulk, whose ‘Book of Government’ (Siyasatnama) is a classic of statecraft.",
+   "Nizam al-Mulk founded the Nizamiyya colleges that spread across the empire, and it was in these years that Omar Khayyam reformed the calendar. The reign ended in mystery: both vizier and sultan died within weeks in 1092, Nizam al-Mulk reputedly assassinated by the Ismailis of Alamut."
+  ],
+  "refs": [ { "label": "Wikipedia — Malik-Shah I", "url": "https://en.wikipedia.org/wiki/Malik-Shah_I" } ],
+  "related": [ "e147", "e186", "e188" ]
+ },
+ "e188": {
+  "img": [ { "file": "Ahmad_Sanjar.jpg", "alt": "Ahmad Sanjar", "credit": "Sultan Ahmad Sanjar · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Ahmad_Sanjar.jpg", "alt": "Ahmad Sanjar", "credit": "Sultan Ahmad Sanjar · Wikimedia Commons" },
+   { "file": "Sultan_Sanjar_mausoleum.jpg", "alt": "Mausoleum of Sanjar", "credit": "The domed mausoleum of Sultan Sanjar at Merv · Wikimedia Commons" },
+   { "file": "Sultan_Sanjar_and_the_old_woman_(folio_15v,_ruler_detail)._Khamsah_of_Nizami,_1485,_Shiraz_(Berlin,_Staatsbibliothek,_Ms._or._quart._1665).jpg", "alt": "Sanjar and the old woman", "credit": "Sultan Sanjar and the old woman, from Nizami’s Khamsa, 1485 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Sanjar was the last great sultan of the united Seljuk empire, ruling the eastern lands from Merv for nearly sixty years. His reign saw a flowering of Persian poetry and the building of some of the finest monuments of the age.",
+   "But his later years brought disaster: defeat by the Kara-Khitai at the Qatwan steppe in 1141, and a humiliating captivity among rebellious Oghuz nomads who overran Khorasan. His majestic domed mausoleum at Merv survived him as a symbol of vanished glory."
+  ],
+  "refs": [ { "label": "Wikipedia — Ahmad Sanjar", "url": "https://en.wikipedia.org/wiki/Ahmad_Sanjar" } ],
+  "related": [ "e187", "e189", "e148" ]
+ },
+ "e189": {
+  "img": [ { "file": "Muhammad_II_portrait_in_a_1430_manuscript_of_the_Jami'_al-tawarikh_by_Rashid-al-Din_Hamadani.jpg", "alt": "Muhammad II of Khwarazm", "credit": "Muhammad II, from a 1430 Jami al-Tawarikh manuscript · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Muhammad_II_portrait_in_a_1430_manuscript_of_the_Jami'_al-tawarikh_by_Rashid-al-Din_Hamadani.jpg", "alt": "Muhammad II", "credit": "Muhammad II of Khwarazm · Wikimedia Commons" },
+   { "file": "Map_of_the_Khwarazmian_Empire.png", "alt": "Khwarazmian Empire map", "credit": "The Khwarazmian empire at its greatest extent · Wikimedia Commons" },
+   { "file": "Dinar_of_'Ala_al-Din_Muhammad_II,_struck_at_the_Bukhara_mint.jpg", "alt": "Dinar of Muhammad II", "credit": "Gold dinar of Muhammad II, Bukhara mint · Wikimedia Commons" }
+  ],
+  "body": [
+   "Ala al-Din Muhammad II raised the Khwarazmian empire to its greatest extent, ruling almost all of Iran and Central Asia and styling himself a ‘second Alexander’. But his hastily assembled empire rested on shaky foundations.",
+   "In 1218 the massacre of a Mongol trade caravan at Otrar, sanctioned by his governor, provoked the wrath of Genghis Khan. The invasion that followed swept away the Khwarazmian state within two years, and Muhammad died a hunted fugitive on an island in the Caspian."
+  ],
+  "refs": [ { "label": "Wikipedia — Muhammad II of Khwarazm", "url": "https://en.wikipedia.org/wiki/Muhammad_II_of_Khwarazm" } ],
+  "related": [ "e190", "e191", "e188" ]
+ },
+ "e190": {
+  "img": [ { "file": "OUZBEKISTAN,_25_Som_à_l'effigie_de_Jaloliddin_Manguberdi_(portrait).jpg", "alt": "Jalal al-Din Mangburni", "credit": "Jalal al-Din Mangburni, portrait on an Uzbek coin · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "OUZBEKISTAN,_25_Som_à_l'effigie_de_Jaloliddin_Manguberdi_(portrait).jpg", "alt": "Jalal al-Din Mangburni", "credit": "Jalal al-Din Mangburni · Wikimedia Commons" },
+   { "file": "Alal_al-Din_Khwarazm-Shah_crossing_the_rapid_Indus_river,_escaping_Chinggis_Khan_and_his_army.jpg", "alt": "Crossing the Indus", "credit": "Jalal al-Din crossing the Indus to escape the Mongols · Wikimedia Commons" },
+   { "file": "Jaloliddin_Manguberdi_haykali_001.jpg", "alt": "Statue of Jalal al-Din", "credit": "Statue of Jalal al-Din Mangburni · Wikimedia Commons" }
+  ],
+  "body": [
+   "Jalal al-Din, son of Muhammad II, was the last Khwarazmshah and the most heroic resister of the Mongol onslaught. Refusing to surrender, he fought Genghis Khan’s armies across Iran and India in a decade of desperate campaigns.",
+   "His most famous exploit came on the banks of the Indus, where, cornered by the Mongols, he spurred his horse from a cliff into the river and swam to safety — a feat that reportedly won even Genghis Khan’s admiration. He was finally killed in the Kurdish mountains in 1231."
+  ],
+  "refs": [ { "label": "Wikipedia — Jalal al-Din Mangburni", "url": "https://en.wikipedia.org/wiki/Jalal_al-Din_Mangburni" } ],
+  "related": [ "e189", "e191", "e188" ]
+ },
+ "e191": {
+  "img": [ { "file": "Hulagu_Khan.jpg", "alt": "Hulagu Khan", "credit": "Hulagu Khan · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Hulagu_Khan.jpg", "alt": "Hulagu Khan", "credit": "Hulagu Khan · Wikimedia Commons" },
+   { "file": "HulaguInBagdad.JPG", "alt": "Hulagu at Baghdad", "credit": "Hulagu’s army besieging Baghdad, 1258 · Wikimedia Commons" },
+   { "file": "Prise_d'Alamût_(1256).jpeg", "alt": "Siege of Alamut", "credit": "The Mongol capture of Alamut, 1256 · Wikimedia Commons" },
+   { "file": "Hulagu_and_Doquz-Qatun_in_Syriac_Bible.jpg", "alt": "Hulagu and Doquz Khatun", "credit": "Hulagu and his Christian wife Doquz Khatun in a Syriac Bible · Wikimedia Commons" }
+  ],
+  "body": [
+   "Hulagu, a grandson of Genghis Khan, led the great Mongol campaign into the Islamic world. In 1256 he destroyed the Ismaili ‘Assassin’ fortresses, including impregnable Alamut, and in 1258 he sacked Baghdad and executed the last Abbasid caliph — ending five centuries of the caliphate.",
+   "Halted at last by the Mamluks in Syria, Hulagu made Iran the heart of a new realm, the Ilkhanate, ruled by his line. Though the conquest was ruinous, his dynasty would soon embrace Persian culture and Islam and preside over a brilliant revival."
+  ],
+  "refs": [ { "label": "Wikipedia — Hulagu Khan", "url": "https://en.wikipedia.org/wiki/Hulagu_Khan" } ],
+  "related": [ "e192", "e193", "e189" ]
+ },
+ "e192": {
+  "img": [ { "file": "Ghazan_with_wife_at_his_court.jpg", "alt": "Ghazan at court", "credit": "Ghazan Khan with his wife at his court · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Ghazan_with_wife_at_his_court.jpg", "alt": "Ghazan at court", "credit": "Ghazan Khan with his wife at his court · Wikimedia Commons" },
+   { "file": "GhazanOnHorse.JPG", "alt": "Ghazan on horseback", "credit": "Ghazan Khan on horseback · Wikimedia Commons" },
+   { "file": "GhazanCoin.jpg", "alt": "Coin of Ghazan", "credit": "Coin of Ghazan Khan · Wikimedia Commons" }
+  ],
+  "body": [
+   "Ghazan Khan was the ruler who reconciled the Mongol Ilkhanate with the land it governed. On taking the throne in 1295 he converted to Islam, and the bulk of the Mongols in Iran followed him.",
+   "With his gifted vizier Rashid al-Din he carried out sweeping reforms of taxation, coinage, the army and agriculture, and sponsored a great flowering of art, science and history-writing. Under Ghazan the alien conquerors became an Iranian dynasty, and Tabriz one of the world’s great cities."
+  ],
+  "refs": [ { "label": "Wikipedia — Ghazan", "url": "https://en.wikipedia.org/wiki/Ghazan" } ],
+  "related": [ "e191", "e193", "e210" ]
+ },
+ "e193": {
+  "img": [ { "file": "Soltaniyeh_exterior.jpg", "alt": "Dome of Soltaniyeh", "credit": "The mausoleum of Öljaitü at Soltaniyeh · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Soltaniyeh_exterior.jpg", "alt": "Dome of Soltaniyeh", "credit": "The great domed mausoleum of Öljaitü at Soltaniyeh · Wikimedia Commons" },
+   { "file": "Khan_Oljaitu_accepts_Yuan_ambassadors,_as_featured_in_Majma'_al-Tavarikh_(cropped)_(cropped).jpg", "alt": "Öljaitü receives ambassadors", "credit": "Öljaitü receives Yuan ambassadors, Majma al-Tawarikh · Wikimedia Commons" },
+   { "file": "Page_from_Uljaytu's_Baghdad_Qur'an_(Leipzig_University_Library,_B._or.1_f._5r_).jpg", "alt": "Öljaitü's Quran", "credit": "A page from Öljaitü’s Baghdad Qur’an · Wikimedia Commons" }
+  ],
+  "body": [
+   "Öljaitü, Ghazan’s brother, continued the Ilkhanid golden age and gave it its supreme monument. At his new capital of Soltaniyeh he raised a vast mausoleum crowned by a soaring turquoise dome — one of the masterpieces of Islamic architecture and a UNESCO World Heritage site.",
+   "His reign was marked by religious searching — he moved between Buddhism, Sunni and finally Shia Islam — and by grand diplomacy, exchanging embassies with the kings of Europe against their common Mamluk foe. The arts of the book and of building reached new heights in his years."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Öljaitü", "url": "https://en.wikipedia.org/wiki/%C3%96ljait%C3%BC" },
+   { "label": "UNESCO — Soltaniyeh", "url": "https://whc.unesco.org/en/list/1188" }
+  ],
+  "related": [ "e192", "e191", "e210" ]
+ },
+ "e194": {
+  "img": [ { "file": "Timur_seated_(earliest_known_portrait),_Timurid_genealogy,_1405-1409,_Samarkand_(TSMK,_H2152).jpg", "alt": "Timur seated", "credit": "Timur seated — earliest known portrait, Samarkand 1405–09 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Timur_seated_(earliest_known_portrait),_Timurid_genealogy,_1405-1409,_Samarkand_(TSMK,_H2152).jpg", "alt": "Timur seated", "credit": "Timur — earliest known portrait, Samarkand 1405–09 · Wikimedia Commons" },
+   { "file": "Timur_reconstruction03.jpg", "alt": "Facial reconstruction of Timur", "credit": "Forensic facial reconstruction of Timur by Mikhail Gerasimov · Wikimedia Commons" },
+   { "file": "Depiction_of_Timur_granting_audience_on_the_occasion_of_his_accession,_in_the_near_contemporary_Zafarnama_(1424-1428),_1467_edition.jpg", "alt": "Timur granting audience", "credit": "Timur granting audience at his accession, Zafarnama · Wikimedia Commons" }
+  ],
+  "body": [
+   "Timur (Tamerlane), a Turco-Mongol warlord from near Samarkand, built the last great steppe empire, conquering from India to Anatolia in a whirlwind of brilliant and terrible campaigns. He claimed the mantle of Genghis Khan and left pyramids of skulls in the cities that resisted him.",
+   "Yet Timur was also a lavish patron who made his capital Samarkand a wonder of the world, gathering the finest craftsmen from every conquered land. He died in 1405 while marching on China, and lies beneath the great jade slab of the Gur-e Amir."
+  ],
+  "refs": [ { "label": "Wikipedia — Timur", "url": "https://en.wikipedia.org/wiki/Timur" } ],
+  "related": [ "e195", "e196", "e191" ]
+ },
+ "e195": {
+  "img": [ { "file": "Contemporary_portrait_of_Shah_Rukh,_painted_in_his_lifetime_in_1435-36,_by_commission_of_his_son_Ibrahim_Sultan.jpg", "alt": "Shah Rukh", "credit": "Contemporary portrait of Shah Rukh, 1435–36 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Contemporary_portrait_of_Shah_Rukh,_painted_in_his_lifetime_in_1435-36,_by_commission_of_his_son_Ibrahim_Sultan.jpg", "alt": "Shah Rukh", "credit": "Contemporary portrait of Shah Rukh, 1435–36 · Wikimedia Commons" },
+   { "file": "Shah_Rukh_Makes_a_Triumphal_Entrance_in_Samarkand_in_1394,_after_Timur_Names_Him_Governor_of_the_City_(two_consecutive_pages)._Zafarnama_of_1436.jpg", "alt": "Shah Rukh enters Samarkand", "credit": "Shah Rukh’s triumphal entrance into Samarkand, Zafarnama of 1436 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Shah Rukh, Timur’s son, held together much of his father’s empire and turned from conquest to cultivation. Ruling from Herat for over forty years, he presided over one of the most refined courts in Islamic history.",
+   "With his wife Gawhar Shad, a great builder, and his bibliophile son Baysunghur, he made Herat the capital of the ‘Timurid Renaissance’ — a golden age of Persian painting, manuscript-making, architecture and poetry whose influence spread across the eastern Islamic world."
+  ],
+  "refs": [ { "label": "Wikipedia — Shah Rukh", "url": "https://en.wikipedia.org/wiki/Shah_Rukh" } ],
+  "related": [ "e194", "e196", "e155" ]
+ },
+ "e196": {
+  "img": [ { "file": "Ulugh_Beg,_Timurid_painting_1425-50.jpg", "alt": "Ulugh Beg", "credit": "Ulugh Beg, Timurid painting, 1425–50 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Ulugh_Beg,_Timurid_painting_1425-50.jpg", "alt": "Ulugh Beg", "credit": "Ulugh Beg, Timurid painting · Wikimedia Commons" },
+   { "file": "Ulugh_Beg_Observatory_02.jpg", "alt": "Ulugh Beg's observatory", "credit": "The remains of Ulugh Beg’s observatory at Samarkand · Wikimedia Commons" },
+   { "file": "A_model_of_Ulug_Beg_obsrvatory_in_the_Uzbek_National_Muzeum.jpg", "alt": "Model of the observatory", "credit": "A model of the Ulugh Beg observatory · Wikimedia Commons" }
+  ],
+  "body": [
+   "Ulugh Beg, grandson of Timur, was that rarest of things — a king who was himself a great scientist. Governing Samarkand, he built a magnificent observatory with a giant stone meridian arc and gathered the finest astronomers of the age, including Jamshid al-Kashi.",
+   "The star catalogue produced there, the Zij-i Sultani, was the most accurate since antiquity and was still consulted in Europe centuries later. He also founded splendid madrasas, but his scholarly rule made enemies, and he was murdered at the instigation of his own son in 1449."
+  ],
+  "refs": [ { "label": "Wikipedia — Ulugh Beg", "url": "https://en.wikipedia.org/wiki/Ulugh_Beg" } ],
+  "related": [ "e171", "e195", "e194" ]
+ },
+ "e197": {
+  "img": [ { "file": "Uzun_Hasan_on_horse,_1460s–1470s,_Aq_Qoyunlu_ruler_Uzun_Hasa_hunting_(detail).jpg", "alt": "Uzun Hasan hunting", "credit": "Uzun Hasan hunting, 1460s–70s · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Uzun_Hasan_on_horse,_1460s–1470s,_Aq_Qoyunlu_ruler_Uzun_Hasa_hunting_(detail).jpg", "alt": "Uzun Hasan hunting", "credit": "Uzun Hasan hunting, 1460s–70s · Wikimedia Commons" },
+   { "file": "Viaggio_al_signor_Usun_Hassan_re_di_Persia.jpg", "alt": "Venetian account of Uzun Hasan", "credit": "‘Journey to Uzun Hasan, king of Persia’, a Venetian travel account · Wikimedia Commons" },
+   { "file": "Map_Aq_Qoyunlu_1478-en.png", "alt": "Aq Qoyunlu realm", "credit": "The Aq Qoyunlu realm in 1478 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Uzun Hasan (‘Tall Hasan’) was the ablest ruler of the Aq Qoyunlu (‘White Sheep’) Turkmen confederation, which came to rule most of Iran and eastern Anatolia from Tabriz in the later 15th century.",
+   "He sought a European alliance — notably with Venice — against the rising Ottomans, but was defeated by their firearms at Bashkent in 1473. His court was a centre of Persian art and learning, and his family ties helped pave the way for the Safavid dynasty that soon supplanted his own."
+  ],
+  "refs": [ { "label": "Wikipedia — Uzun Hasan", "url": "https://en.wikipedia.org/wiki/Uzun_Hasan" } ],
+  "related": [ "e178", "e198", "e196" ]
+ },
 
  "e152": {
   "img": [ { "file": "Maulana_Jelaledin_Muhammad_Rumi_in_konya.jpg", "alt": "Shrine of Rumi", "credit": "The tomb-shrine of Rumi (the Mevlana Museum), Konya · Wikimedia Commons" } ],
