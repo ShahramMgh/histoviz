@@ -63,6 +63,7 @@ window.ENRICH = {
   "related": [ "e003", "e004" ]
  },
  "e006": {
+  "img": [ { "file": "Inside the kaldar cave.jpg", "alt": "Inside Kaldar Cave", "credit": "Inside Kaldar Cave in the Khorramabad valley · Wikimedia Commons" } ],
   "body": [
    "The Khorramabad Valley in Lorestan is a natural corridor through the Zagros, and its caves — Kaldar, Yafteh, Kunji, Ghamari and Gilvaran, with the Gar Arjeneh rock-shelter — preserve one of Iran’s deepest human records, reaching back about 63,000 years.",
    "The sequence spans the Mousterian of the Neanderthals and the Baradostian of the first modern humans, capturing the handover between the two. The valley’s prehistoric sites were inscribed by UNESCO in 2025."
@@ -234,6 +235,11 @@ window.ENRICH = {
   "related": [ "e026", "e019", "e021" ]
  },
  "e023": {
+  "img": [ { "file": "Clay human figurine (Fertility goddess) Tappeh Sarab, Kermanshah ca. 7000-6100 BCE Neolithic period, National Museum of Iran.jpg", "alt": "The 'Venus' of Tepe Sarab", "credit": "The clay 'Venus' of Tepe Sarab, c. 7000 BCE, National Museum of Iran · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Clay human figurine (Fertility goddess) Tappeh Sarab, Kermanshah ca. 7000-6100 BCE Neolithic period, National Museum of Iran.jpg", "alt": "The 'Venus' of Tepe Sarab", "credit": "The clay 'Venus' of Tepe Sarab, c. 7000 BCE, National Museum of Iran · Wikimedia Commons" },
+   { "file": "Boar, clay figurine, Neolithic Period, Sarab, National museum of Iran.jpg", "alt": "Clay boar from Tepe Sarab", "credit": "Clay boar figurine from Tepe Sarab · Wikimedia Commons" }
+  ],
   "body": [
    "From an early village at Tepe Sarab near Kermanshah comes a small baked-clay figurine of a seated, full-bodied woman, among the best-known Neolithic figurines of Iran. Nicknamed the ‘Venus of Sarab’, it is now in the National Museum of Iran.",
    "Such figurines, found across the Neolithic Near East, are usually read as expressions of fertility or simply of the human figure in early village art, though their precise meaning is unknown."
@@ -288,6 +294,11 @@ window.ENRICH = {
   "related": [ "e029", "e026", "e131" ]
  },
  "e035": {
+  "img": [ { "file": "Tablette protoélamite avec empreinte de sceau - Musée du Louvre Antiquités orientales AS 5242 ; SB 2801.jpg", "alt": "Proto-Elamite tablet", "credit": "A Proto-Elamite economic tablet from Susa, Louvre · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Tablette protoélamite avec empreinte de sceau - Musée du Louvre Antiquités orientales AS 5242 ; SB 2801.jpg", "alt": "Proto-Elamite tablet", "credit": "A Proto-Elamite economic tablet from Susa, Louvre · Wikimedia Commons" },
+   { "file": "Economic tablet Susa Louvre Sb15439.jpg", "alt": "Economic tablet from Susa", "credit": "Proto-Elamite economic tablet, Susa, Louvre · Wikimedia Commons" }
+  ],
   "body": [
    "Around 3300 BCE the world’s first writing appears at Uruk in Mesopotamia as proto-cuneiform — pictographic marks pressed into clay to record goods and transactions. At Susa the same steps are visible: counting tokens, sealed clay envelopes (bullae) and the first numerical tablets.",
    "Writing was born not from literature but from accounting, and the Iranian lowlands took part from the very beginning."
@@ -313,6 +324,11 @@ window.ENRICH = {
   "related": [ "e131", "e041", "e045" ]
  },
  "e041": {
+  "img": [ { "file": "Victory stele of Naram Sin 9064.jpg", "alt": "Victory Stele of Naram-Sin", "credit": "The Victory Stele of Naram-Sin, carried off to Susa as booty, Louvre · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Victory stele of Naram Sin 9064.jpg", "alt": "Victory Stele of Naram-Sin", "credit": "The Victory Stele of Naram-Sin, carried off to Susa as booty, Louvre · Wikimedia Commons" },
+   { "file": "Naram-Sin stele inscription in Elamite.jpg", "alt": "Elamite inscription on the stele", "credit": "The Elamite inscription later added to the stele · Wikimedia Commons" }
+  ],
   "body": [
    "The Akkadian kings Sargon and his grandson Naram-Sin campaigned east against Elam and Marhashi around 2300 BCE, drawing the Iranian lowlands into the orbit of the world’s first empire.",
    "A treaty between Naram-Sin and an Elamite ruler is the oldest known text written in the Elamite language (in cuneiform), a landmark in the history of the region’s languages."
@@ -366,6 +382,11 @@ window.ENRICH = {
   "related": [ "e046", "e055" ]
  },
  "e048": {
+  "img": [ { "file": "Kurangun central panel, male and female deities (Inshushinak and Napirisha).jpg", "alt": "Kurangun relief", "credit": "The rock relief of Kurangun: the deities Napirisha and Inshushinak · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Kurangun central panel, male and female deities (Inshushinak and Napirisha).jpg", "alt": "Kurangun relief", "credit": "The rock relief of Kurangun: the deities Napirisha and Inshushinak · Wikimedia Commons" },
+   { "file": "Kurangun panels, 2009-05-08.jpg", "alt": "Kurangun panels", "credit": "The Elamite rock reliefs of Kurangun, Fars · Wikimedia Commons" }
+  ],
   "body": [
    "Kurangun, high on a rock face in Mamasani, Fars, bears an open-air Elamite relief of a seated god enthroned on a coiled serpent, offering the water of life to rows of worshippers. First carved around the 17th century BCE, it was enlarged with later figures.",
    "With Naqsh-e Rostam and Kul-e Farah, it belongs to a tradition of Elamite rock art in the highlands of Fars."
@@ -431,6 +452,7 @@ window.ENRICH = {
   "related": [ "e055", "e064" ]
  },
  "e057": {
+  "img": [ { "file": "The Black Obelisk of Shalmaneser III, 9th century BC, from Nimrud, Iraq. The British Museum.jpg", "alt": "Black Obelisk of Shalmaneser III", "credit": "The Black Obelisk of Shalmaneser III, which names the Medes and Parsua, British Museum · Wikimedia Commons" } ],
   "body": [
    "In 843 and 835 BCE the annals of the Assyrian king Shalmaneser III name, for the first time, Parsua (the Persians, then living in the central Zagros) and Madai (the Medes). These are the earliest written references to the two Iranian-speaking peoples who would later found great empires.",
    "At this stage they were scattered tribal groups paying tribute to Assyria, not the unified kingdoms of later Greek accounts — the very beginning of the Persians and Medes in recorded history."
@@ -439,6 +461,11 @@ window.ENRICH = {
   "related": [ "e058", "e065", "e067" ]
  },
  "e058": {
+  "img": [ { "file": "Zwei Protome, Armreif und Silberschale mit Goldauflagen aus Ziwiye in Iran, c.a. 8. Jh. v.C.jpg", "alt": "Ziwiye treasure", "credit": "Gold and silver work from the Ziwiye treasure, c. 8th century BCE · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Zwei Protome, Armreif und Silberschale mit Goldauflagen aus Ziwiye in Iran, c.a. 8. Jh. v.C.jpg", "alt": "Ziwiye treasure", "credit": "Gold and silver work from the Ziwiye treasure, c. 8th century BCE · Wikimedia Commons" },
+   { "file": "Ivoire Ziwiye AO 26321.jpg", "alt": "Ivory from Ziwiye", "credit": "Carved ivory from Ziwiye, Louvre · Wikimedia Commons" }
+  ],
   "body": [
    "Mannaea was an Iron Age kingdom south of Lake Urmia, wedged between the great powers of Assyria, Urartu and the rising Medes from roughly the 10th to the 7th century BCE. Its people were probably a mix of local and Iranian-speaking groups.",
    "The famous Ziwiye treasure and the fortified sanctuary of Qalaichi near Bukan are associated with Mannaea, whose art blends Assyrian, Urartian and Scythian styles."
@@ -475,6 +502,11 @@ window.ENRICH = {
   "related": [ "e058", "e059", "e065" ]
  },
  "e061": {
+  "img": [ { "file": "تپه نوشیجان-ملایر4.jpg", "alt": "Tepe Nush-i Jan", "credit": "The Median temple mound of Tepe Nush-i Jan, near Malayer · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "تپه نوشیجان-ملایر4.jpg", "alt": "Tepe Nush-i Jan", "credit": "The Median temple mound of Tepe Nush-i Jan, near Malayer · Wikimedia Commons" },
+   { "file": "تپه نوشیجان-ملایر3.jpg", "alt": "Tepe Nush-i Jan", "credit": "Ruins at Tepe Nush-i Jan · Wikimedia Commons" }
+  ],
   "body": [
    "Tepe Nush-i Jan, on a rocky spur near Malayer in Hamadan, is one of the best-preserved Median sites, occupied about 750–600 BCE. It held a fort, a columned hall and — remarkably — one of the oldest known fire temples: a lozenge-shaped sanctuary with a stepped fire altar.",
    "When the settlement was abandoned its buildings were deliberately packed with stone and shale, which is why the mud-brick architecture still stands to roof height — a rare window onto Median religion and building before the Persians."
@@ -504,6 +536,7 @@ window.ENRICH = {
   "related": [ "e064", "e056" ]
  },
  "e064": {
+  "img": [ { "file": "Relief depicting the destruction of Hamanu of Elam by Ashurbanipal, 645-640 BC, North Palace, Nineveh, Exhibition- I am Ashurbanipal king of the world, king of Assyria, British Museum.jpg", "alt": "Ashurbanipal destroys an Elamite city", "credit": "Assyrian relief of Ashurbanipal destroying the Elamite city of Hamanu, British Museum · Wikimedia Commons" } ],
   "body": [
    "Around 647 BCE the Assyrian king Ashurbanipal sacked Susa, the ancient capital of Elam, in revenge for Elamite support of Babylonian revolts. His inscriptions boast of levelling temples, carrying off treasures and desecrating royal tombs, and reliefs at Nineveh show the city in flames.",
    "The blow shattered the old Elamite state; a smaller Neo-Elamite realm lingered on, while in the emptied highlands the Persians were quietly settling the land of Anshan."
@@ -512,6 +545,7 @@ window.ENRICH = {
   "related": [ "e056", "e067", "e047" ]
  },
  "e065": {
+  "img": [ { "file": "Nineveh and Babylon - a narrative of a second expedition to Assyria during the years 1849, 1850, and 1851 (1882) (14767339995).jpg", "alt": "Nineveh", "credit": "A 19th-century reconstruction of Nineveh, destroyed by the Medes and Babylonians · Wikimedia Commons" } ],
   "body": [
    "Between 614 and 612 BCE the Median king Cyaxares (Uvakhshtra) and Nabopolassar of Babylon combined to bring down the Assyrian Empire, the terror of the Near East. Cyaxares took the old religious capital Assur in 614; together the allies stormed and destroyed Nineveh in 612.",
    "Assyria’s fall echoed across the ancient world and in the Hebrew prophets, and it left the Medes the dominant power of the Iranian plateau — until Cyrus."
@@ -520,6 +554,7 @@ window.ENRICH = {
   "related": [ "e057", "e062", "e067" ]
  },
  "e066": {
+  "img": [ { "file": "Thales of Miletus.jpg", "alt": "Thales of Miletus", "credit": "Thales of Miletus, said to have predicted the eclipse that halted the battle · Wikimedia Commons" } ],
   "body": [
    "In 585 BCE a long war between the Medes under Cyaxares and the Lydians of Anatolia was halted when a total solar eclipse suddenly darkened the battlefield on the Halys river. Both armies took it as an omen, made peace, and fixed the Halys as their border.",
    "The eclipse — said to have been foretold by the Greek philosopher Thales — lets astronomers date the battle exactly, making it one of the earliest precisely dated events in history."
@@ -563,6 +598,11 @@ window.ENRICH = {
   "related": [ "e067", "e080", "e072" ]
  },
  "e072": {
+  "img": [ { "file": "Tomb of Cyrus the Great.jpg", "alt": "Tomb of Cyrus", "credit": "The tomb of Cyrus the Great at Pasargadae · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Tomb of Cyrus the Great.jpg", "alt": "Tomb of Cyrus", "credit": "The tomb of Cyrus the Great at Pasargadae · Wikimedia Commons" },
+   { "file": "Pasargadae, Irán, 2016-09-24, DD 03.jpg", "alt": "Tomb of Cyrus", "credit": "The tomb of Cyrus at Pasargadae · Wikimedia Commons" }
+  ],
   "body": [
    "Cyrus the Great died around 530 BCE on campaign in Central Asia — according to Herodotus, fighting the Massagetae, a steppe people led by their queen Tomyris. His body was brought back to Pasargadae.",
    "He left an empire stretching from the Aegean to the edge of India, and a reputation for tolerance that echoes in the Cyrus Cylinder and in the Hebrew Bible."
@@ -619,6 +659,7 @@ window.ENRICH = {
   "related": [ "e077", "e103" ]
  },
  "e079": {
+  "img": [ { "file": "Persepolis - carved Faravahar.JPG", "alt": "Faravahar at Persepolis", "credit": "The Faravahar symbol carved at Persepolis · Wikimedia Commons" } ],
   "body": [
    "Achaemenid royal inscriptions praise the great god Ahuramazda as the giver of kingship, yet the Persepolis administrative tablets record rations for offerings to Elamite and other gods too. How far the early Persian kings were ‘Zoroastrian’ is much debated.",
    "From Artaxerxes II the gods Mithra and Anahita join Ahuramazda in the royal formulas — a sign of the court’s evolving religion."
@@ -667,6 +708,11 @@ window.ENRICH = {
   "related": [ "e080", "e076", "e083" ]
  },
  "e083": {
+  "img": [ { "file": "Adrien Guignet - Retreat of the ten thousand.jpg", "alt": "Retreat of the Ten Thousand", "credit": "‘The Retreat of the Ten Thousand’ by Adrien Guignet · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Adrien Guignet - Retreat of the ten thousand.jpg", "alt": "Retreat of the Ten Thousand", "credit": "‘The Retreat of the Ten Thousand’ by Adrien Guignet · Wikimedia Commons" },
+   { "file": "Battle of Cunaxa.jpg", "alt": "Battle of Cunaxa", "credit": "The Battle of Cunaxa, 401 BCE · Wikimedia Commons" }
+  ],
   "body": [
    "In 401 BCE Cyrus the Younger marched against his brother, King Artaxerxes II, and died at the battle of Cunaxa near Babylon. The Greek mercenaries in his army — the ‘Ten Thousand’ — then fought their way home, a march immortalised in Xenophon’s Anabasis.",
    "Artaxerxes II is also the first Achaemenid king whose inscriptions invoke Mithra and Anahita beside Ahuramazda."
@@ -675,6 +721,7 @@ window.ENRICH = {
   "related": [ "e079", "e082", "e084" ]
  },
  "e084": {
+  "img": [ { "file": "Persepolis - Tomb of Artaxerxes III 01.jpg", "alt": "Tomb of Artaxerxes III", "credit": "The rock-cut tomb of Artaxerxes III at Persepolis · Wikimedia Commons" } ],
   "body": [
    "Egypt had thrown off Persian rule for some sixty years. Around 343 BCE Artaxerxes III reconquered it, briefly restoring the empire to its full extent on the eve of Alexander.",
    "His reign was marked by a ruthless consolidation of a realm strained by repeated satrapal revolts."
@@ -731,6 +778,7 @@ window.ENRICH = {
   "related": [ "e087", "e092", "e050" ]
  },
  "e089": {
+  "img": [ { "file": "Hercules Statue Bisotoum.jpg", "alt": "Herakles of Bisotun", "credit": "The reclining Herakles relief at Bisotun, carved 148 BCE · Wikimedia Commons" } ],
   "body": [
    "On a low rock beside the great cliff of Bisotun reclines a life-size carving of Herakles, cup in hand, a lion-skin beneath him and his club and bow nearby. A Greek inscription dates it to 148 BCE and dedicates it to a Seleucid official.",
    "It is one of the last Seleucid monuments in Iran, carved just as the Parthians were taking over the region — a small but vivid trace of the Greek presence on the plateau.",
@@ -799,6 +847,11 @@ window.ENRICH = {
   "related": [ "e091", "e092", "e098" ]
  },
  "e094": {
+  "img": [ { "file": "Parthian Man Statue, National museum of Iran.jpg", "alt": "The Shami bronze", "credit": "The Shami bronze statue of a Parthian nobleman, National Museum of Iran · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Parthian Man Statue, National museum of Iran.jpg", "alt": "The Shami bronze", "credit": "The Shami bronze statue of a Parthian nobleman, National Museum of Iran · Wikimedia Commons" },
+   { "file": "Statue Parthe.jpg", "alt": "Shami statue", "credit": "The Parthian statue from Shami · Wikimedia Commons" }
+  ],
   "body": [
    "The life-size bronze statue of a Parthian nobleman found at Shami in Khuzestan is the finest surviving Parthian sculpture. Moustached and wearing the belted tunic and baggy trousers of the Iranian nobility, he stands with a stiff frontal dignity typical of Parthian art (National Museum of Iran).",
    "Shami lay in Elymais, a semi-independent kingdom around Izeh in the south-western mountains that survived under Parthian overlordship and left a wealth of rock reliefs.",
@@ -808,6 +861,7 @@ window.ENRICH = {
   "related": [ "e091", "e097" ]
  },
  "e095": {
+  "img": [ { "file": "Harp-Sassanid.png", "alt": "Sasanian harpists", "credit": "Sasanian harp players, from the Taq-e Bostan reliefs · Wikimedia Commons" } ],
   "body": [
    "The Parthian centuries left few written records, but a rich oral culture flourished. Wandering minstrels, the gosans, sang heroic tales at court and in the countryside, keeping alive stories that would later be gathered into Ferdowsi’s Shahnameh.",
    "Much of the ‘Parthian’ heroic cycle — the deeds of Rostam and the house of the Suren — probably took shape in this age, and the great love-romance Vis and Ramin is thought to have Parthian roots.",
@@ -817,6 +871,7 @@ window.ENRICH = {
   "related": [ "e144", "e090" ]
  },
  "e096": {
+  "img": [ { "file": "Coin of Vologases I (cropped), Seleucia mint.jpg", "alt": "Coin of Vologases I", "credit": "Coin of Vologases I, Seleucia mint · Wikimedia Commons" } ],
   "body": [
    "Vologases I (r. c. 51–78 CE) steadied the Parthian empire and settled the long quarrel with Rome over Armenia, securing the Armenian throne for his brother — a compromise that held for generations.",
    "Later Zoroastrian tradition credits a king ‘Valakhsh’ (Vologases) with the first effort to gather the scattered oral and written fragments of the Avesta, an early step toward preserving the sacred texts.",
@@ -826,6 +881,7 @@ window.ENRICH = {
   "related": [ "e091", "e113" ]
  },
  "e097": {
+  "img": [ { "file": "Khaje-Sistan mount.jpg", "alt": "Kuh-e Khwaja", "credit": "The hill of Kuh-e Khwaja rising from Lake Hamun, Sistan · Wikimedia Commons" } ],
   "body": [
    "On a rocky basalt hill rising from Lake Hamun in Sistan stands Kuh-e Khwaja, a Parthian- and Sasanian-era complex of palace and temple built of mud brick and stone.",
    "It is famous for rare surviving wall paintings — figures of gods, kings and courtiers — that give a precious glimpse of Iranian painting in an age from which almost nothing else survives.",
@@ -835,6 +891,7 @@ window.ENRICH = {
   "related": [ "e037", "e099" ]
  },
  "e098": {
+  "img": [ { "file": "Traianus Glyptothek Munich 336.jpg", "alt": "Bust of Trajan", "credit": "Bust of the emperor Trajan, Glyptothek, Munich · Wikimedia Commons" } ],
   "body": [
    "In 116–117 CE the Roman emperor Trajan invaded Parthia, captured the capital Ctesiphon and marched all the way to the Persian Gulf — the furthest east a Roman army ever reached.",
    "But his gains were shallow: revolts erupted behind him, the fortress-city of Hatra defied his siege, and after his death in 117 his successor Hadrian abandoned the conquests and pulled the frontier back to the Euphrates.",
@@ -1157,6 +1214,7 @@ window.ENRICH = {
  },
 
  "e029": {
+  "img": [ { "file": "Pottery bowl, Cheshmeh Ali ware. Possibly from Cheshmeh Ali, northern Iran. 5500-4500 BCE.jpg", "alt": "Cheshmeh Ali ware", "credit": "Painted bowl, Cheshmeh Ali ware, 5500–4500 BCE · Wikimedia Commons" } ],
   "body": [
    "Cheshmeh Ali (“Ali’s Spring”) is a prehistoric mound at Rey, on the southern edge of modern Tehran, that gives its name to a distinctive 5th-millennium BCE painted ware. The fine red-slipped pottery, decorated in black with ibex, birds and hatched geometric bands, is a hallmark of the Chalcolithic on the north-central plateau.",
    "Excavated by Erich Schmidt in the 1930s, the site sits by a spring that has drawn people since deep prehistory and remained important into the Islamic period."
@@ -1467,6 +1525,11 @@ window.ENRICH = {
  },
 
  "e120": {
+  "img": [ { "file": "Do Ashkaft cave.jpg", "alt": "Do-Ashkaft Cave", "credit": "Do-Ashkaft Cave near Kermanshah · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Do Ashkaft cave.jpg", "alt": "Do-Ashkaft Cave", "credit": "Do-Ashkaft Cave near Kermanshah · Wikimedia Commons" },
+   { "file": "Panorama of Do-Ashkaft Cave 2009 big cave.jpg", "alt": "Do-Ashkaft Cave", "credit": "Panorama of Do-Ashkaft Cave · Wikimedia Commons" }
+  ],
   "body": [
    "Do-Ashkaft (“Two Caves”) is a Middle Palaeolithic cave on the northern slopes above the Kermanshah plain, one of the best-surveyed Neanderthal-period sites of the central Zagros. Repeated seasons of collection recovered thousands of Mousterian stone tools made by the Levallois technique.",
    "The site helps map how Neanderthal groups moved through the Zagros valleys over tens of thousands of years, hunting wild goat and sheep in a landscape of caves and springs."
@@ -1478,6 +1541,11 @@ window.ENRICH = {
  },
 
  "e122": {
+  "img": [ { "file": "Pottery bowl, 7100-5800 BCE, from the Neolithic site of Jarmo, Sulaymaniyah, Iraq. Sulaymaniyah Museum, Iraq.jpg", "alt": "Pottery from Jarmo", "credit": "Neolithic pottery bowl from Jarmo, Sulaymaniyah Museum · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Pottery bowl, 7100-5800 BCE, from the Neolithic site of Jarmo, Sulaymaniyah, Iraq. Sulaymaniyah Museum, Iraq.jpg", "alt": "Pottery from Jarmo", "credit": "Neolithic pottery bowl from Jarmo, Sulaymaniyah Museum · Wikimedia Commons" },
+   { "file": "A necklace made of a group of local and exotic stones as well as river and sea shells (cowries). From the Neolithic site of Jarmo, Iraq. 7100-5800 BCE. Sulaymaniyah Museum, Iraq.jpg", "alt": "Necklace from Jarmo", "credit": "Necklace from the Neolithic site of Jarmo · Wikimedia Commons" }
+  ],
   "body": [
    "Jarmo, in the Zagros foothills of Iraqi Kurdistan just west of Iran, was excavated by Robert and Linda Braidwood from 1948 as part of a deliberate search for the origins of farming. It became one of the type-sites for the Neolithic of the eastern Fertile Crescent.",
    "Its packed-mud houses, querns, cultivated emmer and barley and herded goats showed a fully agricultural village of about 7000 BCE. Jarmo’s careful excavation — sieving deposits and studying seeds and bones — set the template for how the beginnings of agriculture are investigated across the region, including at the Iranian sites of Ganj Dareh and Ali Kosh."
