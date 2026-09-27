@@ -4901,3 +4901,5 @@ window.ENRICH = {
    { "label": "Nader Shah — New World Encyclopedia", "url": "https://www.newworldencyclopedia.org/entry/Nader_Shah" }
   ],
   "related": [ "e200", "e202" ]
+ }
+};
