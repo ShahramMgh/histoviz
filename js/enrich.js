@@ -2308,6 +2308,248 @@ window.ENRICH = {
   "refs": [ { "label": "Wikipedia — Uzun Hasan", "url": "https://en.wikipedia.org/wiki/Uzun_Hasan" } ],
   "related": [ "e196", "e198", "e178" ]
  },
+ "e198": {
+  "img": [ { "file": "Shah_Ismail_I_Safavid,_Behzad.jpg", "alt": "Shah Ismail I", "credit": "Shah Ismail I, in the style of Behzad · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Shah_Ismail_I_Safavid,_Behzad.jpg", "alt": "Shah Ismail I", "credit": "Shah Ismail I · Wikimedia Commons" },
+   { "file": "1541-Battle_in_the_war_between_Shah_Isma'il_and_the_King_of_Shirvan-Shahnama-i-Isma'il.jpg", "alt": "Shah Ismail in battle", "credit": "Shah Ismail in battle, from the Shahnama-i Isma'il, 1541 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Shah Ismail I founded the Safavid dynasty in 1501 at the age of only fourteen, sweeping to power at the head of the militant Qizilbash Turkmen followers of his family’s Sufi order. His most momentous act was to proclaim Twelver Shia Islam the state religion of Iran — a decision that set the country apart from the Sunni Ottoman and Uzbek worlds and shaped Iranian identity to this day.",
+   "A charismatic warrior-king revered by his followers as almost divine, he was also a fine poet, writing mystical verse in Turkish under the name Khatai. His aura of invincibility was broken in 1514 when Ottoman firearms crushed his cavalry at the Battle of Chaldiran."
+  ],
+  "refs": [ { "label": "Wikipedia — Ismail I", "url": "https://en.wikipedia.org/wiki/Ismail_I" } ],
+  "related": [ "e178", "e199", "e197" ]
+ },
+ "e199": {
+  "img": [ { "file": "Shah_Tahmasp_I_(1514-1576)_in_a_landscape_(painted_circa_1575).jpg", "alt": "Shah Tahmasp I", "credit": "Shah Tahmasp I in a landscape, c. 1575 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Shah_Tahmasp_I_(1514-1576)_in_a_landscape_(painted_circa_1575).jpg", "alt": "Shah Tahmasp I", "credit": "Shah Tahmasp I in a landscape · Wikimedia Commons" },
+   { "file": "Portrait_of_Shah_Tahmasp_at_the_Celebration_of_Id._Cartier_Hafiz._Circa_1531.jpg", "alt": "Shah Tahmasp at a celebration", "credit": "Shah Tahmasp at the celebration of Id, c. 1531 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Shah Tahmasp I, Ismail’s son, ruled for more than half a century and steadied the young Safavid state through repeated wars with the Ottomans and the Uzbeks. He moved the capital from exposed Tabriz to Qazvin and, by treaty, secured a durable peace on the western frontier.",
+   "In his early years he was a great patron of the arts, commissioning the magnificent illustrated ‘Shahnameh of Shah Tahmasp’, one of the supreme masterpieces of Persian manuscript painting. In later life he grew austere and devout, issuing ‘edicts of sincere repentance’ that curtailed court luxury."
+  ],
+  "refs": [ { "label": "Wikipedia — Tahmasp I", "url": "https://en.wikipedia.org/wiki/Tahmasp_I" } ],
+  "related": [ "e198", "e200", "e156" ]
+ },
+ "e200": {
+  "img": [ { "file": "12_Abu'l_Hasan_Jahangir_Welcoming_Shah_'Abbas,_ca._1618,_Freer_Gallery_of_Art,_Washington_DC_(portrait).jpg", "alt": "Shah Abbas the Great", "credit": "Shah Abbas I, detail from a Mughal painting, c. 1618, Freer Gallery · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "12_Abu'l_Hasan_Jahangir_Welcoming_Shah_'Abbas,_ca._1618,_Freer_Gallery_of_Art,_Washington_DC_(portrait).jpg", "alt": "Shah Abbas I", "credit": "Shah Abbas I, c. 1618, Freer Gallery · Wikimedia Commons" },
+   { "file": "A_Safavid_portrait_of_Shah_Abbas_(1571-1629)_as_a_young_man_(detail),_Iran,_c._1590,_with_a_scene_from_Layla_and_Majnun_above.jpg", "alt": "Young Shah Abbas", "credit": "Shah Abbas as a young man, Iran, c. 1590 · Wikimedia Commons" },
+   { "file": "Prince_ʽAbbās_enthroned,_proclaimed_Shah_in_Khorasan_in_1581.jpg", "alt": "Abbas proclaimed shah", "credit": "Prince Abbas proclaimed shah in Khorasan, 1581 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Shah Abbas I, ‘the Great’, raised the Safavid empire to its zenith. He broke the power of the unruly Qizilbash by building a new standing army of ghulam slave-soldiers equipped with muskets and artillery — reorganised with the help of the English adventurers Robert and Anthony Sherley — and used it to drive back the Ottomans and Uzbeks and recover lost provinces.",
+   "In 1598 he made Isfahan his capital and rebuilt it as one of the most beautiful cities in the world, around the vast Naqsh-e Jahan square with its mosques, palace and bazaar — so splendid that Iranians said ‘Isfahan is half the world’. He fostered the silk trade, welcomed European merchants and missionaries, and presided over a golden age of Persian art (now a UNESCO World Heritage Site)."
+  ],
+  "refs": [
+   { "label": "Wikipedia — Abbas the Great", "url": "https://en.wikipedia.org/wiki/Abbas_the_Great" },
+   { "label": "UNESCO — Meidan Emam, Esfahan", "url": "https://whc.unesco.org/en/list/115" }
+  ],
+  "related": [ "e199", "e173", "e156" ]
+ },
+ "e202": {
+  "img": [ { "file": "Karim_Khan-e_Zand.png", "alt": "Karim Khan Zand", "credit": "Karim Khan Zand · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Karim_Khan-e_Zand.png", "alt": "Karim Khan Zand", "credit": "Karim Khan Zand · Wikimedia Commons" },
+   { "file": "Coin_of_Karim_Khan_Zand,_minted_in_Isfahan.jpg", "alt": "Coin of Karim Khan", "credit": "Coin of Karim Khan Zand, Isfahan mint · Wikimedia Commons" }
+  ],
+  "body": [
+   "After the chaos that followed the fall of the Safavids and the assassination of Nader Shah, Karim Khan of the Zand tribe restored peace to most of Iran from about 1751. Famous for his humanity and modesty, he refused the title of shah, styling himself only ‘Vakil e-Ra'aya’ — the ‘Deputy of the People’.",
+   "He made Shiraz his capital and adorned it with fine buildings — the Arg citadel, the Vakil bazaar and mosque, and lovely gardens — and gave the country a rare generation of prosperity and light taxation. His reign is remembered with unusual affection as a brief interlude of good government."
+  ],
+  "refs": [ { "label": "Wikipedia — Karim Khan Zand", "url": "https://en.wikipedia.org/wiki/Karim_Khan_Zand" } ],
+  "related": [ "e203", "e200", "e156" ]
+ },
+ "e203": {
+  "img": [ { "file": "A_portrait_of_Agha_Muhammad_Khan,_Persia,_Qajar,_dated_1795.jpg", "alt": "Agha Mohammad Khan", "credit": "Agha Mohammad Khan Qajar, 1795 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "A_portrait_of_Agha_Muhammad_Khan,_Persia,_Qajar,_dated_1795.jpg", "alt": "Agha Mohammad Khan", "credit": "Agha Mohammad Khan Qajar, 1795 · Wikimedia Commons" },
+   { "file": "Agha_Mohammad_Khan_Qajar_painting_in_Soleymaniyeh_Palace_cropped.jpg", "alt": "Agha Mohammad Khan", "credit": "Agha Mohammad Khan, Soleymaniyeh Palace · Wikimedia Commons" }
+  ],
+  "body": [
+   "Agha Mohammad Khan, castrated as a boy by a rival ruler, grew into one of the most ruthless and determined figures in Iranian history. Through years of relentless warfare he reunited a country torn by decades of civil strife and founded the Qajar dynasty, crowning himself shah in 1796.",
+   "He made Tehran — then a modest town — his capital, beginning its rise to become the metropolis it is today. His campaigns to reimpose Iranian control, including the brutal sack of Tbilisi and a savage assault on Kerman, made him widely feared; he was murdered by his own servants in 1797."
+  ],
+  "refs": [ { "label": "Wikipedia — Agha Mohammad Khan Qajar", "url": "https://en.wikipedia.org/wiki/Agha_Mohammad_Khan_Qajar" } ],
+  "related": [ "e202", "e204", "e205" ]
+ },
+ "e204": {
+  "img": [ { "file": "Portrait_of_Fath_Ali_Shah_Standing.jpg", "alt": "Fath-Ali Shah", "credit": "Fath-Ali Shah Qajar standing in full regalia · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Portrait_of_Fath_Ali_Shah_Standing.jpg", "alt": "Fath-Ali Shah", "credit": "Fath-Ali Shah in full regalia · Wikimedia Commons" },
+   { "file": "The_Court_of_Fath_Ali_Shah1.jpg", "alt": "Court of Fath-Ali Shah", "credit": "The court of Fath-Ali Shah · Wikimedia Commons" },
+   { "file": "FathAli_shah-taqe_bostan-Photos_from_Sahand_Ace.jpg", "alt": "Fath-Ali Shah rock relief", "credit": "Rock relief of Fath-Ali Shah near Taq-e Bostan · Wikimedia Commons" }
+  ],
+  "body": [
+   "Fath-Ali Shah, second of the Qajars, is instantly recognisable from his portraits — a slender figure with an immense black beard, dripping with jewels, seated on the Peacock Throne. He revived the ancient Iranian tradition of the royal image, commissioning grand court paintings and even Achaemenid-style rock reliefs.",
+   "His long reign, however, saw military disaster. In two ruinous wars with expanding Tsarist Russia, Iran lost its rich provinces in the Caucasus — Georgia, then Armenia and much of Azerbaijan — by the humiliating treaties of Golestan (1813) and Turkmenchay (1828), which also granted Russia sweeping privileges."
+  ],
+  "refs": [ { "label": "Wikipedia — Fath-Ali Shah Qajar", "url": "https://en.wikipedia.org/wiki/Fath-Ali_Shah_Qajar" } ],
+  "related": [ "e203", "e205", "e211" ]
+ },
+ "e205": {
+  "img": [ { "file": "Naser_al-Din_Shah_Qajar,_close_up,_with_slight_smile_by_Nadar.jpg", "alt": "Naser al-Din Shah", "credit": "Naser al-Din Shah photographed by Nadar · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Naser_al-Din_Shah_Qajar,_close_up,_with_slight_smile_by_Nadar.jpg", "alt": "Naser al-Din Shah", "credit": "Naser al-Din Shah, photographed by Nadar · Wikimedia Commons" },
+   { "file": "Photo_portrait_of_Naser-al_Din_Shah_Qajar_in_1873.jpg", "alt": "Naser al-Din Shah, 1873", "credit": "Naser al-Din Shah, 1873 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Naser al-Din Shah reigned for almost fifty years, the longest of any Qajar, straddling the collision of Iran with the modern world. His early years were marked by the reforms of his great chief minister Amir Kabir, who founded the Dar ol-Fonun polytechnic before the shah had him killed.",
+   "A curious and cultivated man — a keen diarist, painter and one of the first royal photographers — he travelled to Europe three times, yet his sale of concessions to foreign powers stirred deep resentment, most famously in the Tobacco Protest of 1890–92, when a nationwide boycast forced him to cancel a British monopoly. He was assassinated in 1896."
+  ],
+  "refs": [ { "label": "Wikipedia — Naser al-Din Shah Qajar", "url": "https://en.wikipedia.org/wiki/Naser_al-Din_Shah_Qajar" } ],
+  "related": [ "e211", "e206", "e212" ]
+ },
+ "e206": {
+  "img": [ { "file": "Mozaffar_ad-Din_Shah_Qajar_portrait.jpg", "alt": "Mozaffar ad-Din Shah", "credit": "Mozaffar ad-Din Shah Qajar · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Mozaffar_ad-Din_Shah_Qajar_portrait.jpg", "alt": "Mozaffar ad-Din Shah", "credit": "Mozaffar ad-Din Shah Qajar · Wikimedia Commons" },
+   { "file": "Mozaffar_ad-Din_Shah_1902.jpg", "alt": "Mozaffar ad-Din Shah, 1902", "credit": "Mozaffar ad-Din Shah, 1902 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Mozaffar ad-Din Shah, a mild and ailing ruler, ran the state deep into debt with extravagant tours of Europe financed by foreign loans, deepening popular anger at Qajar misrule and foreign influence.",
+   "When merchants, clergy and reformers rose up in the Constitutional Revolution of 1906, he gave way: days before his death he signed the decree creating Iran’s first constitution and its first elected parliament, the Majlis — a landmark in the country’s political history."
+  ],
+  "refs": [ { "label": "Wikipedia — Mozaffar ad-Din Shah Qajar", "url": "https://en.wikipedia.org/wiki/Mozaffar_ad-Din_Shah_Qajar" } ],
+  "related": [ "e212", "e205", "e207" ]
+ },
+ "e207": {
+  "img": [ { "file": "AhmadShahQajar2.jpg", "alt": "Ahmad Shah Qajar", "credit": "Ahmad Shah Qajar, the last Qajar king · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "AhmadShahQajar2.jpg", "alt": "Ahmad Shah Qajar", "credit": "Ahmad Shah Qajar · Wikimedia Commons" },
+   { "file": "Ahmad_Shahs_Pavilion.jpg", "alt": "Ahmad Shah's pavilion", "credit": "A pavilion of Ahmad Shah · Wikimedia Commons" }
+  ],
+  "body": [
+   "Ahmad Shah, placed on the throne as a boy of eleven after his father was deposed in the Constitutional crisis, was the last of the Qajar dynasty. His reign was overshadowed by the First World War, when Iran — though neutral — was occupied by Russian, British and Ottoman troops, and struck by famine.",
+   "Weak and increasingly powerless, he watched real authority slip to the army officer Reza Khan, who seized power in a coup in 1921. In 1925 the Majlis deposed the absent Ahmad Shah, ending 130 years of Qajar rule; he died in exile in France."
+  ],
+  "refs": [ { "label": "Wikipedia — Ahmad Shah Qajar", "url": "https://en.wikipedia.org/wiki/Ahmad_Shah_Qajar" } ],
+  "related": [ "e206", "e208", "e212" ]
+ },
+ "e208": {
+  "img": [ { "file": "Reza_shah_uniform.jpg", "alt": "Reza Shah Pahlavi", "credit": "Reza Shah Pahlavi in uniform · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Reza_shah_uniform.jpg", "alt": "Reza Shah", "credit": "Reza Shah Pahlavi in uniform · Wikimedia Commons" },
+   { "file": "Reza_Shah.png", "alt": "Reza Shah", "credit": "Reza Shah Pahlavi · Wikimedia Commons" },
+   { "file": "Reza_Kahn_behind_Ahmad_Shah_jpg.jpg", "alt": "Reza Khan and Ahmad Shah", "credit": "Reza Khan (standing) behind Ahmad Shah · Wikimedia Commons" }
+  ],
+  "body": [
+   "Reza Shah rose from a humble military background to command the Cossack Brigade, seized power in the coup of 1921, and in 1925 founded the Pahlavi dynasty, crowning himself shah. A forceful moderniser in the mould of Atatürk, he set out to build a strong, centralised and secular nation-state.",
+   "He created a national army, a modern bureaucracy and secular courts and schools, built the Trans-Iranian Railway and the University of Tehran, and curbed the power of the clergy and tribes — controversially banning the veil in 1936. His authoritarian rule and pro-German leanings led the Allies to force his abdication in 1941; he died in exile in South Africa."
+  ],
+  "refs": [ { "label": "Wikipedia — Reza Shah", "url": "https://en.wikipedia.org/wiki/Reza_Shah" } ],
+  "related": [ "e207", "e209", "e157" ]
+ },
+ "e209": {
+  "img": [ { "file": "Mohammad_Reza_Pahlavi_1973_portrait_(4x5_cropped).jpg", "alt": "Mohammad Reza Pahlavi", "credit": "Mohammad Reza Pahlavi, 1973 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Mohammad_Reza_Pahlavi_1973_portrait_(4x5_cropped).jpg", "alt": "Mohammad Reza Pahlavi", "credit": "Mohammad Reza Pahlavi, 1973 · Wikimedia Commons" },
+   { "file": "Mohammad_Reza_Shah_Pahlavi_1973_(3x4_cropped).jpg", "alt": "Mohammad Reza Shah", "credit": "Mohammad Reza Shah Pahlavi, 1973 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Mohammad Reza Pahlavi, the last Shah of Iran, came to the throne in 1941 on his father’s abdication. His rule was nearly ended in 1953 by the nationalist premier Mohammad Mossadegh, but a coup organised by the American and British intelligence services restored him to full power.",
+   "Backed by soaring oil revenues, he launched the ‘White Revolution’ of land reform, women’s suffrage and modernisation, and in 1971 staged lavish celebrations of 2,500 years of Iranian monarchy. But rapid change, inequality, and repression through the SAVAK secret police bred mounting opposition, and in 1979 he was swept from power by the Islamic Revolution and died in exile."
+  ],
+  "refs": [ { "label": "Wikipedia — Mohammad Reza Pahlavi", "url": "https://en.wikipedia.org/wiki/Mohammad_Reza_Pahlavi" } ],
+  "related": [ "e208", "e213", "e216" ]
+ },
+ "e210": {
+  "img": [ { "file": "Presentation_of_the_book,_folio_6_(Bibliothèque_nationale_de_France,_Supplément_Persan_1113).jpg", "alt": "Rashid al-Din's history", "credit": "Presentation of Rashid al-Din’s ‘Jami' al-Tawarikh’, BnF · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Presentation_of_the_book,_folio_6_(Bibliothèque_nationale_de_France,_Supplément_Persan_1113).jpg", "alt": "Jami' al-Tawarikh", "credit": "Presentation of the ‘Jami' al-Tawarikh’, BnF · Wikimedia Commons" },
+   { "file": "Mongol_soldiers_by_Rashid_al-Din_1305.JPG", "alt": "Mongol soldiers", "credit": "Mongol soldiers, illustration from Rashid al-Din’s history, 1305 · Wikimedia Commons" }
+  ],
+  "body": [
+   "Rashid al-Din Hamadani, a physician of Jewish origin who converted to Islam, rose to become the powerful vizier of the Ilkhanid rulers Ghazan and Oljaitu. A brilliant administrator, he drove the reforms that revived Iran after the Mongol conquest and built the Rab‘-e Rashidi, a great scholarly and charitable quarter at Tabriz.",
+   "He is above all remembered as the author of the ‘Jami' al-Tawarikh’ (Compendium of Chronicles), an ambitious history of the Mongols and, uniquely for its time, of the wider world — from China and India to Europe — often called the first true world history. Court intrigue brought him down, and he was executed in 1318."
+  ],
+  "refs": [ { "label": "Wikipedia — Rashid-al-Din Hamadani", "url": "https://en.wikipedia.org/wiki/Rashid-al-Din_Hamadani" } ],
+  "related": [ "e192", "e193", "e191" ]
+ },
+ "e211": {
+  "img": [ { "file": "AmirKabir_naghashbashi.jpg", "alt": "Amir Kabir", "credit": "Amir Kabir, reformist chief minister · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "AmirKabir_naghashbashi.jpg", "alt": "Amir Kabir", "credit": "Amir Kabir · Wikimedia Commons" },
+   { "file": "Dar_ul-Funun_2059.jpg", "alt": "Dar ol-Fonun", "credit": "The Dar ol-Fonun, Iran’s first modern college, founded by Amir Kabir · Wikimedia Commons" },
+   { "file": "Fingarden7.jpg", "alt": "Fin Garden, Kashan", "credit": "The Fin Garden at Kashan, where Amir Kabir was killed · Wikimedia Commons" }
+  ],
+  "body": [
+   "Mirza Taqi Khan, titled Amir Kabir, was the greatest reformer of 19th-century Iran and chief minister to the young Naser al-Din Shah. In barely three years he attacked corruption, reorganised the army and finances, curbed foreign interference, and launched a modern newspaper.",
+   "His crowning achievement was the Dar ol-Fonun, the first modern institution of higher learning in Iran, teaching science, engineering and medicine. His reforms threatened powerful interests at court; he was dismissed, exiled, and murdered in the bath-house of the Fin Garden at Kashan in 1852 — remembered ever since as a martyr of Iranian progress."
+  ],
+  "refs": [ { "label": "Wikipedia — Amir Kabir", "url": "https://en.wikipedia.org/wiki/Amir_Kabir" } ],
+  "related": [ "e205", "e212", "e213" ]
+ },
+ "e212": {
+  "img": [ { "file": "First_Majlis_MPs.jpg", "alt": "First Majlis", "credit": "Deputies of Iran’s first parliament (Majlis), 1906 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "First_Majlis_MPs.jpg", "alt": "First Majlis", "credit": "Deputies of the first Majlis, 1906 · Wikimedia Commons" },
+   { "file": "Farmane_e_mashrutiyat.jpg", "alt": "Constitutional decree", "credit": "The constitutional decree of 1906 · Wikimedia Commons" },
+   { "file": "Sattarkhan_&_Bagherkhan.jpg", "alt": "Sattar Khan and Baqer Khan", "credit": "Sattar Khan and Baqer Khan, leaders of the Tabriz resistance · Wikimedia Commons" }
+  ],
+  "body": [
+   "The Constitutional Revolution of 1905–1911 was a turning point in Iranian history: a broad alliance of merchants, clergy, intellectuals and reformers rose up to demand the rule of law, an end to royal absolutism and foreign concessions, and an elected assembly. Taking sanctuary (bast) in mosques and foreign legations, they forced the shah to grant a constitution and Iran’s first parliament, the Majlis, in 1906.",
+   "The gains were fiercely contested. When Mohammad Ali Shah bombarded the Majlis in 1908, resistance blazed up in Tabriz under Sattar Khan and Baqer Khan, and constitutionalists eventually retook Tehran. Though Russian intervention and internal division weakened the movement, it planted the enduring ideals of constitutional and representative government in Iran."
+  ],
+  "refs": [ { "label": "Wikipedia — Persian Constitutional Revolution", "url": "https://en.wikipedia.org/wiki/Persian_Constitutional_Revolution" } ],
+  "related": [ "e206", "e207", "e157" ]
+ },
+ "e213": {
+  "img": [ { "file": "Dr_Mohammad_Mosaddeq.jpg", "alt": "Mohammad Mossadegh", "credit": "Mohammad Mossadegh · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Dr_Mohammad_Mosaddeq.jpg", "alt": "Mohammad Mossadegh", "credit": "Mohammad Mossadegh · Wikimedia Commons" },
+   { "file": "Mossadeghmohammadrezashah.jpg", "alt": "Mossadegh and the Shah", "credit": "Mossadegh with Mohammad Reza Shah · Wikimedia Commons" }
+  ],
+  "body": [
+   "Mohammad Mossadegh was the popular nationalist statesman who, as prime minister in 1951, led the movement to nationalise the Anglo-Iranian Oil Company, asserting Iran’s right to control its own oil after decades of British domination. His stand made him a hero across the developing world.",
+   "Britain organised a boycott of Iranian oil, and in 1953 a coup backed by the American CIA and British MI6 (Operation Ajax) overthrew him and restored the Shah’s absolute power. Mossadegh spent the rest of his life under house arrest, but he remains an enduring symbol of Iranian nationalism and of the struggle for democracy and sovereignty."
+  ],
+  "refs": [ { "label": "Wikipedia — Mohammad Mosaddegh", "url": "https://en.wikipedia.org/wiki/Mohammad_Mosaddegh" } ],
+  "related": [ "e209", "e216", "e212" ]
+ },
+ "e214": {
+  "img": [ { "file": "Sadegh_Hedayat.jpg", "alt": "Sadegh Hedayat", "credit": "Sadegh Hedayat · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Sadegh_Hedayat.jpg", "alt": "Sadegh Hedayat", "credit": "Sadegh Hedayat · Wikimedia Commons" },
+   { "file": "Sadegh-hedayat-grave.jpg", "alt": "Grave of Hedayat", "credit": "The grave of Sadegh Hedayat, Père Lachaise, Paris · Wikimedia Commons" }
+  ],
+  "body": [
+   "Sadegh Hedayat is widely regarded as the greatest modern Iranian prose writer and the father of the Persian short story. Educated in Europe and steeped in both Western literature and Iranian folklore, he brought modernist techniques and a piercing, often bleak sensibility to Persian fiction.",
+   "His masterpiece, ‘The Blind Owl’ (Buf-e Kur, 1936), a haunting, surreal novella, is one of the most celebrated works of 20th-century Iranian literature. A pessimist tormented by the gap between his vision and his society, he took his own life in Paris in 1951."
+  ],
+  "refs": [ { "label": "Wikipedia — Sadegh Hedayat", "url": "https://en.wikipedia.org/wiki/Sadegh_Hedayat" } ],
+  "related": [ "e215", "e158", "e159" ]
+ },
+ "e215": {
+  "img": [ { "file": "Parvin_etesami.jpg", "alt": "Parvin E'tesami", "credit": "Parvin E'tesami · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Parvin_etesami.jpg", "alt": "Parvin E'tesami", "credit": "Parvin E'tesami · Wikimedia Commons" },
+   { "file": "Parvin_Grave.jpg", "alt": "Grave of Parvin E'tesami", "credit": "The grave of Parvin E'tesami at Qom · Wikimedia Commons" }
+  ],
+  "body": [
+   "Parvin E'tesami is one of the most admired women poets in the history of Persian literature. Writing in a pure classical style, she was a supreme master of the ‘monazere’ or debate-poem, in which two figures — a needle and a thread, the rich and the poor, an orphan and a king — argue out a moral truth.",
+   "Her verse is marked by deep compassion for the poor and the powerless and a quiet insistence on justice and human dignity. She published a celebrated Divan to wide acclaim, but died of typhoid at only thirty-four, in 1941."
+  ],
+  "refs": [ { "label": "Wikipedia — Parvin E'tesami", "url": "https://en.wikipedia.org/wiki/Parvin_E%27tesami" } ],
+  "related": [ "e214", "e159", "e157" ]
+ },
+ "e216": {
+  "img": [ { "file": "1979_Iranian_Revolution.jpg", "alt": "The 1979 Revolution", "credit": "Mass demonstration during the 1979 Iranian Revolution · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "1979_Iranian_Revolution.jpg", "alt": "1979 Revolution", "credit": "Mass demonstration during the 1979 Revolution · Wikimedia Commons" },
+   { "file": "Mass_demonstration_in_Iran,_date_unknown.jpg", "alt": "Revolutionary demonstration", "credit": "A mass demonstration in Iran, 1978–79 · Wikimedia Commons" }
+  ],
+  "body": [
+   "The Iranian Revolution of 1978–79 overthrew Mohammad Reza Shah and brought to an end some 2,500 years of Iranian monarchy. A vast coalition of religious, leftist, liberal and nationalist forces, drawing millions into the streets in strikes and demonstrations, united in opposition to the Shah’s autocratic rule, inequality and dependence on foreign powers.",
+   "The movement coalesced around the exiled cleric Ayatollah Ruhollah Khomeini, who returned in triumph in February 1979. A referendum that April established the Islamic Republic, a new order founded on the principle of clerical rule (velayat-e faqih) that transformed Iran’s government, society and place in the world — the point at which this atlas draws to a close."
+  ],
+  "refs": [ { "label": "Wikipedia — Iranian Revolution", "url": "https://en.wikipedia.org/wiki/Iranian_Revolution" } ],
+  "related": [ "e209", "e213", "e208" ]
+ },
 
  "e152": {
   "img": [ { "file": "Maulana_Jelaledin_Muhammad_Rumi_in_konya.jpg", "alt": "Shrine of Rumi", "credit": "The tomb-shrine of Rumi (the Mevlana Museum), Konya · Wikimedia Commons" } ],
