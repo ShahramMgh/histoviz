@@ -35,7 +35,7 @@ window.ERAS = [
   {id:"sas", name:"Sasanian Empire", start:224, end:651, span:"224 – 651 CE", short:"224–651 CE", color:"#7E5A12",
    sum:"A dynasty from Fars revives imperial ambition, founds cities, builds fire temples and gives Zoroastrianism an official, codified form, until the Arab conquest."},
   {id:"later", name:"Later heritage", start:651, end:2026, span:"651 CE – present", short:"651 CE–now", color:"#6B4E9E",
-   sum:"Later chapters of Iranian heritage — Islamic-era monuments, cities and cultural landmarks added to this archive."}
+   sum:"After the Arab conquest, Iran kept its own identity: the Persian language revived, Ferdowsi’s Shahnameh and a thousand years of poetry, art and science flourished under Iranian and Persianate dynasties, and Nowruz and the memory of the old kings endured — within, but never dissolved into, the wider Islamic world."}
 ];
 
 // y = sort value in years (negative = BCE). d = displayed date. lat/lng = map pin.
