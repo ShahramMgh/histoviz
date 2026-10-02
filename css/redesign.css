@@ -730,3 +730,26 @@ body.dash .dash-grid.tl-off .dash-bottom .tl-scroll{display:none}
   .dash-left{max-height:46vh}
   .leftnav-reopen{display:none}
 }
+
+/* ============================================================
+   Pass 12 — fix horizontal overflow + uniform tree spacing + polish
+   ============================================================ */
+/* kill the sliver of horizontal scroll (edge time-labels overflow) */
+body.dash{overflow-x:hidden}
+body.dash .dash-grid{max-width:100vw}
+/* give the compact scroller side room so the end labels stay on-screen */
+.dash-center .timebar.compact{padding-left:1.5rem;padding-right:1.5rem;box-sizing:border-box}
+
+/* uniform, compact tree rows (flex column with explicit gaps) */
+.nav-tree{display:flex;flex-direction:column;gap:2px}
+.tnode{flex:0 0 auto}
+.trow{min-height:34px}
+.era-node>.era-row{padding:.3rem .4rem}
+.tchildren{display:flex;flex-direction:column;gap:2px;margin:.15rem 0 .3rem .55rem;padding-left:.55rem}
+.tnode:not(.open)>.tchildren{display:none}
+/* a touch more left breathing room in the panel header */
+.leftnav-head{padding-left:.85rem}
+.nav-tree{padding-left:.45rem}
+/* widen the left column slightly so long dynasty names fit */
+body.dash .dash-grid{grid-template-columns:298px minmax(0,1fr)}
+body.dash .dash-grid.left-off{grid-template-columns:0 minmax(0,1fr)}
