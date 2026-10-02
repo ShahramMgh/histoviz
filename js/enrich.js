@@ -2881,6 +2881,204 @@ window.ENRICH = {
   "refs": [ { "label": "Wikipedia — Peroz III", "url": "https://en.wikipedia.org/wiki/Peroz_III" } ],
   "related": [ "e118", "e223", "e117" ]
  },
+ "e236": {
+  "img": [ { "file": "National_museum_of_Iran,_Tehran_(2024).jpg", "alt": "National Museum of Iran", "credit": "The National Museum of Iran, Tehran · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "National_museum_of_Iran,_Tehran_(2024).jpg", "alt": "National Museum of Iran", "credit": "The National Museum of Iran, Tehran · Wikimedia Commons" },
+   { "file": "Statue of Darius the Great from Susa National Museum of Iran.jpg", "alt": "Statue of Darius the Great", "credit": "The statue of Darius the Great, found at Susa · Wikimedia Commons" },
+   { "file": "Saltman2.jpg", "alt": "A Salt Man", "credit": "One of the Salt Men of the Chehrabad mine · Wikimedia Commons" },
+   { "file": "The_Islamic_Museum_Of_National_Museum_of_Iran_Darafsh_(05).jpg", "alt": "Islamic-era gallery", "credit": "The Islamic-era museum of the National Museum of Iran · Wikimedia Commons" }
+  ],
+  "body": [
+   "The National Museum of Iran in Tehran, opened in 1937 in a landmark brick building by the French architect André Godard, is the country's central treasury of its own past — and the single greatest collection of Iranian antiquities anywhere. Its ancient halls run from Palaeolithic stone tools and the painted pottery of Susa and Sialk through the Bronze Age of Elam to the Achaemenids, Parthians and Sasanians.",
+   "Its highlights read like a roll-call of Iranian civilisation: the statue of Darius the Great carved in Egypt and found at Susa; glazed bricks, column capitals and reliefs from Persepolis and Susa; the 'Salt Men', naturally mummified miners from the Chehrabad mine; Sasanian silver, stuccos and mosaics; and a famous bronze from the temple at Shami. A second building houses the Museum of the Islamic Era, with ceramics, calligraphy, astrolabes, textiles and manuscripts.",
+   "Together the two museums tell the whole story of the plateau in one place, and most of the key objects excavated on Iranian soil in the 20th century came to rest here."
+  ],
+  "refs": [ { "label": "Wikipedia — National Museum of Iran", "url": "https://en.wikipedia.org/wiki/National_Museum_of_Iran" } ],
+  "related": [ "e237", "e238", "e094" ]
+ },
+ "e237": {
+  "img": [ { "file": "The_Kiani_Crown_at_the_Treasury_of_National_Jewels.jpg", "alt": "The Kiani Crown", "credit": "The Kiani Crown, Treasury of National Jewels, Tehran · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "The_Kiani_Crown_at_the_Treasury_of_National_Jewels.jpg", "alt": "The Kiani Crown", "credit": "The Kiani Crown · Wikimedia Commons" },
+   { "file": "The_Daria-e_Noor_(Sea_of_Light)_Diamond_from_the_collection_of_the_national_jewels_of_Iran_at_Central_Bank_of_Islamic_Republic_of_Iran.jpg", "alt": "The Darya-ye Noor diamond", "credit": "The Darya-ye Noor (Sea of Light) diamond · Wikimedia Commons" },
+   { "file": "Pahlavi_Crown.jpg", "alt": "The Pahlavi Crown", "credit": "The Pahlavi Crown · Wikimedia Commons" }
+  ],
+  "body": [
+   "Kept in a vault beneath the Central Bank in Tehran, the Treasury of National Jewels is one of the most valuable collections of royal regalia on earth — a hoard assembled by the Safavid, Afsharid, Zand, Qajar and Pahlavi dynasties and long used to back the national currency.",
+   "Its centrepieces include the Naderi (Peacock) Throne; the Kiani Crown of the Qajars; the pink Darya-ye Noor ('Sea of Light'), one of the largest pink diamonds in the world, cut from the same great stone as the Koh-i-Noor; the Nur-ol-Ain tiara; and the Globe of Jewels, a terrestrial globe set with over 51,000 gemstones. Much of the collection traces back to the plunder Nader Shah brought from his invasion of Mughal India in 1739.",
+   "The treasury is a dazzling record of Iranian craftsmanship and the wealth of its courts, a complement to the ancient collections of the National Museum a short distance away."
+  ],
+  "refs": [ { "label": "Wikipedia — Iranian Crown Jewels", "url": "https://en.wikipedia.org/wiki/Iranian_Crown_Jewels" } ],
+  "related": [ "e236", "e201", "e204" ]
+ },
+ "e238": {
+  "img": [ { "file": "Reza_Abbasi_Museum_(15).jpg", "alt": "Reza Abbasi Museum", "credit": "A gallery of the Reza Abbasi Museum, Tehran · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Reza_Abbasi_Museum_(15).jpg", "alt": "Reza Abbasi Museum", "credit": "A gallery of the Reza Abbasi Museum · Wikimedia Commons" },
+   { "file": "Shapur_I_Sassanid_silver_coin.JPG", "alt": "Sasanian coin", "credit": "A Sasanian silver coin of Shapur I · Wikimedia Commons" }
+  ],
+  "body": [
+   "The Reza Abbasi Museum in Tehran, named after the great Safavid painter and calligrapher, is a smaller but exquisite survey of Iranian art across some four thousand years. Opened in 1977, it arranges its treasures in a clear chronological sweep from the pre-Islamic to the Islamic eras.",
+   "Its pre-Islamic galleries hold Luristan bronzes, gold and silver vessels, and a fine run of Achaemenid, Parthian and Sasanian coins; its Islamic galleries display lustre and mina'i ceramics, inlaid metalwork, lacquer, textiles and — above all — Persian paintings, calligraphy and illustrated manuscripts, including works associated with its namesake.",
+   "Compact and beautifully displayed, it is one of the best places to follow the whole arc of Iranian craftsmanship in a single visit."
+  ],
+  "refs": [ { "label": "Wikipedia — Reza Abbasi Museum", "url": "https://en.wikipedia.org/wiki/Reza_Abbasi_Museum" } ],
+  "related": [ "e236", "e057", "e200" ]
+ },
+ "e239": {
+  "img": [ { "file": "British_Museum_from_NE_2.JPG", "alt": "The British Museum", "credit": "The British Museum, London · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "British_Museum_from_NE_2.JPG", "alt": "The British Museum", "credit": "The British Museum, London · Wikimedia Commons" },
+   { "file": "Cyrus_Cylinder_front.jpg", "alt": "The Cyrus Cylinder", "credit": "The Cyrus Cylinder · Wikimedia Commons" },
+   { "file": "The_Oxus_Treasure_at_the_British_Museum,_London._From_Takht-i_Kuwad,_Tajikistan._Achaemenid_period,_5th-4th_century_BCE.jpg", "alt": "The Oxus Treasure", "credit": "The Oxus Treasure at the British Museum · Wikimedia Commons" },
+   { "file": "Armlet_from_the_Oxus_Treasure_BM_1897.12-31.116.jpg", "alt": "Oxus griffin armlet", "credit": "A griffin-headed armlet from the Oxus Treasure · Wikimedia Commons" }
+  ],
+  "body": [
+   "The British Museum holds one of the finest collections of ancient Iranian art outside Iran. Its most celebrated Persian object is the Cyrus Cylinder — the clay barrel inscribed with Cyrus the Great's proclamation after taking Babylon in 539 BCE, often called the first charter of its kind.",
+   "Alongside it stand the Oxus Treasure, the richest surviving hoard of Achaemenid gold and silver; Achaemenid reliefs and glazed bricks; and extensive holdings of Elamite, Parthian and Sasanian art, seals and coins. The museum's Islamic collections add Persian ceramics, metalwork and manuscripts.",
+   "Assembled from excavation, purchase and the great 19th-century expeditions, the Persian galleries make the museum a key destination for understanding ancient Iran — even as the display of objects such as the Cyrus Cylinder continues to raise questions of cultural ownership."
+  ],
+  "refs": [ { "label": "Wikipedia — British Museum", "url": "https://en.wikipedia.org/wiki/British_Museum" } ],
+  "related": [ "e217", "e068", "e219" ]
+ },
+ "e240": {
+  "img": [ { "file": "Victoria_&_Albert_Museum_Entrance,_London,_UK_-_Diliff.jpg", "alt": "Victoria and Albert Museum", "credit": "The Victoria and Albert Museum, London · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Victoria_&_Albert_Museum_Entrance,_London,_UK_-_Diliff.jpg", "alt": "Victoria and Albert Museum", "credit": "The Victoria and Albert Museum · Wikimedia Commons" },
+   { "file": "The_Ardabil_Carpet_-_Google_Art_Project.jpg", "alt": "The Ardabil Carpet", "credit": "The Ardabil Carpet · Wikimedia Commons" },
+   { "file": "Victoria_and_Albert_Ardabil_Carpet.jpg", "alt": "The Ardabil Carpet on display", "credit": "The Ardabil Carpet on display at the V&A · Wikimedia Commons" }
+  ],
+  "body": [
+   "The Victoria and Albert Museum in London is the world's leading collection of the decorative arts, and its Islamic and Persian holdings are outstanding. Its single greatest Iranian treasure is the Ardabil Carpet — one of a famous pair woven in 1539–40 for the shrine of Sheikh Safi al-Din at Ardabil, and widely considered the finest Persian carpet in existence.",
+   "The Jameel Gallery of Islamic art holds a deep collection of Safavid and earlier Iranian work: lustre and mina'i ceramics, tilework, inlaid and engraved metalwork, silk textiles and velvets, bookbinding and miniature painting. Many pieces came from the great Safavid workshops of Tabriz, Isfahan and Kashan.",
+   "For the art of the Persian loom, workshop and kiln — especially of the Safavid golden age — the V&A has no rival outside Iran."
+  ],
+  "refs": [ { "label": "Wikipedia — Victoria and Albert Museum", "url": "https://en.wikipedia.org/wiki/Victoria_and_Albert_Museum" } ],
+  "related": [ "e178", "e200", "e239" ]
+ },
+ "e241": {
+  "img": [ { "file": "Louvre_Museum_Wikimedia_Commons.jpg", "alt": "The Louvre", "credit": "The Louvre, Paris · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Louvre_Museum_Wikimedia_Commons.jpg", "alt": "The Louvre", "credit": "The Louvre, Paris · Wikimedia Commons" },
+   { "file": "Frieze of archers from the palace of Darius in Susa (Louvre).jpg", "alt": "Frieze of Archers", "credit": "The glazed-brick Frieze of Archers from Darius's palace at Susa, Louvre · Wikimedia Commons" },
+   { "file": "Archers frieze Darius palace Louvre AOD487.jpg", "alt": "Archers frieze detail", "credit": "Detail of the Susa archers frieze, Louvre · Wikimedia Commons" }
+  ],
+  "body": [
+   "The Louvre's Department of Near Eastern Antiquities grew out of the French excavations at Susa, and its Persian galleries are among the richest anywhere. The star attractions are the glazed-brick friezes from the palace of Darius the Great at Susa — the famous procession of royal guards, the 'Immortals', in richly patterned robes, and panels of striding lions and winged bulls.",
+   "The museum also displays a colossal bull-headed column capital from the Apadana at Susa, the statue of Darius (shared with Tehran in casts), Elamite masterpieces such as the bronze statue of Queen Napir-Asu, and large collections of Luristan bronzes, Sasanian silver and Islamic Persian art. The nearby Code of Hammurabi was itself found at Susa, carried there as war booty in antiquity.",
+   "A whole suite of galleries thus walks the visitor from ancient Elam through the splendour of the Achaemenid court."
+  ],
+  "refs": [ { "label": "Wikipedia — Louvre", "url": "https://en.wikipedia.org/wiki/Louvre" } ],
+  "related": [ "e068", "e076", "e027" ]
+ },
+ "e242": {
+  "img": [ { "file": "Hermitage_Museum_in_Saint_Petersburg.jpg", "alt": "The Hermitage Museum", "credit": "The State Hermitage, Saint Petersburg · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Hermitage_Museum_in_Saint_Petersburg.jpg", "alt": "The Hermitage", "credit": "The State Hermitage, Saint Petersburg · Wikimedia Commons" },
+   { "file": "Pazyryk carpet.jpg", "alt": "The Pazyryk Carpet", "credit": "The Pazyryk Carpet, Hermitage · Wikimedia Commons" },
+   { "file": "Ancient_Siberian_horse_mask,_Hermitage_Museum,_St._Petersburg.jpg", "alt": "Pazyryk horse mask", "credit": "A Pazyryk horse mask, Hermitage · Wikimedia Commons" }
+  ],
+  "body": [
+   "The State Hermitage in Saint Petersburg, founded by Catherine the Great in 1764, holds the world's greatest collection of Sasanian silver. Dozens of gilded plates showing kings hunting and enthroned, together with ewers and bowls, were gathered from the Perm and Ural regions of Russia, where they had been traded north for furs and preserved for over a thousand years.",
+   "The museum is also home to the Pazyryk Carpet — the oldest knotted-pile carpet in the world, of Achaemenid design, found frozen in a Scythian tomb in the Altai — along with the astonishing organic finds from the same burials: felts, saddles, a horse mask and textiles. Its Oriental collections add Achaemenid metalwork, Central Asian art and Islamic Persian material.",
+   "For Sasanian art in particular, the Hermitage is the indispensable collection, holding more royal silver than Iran itself."
+  ],
+  "refs": [ { "label": "Wikipedia — Hermitage Museum", "url": "https://en.wikipedia.org/wiki/Hermitage_Museum" } ],
+  "related": [ "e221", "e218", "e107" ]
+ },
+ "e243": {
+  "img": [ { "file": "Pergamonmuseum_Front.jpg", "alt": "Pergamon Museum, Berlin", "credit": "The Pergamon Museum, Berlin · Wikimedia Commons" } ],
+  "body": [
+   "Berlin's Museum of Islamic Art, housed in a wing of the Pergamon Museum, holds one of the most important collections of Islamic and Persian art in Europe. Its strengths include Persian carpets, lustre and lajvardina ceramics from Kashan, and architectural tilework and stuccos from the Iranian world.",
+   "Among its treasures are Il-khanid and Timurid mihrabs and tile panels, Persian miniatures and book arts, and metalwork of the Seljuk and later periods. The collection sits alongside the museum's ancient Near Eastern holdings, so that a single building spans Mesopotamian antiquity and the Islamic art of Iran.",
+   "For the Persian ceramic and architectural arts of the medieval period, Berlin is one of the richest destinations outside Iran."
+  ],
+  "refs": [ { "label": "Wikipedia — Pergamon Museum", "url": "https://en.wikipedia.org/wiki/Pergamon_Museum" } ],
+  "related": [ "e239", "e241", "e192" ]
+ },
+ "e244": {
+  "img": [ { "file": "Metropolitan_Museum_of_Art_(The_Met)_-_Central_Park,_NYC.jpg", "alt": "The Metropolitan Museum of Art", "credit": "The Metropolitan Museum of Art, New York · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Metropolitan_Museum_of_Art_(The_Met)_-_Central_Park,_NYC.jpg", "alt": "The Met", "credit": "The Metropolitan Museum of Art, New York · Wikimedia Commons" },
+   { "file": "Plate_with_a_hunting_scene_from_the_tale_of_Bahram_Gur_and_Azadeh_MET_DT1634.jpg", "alt": "Sasanian plate", "credit": "Sasanian plate of Bahram Gur and Azadeh, The Met · Wikimedia Commons" },
+   { "file": "Bust_of_Shapur_II_the_Great_in_the_Metropolitan_Museum_of_Art.jpg", "alt": "Bust of Shapur II", "credit": "Silver bust of Shapur II, The Met · Wikimedia Commons" }
+  ],
+  "body": [
+   "The Metropolitan Museum of Art in New York holds a major collection of Iranian art across its ancient Near Eastern and Islamic galleries. Its ancient holdings include Sasanian silver — among them a silver bust of a Sasanian king and plates of royal hunts — Achaemenid and Elamite objects, and Luristan bronzes.",
+   "A special strength is the material from the Met's own excavations at Nishapur in the 1930s and 40s, which fills galleries with early Islamic Iranian pottery, glass, stucco and wall painting. The Islamic wing adds superb Persian carpets, tilework, metalwork and a celebrated collection of illustrated manuscripts, including folios from the great Shahnameh of Shah Tahmasp.",
+   "Together these galleries make the Met one of the foremost collections of Iranian art in the Americas."
+  ],
+  "refs": [ { "label": "Wikipedia — Metropolitan Museum of Art", "url": "https://en.wikipedia.org/wiki/Metropolitan_Museum_of_Art" } ],
+  "related": [ "e107", "e106", "e199" ]
+ },
+ "e245": {
+  "img": [ { "file": "Bull_head_oriental_institute_chicago.jpg", "alt": "Persepolis bull capital", "credit": "Colossal bull-head capital from Persepolis, ISAC Museum, Chicago · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Bull_head_oriental_institute_chicago.jpg", "alt": "Persepolis bull capital", "credit": "Bull-head capital from Persepolis, Chicago · Wikimedia Commons" },
+   { "file": "Man-bull_uc_oriental_institute_capital_01.JPG", "alt": "Man-bull capital", "credit": "Column capital from Persepolis, Chicago · Wikimedia Commons" },
+   { "file": "Oriental_Institute.jpg", "alt": "The Oriental Institute", "credit": "The Institute for the Study of Ancient Cultures (Oriental Institute), Chicago · Wikimedia Commons" }
+  ],
+  "body": [
+   "The ISAC Museum of the University of Chicago — long known as the Oriental Institute — is the home institution of the archaeologists who excavated Persepolis in the 1930s. Its Robert and Deborah Aliber Persian Gallery displays the fruits of that and many other Iranian expeditions.",
+   "Its signature object is a colossal bull-head capital that once crowned a column in the great audience halls of Persepolis, together with reliefs, inscriptions and casts from the royal city. The gallery also holds important Luristan bronzes, finds from the excavations at Chogha Mish and Tall-e Bakun, and material spanning prehistoric to Sasanian and Islamic Iran.",
+   "Because its scholars recorded and studied Persepolis so thoroughly — including the archive of Elamite administrative tablets found there — the institute remains central to the modern understanding of Achaemenid Iran."
+  ],
+  "refs": [ { "label": "Wikipedia — Institute for the Study of Ancient Cultures", "url": "https://en.wikipedia.org/wiki/Institute_for_the_Study_of_Ancient_Cultures" } ],
+  "related": [ "e076", "e080", "e081" ]
+ },
+ "e246": {
+  "img": [ { "file": "Freer_Gallery_of_Art_-_National_Museum_of_Asian_Art_(53832136335).jpg", "alt": "Freer Gallery of Art", "credit": "The Freer Gallery of Art, Washington DC · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Freer_Gallery_of_Art_-_National_Museum_of_Asian_Art_(53832136335).jpg", "alt": "Freer Gallery of Art", "credit": "The Freer Gallery of Art · Wikimedia Commons" },
+   { "file": "The_Peacock_Room_(2).jpg", "alt": "Interior gallery", "credit": "An interior at the Freer Gallery · Wikimedia Commons" }
+  ],
+  "body": [
+   "The Freer Gallery of Art and the adjoining Arthur M. Sackler Gallery form the Smithsonian's National Museum of Asian Art in Washington, and together hold one of the great American collections of Persian art. They are especially strong in the arts of the book.",
+   "Their Iranian holdings include illustrated manuscripts and detached folios — among them leaves of the royal Shahnameh of Shah Tahmasp — Persian paintings and calligraphy, Safavid and earlier ceramics, metalwork, and Sasanian silver. The collection reflects the taste of the founder Charles Lang Freer and later gifts, and is a leading centre for the study of Persian painting.",
+   "For Persian manuscript and painting arts in particular, the Freer|Sackler ranks among the finest collections outside Iran."
+  ],
+  "refs": [ { "label": "Wikipedia — Freer Gallery of Art", "url": "https://en.wikipedia.org/wiki/Freer_Gallery_of_Art" } ],
+  "related": [ "e144", "e199", "e150" ]
+ },
+ "e247": {
+  "img": [ { "file": "Doha_-_Museum_of_Islamic_Art.jpg", "alt": "Museum of Islamic Art, Doha", "credit": "The Museum of Islamic Art, Doha · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Doha_-_Museum_of_Islamic_Art.jpg", "alt": "Museum of Islamic Art, Doha", "credit": "The Museum of Islamic Art, Doha · Wikimedia Commons" },
+   { "file": "Museum_of_Islamic_Art,_Doha_00_(54).JPG", "alt": "Museum of Islamic Art interior", "credit": "Inside the Museum of Islamic Art, Doha · Wikimedia Commons" }
+  ],
+  "body": [
+   "The Museum of Islamic Art in Doha, opened in 2008 in a striking building by I. M. Pei, has assembled in a short time one of the finest collections of Islamic art in the world, with Persian work prominent throughout.",
+   "Its Iranian holdings span lustre and mina'i ceramics, Seljuk and Safavid metalwork, carpets and textiles, jewelled objects, and a distinguished collection of Persian illustrated manuscripts and calligraphy, including fine Shahnameh and poetry volumes. Astronomical instruments and scientific manuscripts recall the achievements of Iranian science.",
+   "As a 21st-century museum built on major acquisitions, it has become one of the leading places to see Persian art in the Gulf region."
+  ],
+  "refs": [ { "label": "Wikipedia — Museum of Islamic Art, Doha", "url": "https://en.wikipedia.org/wiki/Museum_of_Islamic_Art,_Doha" } ],
+  "related": [ "e240", "e243", "e200" ]
+ },
+ "e248": {
+  "img": [ { "file": "Royal_Ontario_Museum_in_Fall_2021.jpg", "alt": "Royal Ontario Museum", "credit": "The Royal Ontario Museum, Toronto · Wikimedia Commons" } ],
+  "body": [
+   "The Royal Ontario Museum in Toronto, Canada's largest museum, holds a significant and long-established collection of Iranian art and archaeology, built up through purchases and participation in excavations over more than a century.",
+   "Its West Asian galleries include Achaemenid and Sasanian objects, Luristan bronzes, early Islamic ceramics from Nishapur and other Iranian centres, Persian tilework, metalwork and miniatures. The museum has supported fieldwork in Iran and published widely on its holdings.",
+   "It is among the most important collections of Iranian material culture in North America and a key teaching resource in Canada."
+  ],
+  "refs": [ { "label": "Wikipedia — Royal Ontario Museum", "url": "https://en.wikipedia.org/wiki/Royal_Ontario_Museum" } ],
+  "related": [ "e244", "e245", "e057" ]
+ },
+ "e249": {
+  "img": [ { "file": "Topkapı_-_01.jpg", "alt": "Topkapı Palace", "credit": "Topkapı Palace, Istanbul · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Topkapı_-_01.jpg", "alt": "Topkapı Palace", "credit": "Topkapı Palace, Istanbul · Wikimedia Commons" },
+   { "file": "Bağdat_Köşkü,_or_Kiosk_of_Baghdad,_located_in_Topkapı_Palace..jpg", "alt": "Baghdad Kiosk", "credit": "The Baghdad Kiosk at Topkapı Palace · Wikimedia Commons" }
+  ],
+  "body": [
+   "Topkapı Palace in Istanbul, the residence of the Ottoman sultans and a museum since 1924, holds one of the great collections of Persian art outside Iran — much of it acquired as diplomatic gifts, dowries and the spoils of the long Ottoman–Safavid wars.",
+   "Its library and treasury preserve superb Persian illustrated manuscripts, including copies of Ferdowsi's Shahnameh and Nizami's Khamsa and albums of miniatures, alongside Safavid and earlier paintings, carved jades, jewelled objects, carpets and fine metalwork of Iranian origin. The famous jewelled 'Topkapı Dagger' belongs to a courtly tradition shared across the Persianate world.",
+   "For Persian manuscript painting and courtly luxury arts, Topkapı is a collection of the first rank, a reminder of how closely the Ottoman and Iranian worlds were entwined."
+  ],
+  "refs": [ { "label": "Wikipedia — Topkapı Palace", "url": "https://en.wikipedia.org/wiki/Topkap%C4%B1_Palace" } ],
+  "related": [ "e150", "e199", "e144" ]
+ },
 
  "e152": {
   "img": [ { "file": "Maulana_Jelaledin_Muhammad_Rumi_in_konya.jpg", "alt": "Shrine of Rumi", "credit": "The tomb-shrine of Rumi (the Mevlana Museum), Konya · Wikimedia Commons" } ],
