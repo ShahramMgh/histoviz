@@ -358,6 +358,22 @@ Object.entries(ROUTES).forEach(([k,r])=>{
   routeLayers[k]=L.polyline(r.pts,{color:r.color,weight:3,opacity:.85,dashArray:"1 8",lineCap:"round"});
 });
 
+/* diaspora "trails": thin lines linking each find abroad back to its Iranian origin */
+const findTrails=L.layerGroup();
+let trailsOn=false;
+function trailColor(){return (CATS.diaspora&&CATS.diaspora.color)||"#A8327D";}
+function drawTrails(list){
+  findTrails.clearLayers();
+  if(!trailsOn){ if(map.hasLayer(findTrails))map.removeLayer(findTrails); return; }
+  const col=trailColor();
+  (list||[]).forEach(v=>{
+    if(v.c!=="diaspora"||!v.origin)return;
+    findTrails.addLayer(L.polyline([v.origin,[v.lat,v.lng]],
+      {color:col,weight:1.4,opacity:.5,dashArray:"2 7",lineCap:"round",interactive:false}));
+  });
+  if(!map.hasLayer(findTrails))findTrails.addTo(map);
+}
+
 /* ---------- Detail panel ---------- */
 const scrim=$("#scrim"), panel=$("#panel");
 function closePanel(){panel.classList.remove("show");panel.classList.remove("polity-mode");scrim.classList.remove("show");
@@ -500,6 +516,7 @@ function render(){
     });
     track.appendChild(group);
   });
+  drawTrails(EV.filter(v=>{const er=ERAS.find(e=>e.id===v.e);return er&&matches(v,er);}));
   // 3D entrance reveal as items scroll into view
   if(window.__io)window.__io.disconnect();
   if("IntersectionObserver" in window){
@@ -521,6 +538,9 @@ document.addEventListener("hv-theme",()=>{applyMapTheme();render();});
 
 /* optional marker clustering (off by default → small individual points) */
 (function(){const c=$("#clusterOn");if(c)c.addEventListener("change",()=>{clusterOn=c.checked;render();});})();
+
+/* trails linking "finds abroad" to their Iranian origin (off by default) */
+(function(){const t=$("#trailsOn");if(t)t.addEventListener("change",()=>{trailsOn=t.checked;render();});})();
 
 document.querySelectorAll(".route-toggle").forEach(cb=>cb.addEventListener("change",()=>{
   const k=cb.dataset.route, lyr=routeLayers[k];

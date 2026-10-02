@@ -2662,6 +2662,225 @@ window.ENRICH = {
   "refs": [ { "label": "Wikipedia — Iranian Revolution", "url": "https://en.wikipedia.org/wiki/Iranian_Revolution" } ],
   "related": [ "e209", "e213", "e208" ]
  },
+ "e217": {
+  "img": [ { "file": "The_Oxus_Treasure_at_the_British_Museum,_London._From_Takht-i_Kuwad,_Tajikistan._Achaemenid_period,_5th-4th_century_BCE.jpg", "alt": "The Oxus Treasure", "credit": "The Oxus Treasure, British Museum · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "The_Oxus_Treasure_at_the_British_Museum,_London._From_Takht-i_Kuwad,_Tajikistan._Achaemenid_period,_5th-4th_century_BCE.jpg", "alt": "The Oxus Treasure", "credit": "The Oxus Treasure, British Museum · Wikimedia Commons" },
+   { "file": "Armlet_from_the_Oxus_Treasure_BM_1897.12-31.116.jpg", "alt": "Griffin armlet", "credit": "Gold griffin-headed armlet from the Oxus Treasure · Wikimedia Commons" },
+   { "file": "Oxus_chariot_model.jpg", "alt": "Gold chariot model", "credit": "Gold model chariot from the Oxus Treasure · Wikimedia Commons" },
+   { "file": "Seated_man_Oxus_Treasure_BM_ME1931.0408.1.jpg", "alt": "Statuette", "credit": "Gold statuette from the Oxus Treasure · Wikimedia Commons" }
+  ],
+  "body": [
+   "The Oxus Treasure is the most important surviving collection of Achaemenid Persian gold and silver — around 180 objects including the famous griffin-headed armlets, a miniature golden chariot drawn by four horses, figurines, vessels and hundreds of votive plaques. It came to light in the 1870s near the Oxus (Amu Darya) river in what is now Tajikistan, probably from a temple at Takht-i Sangin.",
+   "Smuggled through Afghanistan to British India and eventually bequeathed to the British Museum, the hoard shows the imperial art of Persepolis flourishing at the empire's far north-eastern edge. It is the single richest window we have onto the luxury craftsmanship of the Achaemenid court — Iranian heritage preserved thousands of kilometres from the heartland."
+  ],
+  "refs": [ { "label": "Wikipedia — Oxus Treasure", "url": "https://en.wikipedia.org/wiki/Oxus_Treasure" } ],
+  "related": [ "e075", "e218", "e032" ]
+ },
+ "e218": {
+  "img": [ { "file": "Pazyryk carpet.jpg", "alt": "The Pazyryk Carpet", "credit": "The Pazyryk Carpet, Hermitage Museum · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Pazyryk carpet.jpg", "alt": "The Pazyryk Carpet", "credit": "The Pazyryk Carpet, Hermitage Museum · Wikimedia Commons" },
+   { "file": "Pazyryk_presentation_scene.jpg", "alt": "Pazyryk felt", "credit": "A felt hanging from the Pazyryk tombs · Wikimedia Commons" },
+   { "file": "Ancient_Siberian_horse_mask,_Hermitage_Museum,_St._Petersburg.jpg", "alt": "Pazyryk horse mask", "credit": "A horse mask from the Pazyryk burials, Hermitage · Wikimedia Commons" }
+  ],
+  "body": [
+   "The Pazyryk Carpet is the oldest surviving knotted-pile carpet in the world, woven around the 5th–4th century BCE. It was found in 1949, frozen in the ice of a Scythian chieftain's burial mound high in the Altai Mountains of southern Siberia, which preserved it almost perfectly for some 2,400 years.",
+   "Its dense field of grazing deer and mounted horsemen, framed by borders of griffins, echoes the reliefs of Persepolis so closely that many scholars believe it was made in Achaemenid Persia (or a closely linked workshop) and carried far north into the steppe. Either way it is a vivid trace of Persian art reaching the nomads of Central Asia; it is now a treasure of the Hermitage in St Petersburg."
+  ],
+  "refs": [ { "label": "Wikipedia — Pazyryk carpet", "url": "https://en.wikipedia.org/wiki/Pazyryk_carpet" } ],
+  "related": [ "e217", "e032", "e221" ]
+ },
+ "e219": {
+  "img": [ { "file": "Achaemenid_coin_daric_420BC_front.jpg", "alt": "Gold daric", "credit": "Achaemenid gold daric, c. 420 BCE · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Achaemenid_coin_daric_420BC_front.jpg", "alt": "Gold daric", "credit": "Achaemenid gold daric showing the royal archer · Wikimedia Commons" },
+   { "file": "AchaemenidDaric4thCenturyBCE.jpg", "alt": "Daric", "credit": "A 4th-century BCE Achaemenid daric · Wikimedia Commons" }
+  ],
+  "body": [
+   "The gold daric and its silver companion, the siglos, were the coinage of the Achaemenid empire, stamped with the image of the Great King as an archer. Among the first truly imperial currencies, they were trusted far beyond Iran's borders and are found in hoards across Anatolia, the Aegean, mainland Greece and Egypt.",
+   "The darics' influence on history was as much political as economic: Persian gold funded fleets and armies and bought the loyalty of Greek city-states, so that a Spartan king could grumble that he had been driven from Asia by 'ten thousand archers' — the figures stamped on Persian coins. These scattered coins trace the long financial reach of the Iranian empire."
+  ],
+  "refs": [ { "label": "Wikipedia — Daric", "url": "https://en.wikipedia.org/wiki/Daric" } ],
+  "related": [ "e074", "e220", "e217" ]
+ },
+ "e220": {
+  "img": [ { "file": "Sofia_-_King_Kotys_I's_Borovo_Treasure.jpg", "alt": "The Borovo Treasure", "credit": "The Borovo silver treasure, National Museum of History, Sofia · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Sofia_-_King_Kotys_I's_Borovo_Treasure.jpg", "alt": "Borovo Treasure", "credit": "The Borovo silver treasure, Sofia · Wikimedia Commons" },
+   { "file": "Thracian_treasure_Borovo_Jug.JPG", "alt": "Silver jug", "credit": "Silver-gilt jug from the Borovo treasure · Wikimedia Commons" },
+   { "file": "Thracian_treasure_Borovo_Sphynx_1.JPG", "alt": "Rhyton", "credit": "A rhyton from the Borovo treasure · Wikimedia Commons" }
+  ],
+  "body": [
+   "Across the lands of ancient Thrace, in today's Bulgaria, the tombs of local princes have yielded silver-gilt jugs, shallow bowls (phialae) and animal-headed drinking horns (rhyta) made in the unmistakable style of the Achaemenid Persian court. The Borovo treasure, buried in the 4th century BCE, is among the finest.",
+   "Whether they arrived as royal diplomatic gifts, as tribute, or were made by craftsmen imitating Persian fashion for Thracian patrons is still debated — but together they show how the prestige of Iranian court metalwork radiated far into south-eastern Europe, shaping the taste of elites well beyond the empire's frontier."
+  ],
+  "refs": [ { "label": "Wikipedia — Borovo Treasure", "url": "https://en.wikipedia.org/wiki/Borovo_Treasure" } ],
+  "related": [ "e219", "e217", "e032" ]
+ },
+ "e221": {
+  "img": [ { "file": "Iranian_-_Plate_-_Walters_57709.jpg", "alt": "Sasanian silver plate", "credit": "A Sasanian silver plate (Walters Art Museum) · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Iranian_-_Plate_-_Walters_57709.jpg", "alt": "Sasanian silver plate", "credit": "A Sasanian silver plate · Wikimedia Commons" },
+   { "file": "Clevelandart_1962.150.jpg", "alt": "Sasanian silver bowl", "credit": "A Sasanian silver vessel · Wikimedia Commons" }
+  ],
+  "body": [
+   "The gilded silver plates of the Sasanian kings — showing the monarch hunting lions, boar and rams, or feasting enthroned — are among the masterpieces of late-antique art. Astonishingly, far more of them have been found along the Kama and Ural rivers of Russia than in Iran itself, carried north over generations to be traded for the furs so prized at court.",
+   "In the forests of the Perm region these exotic silver dishes were treasured, reused in local rituals and buried; from the 18th century onward they were gathered up, and the Hermitage in St Petersburg now holds the greatest collection of Sasanian silver in the world. The 'silver of Perm' is one of the most remarkable cases of Iranian heritage surviving far from home."
+  ],
+  "refs": [ { "label": "Wikipedia — Sasanian art", "url": "https://en.wikipedia.org/wiki/Sasanian_art" } ],
+  "related": [ "e107", "e112", "e223" ]
+ },
+ "e222": {
+  "img": [ { "file": "Coupe de Chosroès.JPG", "alt": "The Cup of Khosrow", "credit": "The Cup of Khosrow (Coupe de Chosroès), Cabinet des Médailles, Paris · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Coupe de Chosroès.JPG", "alt": "The Cup of Khosrow", "credit": "The Cup of Khosrow, Cabinet des Médailles, Paris · Wikimedia Commons" },
+   { "file": "Arte sasanide, coppa detta di cosroew, oro, granati, cristallo di rocca e vetro verde, iran, VI-VI sec, 01.JPG", "alt": "The Cup of Khosrow, detail", "credit": "The Cup of Khosrow — gold, garnet, rock crystal and glass · Wikimedia Commons" }
+  ],
+  "body": [
+   "The Cup of Khosrow is a Sasanian royal vessel of extraordinary craftsmanship: a central rock-crystal medallion engraved with a king enthroned, set in a honeycomb of gold cloisons filled with garnets and coloured glass. It is traditionally linked to Khosrow I (6th century CE).",
+   "By the early Middle Ages the cup had reached France, where it entered the treasury of the abbey of Saint-Denis and was long revered as the legendary 'Cup of Solomon'. It survives today in the Cabinet des Médailles in Paris — a piece of Sasanian court splendour that travelled to the heart of medieval Europe and shaped its idea of Oriental magnificence."
+  ],
+  "refs": [ { "label": "Wikipedia — Sasanian art", "url": "https://en.wikipedia.org/wiki/Sasanian_art" } ],
+  "related": [ "e112", "e221", "e114" ]
+ },
+ "e223": {
+  "img": [ { "file": "KhosrauIIDinarHistoryofIran.jpg", "alt": "Sasanian gold coin", "credit": "Gold coin of Khosrow II · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "KhosrauIIDinarHistoryofIran.jpg", "alt": "Sasanian gold coin", "credit": "Gold coin of Khosrow II · Wikimedia Commons" },
+   { "file": "Drachme_of_Shahpur_I.jpg", "alt": "Sasanian drachm", "credit": "Silver drachm of Shapur I · Wikimedia Commons" }
+  ],
+  "body": [
+   "The thin, broad silver drachm of the Sasanian kings became one of the great international currencies of late antiquity. Trusted for its reliable weight and purity, it circulated the length of the Silk Road, and thousands have been excavated from tombs and hoards across Xinjiang and inner China.",
+   "In many Chinese burials Sasanian coins were placed in the mouths or on the eyes of the dead, a custom that shows how familiar this foreign money had become. Their wide distribution is direct evidence of Iran's central position in the overland trade that linked the Mediterranean, Central Asia and China."
+  ],
+  "refs": [ { "label": "Wikipedia — Sasanian coinage", "url": "https://en.wikipedia.org/wiki/Sasanian_coinage" } ],
+  "related": [ "e092", "e221", "e235" ]
+ },
+ "e224": {
+  "img": [ { "file": "Shoso-in.jpg", "alt": "The Shōsōin treasury", "credit": "The Shōsōin treasure house at Nara, Japan · Wikimedia Commons" } ],
+  "body": [
+   "The Shōsōin, the imperial repository beside the Tōdai-ji temple at Nara, has preserved for more than 1,200 years a collection of treasures gathered by an 8th-century Japanese emperor. Among them is a cut-glass bowl of unmistakably Sasanian Persian type, its surface covered in the rows of ground circular facets that are a hallmark of Iranian glassmaking.",
+   "Carried the entire length of the Silk Road — from Iran through Central Asia and Tang China to the islands of Japan — and then kept unbroken in a wooden storehouse for over a millennium, the Shōsōin glass is perhaps the most astonishing survival of Sasanian heritage anywhere in the world."
+  ],
+  "refs": [ { "label": "Wikipedia — Shōsōin", "url": "https://en.wikipedia.org/wiki/Sh%C5%8Ds%C5%8Din" } ],
+  "related": [ "e223", "e225", "e112" ]
+ },
+ "e225": {
+  "img": [ { "file": "Faceted glass GNM Gyeongju 2386.jpg", "alt": "Cut glass from a Silla tomb", "credit": "Faceted glass cup from a Silla tomb, Gyeongju National Museum · Wikimedia Commons" } ],
+  "body": [
+   "The royal tombs of the Silla kingdom at Gyeongju, in south-eastern Korea, have yielded a remarkable series of glass vessels — faceted cups, bowls and jars decorated in gold and colour — that were made not locally but far to the west, in the Roman and Sasanian worlds.",
+   "Buried with Silla royalty in the 5th and 6th centuries CE, these luxuries had travelled across the whole of Asia along the Silk Road and the sea routes. They show that the reach of Sasanian and Mediterranean craft extended to the very eastern end of the known world, prized by kings who had never seen the lands that made them."
+  ],
+  "refs": [ { "label": "Wikipedia — Silla", "url": "https://en.wikipedia.org/wiki/Silla" } ],
+  "related": [ "e224", "e223", "e221" ]
+ },
+ "e226": {
+  "img": [ { "file": "Indo-Sasanians_coins._Similar_types_of_Sasanian_style_bust_and_Crude_fire_altar._Mainly_Gurjara_types,_circa_6th-7th_century,_with_a_few_later_Chavada_and_Chauluyka_types.jpg", "alt": "Indo-Sasanian coins", "credit": "Indo-Sasanian coins imitating Sasanian types · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Indo-Sasanians_coins._Similar_types_of_Sasanian_style_bust_and_Crude_fire_altar._Mainly_Gurjara_types,_circa_6th-7th_century,_with_a_few_later_Chavada_and_Chauluyka_types.jpg", "alt": "Indo-Sasanian coins", "credit": "Indo-Sasanian coins · Wikimedia Commons" },
+   { "file": "Indo-Sasanian._Rajputana._Imitating_Peroz._Circa_10th_century.jpg", "alt": "Indo-Sasanian coin imitating Peroz", "credit": "A later Indo-Sasanian coin imitating Peroz I · Wikimedia Commons" }
+  ],
+  "body": [
+   "Sasanian silver drachms circulated widely in western India, and local dynasties were so taken with them that they struck their own imitations for centuries. These 'Indo-Sasanian' or Gadhaiya coins kept the Persian design — the king's bust on one side, the fire altar with its attendants on the other — long after the empire that created it had fallen.",
+   "Over generations the once-naturalistic portrait and altar were simplified into bold, almost abstract geometric patterns, a striking example of a Persian coin type taking on a life of its own far from home. The coinage persisted in parts of Gujarat and Rajasthan into the medieval period."
+  ],
+  "refs": [ { "label": "Wikipedia — Indo-Sasanian coinage", "url": "https://en.wikipedia.org/wiki/Indo-Sasanian_coinage" } ],
+  "related": [ "e223", "e109", "e221" ]
+ },
+ "e227": {
+  "img": [ { "file": "Kartvelo-Sasanian_coin_of_Gurgen_i.e._Guaram_I_of_Iberia.jpg", "alt": "Kartvelo-Sasanian coin", "credit": "A Kartvelo-Sasanian coin of Iberia (Georgia) · Wikimedia Commons" } ],
+  "body": [
+   "For much of late antiquity the kingdom of Iberia (eastern Georgia) and neighbouring Caucasian Albania lay under Sasanian overlordship, the northern march of the Iranian empire against the steppe. Their rulers struck 'Kartvelo-Sasanian' coins that closely imitated Persian drachms, adding local monograms and crosses.",
+   "Sasanian seals, silver and administrative practice spread through the Caucasus along with this coinage, and Persian culture left a deep mark on the region. These finds trace the long frontier where the Iranian world met the mountains — and where its influence reached into the lands beyond."
+  ],
+  "refs": [ { "label": "Wikipedia — Sasanian Iberia", "url": "https://en.wikipedia.org/wiki/Sasanian_Iberia" } ],
+  "related": [ "e221", "e223", "e112" ]
+ },
+ "e228": {
+  "img": [ { "file": "Spillings_Silver_Hoard_2_closeup.jpg", "alt": "The Spillings Hoard", "credit": "Silver coins from the Spillings Hoard, Gotland · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Spillings_Silver_Hoard_2_closeup.jpg", "alt": "Spillings Hoard coins", "credit": "Islamic dirhams from the Spillings Hoard · Wikimedia Commons" },
+   { "file": "Silver_bars_Spillings_Hoard_2.jpg", "alt": "Silver bars", "credit": "Silver ingots from the Spillings Hoard · Wikimedia Commons" }
+  ],
+  "body": [
+   "Unearthed on the island of Gotland in Sweden in 1999, the Spillings Hoard is the largest Viking silver treasure ever found — more than 14,000 coins and over 80 kilograms of silver. The overwhelming majority of the coins are Islamic dirhams, and among them are many struck by the Samanid dynasty of Persia and Central Asia.",
+   "The hoard, buried around 870 CE, is spectacular proof of the river trade that carried torrents of Iranian and Central Asian silver up the Volga and across the Baltic to Scandinavia, paid out for furs, amber and slaves. On a Swedish island, the coins of Nishapur, Samarkand and Bukhara ended their long journey from the Iranian world."
+  ],
+  "refs": [ { "label": "Wikipedia — Spillings Hoard", "url": "https://en.wikipedia.org/wiki/Spillings_Hoard" } ],
+  "related": [ "e181", "e229", "e234" ]
+ },
+ "e229": {
+  "img": [ { "file": "Birka_Ansgar_2008.jpg", "alt": "Birka", "credit": "The Viking trading town of Birka, Sweden · Wikimedia Commons" } ],
+  "body": [
+   "Birka, on an island in Lake Mälaren near modern Stockholm, was one of the most important trading towns of the Viking world in the 9th and 10th centuries. Its graves and settlement layers have produced Islamic silver dirhams — including Samanid coins minted in Iran and Central Asia — alongside silks and other eastern goods.",
+   "The dirhams of Birka are the far-northern end of a trade artery that reached all the way to Nishapur and Bukhara. Norse merchants carried furs and slaves down the Russian rivers and brought back Iranian silver, which they used by weight as the Viking age's most trusted currency."
+  ],
+  "refs": [ { "label": "Wikipedia — Birka", "url": "https://en.wikipedia.org/wiki/Birka" } ],
+  "related": [ "e228", "e231", "e234" ]
+ },
+ "e230": {
+  "img": [ { "file": "Wikingerhaeuser_Haithabu.jpg", "alt": "Hedeby", "credit": "Reconstructed Viking houses at Hedeby (Haithabu) · Wikimedia Commons" } ],
+  "body": [
+   "Hedeby (Haithabu), at the base of the Jutland peninsula, was the largest town of the Viking north and a great hub of long-distance trade between western Europe, Scandinavia and the East. Excavations and hoards there have produced numbers of Islamic dirhams, including Samanid silver that originated in the Iranian world.",
+   "At Hedeby the eastern silver road met the trade of the North Sea and the Frankish lands. The dirhams used there — weighed out on folding balances found in Viking graves — mark the western terminus of a chain of exchange that stretched unbroken back to the mints of Iran and Central Asia."
+  ],
+  "refs": [ { "label": "Wikipedia — Hedeby", "url": "https://en.wikipedia.org/wiki/Hedeby" } ],
+  "related": [ "e228", "e229", "e233" ]
+ },
+ "e231": {
+  "img": [ { "file": "Coin of the Samanid ruler Nuh I, minted at Nishapur in 948 or 949.jpg", "alt": "Samanid coin from Nishapur", "credit": "A Samanid coin minted at Nishapur, Iran — the kind of silver traded up the Volga · Wikimedia Commons" } ],
+  "body": [
+   "Timerevo, near Yaroslavl on the upper Volga, was a key settlement and trading post on the great river route that linked the Islamic world to the Baltic. Its graves and hoards have yielded quantities of silver dirhams, many of them Samanid coins carried north from Iran and Central Asia.",
+   "Sites like Timerevo were the engine room of the 'silver road': here the furs of the northern forests were exchanged for eastern coin, and the dirhams of Nishapur and Bukhara began the final leg of their journey toward Scandinavia. The flood of this silver helped power the whole economy of the Viking age."
+  ],
+  "refs": [ { "label": "Wikipedia — Timerevo", "url": "https://en.wikipedia.org/wiki/Timerevo" } ],
+  "related": [ "e234", "e228", "e229" ]
+ },
+ "e232": {
+  "img": [ { "file": "Cuerdale_hoard_viking_silver_british_museum.JPG", "alt": "The Cuerdale Hoard", "credit": "The Cuerdale Hoard, British Museum · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Cuerdale_hoard_viking_silver_british_museum.JPG", "alt": "Cuerdale Hoard", "credit": "The Cuerdale Hoard, British Museum · Wikimedia Commons" },
+   { "file": "Cuerdale_Hoard_in_the_British_Museum.jpg", "alt": "Cuerdale Hoard display", "credit": "The Cuerdale Hoard on display · Wikimedia Commons" }
+  ],
+  "body": [
+   "The Cuerdale Hoard, found by the River Ribble in Lancashire in 1840, is one of the greatest Viking silver treasures of the British Isles — some 8,600 items, mostly coins and hacksilver, buried around 905–910 CE. Among the western and Anglo-Saxon coins lies a scatter of Islamic dirhams, including Samanid silver from the Iranian east.",
+   "That a handful of Persian and Central Asian coins should turn up in north-west England shows just how far the Viking silver network reached: minted in the Iranian world, carried up the Volga and across the Baltic, they travelled the whole breadth of Europe before being buried on the edge of the Irish Sea."
+  ],
+  "refs": [ { "label": "Wikipedia — Cuerdale Hoard", "url": "https://en.wikipedia.org/wiki/Cuerdale_Hoard" } ],
+  "related": [ "e228", "e230", "e233" ]
+ },
+ "e233": {
+  "img": [ { "file": "Truso_rekonstrukcja_chaty.jpg", "alt": "Truso", "credit": "Reconstruction of a house at Truso, Poland · Wikimedia Commons" } ],
+  "body": [
+   "Truso, on a lake near the mouth of the Vistula in what is now Poland, was a bustling Baltic trading emporium of the 8th to 10th centuries. Excavations have uncovered weights, balances and large numbers of Islamic silver dirhams — including Samanid coins from the Iranian world — used in the trade that passed through the port.",
+   "Truso was one of the gateways through which eastern silver, amber and goods flowed between the lands of the Rus and the Baltic. Its dirhams are another link in the chain that bound the mints of Iran and Central Asia to the markets of northern Europe."
+  ],
+  "refs": [ { "label": "Wikipedia — Truso", "url": "https://en.wikipedia.org/wiki/Truso" } ],
+  "related": [ "e228", "e230", "e234" ]
+ },
+ "e234": {
+  "img": [ { "file": "Bolgar.JPG", "alt": "Bolghar", "credit": "The ruins of Bolghar, capital of Volga Bulgaria · Wikimedia Commons" } ],
+  "body": [
+   "Volga Bulgaria, a Muslim trading state at the confluence of the Volga and Kama, was the great northern clearing-house of the eastern silver trade. Its city of Bolghar linked the caravan routes of Central Asia and Iran with the river roads of the Rus and the Baltic.",
+   "In 922 CE the Baghdad envoy Ibn Fadlan travelled here and left his famous description of the Rus traders he met on the Volga. Through Bolghar passed the Samanid dirhams — struck in Nishapur, Samarkand and Bukhara — that would end up in the hoards of Scandinavia, making this remote river junction a vital hinge of the medieval world economy."
+  ],
+  "refs": [ { "label": "Wikipedia — Volga Bulgaria", "url": "https://en.wikipedia.org/wiki/Volga_Bulgaria" } ],
+  "related": [ "e228", "e231", "e181" ]
+ },
+ "e235": {
+  "img": [ { "file": "Headless_Statue_of_Foreign_Envoy,_Qianling_Mausoleum.jpg", "alt": "Statue at the Qianling Mausoleum", "credit": "Statue of a foreign envoy at the Tang Qianling Mausoleum, among them Peroz · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Headless_Statue_of_Foreign_Envoy,_Qianling_Mausoleum.jpg", "alt": "Envoy statue, Qianling", "credit": "Statues of foreign envoys at the Qianling Mausoleum · Wikimedia Commons" },
+   { "file": "Ambassador_from_Persia_(波斯國),_visiting_the_court_of_the_Tang_Dynasty._The_Gathering_of_Kings_(王会图)_circa_650_CE.jpg", "alt": "Persian envoy at the Tang court", "credit": "A Persian envoy at the Tang court, c. 650 CE · Wikimedia Commons" }
+  ],
+  "body": [
+   "When the Sasanian empire fell to the Arab conquest, its last heirs looked east. Prince Peroz, a son of the final king Yazdegerd III, fled to the Tang court at Chang'an (modern Xi'an), where he was received with honour, given a title and even a short-lived 'governorship of Persia' as the Tang tried to use him against the caliphate.",
+   "A Persian community lived in cosmopolitan Chang'an, and a statue identified with Peroz stood among the foreign envoys carved at the imperial Qianling tombs. Sasanian coins and silver circulated in Tang China, and for a generation an exiled fragment of the Iranian royal house kept its memory alive at the far eastern edge of Asia."
+  ],
+  "refs": [ { "label": "Wikipedia — Peroz III", "url": "https://en.wikipedia.org/wiki/Peroz_III" } ],
+  "related": [ "e118", "e223", "e117" ]
+ },
 
  "e152": {
   "img": [ { "file": "Maulana_Jelaledin_Muhammad_Rumi_in_konya.jpg", "alt": "Shrine of Rumi", "credit": "The tomb-shrine of Rumi (the Mevlana Museum), Konya · Wikimedia Commons" } ],
