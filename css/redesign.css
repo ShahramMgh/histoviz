@@ -753,3 +753,36 @@ body.dash .dash-grid{max-width:100vw}
 /* widen the left column slightly so long dynasty names fit */
 body.dash .dash-grid{grid-template-columns:298px minmax(0,1fr)}
 body.dash .dash-grid.left-off{grid-template-columns:0 minmax(0,1fr)}
+
+/* ============================================================
+   Pass 13 — draggable section sizes (timeline height + panel width)
+   ============================================================ */
+body.dash{--tl-h:348px; --left-w:298px}
+body.dash .dash-grid{
+  grid-template-columns:var(--left-w) minmax(0,1fr);
+  grid-template-rows:auto minmax(0,1fr) var(--tl-h)}
+body.dash .dash-grid.left-off{grid-template-columns:0 minmax(0,1fr)}
+body.dash .dash-grid.tl-off{grid-template-rows:auto minmax(0,1fr) 31px}
+
+/* the left panel needs positioning context for its edge resizer */
+.dash-left{position:relative}
+.left-resizer{position:absolute;top:0;right:0;bottom:0;width:9px;z-index:20;cursor:col-resize;
+  touch-action:none}
+.left-resizer::after{content:"";position:absolute;top:50%;right:2px;width:3px;height:42px;transform:translateY(-50%);
+  border-radius:3px;background:var(--rule);opacity:0;transition:opacity .15s}
+.left-resizer:hover::after,body.resizing-col .left-resizer::after{opacity:.9;background:var(--gold)}
+body.dash .dash-grid.left-off .left-resizer{display:none}
+
+/* timeline top-edge resizer (a thin grab strip above the header) */
+.dash-bottom{position:relative}
+.tl-resizer{flex:0 0 7px;height:7px;cursor:row-resize;touch-action:none;position:relative;
+  border-bottom:1px solid var(--rule);background:var(--surface)}
+.tl-resizer::after{content:"";position:absolute;left:50%;top:50%;width:46px;height:3px;transform:translate(-50%,-50%);
+  border-radius:3px;background:var(--rule);opacity:.7;transition:opacity .15s,background .15s}
+.tl-resizer:hover::after,body.resizing-row .tl-resizer::after{opacity:1;background:var(--gold)}
+body.dash .dash-grid.tl-off .tl-resizer{display:none}
+
+/* while dragging: lock the cursor and prevent text selection / iframe capture */
+body.resizing-col,body.resizing-col *{cursor:col-resize!important;user-select:none}
+body.resizing-row,body.resizing-row *{cursor:row-resize!important;user-select:none}
+body.resizing-col .leaflet-container,body.resizing-row .leaflet-container{pointer-events:none}

@@ -256,6 +256,38 @@ function filterDynasty(dyn){
     t.textContent=off?"▴":"▾"; t.title=off?"Expand timeline":"Collapse timeline"; try{map&&map.invalidateSize();}catch(e){}});
 })();
 
+/* draggable section sizes — timeline height & left-panel width, persisted */
+(function(){
+  const grid=document.querySelector(".dash-grid"), root=document.body; if(!grid)return;
+  const LSK="hv-dash-sizes"; let saved={}; try{saved=JSON.parse(localStorage.getItem(LSK)||"{}")||{};}catch(e){}
+  if(saved.tl)root.style.setProperty("--tl-h",Math.max(90,Math.min(saved.tl,Math.round(window.innerHeight*0.75)))+"px");
+  if(saved.left)root.style.setProperty("--left-w",Math.max(210,Math.min(saved.left,560))+"px");
+  let raf=0; const fitMap=()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>{try{map&&map.invalidateSize({pan:false});}catch(e){}});};
+  function drag(handle,key,cls,compute){
+    if(!handle)return;
+    handle.addEventListener("pointerdown",e=>{
+      e.preventDefault(); try{handle.setPointerCapture(e.pointerId);}catch(_){}
+      root.classList.add(cls); let val=null;
+      const mv=ev=>{val=compute(ev);fitMap();};
+      const up=()=>{root.classList.remove(cls);
+        handle.removeEventListener("pointermove",mv); handle.removeEventListener("pointerup",up); window.removeEventListener("pointerup",up);
+        if(val!=null){try{saved[key]=Math.round(val);localStorage.setItem(LSK,JSON.stringify(saved));}catch(e){}}
+        fitMap();};
+      handle.addEventListener("pointermove",mv); handle.addEventListener("pointerup",up); window.addEventListener("pointerup",up);
+    });
+  }
+  drag($("#tlResizer"),"tl","resizing-row",ev=>{
+    grid.classList.remove("tl-off");
+    const h=Math.max(90,Math.min(Math.round(window.innerHeight*0.75), window.innerHeight-ev.clientY));
+    root.style.setProperty("--tl-h",h+"px"); return h;
+  });
+  drag($("#leftResizer"),"left","resizing-col",ev=>{
+    grid.classList.remove("left-off");
+    const w=Math.max(210,Math.min(560, ev.clientX));
+    root.style.setProperty("--left-w",w+"px"); return w;
+  });
+})();
+
 /* focus the map + political layer on a dynasty (kingdom page → "Show on the map") */
 function focusDynasty(dyn){
   if(!dyn)return;

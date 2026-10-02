@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
 <link rel="stylesheet" href="css/style.css?v=6">
-<link rel="stylesheet" href="css/redesign.css?v=22">
+<link rel="stylesheet" href="css/redesign.css?v=23">
 </head>
 <body class="dash">
 <span id="top"></span>
@@ -58,6 +58,7 @@
       <button id="btnEven"></button><button id="btnTrue"></button>
       <div id="ribbon"></div><p id="ribbonNote"></p>
     </div>
+    <div class="left-resizer" id="leftResizer" title="Drag to resize the panel" role="separator" aria-orientation="vertical" aria-label="Resize navigator"></div>
   </aside>
   <button type="button" class="leftnav-reopen" id="leftReopen" title="Show navigator" aria-label="Show navigator" hidden>»</button>
 
@@ -132,6 +133,7 @@
 
   <!-- ===== bottom: horizontal timeline ===== -->
   <section class="dash-bottom" aria-label="Timeline">
+    <div class="tl-resizer" id="tlResizer" title="Drag to resize the timeline" role="separator" aria-orientation="horizontal" aria-label="Resize timeline"></div>
     <div class="tl-head">
       <span class="tl-head-label">Timeline</span>
       <span class="tl-head-count" id="tlHeadCount"></span>
@@ -287,7 +289,7 @@
 <script src="js/data.js?v=8"></script>
 <script src="js/enrich.js?v=20"></script>
 <script src="js/dynasties.js?v=2"></script>
-<script src="js/app.js?v=24"></script>
+<script src="js/app.js?v=25"></script>
 <script src="js/fullpage.js?v=4"></script>
 <script src="js/mapoftime.js?v=2"></script>
 <script>
