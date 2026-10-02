@@ -2886,6 +2886,8 @@ window.ENRICH = {
   "gallery": [
    { "file": "National_museum_of_Iran,_Tehran_(2024).jpg", "alt": "National Museum of Iran", "credit": "The National Museum of Iran, Tehran · Wikimedia Commons" },
    { "file": "Statue of Darius the Great from Susa National Museum of Iran.jpg", "alt": "Statue of Darius the Great", "credit": "The statue of Darius the Great, found at Susa · Wikimedia Commons" },
+   { "file": "Golden rhyton terminating in a crouching winged lion protome - Hamadan (Ectabane) - Hamadan Province - 5th century B.C. - National museum of Iran - Inv. number 7.jpg", "alt": "Achaemenid gold rhyton", "credit": "Achaemenid gold rhyton with a winged-lion protome, from Hamadan · National Museum of Iran · Wikimedia Commons" },
+   { "file": "Silver plate with Sasanian noble hunting lions, from Sari, 4th century AD, National Museum of Iran, Tehran, Iran.jpg", "alt": "Sasanian silver plate", "credit": "Sasanian silver plate of a noble hunting lions, from Sari · National Museum of Iran · Wikimedia Commons" },
    { "file": "Saltman2.jpg", "alt": "A Salt Man", "credit": "One of the Salt Men of the Chehrabad mine · Wikimedia Commons" },
    { "file": "The_Islamic_Museum_Of_National_Museum_of_Iran_Darafsh_(05).jpg", "alt": "Islamic-era gallery", "credit": "The Islamic-era museum of the National Museum of Iran · Wikimedia Commons" }
   ],
@@ -2902,7 +2904,8 @@ window.ENRICH = {
   "gallery": [
    { "file": "The_Kiani_Crown_at_the_Treasury_of_National_Jewels.jpg", "alt": "The Kiani Crown", "credit": "The Kiani Crown · Wikimedia Commons" },
    { "file": "The_Daria-e_Noor_(Sea_of_Light)_Diamond_from_the_collection_of_the_national_jewels_of_Iran_at_Central_Bank_of_Islamic_Republic_of_Iran.jpg", "alt": "The Darya-ye Noor diamond", "credit": "The Darya-ye Noor (Sea of Light) diamond · Wikimedia Commons" },
-   { "file": "Pahlavi_Crown.jpg", "alt": "The Pahlavi Crown", "credit": "The Pahlavi Crown · Wikimedia Commons" }
+   { "file": "Pahlavi_Crown.jpg", "alt": "The Pahlavi Crown", "credit": "The Pahlavi Crown · Wikimedia Commons" },
+   { "file": "Fath-Ali Shah, enthroned in a garden on the Naderi Throne, with two princes in attendance, receiving presents from Mirza Reza Qoli Nava'i.jpg", "alt": "The Naderi Throne", "credit": "Fath-Ali Shah enthroned on the jewelled Naderi (Peacock) Throne · Wikimedia Commons" }
   ],
   "body": [
    "Kept in a vault beneath the Central Bank in Tehran, the Treasury of National Jewels is one of the most valuable collections of royal regalia on earth — a hoard assembled by the Safavid, Afsharid, Zand, Qajar and Pahlavi dynasties and long used to back the national currency.",
@@ -2916,7 +2919,9 @@ window.ENRICH = {
   "img": [ { "file": "Reza_Abbasi_Museum_(15).jpg", "alt": "Reza Abbasi Museum", "credit": "A gallery of the Reza Abbasi Museum, Tehran · Wikimedia Commons" } ],
   "gallery": [
    { "file": "Reza_Abbasi_Museum_(15).jpg", "alt": "Reza Abbasi Museum", "credit": "A gallery of the Reza Abbasi Museum · Wikimedia Commons" },
-   { "file": "Shapur_I_Sassanid_silver_coin.JPG", "alt": "Sasanian coin", "credit": "A Sasanian silver coin of Shapur I · Wikimedia Commons" }
+   { "file": "Gold Rhyton in the form of a Ram's Head - Reza Abbasi Museum - Tehran, Iran.jpg", "alt": "Gold ram's-head rhyton", "credit": "Achaemenid gold ram's-head rhyton · Reza Abbasi Museum · Wikimedia Commons" },
+   { "file": "Reza Abbasi Museum (Calligraphy of Mir Emad Hassani) (6223578423).jpg", "alt": "Calligraphy by Mir Emad", "credit": "Calligraphy by the Safavid master Mir Emad Hassani · Reza Abbasi Museum · Wikimedia Commons" },
+   { "file": "Audience of Moslem with Imam Hossein, painting in the so-called qahveh-khaneh (coffee-house) style by Hossein Qollar Aqasi (in the Reza Abbasi Museum in Tehran).jpg", "alt": "Coffee-house style painting", "credit": "A 'coffee-house' narrative painting by Hossein Qollar Aqasi · Reza Abbasi Museum · Wikimedia Commons" }
   ],
   "body": [
    "The Reza Abbasi Museum in Tehran, named after the great Safavid painter and calligrapher, is a smaller but exquisite survey of Iranian art across some four thousand years. Opened in 1977, it arranges its treasures in a clear chronological sweep from the pre-Islamic to the Islamic eras.",
@@ -2932,7 +2937,9 @@ window.ENRICH = {
    { "file": "British_Museum_from_NE_2.JPG", "alt": "The British Museum", "credit": "The British Museum, London · Wikimedia Commons" },
    { "file": "Cyrus_Cylinder_front.jpg", "alt": "The Cyrus Cylinder", "credit": "The Cyrus Cylinder · Wikimedia Commons" },
    { "file": "The_Oxus_Treasure_at_the_British_Museum,_London._From_Takht-i_Kuwad,_Tajikistan._Achaemenid_period,_5th-4th_century_BCE.jpg", "alt": "The Oxus Treasure", "credit": "The Oxus Treasure at the British Museum · Wikimedia Commons" },
-   { "file": "Armlet_from_the_Oxus_Treasure_BM_1897.12-31.116.jpg", "alt": "Oxus griffin armlet", "credit": "A griffin-headed armlet from the Oxus Treasure · Wikimedia Commons" }
+   { "file": "Armlet_from_the_Oxus_Treasure_BM_1897.12-31.116.jpg", "alt": "Oxus griffin armlet", "credit": "A griffin-headed armlet from the Oxus Treasure · Wikimedia Commons" },
+   { "file": "Sasanian plate (4496695466) (cropped).jpg", "alt": "Sasanian silver plate", "credit": "A Sasanian silver plate · British Museum · Wikimedia Commons" },
+   { "file": "Master of Animals, 9th-8th Century BCE, Luristan, British Museum.jpg", "alt": "Luristan bronze", "credit": "A Luristan bronze 'Master of Animals', 9th–8th c. BCE · British Museum · Wikimedia Commons" }
   ],
   "body": [
    "The British Museum holds one of the finest collections of ancient Iranian art outside Iran. Its most celebrated Persian object is the Cyrus Cylinder — the clay barrel inscribed with Cyrus the Great's proclamation after taking Babylon in 539 BCE, often called the first charter of its kind.",
@@ -2947,7 +2954,9 @@ window.ENRICH = {
   "gallery": [
    { "file": "Victoria_&_Albert_Museum_Entrance,_London,_UK_-_Diliff.jpg", "alt": "Victoria and Albert Museum", "credit": "The Victoria and Albert Museum · Wikimedia Commons" },
    { "file": "The_Ardabil_Carpet_-_Google_Art_Project.jpg", "alt": "The Ardabil Carpet", "credit": "The Ardabil Carpet · Wikimedia Commons" },
-   { "file": "Victoria_and_Albert_Ardabil_Carpet.jpg", "alt": "The Ardabil Carpet on display", "credit": "The Ardabil Carpet on display at the V&A · Wikimedia Commons" }
+   { "file": "Victoria_and_Albert_Ardabil_Carpet.jpg", "alt": "The Ardabil Carpet on display", "credit": "The Ardabil Carpet on display at the V&A · Wikimedia Commons" },
+   { "file": "Dish with lustre pattern, Iran, probably Kashan, about 1200 AD, glazed fritware, lustre painted over glaze - Victoria and Albert Museum - London, England - DSC04639.jpg", "alt": "Kashan lustre dish", "credit": "Lustre-painted dish from Kashan, c. 1200 · Victoria and Albert Museum · Wikimedia Commons" },
+   { "file": "Tile with Beheaded Birds, Iran, probably Kashan, about 1308 AD, moulded fritware with colour in and lustre over glaze - Victoria and Albert Museum - London, England - DSC04963.jpg", "alt": "Kashan lustre tile", "credit": "Moulded lustre tile from Kashan, c. 1308 · Victoria and Albert Museum · Wikimedia Commons" }
   ],
   "body": [
    "The Victoria and Albert Museum in London is the world's leading collection of the decorative arts, and its Islamic and Persian holdings are outstanding. Its single greatest Iranian treasure is the Ardabil Carpet — one of a famous pair woven in 1539–40 for the shrine of Sheikh Safi al-Din at Ardabil, and widely considered the finest Persian carpet in existence.",
@@ -2962,6 +2971,8 @@ window.ENRICH = {
   "gallery": [
    { "file": "Louvre_Museum_Wikimedia_Commons.jpg", "alt": "The Louvre", "credit": "The Louvre, Paris · Wikimedia Commons" },
    { "file": "Frieze of archers from the palace of Darius in Susa (Louvre).jpg", "alt": "Frieze of Archers", "credit": "The glazed-brick Frieze of Archers from Darius's palace at Susa, Louvre · Wikimedia Commons" },
+   { "file": "Statue de Napir-Asu - Musée du Louvre - Antiquités orientales SB 2731.jpg", "alt": "Statue of Queen Napir-Asu", "credit": "The bronze statue of the Elamite queen Napir-Asu, from Susa · Louvre · Wikimedia Commons" },
+   { "file": "Bull capital Apadana (1).jpg", "alt": "Apadana bull capital", "credit": "A colossal bull-headed column capital from the palace at Susa · Louvre · Wikimedia Commons" },
    { "file": "Archers frieze Darius palace Louvre AOD487.jpg", "alt": "Archers frieze detail", "credit": "Detail of the Susa archers frieze, Louvre · Wikimedia Commons" }
   ],
   "body": [
@@ -2976,6 +2987,8 @@ window.ENRICH = {
   "img": [ { "file": "Hermitage_Museum_in_Saint_Petersburg.jpg", "alt": "The Hermitage Museum", "credit": "The State Hermitage, Saint Petersburg · Wikimedia Commons" } ],
   "gallery": [
    { "file": "Hermitage_Museum_in_Saint_Petersburg.jpg", "alt": "The Hermitage", "credit": "The State Hermitage, Saint Petersburg · Wikimedia Commons" },
+   { "file": "Sasanian art in Hermitage by Darafsh S-43.jpg", "alt": "Sasanian silver plate", "credit": "A Sasanian silver plate · State Hermitage · Wikimedia Commons" },
+   { "file": "Sasanian art in Hermitage by Darafsh S-4.jpg", "alt": "Sasanian silver vessel", "credit": "Sasanian silver in the Hermitage · Wikimedia Commons" },
    { "file": "Pazyryk carpet.jpg", "alt": "The Pazyryk Carpet", "credit": "The Pazyryk Carpet, Hermitage · Wikimedia Commons" },
    { "file": "Ancient_Siberian_horse_mask,_Hermitage_Museum,_St._Petersburg.jpg", "alt": "Pazyryk horse mask", "credit": "A Pazyryk horse mask, Hermitage · Wikimedia Commons" }
   ],
@@ -2989,6 +3002,13 @@ window.ENRICH = {
  },
  "e243": {
   "img": [ { "file": "Pergamonmuseum_Front.jpg", "alt": "Pergamon Museum, Berlin", "credit": "The Pergamon Museum, Berlin · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Pergamonmuseum_Front.jpg", "alt": "Pergamon Museum, Berlin", "credit": "The Pergamon Museum, Berlin · Wikimedia Commons" },
+   { "file": "Simurgh platter. From Iran. Samanids dynasty. 9th-10th century CE. Islamic Art Museum (Museum für Islamische Kunst), Berlin (parallax).jpg", "alt": "Samanid simurgh platter", "credit": "Samanid platter with a simurgh, from Iran, 9th–10th c. · Museum of Islamic Art, Berlin · Wikimedia Commons" },
+   { "file": "Mihrab with Quran verses. From Kashan, Iran. 13th century CE. Islamic Art Museum (Museum für Islamische Kunst), Berlin.jpg", "alt": "Kashan lustre mihrab", "credit": "Lustre-tiled mihrab from Kashan, 13th c. · Museum of Islamic Art, Berlin · Wikimedia Commons" },
+   { "file": "Persian tribute-bearer, from Persepolis, Iran. 8th-5th century BCE. Pergamon Museum, Berlin.jpg", "alt": "Persepolis relief", "credit": "A tribute-bearer relief from Persepolis · Pergamon Museum, Berlin · Wikimedia Commons" },
+   { "file": "Candlestick with a hunting frieze and Persian verses. Engraved and inlaid decoration. From Iran. 13th century CE. Islamic Art Museum (Museum für Islamische Kunst), Berlin, Germany.jpg", "alt": "Inlaid candlestick", "credit": "Inlaid brass candlestick with Persian verses, 13th c. · Museum of Islamic Art, Berlin · Wikimedia Commons" }
+  ],
   "body": [
    "Berlin's Museum of Islamic Art, housed in a wing of the Pergamon Museum, holds one of the most important collections of Islamic and Persian art in Europe. Its strengths include Persian carpets, lustre and lajvardina ceramics from Kashan, and architectural tilework and stuccos from the Iranian world.",
    "Among its treasures are Il-khanid and Timurid mihrabs and tile panels, Persian miniatures and book arts, and metalwork of the Seljuk and later periods. The collection sits alongside the museum's ancient Near Eastern holdings, so that a single building spans Mesopotamian antiquity and the Islamic art of Iran.",
@@ -3002,7 +3022,9 @@ window.ENRICH = {
   "gallery": [
    { "file": "Metropolitan_Museum_of_Art_(The_Met)_-_Central_Park,_NYC.jpg", "alt": "The Met", "credit": "The Metropolitan Museum of Art, New York · Wikimedia Commons" },
    { "file": "Plate_with_a_hunting_scene_from_the_tale_of_Bahram_Gur_and_Azadeh_MET_DT1634.jpg", "alt": "Sasanian plate", "credit": "Sasanian plate of Bahram Gur and Azadeh, The Met · Wikimedia Commons" },
-   { "file": "Bust_of_Shapur_II_the_Great_in_the_Metropolitan_Museum_of_Art.jpg", "alt": "Bust of Shapur II", "credit": "Silver bust of Shapur II, The Met · Wikimedia Commons" }
+   { "file": "Bust_of_Shapur_II_the_Great_in_the_Metropolitan_Museum_of_Art.jpg", "alt": "Bust of Shapur II", "credit": "Silver bust of Shapur II, The Met · Wikimedia Commons" },
+   { "file": "Inkwell Nishapur MET 40-170-116.jpg", "alt": "Nishapur inkwell", "credit": "Early Islamic inkwell excavated by the Met at Nishapur · The Met · Wikimedia Commons" },
+   { "file": "\"Khusrau Parviz's Charge against Bahram Chubina\", Folio 707v from the Shahnama (Book of Kings) of Shah Tahmasp MET DP120257.jpg", "alt": "Shahnameh of Shah Tahmasp folio", "credit": "A folio from the royal Shahnameh of Shah Tahmasp · The Met · Wikimedia Commons" }
   ],
   "body": [
    "The Metropolitan Museum of Art in New York holds a major collection of Iranian art across its ancient Near Eastern and Islamic galleries. Its ancient holdings include Sasanian silver — among them a silver bust of a Sasanian king and plates of royal hunts — Achaemenid and Elamite objects, and Luristan bronzes.",
@@ -3017,6 +3039,7 @@ window.ENRICH = {
   "gallery": [
    { "file": "Bull_head_oriental_institute_chicago.jpg", "alt": "Persepolis bull capital", "credit": "Bull-head capital from Persepolis, Chicago · Wikimedia Commons" },
    { "file": "Man-bull_uc_oriental_institute_capital_01.JPG", "alt": "Man-bull capital", "credit": "Column capital from Persepolis, Chicago · Wikimedia Commons" },
+   { "file": "Frieze of Striding Lions, view 2, Iran, Persepolis, Palace G, Achaemenid Period, reigns of Darius I and Xerxes, 522-465 BC, limestone - Oriental Institute Museum, University of Chicago - DSC07975.JPG", "alt": "Persepolis striding lions frieze", "credit": "Frieze of striding lions from Persepolis, Palace G · ISAC Museum, Chicago · Wikimedia Commons" },
    { "file": "Oriental_Institute.jpg", "alt": "The Oriental Institute", "credit": "The Institute for the Study of Ancient Cultures (Oriental Institute), Chicago · Wikimedia Commons" }
   ],
   "body": [
@@ -3031,7 +3054,9 @@ window.ENRICH = {
   "img": [ { "file": "Freer_Gallery_of_Art_-_National_Museum_of_Asian_Art_(53832136335).jpg", "alt": "Freer Gallery of Art", "credit": "The Freer Gallery of Art, Washington DC · Wikimedia Commons" } ],
   "gallery": [
    { "file": "Freer_Gallery_of_Art_-_National_Museum_of_Asian_Art_(53832136335).jpg", "alt": "Freer Gallery of Art", "credit": "The Freer Gallery of Art · Wikimedia Commons" },
-   { "file": "The_Peacock_Room_(2).jpg", "alt": "Interior gallery", "credit": "An interior at the Freer Gallery · Wikimedia Commons" }
+   { "file": "Rustam rescues Bijan from the well, from the Shahnama by Firdawsi, probably Iran, Mongol period, dated February 1341 AD, watercolor, ink, paper - Freer Gallery of Art - DSC04684.jpg", "alt": "Shahnameh folio, 1341", "credit": "'Rustam rescues Bizhan', Shahnameh folio, Iran 1341 · Freer Gallery of Art · Wikimedia Commons" },
+   { "file": "Beaker illustrating tale of Bizhan and Manizha from the Shahnama, Iran, early 13th century, composite body painted over glaze with enamel - Freer Gallery of Art - DSC04677.jpg", "alt": "Mina'i beaker", "credit": "Mina'i enamelled beaker illustrating the Shahnameh, Iran, early 13th c. · Freer Gallery of Art · Wikimedia Commons" },
+   { "file": "Hemispherical bowl, Iran, Sasanian period or later, 7th-8th century AD, silver and gilt - Arthur M. Sackler Gallery - DSC05772.JPG", "alt": "Sasanian silver bowl", "credit": "Sasanian silver-gilt bowl, Iran, 7th–8th c. · Arthur M. Sackler Gallery · Wikimedia Commons" }
   ],
   "body": [
    "The Freer Gallery of Art and the adjoining Arthur M. Sackler Gallery form the Smithsonian's National Museum of Asian Art in Washington, and together hold one of the great American collections of Persian art. They are especially strong in the arts of the book.",
@@ -3045,6 +3070,8 @@ window.ENRICH = {
   "img": [ { "file": "Doha_-_Museum_of_Islamic_Art.jpg", "alt": "Museum of Islamic Art, Doha", "credit": "The Museum of Islamic Art, Doha · Wikimedia Commons" } ],
   "gallery": [
    { "file": "Doha_-_Museum_of_Islamic_Art.jpg", "alt": "Museum of Islamic Art, Doha", "credit": "The Museum of Islamic Art, Doha · Wikimedia Commons" },
+   { "file": "MIA - Planispheric Astrolabe, Iran, 984 AD.jpg", "alt": "Iranian astrolabe, 984 CE", "credit": "A planispheric astrolabe made in Iran in 984 CE · Museum of Islamic Art, Doha · Wikimedia Commons" },
+   { "file": "Iran, tappeto a medaglione, in lana e cotone, tabriz 1550 ca. 01.jpg", "alt": "Safavid medallion carpet", "credit": "A Safavid medallion carpet, Tabriz, c. 1550 · Museum of Islamic Art, Doha · Wikimedia Commons" },
    { "file": "Museum_of_Islamic_Art,_Doha_00_(54).JPG", "alt": "Museum of Islamic Art interior", "credit": "Inside the Museum of Islamic Art, Doha · Wikimedia Commons" }
   ],
   "body": [
@@ -3057,6 +3084,11 @@ window.ENRICH = {
  },
  "e248": {
   "img": [ { "file": "Royal_Ontario_Museum_in_Fall_2021.jpg", "alt": "Royal Ontario Museum", "credit": "The Royal Ontario Museum, Toronto · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Royal_Ontario_Museum_in_Fall_2021.jpg", "alt": "Royal Ontario Museum", "credit": "The Royal Ontario Museum, Toronto · Wikimedia Commons" },
+   { "file": "Tile panel, Iran, Khargid, 1444, underglaze-painted stonepaste - Royal Ontario Museum - DSC04784.JPG", "alt": "Timurid tile panel", "credit": "Underglaze-painted tile panel from Khargird, Iran, 1444 · Royal Ontario Museum · Wikimedia Commons" },
+   { "file": "Bowl with incantation for Buktuya and household, Mandean in Mandaic language and script, Southern Mesopotamia, c. 200-600 AD - Royal Ontario Museum - DSC09714.JPG", "alt": "Sasanian-era incantation bowl", "credit": "A Sasanian-era Mandaic incantation bowl · Royal Ontario Museum · Wikimedia Commons" }
+  ],
   "body": [
    "The Royal Ontario Museum in Toronto, Canada's largest museum, holds a significant and long-established collection of Iranian art and archaeology, built up through purchases and participation in excavations over more than a century.",
    "Its West Asian galleries include Achaemenid and Sasanian objects, Luristan bronzes, early Islamic ceramics from Nishapur and other Iranian centres, Persian tilework, metalwork and miniatures. The museum has supported fieldwork in Iran and published widely on its holdings.",
@@ -3069,6 +3101,7 @@ window.ENRICH = {
   "img": [ { "file": "Topkapı_-_01.jpg", "alt": "Topkapı Palace", "credit": "Topkapı Palace, Istanbul · Wikimedia Commons" } ],
   "gallery": [
    { "file": "Topkapı_-_01.jpg", "alt": "Topkapı Palace", "credit": "Topkapı Palace, Istanbul · Wikimedia Commons" },
+   { "file": "Isfandiyar kills the dragon. Firdawsi, Shāhnāma. Istanbul, Topkapı Palace Library, H. 1509, fol. 213a.jpg", "alt": "Shahnameh folio at Topkapı", "credit": "'Isfandiyar kills the dragon', a Shahnameh folio · Topkapı Palace Library · Wikimedia Commons" },
    { "file": "Bağdat_Köşkü,_or_Kiosk_of_Baghdad,_located_in_Topkapı_Palace..jpg", "alt": "Baghdad Kiosk", "credit": "The Baghdad Kiosk at Topkapı Palace · Wikimedia Commons" }
   ],
   "body": [
