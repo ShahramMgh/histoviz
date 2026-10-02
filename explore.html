@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
 <link rel="stylesheet" href="css/style.css?v=6">
-<link rel="stylesheet" href="css/redesign.css?v=20">
+<link rel="stylesheet" href="css/redesign.css?v=21">
 </head>
 <body class="dash">
 <span id="top"></span>
@@ -43,39 +43,23 @@
     </div>
   </header>
 
-  <!-- ===== left: navigator (dynasties + eras), scrollable & collapsible ===== -->
+  <!-- ===== left: hierarchical navigator (period → dynasty → king) ===== -->
   <aside class="dash-left" aria-label="Navigator">
     <div class="leftnav" id="leftnav">
-
-      <section class="lnav-sec" id="secDyn">
-        <button type="button" class="lnav-head" aria-expanded="true" aria-controls="secDynBody">
-          <span class="lnav-titles"><span class="lnav-title">Dynasties &amp; kingdoms</span><span class="lnav-sub">Medes → Pahlavi</span></span>
-          <span class="lnav-caret" aria-hidden="true">▾</span>
-        </button>
-        <div class="lnav-body" id="secDynBody">
-          <div class="dyn-list" id="dynList"></div>
-        </div>
-      </section>
-
-      <section class="lnav-sec collapsed" id="secEras">
-        <button type="button" class="lnav-head" aria-expanded="false" aria-controls="secErasBody">
-          <span class="lnav-titles"><span class="lnav-title">Eras</span><span class="lnav-sub">Deep time · 100 ka → now</span></span>
-          <span class="lnav-caret" aria-hidden="true">▾</span>
-        </button>
-        <div class="lnav-body" id="secErasBody">
-          <div class="era-rail" aria-label="Jump to an era">
-            <div class="seg scaleseg" role="group" aria-label="Era scale" hidden>
-              <button type="button" id="btnEven" aria-pressed="true">Even</button>
-              <button type="button" id="btnTrue" aria-pressed="false">True</button>
-            </div>
-            <div class="ribbon" id="ribbon"></div>
-            <p class="ribbon-note" id="ribbonNote" hidden></p>
-          </div>
-        </div>
-      </section>
-
+      <div class="leftnav-head">
+        <span class="leftnav-titles"><span class="leftnav-title">Periods &amp; dynasties</span><span class="leftnav-sub">tap to filter · ⤢ opens its page</span></span>
+        <button type="button" class="leftnav-btn" id="navExpandAll" title="Expand / collapse all">⇅</button>
+        <button type="button" class="leftnav-btn" id="leftCollapse" title="Hide this panel" aria-label="Hide panel">«</button>
+      </div>
+      <div class="nav-tree" id="navTree" role="tree" aria-label="Periods, dynasties and kings"></div>
+    </div>
+    <!-- hidden stubs kept for the era-scale logic -->
+    <div id="eraStubs" hidden aria-hidden="true">
+      <button id="btnEven"></button><button id="btnTrue"></button>
+      <div id="ribbon"></div><p id="ribbonNote"></p>
     </div>
   </aside>
+  <button type="button" class="leftnav-reopen" id="leftReopen" title="Show navigator" aria-label="Show navigator" hidden>»</button>
 
   <!-- ===== center: map + compact period scroller ===== -->
   <main class="dash-center">
@@ -148,6 +132,11 @@
 
   <!-- ===== bottom: horizontal timeline ===== -->
   <section class="dash-bottom" aria-label="Timeline">
+    <div class="tl-head">
+      <span class="tl-head-label">Timeline</span>
+      <span class="tl-head-count" id="tlHeadCount"></span>
+      <button type="button" class="tl-toggle" id="tlToggle" title="Collapse timeline" aria-label="Collapse timeline">▾</button>
+    </div>
     <div class="tl-scroll" id="tlScroll" tabindex="0" aria-label="Horizontal timeline, scroll sideways">
       <div class="tl-track" id="tlTrack"></div>
     </div>
@@ -297,8 +286,8 @@
 <script src="js/theme.js?v=1"></script>
 <script src="js/data.js?v=8"></script>
 <script src="js/enrich.js?v=20"></script>
-<script src="js/dynasties.js?v=1"></script>
-<script src="js/app.js?v=23"></script>
+<script src="js/dynasties.js?v=2"></script>
+<script src="js/app.js?v=24"></script>
 <script src="js/fullpage.js?v=4"></script>
 <script src="js/mapoftime.js?v=2"></script>
 <script>

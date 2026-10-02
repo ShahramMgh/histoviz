@@ -645,3 +645,88 @@ body.dash{margin:0;height:100vh;overflow:hidden}
 .king-go{flex:0 0 auto;color:var(--muted);font-size:1.1rem}
 .coin-gallery{grid-template-columns:repeat(auto-fill,minmax(148px,1fr))!important}
 .coin-gallery img{height:150px!important;object-fit:contain!important;background:var(--surface2)}
+
+/* ============================================================
+   Pass 11 — hierarchical navigator (period→dynasty→king),
+   full-height left panel, shorter timeline, collapse controls
+   ============================================================ */
+/* grid: left column spans full height; timeline shrinks to a strip under the map */
+body.dash .dash-grid{
+  grid-template-columns:290px minmax(0,1fr);
+  grid-template-rows:auto minmax(0,1fr) clamp(158px,20vh,216px);
+  grid-template-areas:"top top" "left center" "left bottom"}
+body.dash .dash-grid.left-off{grid-template-columns:0 minmax(0,1fr)}
+body.dash .dash-grid.tl-off{grid-template-rows:auto minmax(0,1fr) 31px}
+
+/* left panel shell */
+.dash-left{overflow:hidden}
+.dash-left .leftnav{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+.leftnav-head{flex:0 0 auto;display:flex;align-items:center;gap:.45rem;padding:.5rem .6rem .5rem .7rem;
+  border-bottom:1px solid var(--rule);background:var(--surface)}
+.leftnav-titles{flex:1 1 auto;display:flex;flex-direction:column;min-width:0;gap:.04rem}
+.leftnav-title{font-family:var(--display);font-size:.98rem;letter-spacing:.01em;line-height:1.05}
+.leftnav-sub{font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.11em}
+.leftnav-btn{flex:0 0 auto;width:26px;height:26px;border:1px solid var(--rule);background:var(--surface2);
+  border-radius:7px;color:var(--muted);cursor:pointer;font-size:.8rem;display:flex;align-items:center;justify-content:center;transition:.15s}
+.leftnav-btn:hover{color:var(--ink);border-color:var(--gold);background:var(--surface)}
+.leftnav-btn[aria-pressed="true"]{color:var(--gold);border-color:var(--gold)}
+.leftnav-reopen{position:fixed;left:0;top:64px;z-index:650;width:24px;height:44px;border:1px solid var(--rule);
+  border-left:0;background:var(--surface);border-radius:0 9px 9px 0;box-shadow:var(--shadow-1);cursor:pointer;
+  color:var(--muted);font-size:.9rem}
+.leftnav-reopen:hover{color:var(--ink)}
+body.dash .dash-grid.left-off .dash-left{border-right:0;opacity:0;pointer-events:none}
+
+/* the tree */
+.nav-tree{flex:1 1 auto;min-height:0;overflow:auto;padding:.35rem .3rem .7rem;overscroll-behavior:contain}
+.tnode{position:relative}
+.trow{display:flex;align-items:center;gap:.38rem;border-radius:8px;padding:.27rem .35rem;transition:background .12s}
+.era-row:hover,.dyn-row:hover{background:var(--surface2)}
+.tcaret{flex:0 0 auto;width:18px;height:18px;border:0;background:transparent;color:var(--muted);cursor:pointer;
+  font-size:.66rem;display:flex;align-items:center;justify-content:center;transition:transform .16s ease}
+.tnode.open>.trow>.tcaret{transform:rotate(90deg)}
+.tcaret.empty{cursor:default;opacity:.25}
+.tchildren{display:none;margin:.1rem 0 .25rem .55rem;padding-left:.55rem;border-left:1px solid var(--rule)}
+.tnode.open>.tchildren{display:block}
+.tdot{flex:0 0 auto;width:9px;height:9px;border-radius:50%}
+.tbar{flex:0 0 auto;width:4px;align-self:stretch;min-height:22px;border-radius:3px;background:var(--dc)}
+.tlabel{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:.01rem;
+  background:transparent;border:0;cursor:pointer;text-align:left;color:var(--ink);padding:.05rem 0}
+.tname{font-family:var(--display);font-size:.9rem;line-height:1.14;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tmeta{font-size:.65rem;color:var(--muted)}
+.tcount{flex:0 0 auto;font-size:.63rem;color:var(--muted);background:var(--surface2);border:1px solid var(--rule);
+  border-radius:999px;padding:.01rem .4rem;min-width:16px;text-align:center}
+.tpage{flex:0 0 auto;width:23px;height:23px;border:1px solid var(--rule);background:var(--surface);border-radius:6px;
+  color:var(--muted);cursor:pointer;font-size:.72rem;display:flex;align-items:center;justify-content:center;transition:.15s}
+.tpage:hover{border-color:var(--dc);color:var(--dc);background:color-mix(in srgb,var(--dc) 13%,var(--surface))}
+/* active (filtered) states */
+.era-node.active>.era-row{background:color-mix(in srgb,var(--ec) 15%,transparent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--ec) 55%,transparent)}
+.era-node.active>.era-row .tname{color:var(--ec)}
+.dyn-node.active>.dyn-row{background:color-mix(in srgb,var(--dc) 16%,transparent);box-shadow:inset 0 0 0 1px var(--dc)}
+.dyn-node.active>.dyn-row .tname{color:var(--dc)}
+/* king leaves */
+.tleaf{display:flex;align-items:center;gap:.45rem;width:100%;padding:.23rem .4rem;border:0;background:transparent;
+  cursor:pointer;text-align:left;color:var(--ink);border-radius:7px;transition:background .12s}
+.tleaf:hover{background:var(--surface2)}
+.tleaf-dot{flex:0 0 auto;width:7px;height:7px;border-radius:50%;background:var(--dc)}
+.tleaf .tname{font-family:var(--body);font-weight:600;font-size:.82rem}
+.tleaf .tmeta{margin-left:auto;padding-left:.4rem;white-space:nowrap}
+
+/* bottom timeline: header strip + collapse */
+.dash-bottom{display:flex;flex-direction:column;min-height:0}
+.tl-head{flex:0 0 auto;display:flex;align-items:center;gap:.6rem;height:30px;padding:0 .3rem 0 .85rem;
+  border-bottom:1px solid var(--rule);background:var(--surface)}
+.tl-head-label{font-family:var(--display);font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.14em}
+.tl-head-count{font-size:.73rem;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tl-toggle{margin-left:auto;width:26px;height:22px;border:1px solid var(--rule);background:var(--surface2);
+  border-radius:6px;cursor:pointer;color:var(--muted);font-size:.7rem}
+.tl-toggle:hover{color:var(--ink);border-color:var(--gold)}
+.dash-bottom .tl-scroll{flex:1 1 auto;min-height:0;height:auto}
+body.dash .dash-grid.tl-off .dash-bottom .tl-scroll{display:none}
+
+/* stack cleanly on small screens */
+@media (max-width:900px){
+  body.dash .dash-grid{grid-template-columns:1fr;grid-template-rows:auto auto auto auto;
+    grid-template-areas:"top" "left" "center" "bottom"}
+  .dash-left{max-height:46vh}
+  .leftnav-reopen{display:none}
+}
