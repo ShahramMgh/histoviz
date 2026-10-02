@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
 <link rel="stylesheet" href="css/style.css?v=6">
-<link rel="stylesheet" href="css/redesign.css?v=19">
+<link rel="stylesheet" href="css/redesign.css?v=20">
 </head>
 <body class="dash">
 <span id="top"></span>
@@ -43,18 +43,37 @@
     </div>
   </header>
 
-  <!-- ===== left: the Eras rail (fills the column) ===== -->
-  <aside class="dash-left" aria-label="Eras">
-    <div class="era-rail" aria-label="Jump to an era">
-      <div class="era-rail-top">
-        <span class="era-rail-title">Eras</span>
-        <div class="seg scaleseg" role="group" aria-label="Era scale" hidden>
-          <button type="button" id="btnEven" aria-pressed="true">Even</button>
-          <button type="button" id="btnTrue" aria-pressed="false">True</button>
+  <!-- ===== left: navigator (dynasties + eras), scrollable & collapsible ===== -->
+  <aside class="dash-left" aria-label="Navigator">
+    <div class="leftnav" id="leftnav">
+
+      <section class="lnav-sec" id="secDyn">
+        <button type="button" class="lnav-head" aria-expanded="true" aria-controls="secDynBody">
+          <span class="lnav-titles"><span class="lnav-title">Dynasties &amp; kingdoms</span><span class="lnav-sub">Medes → Pahlavi</span></span>
+          <span class="lnav-caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="lnav-body" id="secDynBody">
+          <div class="dyn-list" id="dynList"></div>
         </div>
-      </div>
-      <div class="ribbon" id="ribbon"></div>
-      <p class="ribbon-note" id="ribbonNote" hidden></p>
+      </section>
+
+      <section class="lnav-sec collapsed" id="secEras">
+        <button type="button" class="lnav-head" aria-expanded="false" aria-controls="secErasBody">
+          <span class="lnav-titles"><span class="lnav-title">Eras</span><span class="lnav-sub">Deep time · 100 ka → now</span></span>
+          <span class="lnav-caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="lnav-body" id="secErasBody">
+          <div class="era-rail" aria-label="Jump to an era">
+            <div class="seg scaleseg" role="group" aria-label="Era scale" hidden>
+              <button type="button" id="btnEven" aria-pressed="true">Even</button>
+              <button type="button" id="btnTrue" aria-pressed="false">True</button>
+            </div>
+            <div class="ribbon" id="ribbon"></div>
+            <p class="ribbon-note" id="ribbonNote" hidden></p>
+          </div>
+        </div>
+      </section>
+
     </div>
   </aside>
 
@@ -278,8 +297,9 @@
 <script src="js/theme.js?v=1"></script>
 <script src="js/data.js?v=8"></script>
 <script src="js/enrich.js?v=20"></script>
-<script src="js/app.js?v=22"></script>
-<script src="js/fullpage.js?v=3"></script>
+<script src="js/dynasties.js?v=1"></script>
+<script src="js/app.js?v=23"></script>
+<script src="js/fullpage.js?v=4"></script>
 <script src="js/mapoftime.js?v=2"></script>
 <script>
 /* view switch + filter accordion + profile overlay */

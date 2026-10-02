@@ -142,6 +142,46 @@ function setScale(trueScale){
 $("#btnTrue").onclick=()=>setScale(true);
 $("#btnEven").onclick=()=>setScale(false);
 
+/* ---------- Dynasties navigator (left panel) ---------- */
+const DYN=window.DYNASTIES||[];
+(function buildDynList(){
+  const host=$("#dynList"); if(!host||!DYN.length)return;
+  let lastGroup=null, html="";
+  DYN.forEach(d=>{
+    if(d.group!==lastGroup){ html+='<div class="dyn-group">'+esc(d.group)+'</div>'; lastGroup=d.group; }
+    const kings=(d.kingIds&&d.kingIds.length)||0;
+    html+='<button type="button" class="dyn-item" data-dyn="'+esc(d.id)+'" style="--dc:'+d.color+'" title="'+esc(d.name+' · '+d.years)+'">'
+      +'<span class="dyn-swatch" aria-hidden="true"></span>'
+      +'<span class="dyn-main"><span class="dyn-name">'+esc(d.name)+'</span><span class="dyn-years">'+esc(d.years)+'</span></span>'
+      +(kings?'<span class="dyn-count" title="'+kings+' rulers in the atlas">'+kings+'</span>':'')
+      +'<span class="dyn-go" aria-hidden="true">›</span></button>';
+  });
+  host.innerHTML=html;
+  host.querySelectorAll(".dyn-item").forEach(b=>b.addEventListener("click",()=>{
+    host.querySelectorAll(".dyn-item").forEach(x=>x.setAttribute("aria-current",x===b?"true":"false"));
+    if(HV.openKingdom)HV.openKingdom(b.dataset.dyn);
+  }));
+})();
+
+/* collapsible left-nav sections */
+document.querySelectorAll(".lnav-head").forEach(h=>h.addEventListener("click",()=>{
+  const sec=h.closest(".lnav-sec"); if(!sec)return;
+  const nowCollapsed=!sec.classList.contains("collapsed");
+  sec.classList.toggle("collapsed",nowCollapsed);
+  h.setAttribute("aria-expanded",String(!nowCollapsed));
+}));
+
+/* focus the map + political layer on a dynasty (kingdom page → "Show on the map") */
+function focusDynasty(dyn){
+  if(!dyn)return;
+  const pts=(dyn.kingIds||[]).map(id=>byId[id]).filter(v=>v&&isFinite(v.lat)&&isFinite(v.lng)).map(v=>[v.lat,v.lng]);
+  if(pts.length>1){try{map.fitBounds(pts,{padding:[55,55],maxZoom:6,animate:true});}catch(e){}}
+  else if(pts.length===1){map.flyTo(pts[0],Math.max(map.getZoom(),5));}
+  else{map.setView(HOME_CENTER,HOME_ZOOM);}
+  if(dyn.eraYear!==undefined)loadPolitical(dyn.eraYear);
+  toast(dyn.name+" — "+dyn.years);
+}
+
 /* ---------- Chips + flags ---------- */
 const chips=$("#chips");
 Object.entries(CATS).forEach(([k,v])=>{
@@ -758,7 +798,8 @@ Object.assign(HV,{
   eraShort,ERA_ICON,
   selectEvent,render,toast,
   isAdmin,canEdit,currentUser,
-  saveEventContent,eraForYear,commonsImg,commonsPage
+  saveEventContent,eraForYear,commonsImg,commonsPage,
+  DYNASTIES:DYN, dynastyById:id=>DYN.find(d=>d.id===id), focusDynasty
 });
 
 /* ---------- Init ---------- */

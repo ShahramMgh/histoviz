@@ -8,7 +8,7 @@ const HV=window.HV; if(!HV)return;
 const root=document.getElementById("fullpage"); if(!root)return;
 const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
-let curId=null, editing=false, wGallery=[], wRefs=[];
+let curId=null, curDyn=null, editing=false, wGallery=[], wRefs=[];
 
 function imgSrc(im,w){return im.src||HV.commonsImg(im.file,w||1600);}
 function heroOf(v){return (v.gallery&&v.gallery[0])||(v.img&&v.img[0])||null;}
@@ -20,15 +20,94 @@ function articleHTML(v){
 
 function open(id){
   const v=HV.eventById(id); if(!v)return;
-  curId=id; editing=false;
+  curId=id; curDyn=null; editing=false;
   render(); root.hidden=false; document.body.style.overflow="hidden"; root.scrollTop=0;
   try{history.replaceState(null,"","#full="+id);}catch(e){}
 }
 function close(){
-  root.hidden=true; document.body.style.overflow=""; const id=curId; curId=null; editing=false;
-  if((location.hash||"").indexOf("full=")>=0){try{history.replaceState(null,"","#"+(id||""));}catch(e){}}
+  root.hidden=true; document.body.style.overflow=""; const id=curId; curId=null; curDyn=null; editing=false;
+  if(/full=|kingdom=/.test(location.hash||"")){try{history.replaceState(null,"","#"+(id||""));}catch(e){}}
 }
 HV.openFull=open;
+
+/* ===== Kingdom (dynasty) pages ===== */
+function openKingdom(dynId){
+  const dyn=HV.dynastyById&&HV.dynastyById(dynId); if(!dyn)return;
+  curId=null; curDyn=dyn; editing=false;
+  renderKingdom(); root.hidden=false; document.body.style.overflow="hidden"; root.scrollTop=0;
+  try{history.replaceState(null,"","#kingdom="+dynId);}catch(e){}
+}
+HV.openKingdom=openKingdom;
+
+function dynCoins(dyn){
+  const seen=new Set(), out=[];
+  const isCoin=s=>/coin|dinar|drachm|daric|dirham|tetradrachm|stater|siglos|tanka|medallion/i.test(s||"");
+  (dyn.coins||[]).forEach(f=>{ if(f&&!seen.has(f)){seen.add(f); out.push({file:f,credit:"Coinage of the "+dyn.name+" · via Wikimedia Commons"});} });
+  (dyn.kingIds||[]).forEach(id=>{
+    const k=HV.eventById(id); if(!k)return;
+    [].concat(k.img||[], k.gallery||[]).forEach(im=>{
+      const key=im.file||im.src; if(!key||seen.has(key))return;
+      if(isCoin(im.file)||isCoin(im.alt)||isCoin(im.credit)){seen.add(key); out.push(im);}
+    });
+  });
+  return out;
+}
+
+function renderKingdom(){
+  const dyn=curDyn; if(!dyn){close();return;}
+  const kings=(dyn.kingIds||[]).map(id=>HV.eventById(id)).filter(Boolean);
+  const coins=dynCoins(dyn);
+  let h='';
+  h+='<div class="fp-bar"><button class="fp-back" id="fpBack">‹ Back</button>'+
+     '<span class="fp-crumb">Kingdoms of Iran</span><div class="fp-actions">'+
+     '<button class="fp-x" id="fpClose" aria-label="Close">×</button></div></div>';
+  h+='<div class="fp-scroll"><article class="fp-doc fp-kingdom">';
+  h+='<header class="fp-hero fp-khero nohero"><div class="fp-hero-in">'+
+     '<span class="panel-era" style="background:'+dyn.color+'">Dynasty</span>'+
+     '<div class="fp-date">'+esc(dyn.years)+'</div><h1>'+esc(dyn.name)+'</h1>'+
+     (dyn.capital?'<div class="fp-place">Capital: '+esc(dyn.capital)+'</div>':'')+'</div></header>';
+  h+='<div class="king-facts">'+
+     '<div><span>Period</span><b>'+esc(dyn.years)+'</b></div>'+
+     '<div><span>Capital</span><b>'+esc(dyn.capital||"—")+'</b></div>'+
+     '<div><span>Rulers here</span><b>'+kings.length+'</b></div></div>';
+  h+='<div class="fp-article">'+[].concat(dyn.body||[]).map(p=>"<p>"+esc(p)+"</p>").join("")+'</div>';
+  if(dyn.map){
+    h+='<h3 class="fp-h">Historical map</h3><figure class="king-map"><img loading="lazy" src="'+
+       esc(HV.commonsImg(dyn.map,1400))+'" data-full="'+esc(HV.commonsImg(dyn.map,2000))+
+       '" alt="Map of the '+esc(dyn.name)+'"><figcaption>The '+esc(dyn.name)+' and its reach · via Wikimedia Commons</figcaption></figure>';
+  }
+  if(kings.length){
+    h+='<h3 class="fp-h">Rulers &amp; kings <span class="fp-hcount">'+kings.length+'</span></h3><div class="king-grid">'+kings.map(k=>{
+      const im=(k.img&&k.img[0])||(k.gallery&&k.gallery[0]);
+      const thumb=im?(im.src||HV.commonsImg(im.file,260)):"";
+      return '<button class="king-card" data-king="'+esc(k.id)+'">'+
+        (thumb?'<span class="king-thumb" style="background-image:url(\''+esc(thumb.replace(/'/g,"%27"))+'\')"></span>':'<span class="king-thumb noimg">⌘</span>')+
+        '<span class="king-info"><span class="king-name">'+esc(k.t)+'</span><span class="king-date">'+esc(k.d)+'</span></span>'+
+        '<span class="king-go" aria-hidden="true">›</span></button>';
+    }).join("")+'</div>';
+  }
+  if(coins.length){
+    h+='<h3 class="fp-h">Coins</h3><div class="fp-gallery coin-gallery">'+coins.map(c=>{
+      const src=c.src||HV.commonsImg(c.file,520), full=c.src||HV.commonsImg(c.file,1400);
+      return '<figure><img loading="lazy" src="'+esc(src)+'" data-full="'+esc(full)+'" alt="'+esc(c.alt||"coin")+'">'+
+        (c.credit?'<figcaption>'+esc(c.credit)+'</figcaption>':'')+'</figure>';
+    }).join("")+'</div>';
+  }
+  h+='<h3 class="fp-h">References</h3><ul class="refs"><li><a href="'+esc(dyn.url)+'" target="_blank" rel="noopener">Wikipedia — '+esc(dyn.name)+'</a></li></ul>';
+  h+='<div class="fp-savebar"><button class="btn primary" id="fpKMap">Show on the map ↗</button></div>';
+  h+='</article></div>';
+  root.innerHTML=h;
+  const heroEl=root.querySelector(".fp-hero");
+  if(heroEl){const c=dyn.color;heroEl.style.backgroundImage="linear-gradient(140deg,"+c+",color-mix(in srgb,"+c+" 42%,#000))";}
+  root.querySelector("#fpBack").onclick=close;
+  root.querySelector("#fpClose").onclick=close;
+  root.querySelectorAll(".king-card").forEach(c=>c.onclick=()=>open(c.dataset.king));
+  const km=root.querySelector("#fpKMap"); if(km)km.onclick=()=>{const d=curDyn;close();HV.focusDynasty&&HV.focusDynasty(d);};
+  root.querySelectorAll(".king-map img, .coin-gallery img").forEach(img=>img.addEventListener("click",()=>{
+    const fig=img.closest("figure"), cap=fig&&fig.querySelector("figcaption");
+    openLightbox(img.getAttribute("data-full")||img.src, img.alt, cap?cap.textContent:"");
+  }));
+}
 
 function render(){
   const v=HV.eventById(curId); if(!v){close();return;}
@@ -169,6 +248,12 @@ document.addEventListener("keydown",e=>{
   if(e.key==="Escape"&&lightboxOpen()){closeLightbox();return;}
   if(!root.hidden&&e.key==="Escape"&&!editing)close();
 });
-window.addEventListener("hashchange",()=>{const m=/(?:^|#)full=([^&]+)/.exec(location.hash);if(m&&HV.eventById(m[1]))open(m[1]);});
-(function(){const m=/(?:^|#)full=([^&]+)/.exec(location.hash);if(m&&HV.eventById(m[1]))setTimeout(()=>open(m[1]),400);})();
+window.addEventListener("hashchange",()=>{
+  const k=/(?:^|#)kingdom=([^&]+)/.exec(location.hash); if(k&&HV.dynastyById&&HV.dynastyById(k[1])){openKingdom(k[1]);return;}
+  const m=/(?:^|#)full=([^&]+)/.exec(location.hash); if(m&&HV.eventById(m[1]))open(m[1]);
+});
+(function(){
+  const k=/(?:^|#)kingdom=([^&]+)/.exec(location.hash); if(k&&HV.dynastyById&&HV.dynastyById(k[1])){setTimeout(()=>openKingdom(k[1]),400);return;}
+  const m=/(?:^|#)full=([^&]+)/.exec(location.hash); if(m&&HV.eventById(m[1]))setTimeout(()=>open(m[1]),400);
+})();
 })();
