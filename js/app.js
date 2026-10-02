@@ -14,8 +14,8 @@ const HV=(window.HV=window.HV||{});   // shared API for the other view modules
 const active=new Set(Object.keys(CATS));
 const flags={unesco:false,debated:false};
 let query="";
-let activeEra=null;       // when set, filters the timeline to just this period
-let activeDynasty=null;   // when set, filters to this dynasty's years (kings + contemporaries)
+let activeEra=null, activeDynasty=null;   // (legacy, unused by the new navigator)
+let activeFilter=null;    // unified navigator filter: {key,label,test,year,fit}
 let yrFrom=-10000, yrTo=2010;   // period range from the time scroller (min/max ⇒ no bound)
 let visibleOrder=[];      // ids in current display order
 let activeId=null;
@@ -146,17 +146,24 @@ $("#btnEven").onclick=()=>setScale(false);
 /* ---------- Dynasties navigator (left panel) ---------- */
 const DYN=window.DYNASTIES||[];
 const dynById=id=>DYN.find(d=>d.id===id);
+const PRE_IRON=["pal","epi","neo","chal","bronze"];   // grouped into one "Pre-Iron Age" section
+const PERIOD_ERAS=["iron","ach","hel","par","sas"];    // shown as individual periods (with a dynasty)
+const yrLbl=y=>y<0?(Math.abs(y)+" BCE"):(y+" CE");
 
-/* ---------- Hierarchical navigator: Period → Dynasty → King ---------- */
+/* ---------- Hierarchical navigator: Section / Period → Dynasty → King ---------- */
 (function buildTree(){
   const host=$("#navTree"); if(!host)return;
+  const erById=id=>ERAS.find(e=>e.id===id);
+  const eraSub=er=>esc(er.short||er.span.replace(/c\. /g,""));
+  const count=test=>EV.filter(test).length;
+
   const kingLeaf=id=>{const k=byId[id]; if(!k)return"";
     return '<button type="button" class="tleaf" role="treeitem" data-ev="'+esc(id)+'" style="--dc:'+((CATS[k.c]&&CATS[k.c].color)||"#888")+'">'
       +'<span class="tleaf-dot"></span><span class="tname">'+esc(k.t.replace(/\s*\([^)]*\)\s*$/,""))+'</span>'
       +'<span class="tmeta">'+esc(k.d)+'</span></button>';};
   const dynNode=d=>{
     const kings=(d.kingIds||[]).map(id=>byId[id]).filter(Boolean);
-    return '<div class="tnode dyn-node" data-dyn="'+esc(d.id)+'" style="--dc:'+d.color+'" role="treeitem">'
+    return '<div class="tnode dyn-node" data-key="dyn:'+esc(d.id)+'" style="--dc:'+d.color+'" role="treeitem">'
       +'<div class="trow dyn-row">'
       +(kings.length?'<button type="button" class="tcaret" aria-label="Expand">▸</button>':'<span class="tcaret empty"></span>')
       +'<span class="tbar"></span>'
@@ -164,76 +171,95 @@ const dynById=id=>DYN.find(d=>d.id===id);
       +'<button type="button" class="tpage" data-page="'+esc(d.id)+'" title="Open the '+esc(d.name)+' page" aria-label="Open dedicated page">⤢</button>'
       +'</div>'
       +(kings.length?'<div class="tchildren" role="group">'+kings.map(k=>kingLeaf(k.id)).join("")+'</div>':'')
-      +'</div>';
-  };
-  let html="";
-  ERAS.forEach(er=>{
-    const dyns=DYN.filter(d=>d.era===er.id);
-    const count=EV.filter(v=>v.e===er.id).length;
-    const hasKids=dyns.length>0;
-    html+='<div class="tnode era-node" data-era="'+esc(er.id)+'" style="--ec:'+er.color+'" role="treeitem">'
-      +'<div class="trow era-row">'
-      +(hasKids?'<button type="button" class="tcaret" aria-label="Expand">▸</button>':'<span class="tcaret empty"></span>')
+      +'</div>';};
+  const eraLeaf=er=>'<div class="tnode era-node" data-key="era:'+er.id+'" style="--ec:'+er.color+'" role="treeitem">'
+      +'<div class="trow era-row"><span class="tcaret empty"></span>'
       +'<span class="tdot" style="background:'+er.color+'"></span>'
-      +'<button type="button" class="tlabel" data-filter-era="'+esc(er.id)+'"><span class="tname">'+esc(eraShort(er.name))+'</span><span class="tmeta">'+esc(er.short||er.span.replace(/c\. /g,""))+'</span></button>'
-      +'<span class="tcount">'+count+'</span>'
-      +'</div>'
-      +(hasKids?'<div class="tchildren" role="group">'+dyns.map(dynNode).join("")+'</div>':'')
-      +'</div>';
+      +'<button type="button" class="tlabel" data-filter-era="'+er.id+'"><span class="tname">'+esc(eraShort(er.name))+'</span><span class="tmeta">'+eraSub(er)+'</span></button>'
+      +'<span class="tcount">'+count(v=>v.e===er.id)+'</span></div></div>';
+  const periodNode=er=>{
+    const dyns=DYN.filter(d=>d.era===er.id);
+    return '<div class="tnode era-node" data-key="era:'+er.id+'" style="--ec:'+er.color+'" role="treeitem">'
+      +'<div class="trow era-row">'
+      +(dyns.length?'<button type="button" class="tcaret" aria-label="Expand">▸</button>':'<span class="tcaret empty"></span>')
+      +'<span class="tdot" style="background:'+er.color+'"></span>'
+      +'<button type="button" class="tlabel" data-filter-era="'+er.id+'"><span class="tname">'+esc(eraShort(er.name))+'</span><span class="tmeta">'+eraSub(er)+'</span></button>'
+      +'<span class="tcount">'+count(v=>v.e===er.id)+'</span></div>'
+      +(dyns.length?'<div class="tchildren" role="group">'+dyns.map(dynNode).join("")+'</div>':'')+'</div>';};
+  const sectionNode=(key,label,sub,cnt,secAttrs,childrenHTML)=>
+      '<div class="tnode sec-node" data-key="'+esc(key)+'" role="treeitem">'
+      +'<div class="trow sec-row"><button type="button" class="tcaret" aria-label="Expand">▸</button>'
+      +'<button type="button" class="tlabel" data-filter-sec="1" data-sec-key="'+esc(key)+'" data-sec-label="'+esc(label)+'" '+secAttrs+'><span class="tname">'+esc(label)+'</span><span class="tmeta">'+esc(sub)+'</span></button>'
+      +'<span class="tcount">'+cnt+'</span></div><div class="tchildren" role="group">'+childrenHTML+'</div></div>';
+
+  let html="";
+  // 1) Pre-Iron Age section (deep-time periods, no dynasties)
+  const preEras=PRE_IRON.map(erById).filter(Boolean);
+  html+=sectionNode("sec:preiron","Pre-Iron Age","deep time · to 1000 BCE",
+        count(v=>PRE_IRON.indexOf(v.e)>=0),'data-sec-eras="'+PRE_IRON.join(",")+'"',preEras.map(eraLeaf).join(""));
+  // 2) ancient periods, each carrying its dynasty
+  PERIOD_ERAS.forEach(id=>{const er=erById(id); if(er)html+=periodNode(er);});
+  // 3) the later dynasties, grouped into sections (no "Later heritage" umbrella)
+  const later=DYN.filter(d=>d.era==="later");
+  const groups=[]; later.forEach(d=>{if(groups.indexOf(d.group)<0)groups.push(d.group);});
+  groups.forEach(g=>{
+    const ds=later.filter(d=>d.group===g);
+    const start=Math.min.apply(null,ds.map(d=>d.start)), end=Math.max.apply(null,ds.map(d=>d.end)), mid=Math.round((start+end)/2);
+    html+=sectionNode("sec:"+g,g,yrLbl(start)+" – "+yrLbl(end),
+          count(v=>v.c!=="museum"&&v.y>=start&&v.y<=end),
+          'data-sec-range="'+start+","+end+'" data-sec-year="'+mid+'"',ds.map(dynNode).join(""));
   });
   host.innerHTML=html;
 
-  // caret → expand/collapse that node
   host.querySelectorAll(".tcaret").forEach(c=>{ if(c.classList.contains("empty"))return;
-    c.addEventListener("click",e=>{e.stopPropagation();c.closest(".tnode").classList.toggle("open");});
-  });
-  // era label → filter to period
+    c.addEventListener("click",e=>{e.stopPropagation();c.closest(".tnode").classList.toggle("open");});});
   host.querySelectorAll("[data-filter-era]").forEach(b=>b.addEventListener("click",()=>{
-    const node=b.closest(".tnode"); if(node&&node.querySelector(".tchildren"))node.classList.add("open");
-    filterEra(b.dataset.filterEra);
-  }));
-  // dynasty label → filter to dynasty's years; page button → dedicated page
+    const n=b.closest(".tnode"); if(n&&n.querySelector(".tchildren"))n.classList.add("open"); filterEra(b.dataset.filterEra);}));
   host.querySelectorAll("[data-filter-dyn]").forEach(b=>b.addEventListener("click",()=>{
-    const node=b.closest(".tnode"); if(node&&node.querySelector(".tchildren"))node.classList.add("open");
-    filterDynasty(dynById(b.dataset.filterDyn));
-  }));
+    const n=b.closest(".tnode"); if(n&&n.querySelector(".tchildren"))n.classList.add("open"); filterDynasty(dynById(b.dataset.filterDyn));}));
+  host.querySelectorAll("[data-filter-sec]").forEach(b=>b.addEventListener("click",()=>{
+    const n=b.closest(".tnode"); if(n)n.classList.add("open");
+    const key=b.dataset.secKey,label=b.dataset.secLabel,year=b.dataset.secYear?+b.dataset.secYear:undefined;
+    if(b.dataset.secEras)filterEraSet(key,label,b.dataset.secEras.split(","),year);
+    else{const r=(b.dataset.secRange||"").split(",");filterRange(key,label,+r[0],+r[1],year);}}));
   host.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",e=>{
-    e.stopPropagation(); if(HV.openKingdom)HV.openKingdom(b.dataset.page);
-  }));
-  // king leaf → select that event
+    e.stopPropagation(); if(HV.openKingdom)HV.openKingdom(b.dataset.page);}));
   host.querySelectorAll("[data-ev]").forEach(b=>b.addEventListener("click",()=>selectEvent(b.dataset.ev)));
 })();
 
 function highlightTree(){
   const host=$("#navTree"); if(!host)return;
-  host.querySelectorAll(".era-node").forEach(n=>n.classList.toggle("active",!activeDynasty&&n.dataset.era===activeEra));
-  host.querySelectorAll(".dyn-node").forEach(n=>n.classList.toggle("active",!!activeDynasty&&n.dataset.dyn===activeDynasty.id));
+  host.querySelectorAll(".tnode").forEach(n=>n.classList.toggle("active",!!activeFilter&&n.dataset.key===activeFilter.key));
 }
+function ptsForTest(test){return EV.filter(v=>test(v)&&isFinite(v.lat)&&isFinite(v.lng)).map(v=>[v.lat,v.lng]);}
 function scrollTimelineToFirstMatch(){
   const first=EV.filter(v=>{const er=ERAS.find(e=>e.id===v.e);return er&&matches(v,er);}).sort((a,b)=>a.y-b.y)[0];
   if(first){const g=document.getElementById("tlera-"+first.e); if(g)$("#tlScroll").scrollTo({left:g.offsetLeft-8,behavior:"smooth"});}
 }
-function filterEra(erId){
-  activeDynasty=null;
-  activeEra=(activeEra===erId)?null:erId;
+function applyFilter(f){
+  if(activeFilter&&f&&activeFilter.key===f.key)activeFilter=null; else activeFilter=f;
   highlightTree(); render();
-  if(activeEra){
-    const er=ERAS.find(e=>e.id===activeEra);
+  if(activeFilter){
     scrollTimelineToFirstMatch();
-    const pts=EV.filter(v=>v.e===activeEra&&isFinite(v.lat)&&isFinite(v.lng)).map(v=>[v.lat,v.lng]);
-    if(pts.length){try{map.fitBounds(pts,{padding:[45,45],maxZoom:7,animate:true});}catch(e){}}
-    const yr=ERA_YEAR[activeEra]; if(yr!==undefined)loadPolitical(yr);
-    toast("Filtered to "+eraShort(er.name)+" — tap again to clear");
+    if(activeFilter.fit&&activeFilter.fit.length){try{map.fitBounds(activeFilter.fit,{padding:[45,45],maxZoom:7,animate:true});}catch(e){}}
+    else map.setView(HOME_CENTER,HOME_ZOOM);
+    if(activeFilter.year!==undefined&&activeFilter.year!==null)loadPolitical(activeFilter.year);
+    toast(activeFilter.label+" — tap again to clear");
   }else{ map.setView(HOME_CENTER,HOME_ZOOM); toast("Showing all periods"); }
 }
-function filterDynasty(dyn){
-  if(!dyn)return;
-  const same=activeDynasty&&activeDynasty.id===dyn.id;
-  activeEra=null; activeDynasty=same?null:dyn;
-  highlightTree(); render();
-  if(activeDynasty){ scrollTimelineToFirstMatch(); focusDynasty(dyn); toast(dyn.name+" — tap again to clear"); }
-  else{ map.setView(HOME_CENTER,HOME_ZOOM); toast("Showing all periods"); }
-}
+function filterEra(id){const er=ERAS.find(e=>e.id===id); if(!er)return;
+  const test=v=>v.e===id;
+  applyFilter({key:"era:"+id,label:eraShort(er.name),test,year:ERA_YEAR[id],fit:ptsForTest(test)});}
+function filterDynasty(d){if(!d)return;
+  const test=v=>v.c!=="museum"&&((v.y>=d.start&&v.y<=d.end)||(d.kingIds&&d.kingIds.indexOf(v.id)>=0));
+  const kp=ptsForTest(v=>d.kingIds&&d.kingIds.indexOf(v.id)>=0);
+  applyFilter({key:"dyn:"+d.id,label:d.name,test,year:d.eraYear,fit:kp.length?kp:ptsForTest(test)});}
+function filterEraSet(key,label,eras,year){
+  const test=v=>eras.indexOf(v.e)>=0;
+  applyFilter({key,label,test,year,fit:ptsForTest(test)});}
+function filterRange(key,label,start,end,year){
+  const test=v=>v.c!=="museum"&&v.y>=start&&v.y<=end;
+  applyFilter({key,label,test,year,fit:ptsForTest(test)});}
 
 /* expand / collapse every node */
 (function(){const b=$("#navExpandAll"); if(!b)return; let allOpen=false;
@@ -313,12 +339,7 @@ $("#fDebated").onclick=e=>{flags.debated=!flags.debated;e.currentTarget.setAttri
 $("#search").addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();render();});
 
 function matches(v,er){
-  if(activeDynasty){
-    const d=activeDynasty;
-    const inRange=(v.y>=d.start&&v.y<=d.end)||(d.kingIds&&d.kingIds.indexOf(v.id)>=0);
-    if(!inRange)return false;
-    if(v.c==="museum")return false;               // institutions aren't period content
-  }else if(activeEra&&v.e!==activeEra)return false;
+  if(activeFilter && !activeFilter.test(v))return false;   // navigator filter (period / dynasty / section)
   if(yrFrom>-10000 && v.y<yrFrom)return false;   // period range (from handle at min = no lower bound)
   if(yrTo<2010 && v.y>yrTo)return false;         // (to handle at max = no upper bound)
   if(!active.has(v.c))return false;
@@ -688,7 +709,7 @@ function render(){
   }else{track.querySelectorAll(".tl-item").forEach(it=>it.classList.add("in"));}
   if(!shown)track.innerHTML='<p class="empty">No entries match. Clear the search box or turn categories back on.</p>';
   $("#count").textContent=shown+" of "+EV.length+" entries";
-  {const hc=$("#tlHeadCount"); if(hc)hc.textContent=(activeDynasty?activeDynasty.name:(activeEra?eraShort((ERAS.find(e=>e.id===activeEra)||{}).name||""):"All periods"))+" · "+shown+" shown";}
+  {const hc=$("#tlHeadCount"); if(hc)hc.textContent=(activeFilter?activeFilter.label:"All periods")+" · "+shown+" shown";}
   if(activeId&&markersByIdx[activeId]){
     const card=document.querySelector('.tl-item[data-id="'+activeId+'"]'); if(card)card.classList.add("active");
     const mk=markersByIdx[activeId];

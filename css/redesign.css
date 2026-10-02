@@ -786,3 +786,15 @@ body.dash .dash-grid.tl-off .tl-resizer{display:none}
 body.resizing-col,body.resizing-col *{cursor:col-resize!important;user-select:none}
 body.resizing-row,body.resizing-row *{cursor:row-resize!important;user-select:none}
 body.resizing-col .leaflet-container,body.resizing-row .leaflet-container{pointer-events:none}
+
+/* ============================================================
+   Pass 14 — section headers (Pre-Iron Age, dynasty groups)
+   ============================================================ */
+.sec-row{padding:.36rem .4rem}
+.sec-row .tname{font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.sec-row .tmeta{font-size:.62rem}
+.sec-row:hover .tname{color:var(--ink)}
+.sec-node.active>.sec-row{background:var(--surface2);box-shadow:inset 0 0 0 1px var(--gold)}
+.sec-node.active>.sec-row .tname{color:var(--gold)}
+.sec-node>.tchildren{margin-left:.4rem;padding-left:.5rem;border-left:1px dashed var(--rule)}
+.sec-row .tcaret{color:var(--ink)}
