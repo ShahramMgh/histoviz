@@ -3112,6 +3112,127 @@ window.ENRICH = {
   "refs": [ { "label": "Wikipedia — Topkapı Palace", "url": "https://en.wikipedia.org/wiki/Topkap%C4%B1_Palace" } ],
   "related": [ "e150", "e199", "e144" ]
  },
+ "e250": {
+  "img": [ { "file": "Al-Āṯār_al-bāqiya_ʿan_al-qurūn_al-ẖāliya_Folio_230.jpg", "alt": "Al-Biruni's Chronology", "credit": "A folio of al-Biruni's ‘Chronology of Ancient Nations’, a source on Bihafarid · Wikimedia Commons" } ],
+  "body": [
+   "Bihafarid ibn Farvardin was a prophet-reformer who appeared in the countryside around Khwaf and Nishapur in the 740s. Returning, he claimed, from a journey to heaven, he preached a reformed faith that kept much of Zoroastrianism but simplified its rituals: he forbade close-kin marriage and ruinous wedding costs, told his followers to pray toward the sun, and bade them set aside part of their wealth for the common good.",
+   "His teaching spread quickly among the peasants of Khorasan — but it won him no friends among the established clergy. The orthodox Zoroastrian priests (herbads) denounced him to Abu Muslim as a danger to their own religion, and Abu Muslim had him seized and killed around 749. Bihafarid's fate is a reminder that the religious ferment of early Islamic Iran set reformers against the old priesthood quite as much as against the new rulers."
+  ],
+  "refs": [ { "label": "Wikipedia — Behafarid", "url": "https://en.wikipedia.org/wiki/Behafarid" } ],
+  "related": [ "e251", "e113", "e252" ]
+ },
+ "e251": {
+  "img": [ { "file": "Portrait_of_Abu_Muslim_(d._755)_from_the_genealogy_(silsilanāma),_Cream_of_Histories_(Zübdet-üt_Tevarih,_1598).jpg", "alt": "Abu Muslim Khorasani", "credit": "Abu Muslim Khorasani, Ottoman genealogy manuscript, 1598 · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Portrait_of_Abu_Muslim_(d._755)_from_the_genealogy_(silsilanāma),_Cream_of_Histories_(Zübdet-üt_Tevarih,_1598).jpg", "alt": "Abu Muslim", "credit": "Abu Muslim Khorasani, 1598 manuscript · Wikimedia Commons" },
+   { "file": "Abbasid_silver_dirham_in_the_name_of_abu_Muslim_struck_at_Marv_in_AH_132_(749-50),_The_David_Collection,_Copenhagen_(36241672762).jpg", "alt": "Coin of Abu Muslim", "credit": "Silver dirham struck in Abu Muslim's name at Merv, 749–50 · David Collection · Wikimedia Commons" },
+   { "file": "Abu_Muslim_chastises_a_man_for_telling_tales,_Folio_from_the_Ethics_of_Nasir_(Akhlaq-e_Nasiri)_by_Nasir_al-Din_Tusi_(fol._248r).jpg", "alt": "Abu Muslim, manuscript scene", "credit": "Abu Muslim in a scene from the Akhlaq-e Nasiri · Wikimedia Commons" }
+  ],
+  "body": [
+   "Abu Muslim al-Khurasani is one of the pivotal figures of early Islamic Iran. From the city of Merv he organised, from 747, the clandestine ‘black-banner’ revolution that in three years overthrew the Umayyad caliphate and brought the Abbasids to power. His army was drawn above all from the discontented Iranian converts and Arab settlers of Khorasan, and his victory gave the Iranian east a decisive role in the new empire.",
+   "For a few years Abu Muslim was the most powerful man in the realm, effective ruler of the east, and the Abbasid caliphs came to fear him. In 755 the caliph al-Mansur had him treacherously killed. The murder of the man who had made the dynasty turned him, in popular memory, into a martyr — and for generations afterward rebels across Iran rose ‘to avenge Abu Muslim’.",
+   "His legacy is genuinely double-edged: his revolution empowered Iranians within the caliphate yet also entrenched a new Arab-Islamic dynasty, and the movements that invoked his name ranged from Muslim sectarians to Zoroastrian and Mazdakite rebels."
+  ],
+  "refs": [ { "label": "Wikipedia — Abu Muslim Khorasani", "url": "https://en.wikipedia.org/wiki/Abu_Muslim_Khorasani" } ],
+  "related": [ "e250", "e252", "e253" ]
+ },
+ "e252": {
+  "body": [
+   "Within months of Abu Muslim's murder, a Zoroastrian noble named Sunpadh (Sinbad) rose in revolt near Nishapur in 755, vowing to avenge him. Gathering followers from among both Zoroastrians and discontented Muslims, he seized the treasure Abu Muslim had left at Rey and marched against the caliph's forces.",
+   "The rising blended several currents — personal loyalty to Abu Muslim, Zoroastrian hopes of a return of the old order, and the egalitarian dreams of the Mazdakite tradition. It lasted only about seventy days before the Abbasid army crushed it, but it set the pattern for the religiously-tinged Iranian revolts of the century that followed."
+  ],
+  "refs": [ { "label": "Wikipedia — Sunpadh", "url": "https://en.wikipedia.org/wiki/Sunpadh" } ],
+  "related": [ "e251", "e255", "e259" ]
+ },
+ "e253": {
+  "body": [
+   "The Rawandiyya were an extremist Khorasani sect who carried their devotion to Abu Muslim and the Abbasid house to the point of worship. They held doctrines of the transmigration of souls, and declared the caliph al-Mansur himself to be divine and his dead henchman Abu Muslim to have been an angel.",
+   "When al-Mansur, embarrassed, repudiated and arrested them around 758, hundreds of the Rawandiyya turned on him and stormed his residence at al-Hashimiyya; the caliph was nearly killed before they were cut down. The episode shows how the ferment of the Iranian east threw up radical movements that fused old Iranian ideas of divine kingship with the new faith."
+  ],
+  "refs": [ { "label": "Wikipedia — Rawandiyya", "url": "https://en.wikipedia.org/wiki/Rawandiyya" } ],
+  "related": [ "e251", "e252", "e259" ]
+ },
+ "e254": {
+  "body": [
+   "Around 767 a leader known as Ustadh Sis raised one of the largest popular revolts of the early Abbasid east. It spread across Badghis, Herat, Sistan and the surrounding country, and the chronicles speak — with the usual exaggeration — of tens or even hundreds of thousands of villagers flocking to him.",
+   "Like the other risings of the age it drew on rural anger at taxation and foreign rule and on the deep religious undercurrents of Khorasan. After early successes it was defeated by the forces of the future caliph al-Mahdi; Ustadh Sis was captured and executed, and great numbers of his followers were killed or enslaved."
+  ],
+  "refs": [ { "label": "Wikipedia — Ustadh Sis", "url": "https://en.wikipedia.org/wiki/Ustadh_Sis" } ],
+  "related": [ "e251", "e255", "e256" ]
+ },
+ "e255": {
+  "img": [ { "file": "Chronology_of_Ancient_Nations,_Or.Ms.161,_f.93v.jpg", "alt": "Al-Biruni manuscript", "credit": "A folio of al-Biruni's ‘Chronology of Ancient Nations’, which records al-Muqanna · Wikimedia Commons" } ],
+  "body": [
+   "Hashim ibn Hakim, nicknamed al-Muqanna, ‘the Veiled One’, for the mask or veil he always wore — said to hide a disfigurement, or a light too dazzling to look upon — led a messianic revolt in Transoxiana from about 776. He claimed that the divine spirit, having passed through the prophets and through Abu Muslim, now dwelt in him.",
+   "His followers, the white-clad Sepid-Jamegan, joined these claims to the social teachings of Mazdak — the sharing of property and an end to the old inequalities. They held out for years in the hill fortresses between the Oxus and Samarkand against repeated Abbasid armies.",
+   "When his last stronghold fell around 783, al-Muqanna is said to have chosen death over surrender. His memory lingered long in Central Asia, and the Veiled Prophet of Khorasan later entered European Romantic literature through Thomas Moore's ‘Lalla Rookh’."
+  ],
+  "refs": [ { "label": "Wikipedia — Al-Muqanna", "url": "https://en.wikipedia.org/wiki/Al-Muqanna" } ],
+  "related": [ "e251", "e254", "e259" ]
+ },
+ "e256": {
+  "body": [
+   "Yusuf al-Barm led a revolt in the Khorasani countryside around 776–777, raising both Arab settlers and Iranian villagers against the Abbasid governors in protest at misrule and oppression.",
+   "Like most of these risings it was localised and relatively brief; Yusuf was defeated, captured and taken to Baghdad, where he was put to death. Small individually, together such revolts kept the Abbasid east in near-constant unrest through the later 8th century."
+  ],
+  "refs": [ { "label": "Wikipedia — Yusuf al-Barm", "url": "https://en.wikipedia.org/wiki/Yusuf_al-Barm" } ],
+  "related": [ "e254", "e258", "e251" ]
+ },
+ "e257": {
+  "body": [
+   "The Khorramis — rural communities of the Caspian lowlands and the Zagros who held to a faith descended from Mazdak's — rose against caliphal authority again and again. One such rising of the ‘red-clad’ (Muhammira) broke out in Gorgan in the later 8th century.",
+   "These movements were as much social as religious: their adherents are described as holding land and goods in common, rejecting the authority of the landlords and tax-collectors, and awaiting a saviour who would restore justice. They form the backdrop to the far greater Khorrami revolt of Babak a generation later."
+  ],
+  "refs": [ { "label": "Wikipedia — Khurramites", "url": "https://en.wikipedia.org/wiki/Khurramites" } ],
+  "related": [ "e259", "e255", "e260" ]
+ },
+ "e258": {
+  "body": [
+   "In 806 Rafi ibn al-Layth, grandson of a former governor, raised Samarkand and much of Transoxiana in revolt against the heavy hand of the Abbasid administration. The rising was serious enough to shake Abbasid control of the whole north-east.",
+   "The ageing caliph Harun al-Rashid set out in person to deal with it and died on the road at Tus in 809. It fell to his son al-Ma'mun, governing Khorasan from Merv, to pacify the province — a task that drew him deep into the affairs and the talent of the Iranian east and helped make Khorasan the base from which he later won the caliphate."
+  ],
+  "refs": [ { "label": "Wikipedia — Rafi ibn al-Layth", "url": "https://en.wikipedia.org/wiki/Rafi_ibn_al-Layth" } ],
+  "related": [ "e251", "e259", "e179" ]
+ },
+ "e259": {
+  "img": [ { "file": "Babak_Castle_2.JPG", "alt": "Babak's fortress", "credit": "Babak's cliff-top fortress (Qal'eh Babak / Badd) near Kalibar, Azerbaijan · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Babak_Castle_2.JPG", "alt": "Babak's fortress", "credit": "Babak's cliff-top fortress near Kalibar, Azerbaijan · Wikimedia Commons" },
+   { "file": "Illustrated_leaf_from_the_Tarikhnama_of_Abu_'Ali_Muhammad_ibn_Muhammad_al-Bal'ami;_Afshin_and_Babak_arriving_at_Samarra._Persia,_Safavid_dynasty,_16th_century_(Babak_detail).jpg", "alt": "Babak and Afshin", "credit": "Afshin bringing the captured Babak to Samarra, Safavid manuscript · Wikimedia Commons" },
+   { "file": "Bazz_fortress.jpg", "alt": "Bazz fortress", "credit": "The fortress of Badd (Bazz), Babak's stronghold · Wikimedia Commons" },
+   { "file": "Khorramdin1.jpg", "alt": "Babak Khorramdin", "credit": "Babak Khorramdin, modern depiction · Wikimedia Commons" }
+  ],
+  "body": [
+   "Babak Khorramdin led the longest and most formidable of all the risings against the caliphate. From about 816 he headed the Khorram-dini — the ‘glad religion’, an egalitarian faith descended from Mazdak that preached justice, the sharing of goods and the return of the old Iranian order — and turned the mountains of Azerbaijan, from his fortress of Badd (Qal'eh Babak), into a realm of his own.",
+   "For more than twenty years he defeated army after army sent against him by the caliph al-Mu'tasim, inflicting some of the heaviest defeats the Abbasids ever suffered. He was brought down at last not by an Arab but by Afshin, the Iranian prince of Ushrusana in caliphal service, who besieged and stormed Badd in 837. Babak was carried to Samarra and executed with great cruelty in 838.",
+   "His memory has been claimed in many ways — by the medieval chroniclers as a dangerous heretic, and in modern times as a hero of resistance in both Iran and the Republic of Azerbaijan. The ruin of his cliff-top castle above Kalibar is today a place of pilgrimage."
+  ],
+  "refs": [ { "label": "Wikipedia — Babak Khorramdin", "url": "https://en.wikipedia.org/wiki/Babak_Khorramdin" } ],
+  "related": [ "e257", "e255", "e260" ]
+ },
+ "e260": {
+  "img": [ { "file": "Mazyar_of_the_Qarinvand_dynasty.jpg", "alt": "Maziyar of Tabaristan", "credit": "Maziyar ibn Qarin of the Qarinvand dynasty · Wikimedia Commons" } ],
+  "gallery": [
+   { "file": "Mazyar_of_the_Qarinvand_dynasty.jpg", "alt": "Maziyar", "credit": "Maziyar ibn Qarin of the Qarinvand dynasty · Wikimedia Commons" },
+   { "file": "Caspian_coast_of_Iran_during_the_Iranian_intermezzo.png", "alt": "The Caspian lands", "credit": "The Caspian lands of northern Iran in Maziyar's age · Wikimedia Commons" }
+  ],
+  "body": [
+   "Maziyar ibn Qarin was the ispahbad (prince) of the Caspian highlands of Tabaristan, heir of the Qarinvand line that traced itself to the Sasanian nobility and had kept a stubborn independence in its mountains long after the rest of Iran had fallen. A convert to Islam at the caliph's court, he returned to rule his mountainous homeland.",
+   "In 839 he rose in open revolt against the caliph al-Mu'tasim, against the Tahirid governors and against the lowland landlords — reportedly siding with the peasants against their masters, so that his rising had both a separatist and a social dimension. Betrayed by his own brother, he was captured and flogged to death.",
+   "His fall, so close in time to Babak's, marked the end of the armed resistance of the old north-Iranian noble houses; within a few decades the Caspian lands would instead give rise to new local Muslim dynasties such as the Ziyarids and Buyids."
+  ],
+  "refs": [ { "label": "Wikipedia — Mazyar", "url": "https://en.wikipedia.org/wiki/Mazyar" } ],
+  "related": [ "e259", "e182", "e183" ]
+ },
+ "e261": {
+  "body": [
+   "Alongside the risings of arms ran a quieter contest of words. The Shu‘ubiyya was a literary and cultural movement of the 8th to 10th centuries in which non-Arab Muslims — Iranians foremost among them, but by no means only Iranians — rejected the Arabs' claim to an inborn precedence and asserted the equal, or greater, worth of their own peoples, languages and past.",
+   "Writers and secretaries, many of Iranian background working in the Abbasid chancery, revived the memory of the pre-Islamic Persian kings, translated and praised the old wisdom literature, and argued for the dignity of the mawali — the non-Arab converts. Their opponents answered in kind, and the long debate shaped the development of Arabic prose.",
+   "The Shu‘ubiyya left no battlefield, but it helped keep alive the cultural self-confidence that would soon flower in the revival of the New Persian language and literature under the Samanids and their successors."
+  ],
+  "refs": [ { "label": "Wikipedia — Shu'ubiyya", "url": "https://en.wikipedia.org/wiki/Shu%27ubiyya" } ],
+  "related": [ "e251", "e144", "e181" ]
+ },
 
  "e152": {
   "img": [ { "file": "Maulana_Jelaledin_Muhammad_Rumi_in_konya.jpg", "alt": "Shrine of Rumi", "credit": "The tomb-shrine of Rumi (the Mevlana Museum), Konya · Wikimedia Commons" } ],

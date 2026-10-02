@@ -199,6 +199,12 @@ const yrLbl=y=>y<0?(Math.abs(y)+" BCE"):(y+" CE");
         count(v=>PRE_IRON.indexOf(v.e)>=0),'data-sec-eras="'+PRE_IRON.join(",")+'"',preEras.map(eraLeaf).join(""));
   // 2) ancient periods, each carrying its dynasty
   PERIOD_ERAS.forEach(id=>{const er=erById(id); if(er)html+=periodNode(er);});
+  // 2b) Resistance to the Caliphate — the 8th–9th-century uprisings (a thread)
+  const resEvents=EV.filter(v=>v.c==="resistance").sort((a,b)=>a.y-b.y);
+  if(resEvents.length){
+    html+=sectionNode("sec:resistance","Resistance to the Caliphate","8th–9th century CE",resEvents.length,
+          'data-sec-cat="resistance" data-sec-year="820"',resEvents.map(v=>kingLeaf(v.id)).join(""));
+  }
   // 3) the later dynasties, grouped into sections (no "Later heritage" umbrella)
   const later=DYN.filter(d=>d.era==="later");
   const groups=[]; later.forEach(d=>{if(groups.indexOf(d.group)<0)groups.push(d.group);});
@@ -220,7 +226,8 @@ const yrLbl=y=>y<0?(Math.abs(y)+" BCE"):(y+" CE");
   host.querySelectorAll("[data-filter-sec]").forEach(b=>b.addEventListener("click",()=>{
     const n=b.closest(".tnode"); if(n)n.classList.add("open");
     const key=b.dataset.secKey,label=b.dataset.secLabel,year=b.dataset.secYear?+b.dataset.secYear:undefined;
-    if(b.dataset.secEras)filterEraSet(key,label,b.dataset.secEras.split(","),year);
+    if(b.dataset.secCat)filterCat(key,label,b.dataset.secCat,year);
+    else if(b.dataset.secEras)filterEraSet(key,label,b.dataset.secEras.split(","),year);
     else{const r=(b.dataset.secRange||"").split(",");filterRange(key,label,+r[0],+r[1],year);}}));
   host.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",e=>{
     e.stopPropagation(); if(HV.openKingdom)HV.openKingdom(b.dataset.page);}));
@@ -256,6 +263,9 @@ function filterDynasty(d){if(!d)return;
   applyFilter({key:"dyn:"+d.id,label:d.name,test,year:d.eraYear,fit:kp.length?kp:ptsForTest(test)});}
 function filterEraSet(key,label,eras,year){
   const test=v=>eras.indexOf(v.e)>=0;
+  applyFilter({key,label,test,year,fit:ptsForTest(test)});}
+function filterCat(key,label,cat,year){
+  const test=v=>v.c===cat;
   applyFilter({key,label,test,year,fit:ptsForTest(test)});}
 function filterRange(key,label,start,end,year){
   const test=v=>v.c!=="museum"&&v.y>=start&&v.y<=end;

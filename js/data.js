@@ -10,7 +10,8 @@ window.CATS = {
   context:{name:"Wider Middle East", color:"#5E5242"},
   env:{name:"Climate & environment", color:"#4E6A35"},
   diaspora:{name:"Iranian finds abroad", color:"#A8327D"},
-  museum:{name:"Museums with Iranian art", color:"#BD4632"}
+  museum:{name:"Museums with Iranian art", color:"#BD4632"},
+  resistance:{name:"Resistance & revolts", color:"#A42B2B"}
 };
 
 window.ERAS = [
@@ -35,7 +36,7 @@ window.ERAS = [
   {id:"sas", name:"Sasanian Empire", start:224, end:651, span:"224 – 651 CE", short:"224–651 CE", color:"#7E5A12",
    sum:"A dynasty from Fars revives imperial ambition, founds cities, builds fire temples and gives Zoroastrianism an official, codified form, until the Arab conquest."},
   {id:"later", name:"Later heritage", start:651, end:2026, span:"651 CE – present", short:"651 CE–now", color:"#6B4E9E",
-   sum:"After the Arab conquest, Iran kept its own identity: the Persian language revived, Ferdowsi’s Shahnameh and a thousand years of poetry, art and science flourished under Iranian and Persianate dynasties, and Nowruz and the memory of the old kings endured — within, but never dissolved into, the wider Islamic world."}
+   sum:"Iran from the Arab conquest to the present: the revival of the Persian language, the dynasties of the plateau, and the monuments, cities, poets and figures of the age."}
 ];
 
 // y = sort value in years (negative = BCE). d = displayed date. lat/lng = map pin.
@@ -317,7 +318,20 @@ window.EV = [
  {id:"e246",e:"later",y:1923,lat:38.8879,lng:-77.0260,d:"opened 1923",t:"Freer Gallery of Art (Washington DC)",p:"Smithsonian, Washington DC, USA",x:"Part of the Smithsonian's National Museum of Asian Art, with a distinguished collection of Persian manuscripts, paintings, metalwork and ceramics, including illustrated Shahnameh folios.",c:"museum"},
  {id:"e247",e:"later",y:2008,lat:25.2953,lng:51.5392,d:"opened 2008",t:"Museum of Islamic Art (Doha)",p:"Doha, Qatar",x:"I. M. Pei's landmark museum on the Gulf, with a world-class collection of Islamic art including fine Persian manuscripts, carpets, ceramics and the metalwork and painting of Safavid and Qajar Iran.",c:"museum"},
  {id:"e248",e:"later",y:1914,lat:43.6677,lng:-79.3948,d:"founded 1914",t:"Royal Ontario Museum (Toronto)",p:"Toronto, Canada",x:"Canada's largest museum holds an important Iranian collection — Achaemenid and Sasanian objects, Luristan bronzes, Nishapur ceramics and Persian art gathered over a century.",c:"museum"},
- {id:"e249",e:"later",y:1924,lat:41.0115,lng:28.9834,d:"palace museum since 1924",t:"Topkapı Palace Museum (Istanbul)",p:"Istanbul, Turkey",x:"The Ottoman palace treasury holds superb Persian manuscripts and gifts — illustrated Shahnameh and Khamsa volumes, Safavid miniatures, jade, carpets and the booty of the long wars with Iran.",c:"museum"}
+ {id:"e249",e:"later",y:1924,lat:41.0115,lng:28.9834,d:"palace museum since 1924",t:"Topkapı Palace Museum (Istanbul)",p:"Istanbul, Turkey",x:"The Ottoman palace treasury holds superb Persian manuscripts and gifts — illustrated Shahnameh and Khamsa volumes, Safavid miniatures, jade, carpets and the booty of the long wars with Iran.",c:"museum"},
+ // ===== Resistance to the Caliphate: uprisings of the 8th–9th centuries =====
+ {id:"e250",e:"later",y:748,lat:34.57,lng:60.14,d:"c. 748–749 CE",t:"The revolt of Bihafarid",p:"Khwaf & Nishapur, Khorasan",x:"A Zoroastrian-born preacher who founded a reformed religion blending Zoroastrian and new ideas. His movement in rural Khorasan was crushed by Abu Muslim — at the urging of the orthodox Zoroastrian priests, who saw him as a heretic as much as the Muslims did.",c:"resistance"},
+ {id:"e251",e:"later",y:747,lat:37.66,lng:62.19,d:"747–755 CE",t:"Abu Muslim and the Khorasan revolution",p:"Merv, Khorasan",x:"The Khorasani general whose revolt of the ‘black banners’ toppled the Umayyad caliphate and brought the Abbasids to power, giving Iranians a central place in the new state. His murder in 755 by the caliph al-Mansur enraged his followers and sparked a chain of later uprisings in his name.",c:"resistance"},
+ {id:"e252",e:"later",y:755,lat:36.21,lng:58.80,d:"755 CE",t:"The revolt of Sunpadh",p:"Nishapur & Rey",x:"A Zoroastrian noble of Nishapur who rose in 755 to avenge Abu Muslim, marching on Rey. His short-lived rebellion mixed Zoroastrian and Mazdakite hopes of overturning Arab rule before it was crushed by the Abbasid army.",c:"resistance"},
+ {id:"e253",e:"later",y:758,lat:32.03,lng:44.40,d:"c. 758 CE",t:"The Rawandiyya",p:"al-Hashimiyya, Iraq",x:"A radical Khorasani sect devoted to Abu Muslim’s memory who venerated the caliph al-Mansur himself as divine; when he rejected them they turned on him, storming his residence before being put down.",c:"resistance"},
+ {id:"e254",e:"later",y:767,lat:34.90,lng:63.00,d:"c. 767 CE",t:"The revolt of Ustadh Sis",p:"Badghis, Herat & Sistan",x:"A vast rising across Badghis, Herat and Sistan that drew in tens of thousands of villagers against Abbasid taxation and rule. It was one of the largest popular revolts of the early Islamic east before its defeat.",c:"resistance"},
+ {id:"e255",e:"later",y:776,lat:39.06,lng:66.83,d:"c. 776–783 CE",t:"Al-Muqanna, the Veiled Prophet",p:"Transoxiana (near Samarkand)",x:"Hashim ibn Hakim, ‘the Veiled One’, led a messianic revolt in Transoxiana whose white-clad followers (the Sepid-Jamegan) held out in mountain fortresses for years. His movement fused Mazdakite social ideas with a claim to prophethood.",c:"resistance"},
+ {id:"e256",e:"later",y:777,lat:36.10,lng:62.60,d:"c. 776–777 CE",t:"The revolt of Yusuf al-Barm",p:"Khorasan",x:"A rebellion in the Khorasani countryside against Abbasid misrule, drawing both Arab and Iranian discontent, suppressed after Yusuf was captured and sent to Baghdad.",c:"resistance"},
+ {id:"e257",e:"later",y:778,lat:36.84,lng:54.44,d:"late 8th century CE",t:"The Red-clad (Muhammira) of Gorgan",p:"Gorgan (Jorjan)",x:"One of several risings of the ‘red-clad’ Khorramis of the Caspian lowlands, rural communities that held to a Mazdakite-descended faith and rebelled repeatedly against caliphal authority.",c:"resistance"},
+ {id:"e258",e:"later",y:806,lat:39.65,lng:66.96,d:"806–810 CE",t:"The revolt of Rafi ibn al-Layth",p:"Samarkand, Transoxiana",x:"A major rising in Samarkand that convulsed the north-east; the caliph Harun al-Rashid died on the march to suppress it, and it was only ended when the future caliph al-Ma’mun governed Khorasan in person.",c:"resistance"},
+ {id:"e259",e:"later",y:816,lat:38.82,lng:46.95,d:"816–837 CE",t:"Babak Khorramdin and the Khorram-dini",p:"Azerbaijan (fortress of Badd)",x:"The longest and greatest of the risings: for over twenty years Babak, leader of the egalitarian Khorram-dini faith, held the mountains of Azerbaijan and destroyed army after army sent by the caliph al-Mu’tasim, until the Iranian general Afshin took his stronghold and he was executed in 838.",c:"resistance"},
+ {id:"e260",e:"later",y:839,lat:36.56,lng:53.06,d:"839 CE",t:"Maziyar of the Qarinvand dynasty",p:"Tabaristan (Mazandaran)",x:"The ispahbad of the Caspian highlands, heir of the Zoroastrian Qarinvand princes who had never fully submitted, who rose against the caliphate and the local landlords before he was betrayed and killed — among the last of the old noble risings of the north.",c:"resistance"},
+ {id:"e261",e:"later",y:850,lat:30.50,lng:47.82,d:"8th–10th century CE",t:"The Shu‘ubiyya",p:"Basra & Baghdad",x:"Not a revolt of arms but of the pen: a literary and cultural movement of non-Arab Muslims — Iranians prominent among them, but also others — who asserted the equal, or superior, worth of their peoples and heritage against Arab claims of precedence.",c:"resistance"}
 ];
 
 /* ============================================================
