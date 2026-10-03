@@ -400,11 +400,50 @@ function setBasemap(kind){
   const zi=$("#mpZoomIn"),zo=$("#mpZoomOut"),rs=$("#mpReset"),bt=$("#mpTerrain"),bs=$("#mpSatellite");
   if(zi)zi.onclick=()=>map.zoomIn();
   if(zo)zo.onclick=()=>map.zoomOut();
-  if(rs)rs.onclick=()=>map.setView(HOME_CENTER,HOME_ZOOM);
+  if(rs){rs.onclick=resetAll; rs.title="Reset the view, filters and layout to defaults";}
   if(bt)bt.onclick=()=>setBasemap("terrain");
   if(bs)bs.onclick=()=>setBasemap("satellite");
 })();
 setTimeout(()=>map.invalidateSize(),150);
+
+/* ---- Reset everything (view + filters + content + layout) to defaults ---- */
+function resetAll(){
+  // navigator filter + tree
+  activeFilter=null; try{highlightTree();}catch(e){}
+  document.querySelectorAll("#navTree .tnode.open").forEach(n=>n.classList.remove("open"));
+  // category chips → all on
+  active.clear(); Object.keys(CATS).forEach(k=>active.add(k));
+  document.querySelectorAll("#chips .chip").forEach(b=>b.setAttribute("aria-pressed","true"));
+  // quick-filter flags → off
+  flags.unesco=false; flags.debated=false;
+  const fu=$("#fUnesco"),fd=$("#fDebated");
+  if(fu)fu.setAttribute("aria-pressed","false"); if(fd)fd.setAttribute("aria-pressed","false");
+  // search
+  query=""; const se=$("#search"); if(se)se.value="";
+  // map overlays / toggles → off
+  clusterOn=false; trailsOn=false;
+  ["clusterOn","trailsOn","timeOn"].forEach(id=>{const el=$("#"+id); if(el)el.checked=false;});
+  document.querySelectorAll(".route-toggle").forEach(cb=>{cb.checked=false;
+    const l=routeLayers[cb.dataset.route]; if(l&&map.hasLayer(l))map.removeLayer(l);});
+  try{drawTrails([]);}catch(e){} clearPolit();
+  // period range → full span (dispatch repaints the slider + re-renders)
+  const a=$("#timeFrom"),b=$("#timeTo");
+  if(a&&b){a.value=a.min; b.value=b.max; a.dispatchEvent(new Event("change"));}
+  else{ yrFrom=-10000; yrTo=2010; }
+  // layout → panel shown, timeline expanded, custom drag sizes cleared
+  const grid=document.querySelector(".dash-grid"); if(grid)grid.classList.remove("left-off","tl-off");
+  const lr=$("#leftReopen"); if(lr)lr.hidden=true;
+  const tt=$("#tlToggle"); if(tt){tt.textContent="▾"; tt.title="Collapse timeline";}
+  try{document.body.style.removeProperty("--tl-h"); document.body.style.removeProperty("--left-w");
+    localStorage.removeItem("hv-dash-sizes");}catch(e){}
+  // basemap, drawer, view
+  setBasemap("terrain");
+  try{closePanel();}catch(e){}
+  map.setView(HOME_CENTER,HOME_ZOOM);
+  render();
+  setTimeout(()=>{try{map.invalidateSize();}catch(e){}},80);
+  toast("Everything reset to defaults ✓");
+}
 
 function applyMapTheme(){                       // imagery basemaps carry no theme filter
   const el=document.getElementById("map"); if(el)el.classList.remove("map-dark","map-parchment");
